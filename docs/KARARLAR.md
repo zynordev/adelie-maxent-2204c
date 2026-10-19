@@ -137,3 +137,10 @@
 - **Gerekçe:** ERA5 hücresinin dar kenarı ≈ 10.4 km; daha büyük belirsizlikli kayıt hücreye güvenle atanamaz. Seyreltme MaxEnt'in "remove duplicate presence records" davranışıyla aynıdır, sayıyı şeffaf kılar. Belirsizliği bilinmeyen 420 kayıt tutuldu (çoğu kaynak bu alanı doldurmuyor).
 - **Denenip geri alınan:** Ondalık basamak sayısına göre eleme. Metinde sondaki sıfırlar kaybolduğu için hassas kayıtlar (ör. iNaturalist, Stonington Adası, 160 m belirsizlik) haksız elendi.
 - **Açık nokta:** Kara (koloni) ve deniz (beslenme/gemi gözlemi) kayıtları birlikte tutuldu → danışmanla konuşulacak.
+
+### K-019 — Uzak depo: private GitHub
+- **Tarih:** 2026-10-19
+- **Karar veren:** Öğrenci
+- **Durum:** Geçerli
+- **Karar:** Proje `zynordev/adelie-maxent-2204c` (**private**) deposunda. Commit yazarı: Halil Erdem Yanık `<159820410+zynordev@users.noreply.github.com>` (GitHub noreply adresi; commit'ler hesaba bağlanır, gerçek e-posta geçmişe yazılmaz). Mevcut 6 yerel commit push öncesi bu kimlikle yeniden yazıldı.
+- **Depoda olmayanlar:** `.venv/`, ham veriler (`era5/veri_ham/`, `gbif/ham/` — scriptlerle yeniden indirilebilir), CDS anahtarı ve GBIF şifresi (proje dışında; her push öncesi tüm geçmiş taranır).

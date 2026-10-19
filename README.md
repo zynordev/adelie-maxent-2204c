@@ -7,6 +7,8 @@
 
 Projenin tam bağlamı, alınan kararlar ve kurallar için: [`CLAUDE.md`](CLAUDE.md)
 
+**Depo:** https://github.com/zynordev/adelie-maxent-2204c (private)
+
 ## Klasör yapısı
 
 ```
@@ -19,8 +21,10 @@ adelie-maxent/
     ├── KARARLAR.md    # Numaralı karar kaydı (K-001, K-002, ...)
     ├── ASAMALAR.md    # Aşama / yol haritası takibi
     └── toplantilar/   # Danışman toplantı notları
+├── era5/              # İklim katmanı üretimi: kod + output/ (MaxEnt "Environmental layers")
+└── gbif/              # Bulunuş kayıtları: indirme + temizlik; temiz/adelie_maxent.csv (MaxEnt "Samples")
 ```
 
-İleride eklenecekler (iş başladıkça): `era5/` (iklim katmanı üretimi: kod + `output/`), `gbif/` (bulunuş kayıtları), `maxent/` (model çalıştırmaları), `rapor/`.
+İleride eklenecekler: `maxent/` (model çalıştırmaları), `rapor/`.
 
 > Dosya/klasör adlarında Türkçe karakter ve boşluk kullanılmaz.
