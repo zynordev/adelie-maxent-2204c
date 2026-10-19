@@ -89,3 +89,33 @@
 - **Durum:** Geçerli
 - **Karar:** Her iş ve aşama için proje klasöründe (`docs/`) Markdown kaydı tutulur; Obsidian'dan bağımsız.
 - **Gerekçe:** Profesyonel ve izlenebilir ilerleme; raporun Yöntem bölümüne temel.
+
+### K-013 — Günlük sıcaklık saatlik ERA5'ten hesaplanıyor
+- **Tarih:** 2026-10-19
+- **Karar veren:** Claude (öğrencinin isteğiyle yürütülen ERA5 görevi kapsamında; sonuç değişmediği için yöntemsel değil teknik karar)
+- **Durum:** Geçerli
+- **Karar:** Günlük Tmax/Tmin, `derived-era5-single-levels-daily-statistics` yerine `reanalysis-era5-single-levels` (saatlik 2 m sıcaklık) indirilip yerelde hesaplanır: UTC günü içindeki 24 saatlik değerin maks/min'i.
+- **Gerekçe:** Günlük istatistik veri setinin CDS kuyruğu çok yavaştı (istekler 35 dk'da hiç başlamadı; aynı anda yalnızca birkaç istek kabul ediliyor). Saatlik istek 13 sn'de başladı, yılı ~13 dk'da indi. 2000 yılı için iki yol karşılaştırıldı: 366 gün × 703 hücrenin **tamamında fark 0.0 K** (`era5/saatlik_gunluk_karsilastir.py`).
+- **Alternatifler:** Günlük istatistik veri setini beklemek (52 istek, tahmini saatler–günler).
+- **Kaynak:** CDS DOI 10.24381/cds.adbb2d47 (saatlik), 10.24381/cds.4991cf48 (günlük istatistik)
+
+### K-014 — Günlük maks/min için UTC günü
+- **Tarih:** 2026-10-19
+- **Karar veren:** Claude (CDS varsayılanı korunarak)
+- **Durum:** Geçerli
+- **Karar:** Gün sınırı UTC 00:00. Yerel saat (≈UTC−4/−5) kullanılmadı.
+- **Gerekçe:** CDS günlük istatistik ürününün varsayılanı; aylık ortalamalara etkisi ihmal edilebilir düzeyde. README'de sınırlılık olarak belirtilecek.
+
+### K-015 — Denizel katmanlarda kara hücresi doldurma: küresel en yakın komşu
+- **Tarih:** 2026-10-19
+- **Karar veren:** Claude (`CLAUDE.md` 9.5 uygulanırken)
+- **Durum:** Geçerli
+- **Karar:** SST ve deniz buzunda NaN olan 364 kara hücresine, küre üzerindeki gerçek uzaklığa göre en yakın deniz hücresinin değeri atanır. Ham (doldurulmamış) sürüm `era5/output/ham/` altında.
+- **Gerekçe:** 68°G'de 1° boylam ≈ 0.37° enlem uzunluğundadır; ızgara indeksine göre "en yakın" seçmek doğuya/batıya yanlı olurdu.
+
+### K-016 — Deniz yüzeyi tuzluluğu (öneri)
+- **Tarih:** 2026-10-19
+- **Karar veren:** Öğrenci (netleştirme bekleniyor) → Danışman
+- **Durum:** Onay bekliyor
+- **Karar:** Öğrenci "deniz tuzu" değişkeninin eklenmesini önerdi. Kastedilenin deniz buzu mu (zaten planda) yoksa tuzluluk mu olduğu soruldu.
+- **Not:** ERA5'te tuzluluk yok. CDS'te ORAS5 (`reanalysis-oras5`, `sea_surface_salinity`, aylık, CC-BY, DOI 10.24381/cds.67e8eeb7) var; ancak alan kırpma yok (küresel dosyalar) ve ORCA025 ızgarasında → ERA5 ızgarasına yeniden örnekleme gerekir (Bölüm 9.10 kuralına bilinçli istisna olur).

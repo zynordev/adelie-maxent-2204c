@@ -99,6 +99,8 @@ Toplantı not alınmadı; öğrencinin aktarımıdır.
 | İklim kaynağı (öğrencinin kararı, danışman onayı bekleniyor) | **ERA5'ten 2000–2025 için Bio1–Bio19'u kendimiz hesaplamak** + **deniz yüzeyi sıcaklığı ve deniz buzu** katmanları |
 | Yedek seçenek | MERRAclim 2000'ler (hazır, hakemli, ama 2001–2010) |
 | Kayıt sistemi (2026-10-19) | Her iş/aşama `docs/` altında Markdown olarak kaydedilir (K-012) |
+| Günlük sıcaklık kaynağı (2026-10-19) | Saatlik ERA5'ten günlük maks/min (UTC günü); CDS günlük ürünüyle birebir aynı, fark 0.0 K (K-013, K-014) |
+| Kara hücresi doldurma (2026-10-19) | Küre üzerinde en yakın deniz hücresi (K-015) |
 
 Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 
@@ -136,6 +138,7 @@ Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 - Hangi değişkenler modele girecek? (Korelasyon matrisi çıktıktan sonra öğrenci + danışman seçecek.)
 - GBIF'te Marguerite Körfezi'nde 2000–2026 için kaç kayıt var, karada mı denizde mi? (Öğrenci indirecek.)
 - Gelecek senaryoları (2050) ileride geri dönecek mi?
+- "Deniz tuzu" = deniz buzu mu, tuzluluk mu? Tuzluluksa ORAS5 + yeniden örnekleme kabul edilecek mi? (K-016; öğrenci + danışman)
 
 ---
 
@@ -157,8 +160,7 @@ Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 
 | İhtiyaç | CDS veri seti | Değişken |
 |---|---|---|
-| Günlük max sıcaklık | `derived-era5-single-levels-daily-statistics` (daily_maximum) | `2m_temperature` |
-| Günlük min sıcaklık | aynı (daily_minimum) | `2m_temperature` |
+| Günlük max/min sıcaklık | ~~`derived-era5-single-levels-daily-statistics`~~ → **`reanalysis-era5-single-levels` (saatlik), günlük maks/min yerelde** (K-013) | `2m_temperature` |
 | Aylık yağış | `reanalysis-era5-single-levels-monthly-means` (monthly_averaged_reanalysis) | `total_precipitation` |
 | Deniz yüzeyi sıcaklığı | `reanalysis-era5-single-levels-monthly-means` | `sea_surface_temperature` |
 | Deniz buzu | `reanalysis-era5-single-levels-monthly-means` | `sea_ice_cover` |
