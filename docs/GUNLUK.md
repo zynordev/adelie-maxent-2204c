@@ -18,6 +18,8 @@
 - CDS günlük istatistik veri seti kuyruğu çok yavaş + eşzamanlı istek sınırı ("Number queued requests for this dataset is temporarily limited"). Saatlik veriye geçildi; 2000 ve 2001'de sonuç birebir aynı (fark 0.0 K) → K-013.
 - rasterio 1.5.2 (ARM) içindeki GDAL 3.12.2 açılışta zararsız "apszKnownConfigOptions" satırları basıyor; `CPL_LOG` ile susturuldu.
 - Öğrenci "deniz tuzu" eklemek istedi; deniz buzu mu tuzluluk mu netleşmedi → K-016.
+- Öğrenci önizleme PNG'lerinin kalitesizliğini belirtti. Yenilendi: 220 dpi, gerçek en/boy oranı, °G/°B eksenler, Rothera işareti, kaynak dipnotu; kıyı çizgisi hücre merkezlerinden geçen kontur yerine hücre kenarlarını izleyen basamaklı sınır. Pikseller bilerek yumuşatılmadı (0.25° verinin gerçek çözünürlüğü; enterpolasyon olmayan ayrıntı gösterirdi). Rapor haritaları Aşama 7'de QGIS'te yapılacak.
+- Hesaplama zinciri 7 yıllık veriyle (2000–2006) deneme olarak uçtan uca çalıştırıldı: tüm doğrulama kontrolleri geçti.
 
 **Sıradaki adım**
 - İndirme bitince: `bioclim_hesapla.py` → `korelasyon.py` → `dogrula.py`, çıktı README'si.

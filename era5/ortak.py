@@ -76,21 +76,72 @@ def tif_yaz(yol, dizi, izg):
         f.write(np.where(np.isfinite(dizi), dizi, NODATA).astype("float32"), 1)
 
 
-def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis"):
-    """Renk skalası ve birimli önizleme. kara_maskesi verilirse kıyı çizgisi olarak çizilir."""
-    kapsam = [izg["bati"], izg["bati"] + izg["ncols"] * HUCRE,
-              izg["kuzey"] - izg["nrows"] * HUCRE, izg["kuzey"]]
-    fig, ax = plt.subplots(figsize=(8, 5))
-    im = ax.imshow(np.ma.masked_invalid(dizi), extent=kapsam, cmap=cmap, origin="upper")
+def _kara_siniri(kara_maskesi, izg):
+    """Kara/deniz hücreleri arasındaki ortak HÜCRE KENARLARI (basamaklı sınır, uydurma yumuşatma yok)."""
+    k, b, c = izg["kuzey"], izg["bati"], izg["cellsize"]
+    parcalar = []
+    m = kara_maskesi
+    for i, j in zip(*np.nonzero(m[:, 1:] != m[:, :-1])):        # dikey kenarlar
+        x = b + (j + 1) * c
+        parcalar.append([(x, k - i * c), (x, k - (i + 1) * c)])
+    for i, j in zip(*np.nonzero(m[1:, :] != m[:-1, :])):        # yatay kenarlar
+        y = k - (i + 1) * c
+        parcalar.append([(b + j * c, y), (b + (j + 1) * c, y)])
+    return parcalar
+
+
+def _derece(deger, yon):
+    harf = {"enlem": ("K", "G"), "boylam": ("D", "B")}[yon][int(deger < 0)]
+    return f"{abs(deger):g}°{harf}"
+
+
+def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", donem="2000–2025"):
+    """Önizleme haritası. Pikseller ERA5 hücreleridir; görüntü bilerek yumuşatılmaz."""
+    from matplotlib.collections import LineCollection
+    from matplotlib.ticker import FuncFormatter
+
+    from ayarlar import ROTHERA
+
+    bati, kuzey, c = izg["bati"], izg["kuzey"], izg["cellsize"]
+    dogu, guney = bati + izg["ncols"] * c, kuzey - izg["nrows"] * c
+    olcek = np.cos(np.deg2rad((kuzey + guney) / 2))      # 1° boylamın 1° enleme oranı (~0.37)
+
+    # Şekil boyu, haritanın gerçek en/boy oranından hesaplanır (boşluk kalmasın)
+    gen_in = 7.2 * 0.70                                       # harita genişliği (inç)
+    yuk_in = gen_in * (kuzey - guney) / ((dogu - bati) * olcek)
+    fig_yuk = yuk_in + 1.35                                   # başlık + eksen + dipnot payı
+    alt, yuk = 0.85 / fig_yuk, yuk_in / fig_yuk
+    fig = plt.figure(figsize=(7.2, fig_yuk))
+    ax = fig.add_axes([0.11, alt, 0.70, yuk])
+    cax = fig.add_axes([0.84, alt, 0.03, yuk])
+
+    im = ax.imshow(np.ma.masked_invalid(dizi), extent=[bati, dogu, guney, kuzey], cmap=cmap,
+                   origin="upper", interpolation="nearest")
+    ax.set_aspect(1 / olcek)
+
     if kara_maskesi is not None:
-        enlem = np.linspace(kapsam[3] - HUCRE / 2, kapsam[2] + HUCRE / 2, izg["nrows"])
-        boylam = np.linspace(kapsam[0] + HUCRE / 2, kapsam[1] - HUCRE / 2, izg["ncols"])
-        ax.contour(boylam, enlem, kara_maskesi.astype(float), levels=[0.5], colors="k", linewidths=0.8)
-    fig.colorbar(im, ax=ax, label=birim)
-    ax.set_title(baslik)
-    ax.set_xlabel("Boylam (°)")
-    ax.set_ylabel("Enlem (°)")
-    ax.set_aspect(1 / np.cos(np.deg2rad(68)))  # 68°G'de 1° boylam ≈ 0.37° enlem uzunluğunda
-    fig.tight_layout()
-    fig.savefig(yol, dpi=120)
+        ax.add_collection(LineCollection(_kara_siniri(kara_maskesi, izg), colors="k", linewidths=1.0))
+
+    ax.plot(ROTHERA["boylam"], ROTHERA["enlem"], marker="*", ms=13, mfc="white", mec="k", mew=1.0)
+    ax.annotate("Rothera", (ROTHERA["boylam"], ROTHERA["enlem"]), xytext=(7, 5),
+                textcoords="offset points", fontsize=9, fontweight="bold",
+                bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.75))
+
+    ax.set_xticks(np.arange(np.ceil(bati), dogu, 1))
+    ax.set_yticks(np.arange(np.ceil(guney * 2) / 2, kuzey, 0.5))
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: _derece(v, "boylam")))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _derece(v, "enlem")))
+    ax.grid(color="k", alpha=0.18, lw=0.5, ls="--")
+    ax.tick_params(labelsize=8.5)
+    ax.set_title(baslik, fontsize=11.5, fontweight="bold", loc="left")
+
+    cb = fig.colorbar(im, cax=cax)
+    cb.set_label(birim, fontsize=10)
+    cb.ax.tick_params(labelsize=8.5)
+
+    fig.text(0.11, 0.12 / fig_yuk,
+             f"Veri: ERA5 (Hersbach vd. 2020), {donem}. Izgara 0.25°: her kare bir ERA5 hücresidir,\n"
+             "görüntü bilerek yumuşatılmamıştır. Siyah çizgi: ERA5 kara–deniz sınırı (hücre kenarları).",
+             fontsize=7, color="0.35", va="bottom")
+    fig.savefig(yol, dpi=220)
     plt.close(fig)
