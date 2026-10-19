@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-10-19 — ERA5 katman üretimi başladı (Aşama 2 ✅, Aşama 3 🟡)
+
+**Yapılanlar**
+- CDS API anahtarı `~/.cdsapirc` dosyasına yazıldı (izin 600; anahtar hiçbir proje dosyasında/commit'te yok — kontrol edildi).
+- CDS veri seti adları, değişkenler ve DOI'ler katalog API'sinden doğrulandı.
+- `era5/` altında sanal ortam ve scriptler: `indir.py`, `biovars.py`, `test_biovars.py`, `bioclim_hesapla.py`, `denizel_hesapla.py`, `korelasyon.py`, `dogrula.py`, `saatlik_gunluk_karsilastir.py`.
+- `biovars()` elle hesaplanmış sentetik örnekle test edildi: 19 değişkenin tamamı geçti.
+- Aylık yağış, SST ve deniz buzu (2000–2025) indi. 5 denizel katman üretildi; 364 kara hücresi küresel en yakın komşu ile dolduruldu (K-015).
+- Saatlik 2 m sıcaklık indiriliyor (yıl başına ~12 dk; CDS aynı anda tek iş işliyor).
+
+**Sorunlar / notlar**
+- CDS günlük istatistik veri seti kuyruğu çok yavaş + eşzamanlı istek sınırı ("Number queued requests for this dataset is temporarily limited"). Saatlik veriye geçildi; 2000 ve 2001'de sonuç birebir aynı (fark 0.0 K) → K-013.
+- rasterio 1.5.2 (ARM) içindeki GDAL 3.12.2 açılışta zararsız "apszKnownConfigOptions" satırları basıyor; `CPL_LOG` ile susturuldu.
+- Öğrenci "deniz tuzu" eklemek istedi; deniz buzu mu tuzluluk mu netleşmedi → K-016.
+
+**Sıradaki adım**
+- İndirme bitince: `bioclim_hesapla.py` → `korelasyon.py` → `dogrula.py`, çıktı README'si.
+- Öğrenci: "deniz tuzu" sorusunu yanıtlamak; danışmana ERA5 yaklaşımını sormak.
+
+---
+
 ## 2026-10-19 — Proje klasörü ve kayıt sistemi kuruldu
 
 **Yapılanlar**

@@ -95,7 +95,7 @@
 - **Karar veren:** Claude (öğrencinin isteğiyle yürütülen ERA5 görevi kapsamında; sonuç değişmediği için yöntemsel değil teknik karar)
 - **Durum:** Geçerli
 - **Karar:** Günlük Tmax/Tmin, `derived-era5-single-levels-daily-statistics` yerine `reanalysis-era5-single-levels` (saatlik 2 m sıcaklık) indirilip yerelde hesaplanır: UTC günü içindeki 24 saatlik değerin maks/min'i.
-- **Gerekçe:** Günlük istatistik veri setinin CDS kuyruğu çok yavaştı (istekler 35 dk'da hiç başlamadı; aynı anda yalnızca birkaç istek kabul ediliyor). Saatlik istek 13 sn'de başladı, yılı ~13 dk'da indi. 2000 yılı için iki yol karşılaştırıldı: 366 gün × 703 hücrenin **tamamında fark 0.0 K** (`era5/saatlik_gunluk_karsilastir.py`).
+- **Gerekçe:** Günlük istatistik veri setinin CDS kuyruğu çok yavaştı (istekler 35 dk'da hiç başlamadı; aynı anda yalnızca birkaç istek kabul ediliyor). Saatlik istek 13 sn'de başladı, yılı ~13 dk'da indi. 2000 ve 2001 yılları için iki yol karşılaştırıldı: 731 gün × 703 hücrenin **tamamında fark 0.0 K** (`era5/saatlik_gunluk_karsilastir.py`).
 - **Alternatifler:** Günlük istatistik veri setini beklemek (52 istek, tahmini saatler–günler).
 - **Kaynak:** CDS DOI 10.24381/cds.adbb2d47 (saatlik), 10.24381/cds.4991cf48 (günlük istatistik)
 
