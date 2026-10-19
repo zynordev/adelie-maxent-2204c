@@ -21,10 +21,11 @@
 - Öğrenci önizleme PNG'lerinin kalitesizliğini belirtti. Yenilendi: 220 dpi, gerçek en/boy oranı, °G/°B eksenler, Rothera işareti, kaynak dipnotu; kıyı çizgisi hücre merkezlerinden geçen kontur yerine hücre kenarlarını izleyen basamaklı sınır. Pikseller bilerek yumuşatılmadı (0.25° verinin gerçek çözünürlüğü; enterpolasyon olmayan ayrıntı gösterirdi). Rapor haritaları Aşama 7'de QGIS'te yapılacak.
 - Hesaplama zinciri 7 yıllık veriyle (2000–2006) deneme olarak uçtan uca çalıştırıldı: tüm doğrulama kontrolleri geçti.
 - GBIF: sitede filtreler 0 sonuç verdi (site varsayılan taksonomi listesi taxonKey 2481663'ü tanımıyor). Öğrencinin isteğiyle resmi indirme API'siyle indirildi (K-017): **1001 kayıt, 8 veri seti, DOI 10.15468/dl.jt3gt7** → `gbif/ham/0034792-260928105237408.zip`. Sorgu `gbif/sorgu.json`, bilgiler `gbif/indirme_bilgisi.json`.
+- GBIF temizliği (öğrencinin isteğiyle, K-018): `gbif/temizle.py` → 1001 → 704 temiz kayıt → **67 MaxEnt noktası** (`gbif/temiz/adelie_maxent.csv`). Atılan her kayıt nedeniyle `gbif/temiz/atilan_kayitlar.csv`'de; adım tablosu `gbif/temiz/temizlik_raporu.md`; kontrol haritası `gbif/temiz/noktalar.png`. Ondalık sayısına göre eleme denendi, hassas kayıtları haksız elediği için geri alındı.
 
 **Sıradaki adım**
 - İndirme bitince: `bioclim_hesapla.py` → `korelasyon.py` → `dogrula.py`, çıktı README'si.
-- Öğrenci: "deniz tuzu" sorusunu yanıtlamak; danışmana ERA5 yaklaşımını sormak; GBIF kayıtlarını temizlemek (Aşama 4).
+- Öğrenci: "deniz tuzu" sorusunu yanıtlamak; danışmana ERA5 yaklaşımını sormak; K-018 temizlik kurallarını gözden geçirmek; kara+deniz kayıtlarını danışmana sormak.
 
 ---
 

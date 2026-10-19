@@ -101,6 +101,8 @@ Toplantı not alınmadı; öğrencinin aktarımıdır.
 | Kayıt sistemi (2026-10-19) | Her iş/aşama `docs/` altında Markdown olarak kaydedilir (K-012) |
 | Günlük sıcaklık kaynağı (2026-10-19) | Saatlik ERA5'ten günlük maks/min (UTC günü); CDS günlük ürünüyle birebir aynı, fark 0.0 K (K-013, K-014) |
 | Kara hücresi doldurma (2026-10-19) | Küre üzerinde en yakın deniz hücresi (K-015) |
+| GBIF indirme (2026-10-19) | API, öğrencinin hesabı; 1001 kayıt, DOI 10.15468/dl.jt3gt7 (K-017) |
+| GBIF temizlik (2026-10-19, onay bekliyor) | 1001 → 704 temiz → 67 MaxEnt noktası, ERA5 hücresi başına 1 (K-018) |
 
 Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 
@@ -136,7 +138,7 @@ Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 
 - Danışman, ERA5 tabanlı kendi hesapladığımız katmanları (Bio + denizel) onaylayacak mı? (Öğrenci soracak.)
 - Hangi değişkenler modele girecek? (Korelasyon matrisi çıktıktan sonra öğrenci + danışman seçecek.)
-- GBIF'te Marguerite Körfezi'nde 2000–2026 için kaç kayıt var, karada mı denizde mi? (Öğrenci indirecek.)
+- ~~GBIF'te kaç kayıt var?~~ → 1001 ham, 67 MaxEnt noktası (19 kara, 48 deniz hücresi). **Kara (koloni) + deniz kayıtları birlikte mi kullanılacak?** (K-018; öğrenci + danışman)
 - Gelecek senaryoları (2050) ileride geri dönecek mi?
 - "Deniz tuzu" = deniz buzu mu, tuzluluk mu? Tuzluluksa ORAS5 + yeniden örnekleme kabul edilecek mi? (K-016; öğrenci + danışman)
 

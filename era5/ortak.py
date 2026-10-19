@@ -95,8 +95,11 @@ def _derece(deger, yon):
     return f"{abs(deger):g}°{harf}"
 
 
-def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", donem="2000–2025"):
-    """Önizleme haritası. Pikseller ERA5 hücreleridir; görüntü bilerek yumuşatılmaz."""
+def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", donem="2000–2025", noktalar=()):
+    """Önizleme haritası. Pikseller ERA5 hücreleridir; görüntü bilerek yumuşatılmaz.
+
+    noktalar: (boylamlar, enlemler, scatter ayarları) üçlüleri — ör. tür kayıtlarını üstüne çizmek için.
+    """
     from matplotlib.collections import LineCollection
     from matplotlib.ticker import FuncFormatter
 
@@ -121,6 +124,11 @@ def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", do
 
     if kara_maskesi is not None:
         ax.add_collection(LineCollection(_kara_siniri(kara_maskesi, izg), colors="k", linewidths=1.0))
+
+    for x, y, ayar in noktalar:
+        ax.scatter(x, y, zorder=3, **ayar)
+    if noktalar:
+        ax.legend(loc="lower left", fontsize=8, framealpha=0.85)
 
     ax.plot(ROTHERA["boylam"], ROTHERA["enlem"], marker="*", ms=13, mfc="white", mec="k", mew=1.0)
     ax.annotate("Rothera", (ROTHERA["boylam"], ROTHERA["enlem"]), xytext=(7, 5),

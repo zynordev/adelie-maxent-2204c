@@ -128,3 +128,12 @@
 - **Filtre:** taxonKey 2481663 (GBIF Backbone) · yıl 2000–2026 · koordinatlı · coğrafi sorun yok · occurrenceStatus = PRESENT · iklim katmanlarının sınırı (73.125°B–63.875°B, 70.625°G–65.875°G). 2026-10-19 itibarıyla arama API'sinde 1001 kayıt.
 - **Gerekçe:** GBIF sitesinde aynı filtreler 0 sonuç verdi. Ekran görüntüsünde filtre "Scientific name: 2481663" olarak görünüyordu; sitenin varsayılan taksonomi listesi Backbone değil, bu numarayı tanımıyor. API'de `checklistKey` = Backbone açıkça verildi.
 - **Gizlilik:** GBIF şifresi yalnızca `~/.gbif_sifre` dosyasında (izin 600, öğrenci oluşturdu); hiçbir proje dosyasına/commit'e yazılmaz.
+
+### K-018 — GBIF temizlik kuralları ve seyreltme
+- **Tarih:** 2026-10-19
+- **Karar veren:** Claude (öğrencinin isteğiyle; öğrenci + danışman gözden geçirecek)
+- **Durum:** Onay bekliyor (öğrenci + danışman)
+- **Karar:** `gbif/temizle.py` sırasıyla: (1) ERA5 alanı dışını at · (2) `coordinateUncertaintyInMeters` > 10 km at · (3) konum adı yalnızca bölge olanları at ("Western Antarctic Peninsula" — 42 INSDC kaydı tek noktada; "Marguerite Bay Antartica" — 2 kayıt, körfez merkezi) · (4) belirsizliği yok + iki koordinat 0.5°'nin tam katı olanları at (yer tutucu; şu an 0) · (5) aynı koordinat + aynı tarih tekrarlarını teke indir · (6) ERA5 hücresi başına 1 nokta (en küçük belirsizlikli kayıt). Sonuç: 1001 → 704 temiz kayıt → **67 MaxEnt noktası** (19 kara, 48 deniz hücresi).
+- **Gerekçe:** ERA5 hücresinin dar kenarı ≈ 10.4 km; daha büyük belirsizlikli kayıt hücreye güvenle atanamaz. Seyreltme MaxEnt'in "remove duplicate presence records" davranışıyla aynıdır, sayıyı şeffaf kılar. Belirsizliği bilinmeyen 420 kayıt tutuldu (çoğu kaynak bu alanı doldurmuyor).
+- **Denenip geri alınan:** Ondalık basamak sayısına göre eleme. Metinde sondaki sıfırlar kaybolduğu için hassas kayıtlar (ör. iNaturalist, Stonington Adası, 160 m belirsizlik) haksız elendi.
+- **Açık nokta:** Kara (koloni) ve deniz (beslenme/gemi gözlemi) kayıtları birlikte tutuldu → danışmanla konuşulacak.
