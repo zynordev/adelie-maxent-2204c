@@ -1,0 +1,44 @@
+{
+  "format": "SIMPLE_CSV",
+  "sendNotification": false,
+  "checklistKey": "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
+  "predicate": {
+    "type": "and",
+    "predicates": [
+      {
+        "type": "equals",
+        "key": "TAXON_KEY",
+        "value": "2481663"
+      },
+      {
+        "type": "greaterThanOrEquals",
+        "key": "YEAR",
+        "value": "2000"
+      },
+      {
+        "type": "lessThanOrEquals",
+        "key": "YEAR",
+        "value": "2026"
+      },
+      {
+        "type": "equals",
+        "key": "HAS_COORDINATE",
+        "value": "true"
+      },
+      {
+        "type": "equals",
+        "key": "HAS_GEOSPATIAL_ISSUE",
+        "value": "false"
+      },
+      {
+        "type": "equals",
+        "key": "OCCURRENCE_STATUS",
+        "value": "PRESENT"
+      },
+      {
+        "type": "within",
+        "geometry": "POLYGON((-73.125 -70.625,-63.875 -70.625,-63.875 -65.875,-73.125 -65.875,-73.125 -70.625))"
+      }
+    ]
+  }
+}

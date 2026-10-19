@@ -3,3 +3,4 @@ __pycache__/
 veri_ham/
 indirme.log
 *.part
+gbif/ham/

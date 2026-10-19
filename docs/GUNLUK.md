@@ -20,10 +20,11 @@
 - Öğrenci "deniz tuzu" eklemek istedi; deniz buzu mu tuzluluk mu netleşmedi → K-016.
 - Öğrenci önizleme PNG'lerinin kalitesizliğini belirtti. Yenilendi: 220 dpi, gerçek en/boy oranı, °G/°B eksenler, Rothera işareti, kaynak dipnotu; kıyı çizgisi hücre merkezlerinden geçen kontur yerine hücre kenarlarını izleyen basamaklı sınır. Pikseller bilerek yumuşatılmadı (0.25° verinin gerçek çözünürlüğü; enterpolasyon olmayan ayrıntı gösterirdi). Rapor haritaları Aşama 7'de QGIS'te yapılacak.
 - Hesaplama zinciri 7 yıllık veriyle (2000–2006) deneme olarak uçtan uca çalıştırıldı: tüm doğrulama kontrolleri geçti.
+- GBIF: sitede filtreler 0 sonuç verdi (site varsayılan taksonomi listesi taxonKey 2481663'ü tanımıyor). Öğrencinin isteğiyle resmi indirme API'siyle indirildi (K-017): **1001 kayıt, 8 veri seti, DOI 10.15468/dl.jt3gt7** → `gbif/ham/0034792-260928105237408.zip`. Sorgu `gbif/sorgu.json`, bilgiler `gbif/indirme_bilgisi.json`.
 
 **Sıradaki adım**
 - İndirme bitince: `bioclim_hesapla.py` → `korelasyon.py` → `dogrula.py`, çıktı README'si.
-- Öğrenci: "deniz tuzu" sorusunu yanıtlamak; danışmana ERA5 yaklaşımını sormak.
+- Öğrenci: "deniz tuzu" sorusunu yanıtlamak; danışmana ERA5 yaklaşımını sormak; GBIF kayıtlarını temizlemek (Aşama 4).
 
 ---
 

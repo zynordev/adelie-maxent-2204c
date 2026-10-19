@@ -119,3 +119,12 @@
 - **Durum:** Onay bekliyor
 - **Karar:** Öğrenci "deniz tuzu" değişkeninin eklenmesini önerdi. Kastedilenin deniz buzu mu (zaten planda) yoksa tuzluluk mu olduğu soruldu.
 - **Not:** ERA5'te tuzluluk yok. CDS'te ORAS5 (`reanalysis-oras5`, `sea_surface_salinity`, aylık, CC-BY, DOI 10.24381/cds.67e8eeb7) var; ancak alan kırpma yok (küresel dosyalar) ve ORCA025 ızgarasında → ERA5 ızgarasına yeniden örnekleme gerekir (Bölüm 9.10 kuralına bilinçli istisna olur).
+
+### K-017 — GBIF indirmesi API ile, öğrencinin isteğiyle Claude tarafından
+- **Tarih:** 2026-10-19
+- **Karar veren:** Öğrenci
+- **Durum:** Geçerli
+- **Karar:** GBIF kayıtları resmi indirme API'siyle (`gbif/indir_gbif.py`, öğrencinin hesabı) indirilir. Ürün sitedeki "Download → Simple" ile aynıdır (SIMPLE_CSV + DOI). Filtre `gbif/sorgu.json`'da saklanır. Temizlik ve seçim kararları öğrencide kalır.
+- **Filtre:** taxonKey 2481663 (GBIF Backbone) · yıl 2000–2026 · koordinatlı · coğrafi sorun yok · occurrenceStatus = PRESENT · iklim katmanlarının sınırı (73.125°B–63.875°B, 70.625°G–65.875°G). 2026-10-19 itibarıyla arama API'sinde 1001 kayıt.
+- **Gerekçe:** GBIF sitesinde aynı filtreler 0 sonuç verdi. Ekran görüntüsünde filtre "Scientific name: 2481663" olarak görünüyordu; sitenin varsayılan taksonomi listesi Backbone değil, bu numarayı tanımıyor. API'de `checklistKey` = Backbone açıkça verildi.
+- **Gizlilik:** GBIF şifresi yalnızca `~/.gbif_sifre` dosyasında (izin 600, öğrenci oluşturdu); hiçbir proje dosyasına/commit'e yazılmaz.

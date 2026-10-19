@@ -1,0 +1,10 @@
+{
+  "anahtar": "0034792-260928105237408",
+  "istek_tarihi": "2026-10-19 19:25",
+  "doi": "10.15468/dl.jt3gt7",
+  "kayit_sayisi": 1001,
+  "veri_seti_sayisi": 8,
+  "olusturma": "2026-10-19T16:25:21.084+00:00",
+  "baglanti": "https://api.gbif.org/v1/occurrence/download/request/0034792-260928105237408.zip",
+  "atif": "GBIF.org (2026-10-19) GBIF Occurrence Download https://doi.org/10.15468/dl.jt3gt7"
+}
