@@ -11,8 +11,10 @@
 - **deneme1:** Test AUC **0.781**, Training AUC 0.819 (hedef > 0.70 ✔). Çıktılar Pi'deki repoya kopyalandı: `maxent/cikti/deneme1/`.
 - **Hata bulundu ve düzeltildi:** MaxEnt 67 yerine 66 nokta kullandı. 66.875°G hücre sınırındaki bir nokta için `gbif/temizle.py` satırı kuzeyden, MaxEnt güneyden sayıyor → farklı hücre. Script MaxEnt kuralına uyduruldu; yeni dosyada 67 nokta, sınırda nokta yok, MaxEnt'te tekrar yok.
 
+- **deneme2** (10 katlı çapraz doğrulama, 67 nokta): ortalama Test AUC **0.768 ± 0.111** (MaxEnt; katlar 0.518–0.916). Permütasyon önemi en yüksek buz_yillik (55.6). Jackknife bu çalıştırmada işaretlenmemişti. Çıktılar `maxent/cikti/deneme2/`.
+
 **Sıradaki adım**
-- Öğrenci: laptop'ta `git pull` → yeni `adelie_maxent.csv` ile 10 tekrarlı çapraz doğrulama (deneme2).
+- deneme3: çapraz doğrulama + jackknife (rapor için), katman klasörü `girdi/katmanlar`.
 
 ---
 

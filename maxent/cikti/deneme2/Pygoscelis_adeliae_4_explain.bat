@@ -1,0 +1,1 @@
+java -mx1024m -cp "/home/halil/adelie-maxent-2204c/maxent/maxent.jar:maxent.jar" density.Explain -l /home/halil/adelie-maxent-2204c/maxent/cikti/deneme2/Pygoscelis_adeliae_4.lambdas -c /home/halil/adelie-maxent-2204c/maxent/cikti/deneme2/Pygoscelis_adeliae_4.asc /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache
