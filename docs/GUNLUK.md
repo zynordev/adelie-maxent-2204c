@@ -9,6 +9,7 @@
 **Yapılanlar**
 - Saatlik 2 m sıcaklık indirmesi 01:51'de bitti (26/26 yıl). `hepsini_calistir.sh` 01:52–01:53'te zinciri otomatik çalıştırdı: biovars testi ✔ → saatlik/günlük eşdeğerlik (2000, 2001: fark 0.0 K) ✔ → denizel → bioclim → korelasyon → doğrulama: **tüm kontroller geçti**.
 - `era5/output/README.md` yazıldı (veri setleri + DOI, dönem, alan, birimler, formüller, doldurma, doğrulama, sınırlılıklar, atıflar). Veri seti atıfları DOI kayıt sisteminden (DataCite) doğrulandı; ezberden yazılan yazar/yıl yanlıştı, düzeltildi.
+- Push öncesi elle yapılan gizli bilgi taramasında komut hatası fark edildi (tarama çalışmadan push yapılmıştı). Tüm geçmiş doğru komutla yeniden tarandı: temiz. Kalıcı çözüm: `.git/hooks/pre-push` kancası, her push'ta gönderilen commit'lerde CDS anahtarı/GBIF şifresi arar ve bulursa push'u engeller; sahte anahtarla geçici depoda test edildi (temiz → geçti, sızıntı → engellendi). Not: kanca `.git/` içinde olduğu için repoya gitmez, yalnızca bu bilgisayarda geçerlidir.
 
 **Sonuçlar**
 - 24 katman (`.asc` + `.tif` + `.png`), ızgara 37 × 19, 0.25°, NoData yok.
