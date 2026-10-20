@@ -269,6 +269,8 @@ Dosya/klasör adlarında **Türkçe karakter ve boşluk yok.**
 
 ## 11. Kaynaklar
 
+> Değişken seçimi için doğrulanmış literatür özeti: `docs/literatur/degisken_literaturu.md` (2026-10-20).
+
 - Vega, G. C., Pertierra, L. R. & Olalla-Tárraga, M. Á. (2017). MERRAclim. *Scientific Data* 4:170078. https://www.nature.com/articles/sdata201778
 - MERRAclim verisi (Dryad): https://datadryad.org/dataset/doi:10.5061/dryad.s2v81
 - Cimino, M. A. vd. (2016). *Scientific Reports* 6:28785. https://www.nature.com/articles/srep28785

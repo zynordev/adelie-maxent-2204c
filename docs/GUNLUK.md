@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-10-20 — Değişken seçimi için literatür taraması
+
+**Yapılanlar**
+- `docs/literatur/degisken_literaturu.md` hazırlandı: 9 kaynak, hepsinin künyesi doi.org/Crossref'ten doğrulandı. Ana referans: Cimino vd. 2016 (Adélie, MaxEnt + GAM, değişkenler yaz SST + yaz SIC + buzsuz kaya, AUC > 0.85).
+- Gemini worker sistemi (hk_agents, 15 worker) paralel çalıştırıldı; önerdiği 9 DOI'nin 4'ü yanlış/uydurma çıktı → çıktısı kullanılmadı, ham dosya silindi.
+- Kendi verimizden: en sıcak çeyrek her hücrede yaz (Ara–Şub / Oca–Mar), en soğuk her hücrede kış → bio10/bio18 üreme mevsimi, bio11/bio19 kış. En yağışlı/kurak çeyrek yerden yere farklı → **bio8/bio9 haritalarında yapay kesintiler** (Booth 2022 ile uyumlu).
+- |r| > 0.7 (Dormann vd. 2013 eşiği) → 64 çift; |r| > 0.8 → 49 çift.
+
+**Sıradaki adım**
+- Öğrenci + danışman: Bölüm 8'deki 5 soruyu konuşup değişkenleri seçmek.
+
+---
+
 ## 2026-10-20 — ERA5 katmanları tamamlandı (Aşama 3 ✅)
 
 **Yapılanlar**
