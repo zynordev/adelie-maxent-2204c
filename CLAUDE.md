@@ -137,7 +137,7 @@ Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 ## 8. Açık sorular / bekleyenler
 
 - Danışman, ERA5 tabanlı kendi hesapladığımız katmanları (Bio + denizel) onaylayacak mı? (Öğrenci soracak.)
-- Hangi değişkenler modele girecek? (Korelasyon matrisi çıktıktan sonra öğrenci + danışman seçecek.)
+- Hangi değişkenler modele girecek? **Korelasyon matrisi hazır (2026-10-20):** `era5/output/korelasyon_matrisi.png`, `yuksek_korelasyon.txt` (49 çift \|r\| > 0.8). Öğrenci + danışman seçecek.
 - ~~GBIF'te kaç kayıt var?~~ → 1001 ham, 67 MaxEnt noktası (19 kara, 48 deniz hücresi). **Kara (koloni) + deniz kayıtları birlikte mi kullanılacak?** (K-018; öğrenci + danışman)
 - Gelecek senaryoları (2050) ileride geri dönecek mi?
 - "Deniz tuzu" = deniz buzu mu, tuzluluk mu? Tuzluluksa ORAS5 + yeniden örnekleme kabul edilecek mi? (K-016; öğrenci + danışman)

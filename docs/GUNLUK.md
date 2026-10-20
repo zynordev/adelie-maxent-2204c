@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-10-20 — ERA5 katmanları tamamlandı (Aşama 3 ✅)
+
+**Yapılanlar**
+- Saatlik 2 m sıcaklık indirmesi 01:51'de bitti (26/26 yıl). `hepsini_calistir.sh` 01:52–01:53'te zinciri otomatik çalıştırdı: biovars testi ✔ → saatlik/günlük eşdeğerlik (2000, 2001: fark 0.0 K) ✔ → denizel → bioclim → korelasyon → doğrulama: **tüm kontroller geçti**.
+- `era5/output/README.md` yazıldı (veri setleri + DOI, dönem, alan, birimler, formüller, doldurma, doğrulama, sınırlılıklar, atıflar). Veri seti atıfları DOI kayıt sisteminden (DataCite) doğrulandı; ezberden yazılan yazar/yıl yanlıştı, düzeltildi.
+
+**Sonuçlar**
+- 24 katman (`.asc` + `.tif` + `.png`), ızgara 37 × 19, 0.25°, NoData yok.
+- Rothera hücresi (67.50°G, 68.25°B; deniz): Bio1 −6.78 °C · Bio5 −0.23 °C · Bio6 −14.76 °C · Bio12 1341 mm · sst_yaz −1.45 °C · buz_kis %58.6.
+- Korelasyon: 49 çift |r| > 0.8 (sıcaklık grubu bio1/5/6/10/11 ve yağış grubu bio12–19 kendi içinde çok yüksek; sst_yillik–sst_yaz 0.98; buz_yillik–buz_yaz 0.98).
+
+**Sıradaki adım**
+- Öğrenci + danışman: korelasyon matrisine bakarak değişken seçimi (Aşama 5). Açık sorular: K-009 (ERA5 onayı), K-016 (tuzluluk), K-018 (GBIF kuralları + kara/deniz kayıtları).
+
+---
+
 ## 2026-10-19 — ERA5 katman üretimi başladı (Aşama 2 ✅, Aşama 3 🟡)
 
 **Yapılanlar**
