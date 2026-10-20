@@ -25,6 +25,9 @@ adelie-maxent/
 └── gbif/              # Bulunuş kayıtları: indirme + temizlik; temiz/adelie_maxent.csv (MaxEnt "Samples")
 ```
 
-İleride eklenecekler: `maxent/` (model çalıştırmaları), `rapor/`.
+├── kaya/              # Buzsuz kaya katmanı üretimi (SCAR ADD v7.11)
+├── maxent/            # MaxEnt girdileri (girdi/) ve çalıştırmaları
+
+İleride eklenecekler: `rapor/`.
 
 > Dosya/klasör adlarında Türkçe karakter ve boşluk kullanılmaz.

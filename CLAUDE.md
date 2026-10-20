@@ -103,6 +103,7 @@ Toplantı not alınmadı; öğrencinin aktarımıdır.
 | Kara hücresi doldurma (2026-10-19) | Küre üzerinde en yakın deniz hücresi (K-015) |
 | GBIF indirme (2026-10-19) | API, öğrencinin hesabı; 1001 kayıt, DOI 10.15468/dl.jt3gt7 (K-017) |
 | GBIF temizlik (2026-10-19, onay bekliyor) | 1001 → 704 temiz → 67 MaxEnt noktası, ERA5 hücresi başına 1 (K-018) |
+| Değişkenler (2026-10-20, danışman onayı bekliyor) | kaya, bio18, sst_yillik, buz_yillik; sıcaklık yok (K-020). Buzsuz kaya katmanı SCAR ADD v7.11 (K-021) |
 
 Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.
 

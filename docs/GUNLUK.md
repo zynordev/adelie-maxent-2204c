@@ -10,6 +10,7 @@
 - Öğrenci değişkenleri önerdi: kaya, bio18, sst_yillik, buz_yillik; üreme sıcaklığında karar veremedi (K-020, danışman onayı bekliyor). Seçilenler arası en yüksek |r| = 0.65.
 - Buzsuz kaya katmanı üretildi (K-021): SCAR ADD v7.11 (288 MB GeoPackage, boyutu katalogla aynı) → `era5/output/kaya.asc/.tif/.png`. 343/703 hücrede kaya, en yüksek %15.3.
 - 25 katmanla korelasyon ve doğrulama yeniden çalıştı: tüm kontroller geçti.
+- Öğrenci üreme mevsimi sıcaklığını **eklememeye** karar verdi (K-020). MaxEnt girdi klasörü hazırlandı: `maxent/girdi/` (4 katman + 67 nokta; başlıklar aynı, NoData'ya düşen nokta yok).
 - **Bulgu:** ERA5'in "deniz" saydığı 48 penguen hücresinin 33'ünde kaya var → bunlar küçük adalardaki koloniler; 16 hücrede kaya yok → büyük olasılıkla deniz gözlemleri.
 
 ---

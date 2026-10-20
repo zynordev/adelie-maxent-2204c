@@ -149,7 +149,7 @@
 - **Tarih:** 2026-10-20
 - **Karar veren:** Öğrenci → Danışman onayı bekleniyor
 - **Durum:** Onay bekliyor (danışman)
-- **Karar:** `kaya` (buzsuz kaya), `bio18` (en sıcak çeyreğin yağışı = üreme mevsimi yağışı), `sst_yillik`, `buz_yillik`. Üreme mevsimi sıcaklığı için seçim yapılmadı (adaylar: `bio10`, `bio5`, `bio1` veya hiçbiri).
+- **Karar:** `kaya` (buzsuz kaya), `bio18` (en sıcak çeyreğin yağışı = üreme mevsimi yağışı), `sst_yillik`, `buz_yillik`. **Üreme mevsimi sıcaklığı eklenmedi** (öğrenci, 2026-10-20; adaylar bio10/bio5/bio1 idi). Gerekçe: Cimino vd. 2016 yaklaşımı — deniz değişkenleri atmosfer koşullarının vekili; 67 noktayla az değişken daha güvenli.
 - **Gerekçe (literatür, `docs/literatur/degisken_literaturu.md`):** kaya + SST + deniz buzu → Cimino vd. 2016; bio18 → Chapman vd. 2011, Cimino vd. 2025 (kar/ıslanma).
 - **Eşdoğrusallık:** Seçilen 4 katman arası en yüksek |r| = 0.65 (bio18 ↔ buz_yillik) → Dormann vd. 2013 eşiği (0.7) altında. Üç sıcaklık adayının seçilenlerle en yüksek |r|'si 0.57 (bio1 ↔ sst_yillik); adaylar kendi aralarında 0.91–0.99 (en fazla biri seçilmeli).
 - **Not:** Cimino vd. 2016 SST ve deniz buzunun **yaz** ortalamalarını kullandı; öğrenci **yıllık** olanları seçti (sst_yillik ↔ sst_yaz r = 0.97, buz_yillik ↔ buz_yaz r = 0.98 → bilgi neredeyse aynı; gerekçe raporda yazılmalı).
