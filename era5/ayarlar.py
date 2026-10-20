@@ -29,6 +29,7 @@ DS_AYLIK = "reanalysis-era5-single-levels-monthly-means"
 # Doğrulama noktası: Rothera Araştırma İstasyonu
 ROTHERA = {"enlem": -67.57, "boylam": -68.13}
 
-# MaxEnt'e aday 24 katman (değişken SEÇİMİ öğrenci + danışmanındır)
+# MaxEnt'e aday katmanlar (değişken SEÇİMİ öğrenci + danışmanındır)
 DENIZEL = ["sst_yillik", "sst_yaz", "buz_yillik", "buz_yaz", "buz_kis"]
-KATMANLAR = [f"bio{i}" for i in range(1, 20)] + DENIZEL
+KARASAL = ["kaya"]   # buzsuz kaya örtüsü, ../kaya/kaya_hesapla.py (SCAR ADD v7.11)
+KATMANLAR = [f"bio{i}" for i in range(1, 20)] + DENIZEL + KARASAL

@@ -144,3 +144,20 @@
 - **Durum:** Geçerli
 - **Karar:** Proje `zynordev/adelie-maxent-2204c` (**private**) deposunda. Commit yazarı: Halil Erdem Yanık `<159820410+zynordev@users.noreply.github.com>` (GitHub noreply adresi; commit'ler hesaba bağlanır, gerçek e-posta geçmişe yazılmaz). Mevcut 6 yerel commit push öncesi bu kimlikle yeniden yazıldı.
 - **Depoda olmayanlar:** `.venv/`, ham veriler (`era5/veri_ham/`, `gbif/ham/` — scriptlerle yeniden indirilebilir), CDS anahtarı ve GBIF şifresi (proje dışında; her push öncesi tüm geçmiş taranır).
+
+### K-020 — Değişken seçimi (öğrencinin önerisi)
+- **Tarih:** 2026-10-20
+- **Karar veren:** Öğrenci → Danışman onayı bekleniyor
+- **Durum:** Onay bekliyor (danışman)
+- **Karar:** `kaya` (buzsuz kaya), `bio18` (en sıcak çeyreğin yağışı = üreme mevsimi yağışı), `sst_yillik`, `buz_yillik`. Üreme mevsimi sıcaklığı için seçim yapılmadı (adaylar: `bio10`, `bio5`, `bio1` veya hiçbiri).
+- **Gerekçe (literatür, `docs/literatur/degisken_literaturu.md`):** kaya + SST + deniz buzu → Cimino vd. 2016; bio18 → Chapman vd. 2011, Cimino vd. 2025 (kar/ıslanma).
+- **Eşdoğrusallık:** Seçilen 4 katman arası en yüksek |r| = 0.65 (bio18 ↔ buz_yillik) → Dormann vd. 2013 eşiği (0.7) altında. Üç sıcaklık adayının seçilenlerle en yüksek |r|'si 0.57 (bio1 ↔ sst_yillik); adaylar kendi aralarında 0.91–0.99 (en fazla biri seçilmeli).
+- **Not:** Cimino vd. 2016 SST ve deniz buzunun **yaz** ortalamalarını kullandı; öğrenci **yıllık** olanları seçti (sst_yillik ↔ sst_yaz r = 0.97, buz_yillik ↔ buz_yaz r = 0.98 → bilgi neredeyse aynı; gerekçe raporda yazılmalı).
+
+### K-021 — Buzsuz kaya katmanı
+- **Tarih:** 2026-10-20
+- **Karar veren:** Claude (öğrencinin K-020 seçimi üzerine)
+- **Durum:** Geçerli
+- **Karar:** SCAR Antarctic Digital Database "High resolution vector polygons of Antarctic rock outcrop" v7.11 (Skachkova vd. 2025, doi:10.5285/815525ca-cefe-4fbf-9224-3ee784e7de4e, CC BY 4.0; bu bölgede 2024/25 Sentinel-2'den otomatik çıkarılmış) → her ERA5 hücresinde **% kaya örtüsü** (eşit alanlı Lambert azimutal projeksiyonda kesişim alanı / hücre alanı). Denizde/buzla kaplı hücreler 0. `kaya/kaya_hesapla.py` → `era5/output/kaya.asc`.
+- **Sonuç:** 343/703 hücrede kaya; en yüksek %15.3; toplam 1856 km². 67 MaxEnt noktasının 51'inin hücresinde kaya var. ERA5'in "deniz" saydığı 48 penguen hücresinin 33'ünde kaya var (ERA5 kaba maskesinde görünmeyen küçük adalardaki koloniler); kaya olmayan 16 hücre büyük olasılıkla deniz gözlemleri → K-018'deki kara/deniz sorusu için önemli bilgi.
+- **Eşdoğrusallık:** Diğer tüm katmanlarla |r| ≤ 0.29.

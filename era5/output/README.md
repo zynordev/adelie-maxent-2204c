@@ -1,6 +1,6 @@
 # ERA5 tabanlı iklim ve denizel katmanlar — Marguerite Körfezi, 2000–2025
 
-MaxEnt'in **"Environmental layers"** girdisi olarak hazırlanmış 24 katman (19 biyoklimatik + 5 denizel).
+MaxEnt'in **"Environmental layers"** girdisi olarak hazırlanmış 25 katman (19 biyoklimatik + 5 denizel + 1 buzsuz kaya).
 Kod: `../` (bu klasörün bir üstü). Kararların gerekçeleri: `../../docs/KARARLAR.md`.
 
 > **Bu katmanlar hakemli bir veri seti değildir.** Ham ERA5 reanalizinden, WorldClim / `dismo::biovars`
@@ -114,6 +114,13 @@ Katman başına min/maks/ortalama/NoData/doldurulan hücre: `ozet_istatistik.csv
 |r| > 0.8 olan **49 çift**: `yuksek_korelasyon.txt`. **Değişken seçimi bu çalışmada yapılmamıştır**; öğrenci ve danışman tarafından yapılacaktır.
 Not: Doldurulmuş kara hücreleri denizel katmanlarda tekrarlanan değerler içerdiği için bu katmanların korelasyonlarını bir miktar etkiler.
 
+## 6b. Buzsuz kaya katmanı (`kaya`) — ERA5 değil
+
+- **Kaynak:** SCAR Antarctic Digital Database, *High resolution vector polygons of Antarctic rock outcrop*, v7.11 — Skachkova, A., Gerrish, L., Fretwell, P. & Cooper, P. (2025), NERC EDS UK Polar Data Centre, https://doi.org/10.5285/815525ca-cefe-4fbf-9224-3ee784e7de4e (CC BY 4.0). Bu bölge (20°B–80°B) 2024/25 Sentinel-2 mozaiğinden otomatik çıkarılmıştır. İndirme: 2026-10-20.
+- **Hesap (`../../kaya/kaya_hesapla.py`):** her 0.25° hücrenin kaya poligonlarıyla kesişim alanı / hücre alanı × 100, eşit alanlı Lambert azimutal (Güney Kutbu) projeksiyonunda. Birim: **% hücre alanı**. Denizdeki ve tamamen buzla kaplı hücreler 0 (NoData değil).
+- **Sonuç:** 343/703 hücrede kaya; en yüksek %15.3; toplam 1856 km². Diğer katmanlarla |r| ≤ 0.29.
+- **Sınırlılık:** Kaya örtüsü statiktir (tek bir yaz); hücre ortalaması koloni ölçeğindeki zemin özelliklerini (eğim, bakı, kar birikimi) göstermez.
+
 ## 7. Sınırlılıklar
 
 - **Çözünürlük:** 0.25° ≈ enlemde ~28 km, bu enlemde boylamda ~10 km. Koloni ölçeğindeki mikroklima temsil edilmez; kıyı hücreleri kara ve denizi karışık temsil eder.
@@ -139,6 +146,7 @@ Not: Doldurulmuş kara hücreleri denizel katmanlarda tekrarlanan değerler içe
 |---|---|
 | `bio1.asc` … `bio19.asc` | Biyoklimatik katmanlar (MaxEnt girdisi) |
 | `sst_yillik.asc`, `sst_yaz.asc`, `buz_yillik.asc`, `buz_yaz.asc`, `buz_kis.asc` | Denizel katmanlar, kara dolduruldu (MaxEnt girdisi) |
+| `kaya.asc` | Buzsuz kaya örtüsü (% hücre alanı; SCAR ADD v7.11, Bölüm 6b) |
 | `*.tif` | Aynı katmanların GeoTIFF kopyaları (QGIS için) |
 | `*.png` | Önizlemeler (220 dpi; pikseller bilerek yumuşatılmadı) |
 | `ham/` | Denizel katmanların doldurulmamış hali |

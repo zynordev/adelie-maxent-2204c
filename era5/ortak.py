@@ -95,7 +95,8 @@ def _derece(deger, yon):
     return f"{abs(deger):g}°{harf}"
 
 
-def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", donem="2000–2025", noktalar=()):
+def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", donem="2000–2025", noktalar=(),
+            kaynak="ERA5 (Hersbach vd. 2020)"):
     """Önizleme haritası. Pikseller ERA5 hücreleridir; görüntü bilerek yumuşatılmaz.
 
     noktalar: (boylamlar, enlemler, scatter ayarları) üçlüleri — ör. tür kayıtlarını üstüne çizmek için.
@@ -148,7 +149,7 @@ def png_yaz(yol, dizi, izg, baslik, birim, kara_maskesi=None, cmap="viridis", do
     cb.ax.tick_params(labelsize=8.5)
 
     fig.text(0.11, 0.12 / fig_yuk,
-             f"Veri: ERA5 (Hersbach vd. 2020), {donem}. Izgara 0.25°: her kare bir ERA5 hücresidir,\n"
+             f"Veri: {kaynak}, {donem}. Izgara 0.25°: her kare bir ERA5 hücresidir,\n"
              "görüntü bilerek yumuşatılmamıştır. Siyah çizgi: ERA5 kara–deniz sınırı (hücre kenarları).",
              fontsize=7, color="0.35", va="bottom")
     fig.savefig(yol, dpi=220)

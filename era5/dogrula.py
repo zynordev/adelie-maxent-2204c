@@ -3,7 +3,7 @@
 Kullanım:  .venv/bin/python dogrula.py
 
 Kontroller:
- 1. 24 .asc başlığı birebir aynı (ncols, nrows, köşe, cellsize, NODATA)
+ 1. tüm .asc başlıkları birebir aynı (ncols, nrows, köşe, cellsize, NODATA)
  2. Hiçbir MaxEnt katmanında NoData/NaN yok
  3. Rothera hücresi: Bio1 sıfırın birkaç derece altında; Bio5 > Bio1 > Bio6; Bio12 > 0
  4. Yaz deniz yüzeyi sıcaklığı yaklaşık −2 … birkaç °C; kış deniz buzu > yaz deniz buzu (deniz hücrelerinde)
@@ -31,7 +31,7 @@ def main():
     basliklar = {ad: asc_baslik(CIKTI / f"{ad}.asc") for ad in KATMANLAR}
     referans = basliklar["bio1"]
     farkli = [ad for ad, b in basliklar.items() if b != referans]
-    kontrol(not farkli, f"24 başlık aynı {'' if not farkli else farkli}")
+    kontrol(not farkli, f"{len(KATMANLAR)} başlık aynı {'' if not farkli else farkli}")
     print("     " + " | ".join(referans))
 
     veri = {ad: asc_oku(CIKTI / f"{ad}.asc") for ad in KATMANLAR}

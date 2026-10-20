@@ -22,5 +22,9 @@ for adim in test_biovars.py saatlik_gunluk_karsilastir.py denizel_hesapla.py bio
         echo "!!! $adim başarısız (çıkış kodu $?)" >> "$LOG"
         exit 1
     fi
+    if [ "$adim" = bioclim_hesapla.py ]; then   # kaya katmanı korelasyondan önce hazır olmalı
+        echo "=== $(date '+%F %T') ../kaya/kaya_hesapla.py" >> "$LOG"
+        $PY ../kaya/kaya_hesapla.py >> "$LOG" 2>&1 || { echo "!!! kaya_hesapla.py başarısız" >> "$LOG"; exit 1; }
+    fi
 done
 echo "=== $(date '+%F %T') TAMAMLANDI" >> "$LOG"
