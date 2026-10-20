@@ -60,7 +60,26 @@ def main():
 
     izg = {"ncols": int(h["ncols"]), "nrows": int(h["nrows"]), "cellsize": c, "bati": bati, "kuzey": kuzey}
     tif_yaz(KOK / "uygunluk_ortalama.tif", asc_oku(MAXENT), izg)
+    kutup_kopyasi(KOK / "uygunluk_ortalama.tif", KOK / "uygunluk_ortalama_3031.tif")
     print(f"yazıldı: {CIKTI.name} (kiyi, noktalar={len(m)}, istasyonlar), uygunluk_ortalama.tif")
+
+
+def kutup_kopyasi(kaynak, hedef, cozunurluk=1000):
+    """Raster'ı EPSG:3031'e EN YAKIN KOMŞU ile 1 km ızgaraya çevirir.
+
+    QGIS 4326 → 3031 anlık dönüşümünde hücre kenarlarını yumuşatıyordu. 1 km'lik ince ızgara + en yakın komşu:
+    her ERA5 hücresi (≈10 × 28 km) keskin, tek renkli bir blok olarak kalır; değerler değişmez, enterpolasyon yok.
+    """
+    import rasterio
+    from rasterio.warp import Resampling, calculate_default_transform, reproject
+
+    with rasterio.open(kaynak) as k:
+        donusum, gen, yuk = calculate_default_transform(k.crs, KUTUP, k.width, k.height, *k.bounds,
+                                                        resolution=cozunurluk)
+        profil = k.profile | {"crs": KUTUP, "transform": donusum, "width": gen, "height": yuk}
+        with rasterio.open(hedef, "w", **profil) as h:
+            reproject(rasterio.band(k, 1), rasterio.band(h, 1), resampling=Resampling.nearest,
+                      src_nodata=k.nodata, dst_nodata=k.nodata)
 
 
 if __name__ == "__main__":
