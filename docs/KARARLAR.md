@@ -137,6 +137,7 @@
 - **Gerekçe:** ERA5 hücresinin dar kenarı ≈ 10.4 km; daha büyük belirsizlikli kayıt hücreye güvenle atanamaz. Seyreltme MaxEnt'in "remove duplicate presence records" davranışıyla aynıdır, sayıyı şeffaf kılar. Belirsizliği bilinmeyen 420 kayıt tutuldu (çoğu kaynak bu alanı doldurmuyor).
 - **Denenip geri alınan:** Ondalık basamak sayısına göre eleme. Metinde sondaki sıfırlar kaybolduğu için hassas kayıtlar (ör. iNaturalist, Stonington Adası, 160 m belirsizlik) haksız elendi.
 - **Açık nokta:** Kara (koloni) ve deniz (beslenme/gemi gözlemi) kayıtları birlikte tutuldu → danışmanla konuşulacak.
+- **Düzeltme (2026-10-20):** Seyreltmede hücre satırı MaxEnt gibi güneyden sayılacak şekilde değiştirildi (hücre sınırındaki noktalar için). Sayı yine 67, bir hücrenin temsilci kaydı değişti. Ayrıntı: `maxent/cikti/deneme1/NOT.md`.
 
 ### K-019 — Uzak depo: private GitHub
 - **Tarih:** 2026-10-19

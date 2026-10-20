@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-10-20 — İlk MaxEnt denemesi (Aşama 6 🟡)
+
+**Yapılanlar**
+- Öğrenci MaxEnt 3.4.4'ü laptop'ta çalıştırdı. Laptop'taki Java 27'de MaxEnt açılırken çöktü (`checkVersion` sürüm adının ilk 3 karakterini okuyor, "27" 2 karakter) → Java 21 kuruldu, MaxEnt doğrudan onunla çalıştırıldı (varsayılan Java 27 kaldı).
+- **deneme1:** Test AUC **0.781**, Training AUC 0.819 (hedef > 0.70 ✔). Çıktılar Pi'deki repoya kopyalandı: `maxent/cikti/deneme1/`.
+- **Hata bulundu ve düzeltildi:** MaxEnt 67 yerine 66 nokta kullandı. 66.875°G hücre sınırındaki bir nokta için `gbif/temizle.py` satırı kuzeyden, MaxEnt güneyden sayıyor → farklı hücre. Script MaxEnt kuralına uyduruldu; yeni dosyada 67 nokta, sınırda nokta yok, MaxEnt'te tekrar yok.
+
+**Sıradaki adım**
+- Öğrenci: laptop'ta `git pull` → yeni `adelie_maxent.csv` ile 10 tekrarlı çapraz doğrulama (deneme2).
+
+---
+
 ## 2026-10-20 — Değişken önerisi ve buzsuz kaya katmanı
 
 **Yapılanlar**

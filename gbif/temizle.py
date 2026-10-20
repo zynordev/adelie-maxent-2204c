@@ -57,9 +57,12 @@ def izgara():
 
 
 def hucre(d, h):
-    """MaxEnt'in yaptığı gibi: hücre = taban((x − köşe) / hücre boyu)."""
-    kuzey = h["yllcorner"] + h["nrows"] * h["cellsize"]
-    satir = np.floor((kuzey - d.decimalLatitude) / h["cellsize"]).astype(int)
+    """MaxEnt'in yaptığı gibi: sütun = taban((x − xll) / hücre), satır GÜNEYDEN sayılır = taban((y − yll) / hücre).
+
+    Tam hücre sınırındaki bir nokta MaxEnt'te kuzeydeki/doğudaki hücreye düşer. (2026-10-20: satırı kuzeyden
+    saymak, 66.875°G sınırındaki bir noktayı MaxEnt'ten farklı hücreye koymuştu → 67 değil 66 nokta.)
+    """
+    satir = int(h["nrows"]) - 1 - np.floor((d.decimalLatitude - h["yllcorner"]) / h["cellsize"]).astype(int)
     sutun = np.floor((d.decimalLongitude - h["xllcorner"]) / h["cellsize"]).astype(int)
     return satir, sutun
 
