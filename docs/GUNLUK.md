@@ -13,8 +13,10 @@
 
 - **deneme2** (10 katlı çapraz doğrulama, 67 nokta): ortalama Test AUC **0.768 ± 0.111** (MaxEnt; katlar 0.518–0.916). Permütasyon önemi en yüksek buz_yillik (55.6). Jackknife bu çalıştırmada işaretlenmemişti. Çıktılar `maxent/cikti/deneme2/`.
 
+- **deneme3** (ÇD + jackknife): sonuçlar deneme2 ile birebir aynı (tekrarlanabilir). Jackknife: tek başına en çok bilgi bio18 (eğitim kazancı 0.287, test AUC 0.732); çıkarılınca en çok kayıp buz_yillik (0.592 → 0.441); kaya çıkarılınca test AUC hafifçe artıyor (0.768 → 0.772). Tablo: `maxent/cikti/deneme3/NOT.md`. **Raporda kullanılacak çalıştırma bu.**
+
 **Sıradaki adım**
-- deneme3: çapraz doğrulama + jackknife (rapor için), katman klasörü `girdi/katmanlar`.
+- Aşama 7: `deneme3/Pygoscelis_adeliae_avg.asc` → QGIS haritası.
 
 ---
 

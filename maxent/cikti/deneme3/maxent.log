@@ -1,0 +1,1870 @@
+Tue Oct 20 17:33:47 TRT 2026
+MaxEnt version 3.4.4
+Checking header of /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache/bio18.mxe
+Checking header of /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache/buz_yillik.mxe
+Checking header of /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache/kaya.mxe
+Checking header of /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache/sst_yillik.mxe
+Reading samples from adelie_maxent.csv
+Read samples: max memory 1073741824, total allocated 258998272, free 248262680, used 10735592, increment 10735592
+Extractor: max memory 1073741824, total allocated 258998272, free 247711080, used 11287192, increment 551600
+Extracting random background and sample data
+703 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/deneme3 samplesfile=/home/halil/adelie-maxent-2204c/maxent/girdi/adelie_maxent.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache replicates=10
+Species: Pygoscelis_adeliae_0 Pygoscelis_adeliae_1 Pygoscelis_adeliae_2 Pygoscelis_adeliae_3 Pygoscelis_adeliae_4 Pygoscelis_adeliae_5 Pygoscelis_adeliae_6 Pygoscelis_adeliae_7 Pygoscelis_adeliae_8 Pygoscelis_adeliae_9
+Layers: bio18 buz_yillik kaya sst_yillik
+Layertypes: Continuous Continuous Continuous Continuous
+responsecurves: true
+jackknife: true
+outputdirectory: /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3
+samplesfile: /home/halil/adelie-maxent-2204c/maxent/girdi/adelie_maxent.csv
+environmentallayers: /home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar/maxent.cache
+replicates: 10
+
+getSamples: max memory 1073741824, total allocated 258998272, free 247214720, used 11783552, increment 496360
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 246634568, used 12363704, increment 580152
+Pygoscelis_adeliae_0: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 245613928, used 13384344, increment 1020640
+linearPredictor: max memory 1073741824, total allocated 258998272, free 245613928, used 13384344, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 245613928, used 13384344, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 245613928, used 13384344, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,366000 loss = 5,843131 testLoss 7,293650
+Resulting gain: 0.7122263713329362
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_0.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_0.png
+Time since start: 1.125
+Pygoscelis_adeliae_0 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 155670344, used 103327928, increment 89943584
+Pygoscelis_adeliae_0 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 155670344, used 103327928, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 155670344, used 103327928, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 155670344, used 103327928, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 155670344, used 103327928, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,053000 loss = 6,247303
+Resulting gain: 0.30805433391432313
+Pygoscelis_adeliae_0 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 109533000, used 149465272, increment 46137344
+Pygoscelis_adeliae_0 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 109008712, used 149989560, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 109008712, used 149989560, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 109008712, used 149989560, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 109008712, used 149989560, increment 0
+Initial loss: 6.555356891810665
+180: time = 0,026000 loss = 6,249758
+Resulting gain: 0.3055990185340267
+Pygoscelis_adeliae_0 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 94328648, used 164669624, increment 14680064
+Pygoscelis_adeliae_0 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 94328648, used 164669624, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 94328648, used 164669624, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 94328648, used 164669624, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 94328648, used 164669624, increment 0
+Initial loss: 6.555356891810665
+120: time = 0,027000 loss = 6,388924
+Resulting gain: 0.16643289371360748
+Pygoscelis_adeliae_0 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 226152328, used 32845944, increment -131823680
+Pygoscelis_adeliae_0 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 226152328, used 32845944, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 226152328, used 32845944, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 226152328, used 32845944, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 226152328, used 32845944, increment 0
+Initial loss: 6.555356891810665
+240: time = 0,032000 loss = 6,500739
+Resulting gain: 0.054618122901718635
+Pygoscelis_adeliae_0 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 200986504, used 58011768, increment 25165824
+Pygoscelis_adeliae_0 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 200462216, used 58536056, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 200462216, used 58536056, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 200462216, used 58536056, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 200462216, used 58536056, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+360: time = 0,090000 loss = 5,888758 testLoss 7,381312
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 120770440, used 138227832, increment 79691776
+Pygoscelis_adeliae_0 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 120246152, used 138752120, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 120246152, used 138752120, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 120246152, used 138752120, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 120246152, used 138752120, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+380: time = 0,127000 loss = 6,067007 testLoss 6,549388
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 161487752, used 97510520, increment -41241600
+Pygoscelis_adeliae_0 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 161487752, used 97510520, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 161487752, used 97510520, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 161487752, used 97510520, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 161487752, used 97510520, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,158000 loss = 5,936145 testLoss 6,970991
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 156310056, used 102688216, increment 5177696
+Pygoscelis_adeliae_0 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 155785768, used 103212504, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 155785768, used 103212504, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 155785768, used 103212504, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 155785768, used 103212504, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,136000 loss = 5,950925 testLoss 7,368155
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 170956616, used 88041656, increment -15170848
+Pygoscelis_adeliae_0 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 170715408, used 88282864, increment 241208
+linearPredictor: max memory 1073741824, total allocated 258998272, free 170715408, used 88282864, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 170715408, used 88282864, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 170715408, used 88282864, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,050000 loss = 6,247303 testLoss 6,376464
+Res.gain: 0.30805433391432313
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 126392136, used 132606136, increment 44323272
+Pygoscelis_adeliae_0 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 126392136, used 132606136, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 126392136, used 132606136, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 126392136, used 132606136, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 126392136, used 132606136, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 2.131
+180: time = 0,036000 loss = 6,249758 testLoss 7,276648
+Res.gain: 0.3055990185340267
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 112760648, used 146237624, increment 13631488
+Pygoscelis_adeliae_0 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 112236360, used 146761912, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 112236360, used 146761912, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 112236360, used 146761912, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 112236360, used 146761912, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+120: time = 0,042000 loss = 6,388924 testLoss 6,673962
+Res.gain: 0.16643289371360748
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 247092400, used 11905872, increment -134856040
+Pygoscelis_adeliae_0 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 247092400, used 11905872, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 247092400, used 11905872, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 247092400, used 11905872, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 247092400, used 11905872, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+240: time = 0,057000 loss = 6,500739 testLoss 6,496254
+Res.gain: 0.054618122901718635
+getSamples: max memory 1073741824, total allocated 258998272, free 225672640, used 33325632, increment 21419760
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 225148352, used 33849920, increment 524288
+Pygoscelis_adeliae_1: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 224624064, used 34374208, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 224624064, used 34374208, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 224624064, used 34374208, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 224624064, used 34374208, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,209000 loss = 6,024045 testLoss 5,474862
+Resulting gain: 0.531312268589935
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_1.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_1.png
+Pygoscelis_adeliae_1 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 157720456, used 101277816, increment 66903608
+Pygoscelis_adeliae_1 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 157196168, used 101802104, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 157196168, used 101802104, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 157196168, used 101802104, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 157196168, used 101802104, increment 0
+Initial loss: 6.555356891810665
+500: time = 0,096000 loss = 6,265595
+Resulting gain: 0.2897621997416948
+Pygoscelis_adeliae_1 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 224119408, used 34878864, increment -66923240
+Pygoscelis_adeliae_1 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 223993592, used 35004680, increment 125816
+linearPredictor: max memory 1073741824, total allocated 258998272, free 223993592, used 35004680, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 223993592, used 35004680, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 223993592, used 35004680, increment 0
+Initial loss: 6.555356891810665
+260: time = 0,028000 loss = 6,369987
+Resulting gain: 0.185369527761579
+Pygoscelis_adeliae_1 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 202623600, used 56374672, increment 21369992
+Pygoscelis_adeliae_1 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 202497744, used 56500528, increment 125856
+linearPredictor: max memory 1073741824, total allocated 258998272, free 202497744, used 56500528, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 202497744, used 56500528, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 202497744, used 56500528, increment 0
+Initial loss: 6.555356891810665
+60: time = 0,010000 loss = 6,451530
+Resulting gain: 0.10382681978480335
+Pygoscelis_adeliae_1 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 195807856, used 63190416, increment 6689888
+Pygoscelis_adeliae_1 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 195807856, used 63190416, increment 0
+linearPredictor: max memory 1073741824, total allocated 258998272, free 195807856, used 63190416, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 195807856, used 63190416, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 195807856, used 63190416, increment 0
+Initial loss: 6.555356891810665
+260: time = 0,029000 loss = 6,515591
+Resulting gain: 0.03976557682979642
+Pygoscelis_adeliae_1 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 168943296, used 90054976, increment 26864560
+Pygoscelis_adeliae_1 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 168419008, used 90579264, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 168419008, used 90579264, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 168419008, used 90579264, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 168419008, used 90579264, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+340: time = 0,082000 loss = 6,103161 testLoss 5,429584
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 93047408, used 165950864, increment 75371600
+Pygoscelis_adeliae_1 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 92523120, used 166475152, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 92523120, used 166475152, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 92523120, used 166475152, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 92523120, used 166475152, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 3.305
+500: time = 0,174000 loss = 6,160662 testLoss 5,704081
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 258998272, free 246567352, used 12430920, increment -154044232
+Pygoscelis_adeliae_1 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 258998272, free 246043064, used 12955208, increment 524288
+linearPredictor: max memory 1073741824, total allocated 258998272, free 246043064, used 12955208, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 258998272, free 246043064, used 12955208, increment 0
+Sequential: max memory 1073741824, total allocated 258998272, free 246043064, used 12955208, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,163000 loss = 6,061305 testLoss 5,672119
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 273106728, used 19445976, increment 6490768
+Pygoscelis_adeliae_1 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 272659688, used 19893016, increment 447040
+linearPredictor: max memory 1073741824, total allocated 292552704, free 272659688, used 19893016, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 272659688, used 19893016, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 272659688, used 19893016, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+460: time = 0,156000 loss = 6,123983 testLoss 5,643205
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 132150504, used 160402200, increment 140509184
+Pygoscelis_adeliae_1 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 131626216, used 160926488, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 131626216, used 160926488, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 131626216, used 160926488, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 131626216, used 160926488, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,092000 loss = 6,265595 testLoss 6,188883
+Res.gain: 0.2897621997416948
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 219096776, used 73455928, increment -87470560
+Pygoscelis_adeliae_1 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 219096776, used 73455928, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 219096776, used 73455928, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 219096776, used 73455928, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 219096776, used 73455928, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+260: time = 0,026000 loss = 6,369987 testLoss 6,164879
+Res.gain: 0.185369527761579
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 199698128, used 92854576, increment 19398648
+Pygoscelis_adeliae_1 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 199698128, used 92854576, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 199698128, used 92854576, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 199698128, used 92854576, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 199698128, used 92854576, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+60: time = 0,010000 loss = 6,451530 testLoss 6,173798
+Res.gain: 0.10382681978480335
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 194537704, used 98015000, increment 5160424
+Pygoscelis_adeliae_1 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 194537704, used 98015000, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 194537704, used 98015000, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 194537704, used 98015000, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 194537704, used 98015000, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+260: time = 0,030000 loss = 6,515591 testLoss 6,346287
+Res.gain: 0.03976557682979642
+getSamples: max memory 1073741824, total allocated 292552704, free 171386560, used 121166144, increment 23151144
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 171386560, used 121166144, increment 0
+Pygoscelis_adeliae_2: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 170944744, used 121607960, increment 441816
+linearPredictor: max memory 1073741824, total allocated 292552704, free 170944744, used 121607960, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 170944744, used 121607960, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 170944744, used 121607960, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,176000 loss = 6,018743 testLoss 5,602647
+Resulting gain: 0.536614006052857
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_2.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_2.png
+Pygoscelis_adeliae_2 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 126513200, used 166039504, increment 44431544
+Pygoscelis_adeliae_2 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 126068696, used 166484008, increment 444504
+linearPredictor: max memory 1073741824, total allocated 292552704, free 126068696, used 166484008, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 126068696, used 166484008, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 126068696, used 166484008, increment 0
+Initial loss: 6.555356891810665
+300: time = 0,055000 loss = 6,276020
+Resulting gain: 0.2793364609972713
+Pygoscelis_adeliae_2 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 244951912, used 47600792, increment -118883216
+Pygoscelis_adeliae_2 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 244427624, used 48125080, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 244427624, used 48125080, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 244427624, used 48125080, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 244427624, used 48125080, increment 0
+Initial loss: 6.555356891810665
+Time since start: 4.306
+260: time = 0,027000 loss = 6,348915
+Resulting gain: 0.20644179473462554
+Pygoscelis_adeliae_2 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 223899624, used 68653080, increment 20528000
+Pygoscelis_adeliae_2 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 223456104, used 69096600, increment 443520
+linearPredictor: max memory 1073741824, total allocated 292552704, free 223456104, used 69096600, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 223456104, used 69096600, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 223456104, used 69096600, increment 0
+Initial loss: 6.555356891810665
+80: time = 0,015000 loss = 6,432116
+Resulting gain: 0.12324075875403562
+Pygoscelis_adeliae_2 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 215510008, used 77042696, increment 7946096
+Pygoscelis_adeliae_2 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 215067496, used 77485208, increment 442512
+linearPredictor: max memory 1073741824, total allocated 292552704, free 215067496, used 77485208, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 215067496, used 77485208, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 215067496, used 77485208, increment 0
+Initial loss: 6.555356891810665
+180: time = 0,021000 loss = 6,508239
+Resulting gain: 0.04711830956626173
+Pygoscelis_adeliae_2 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 197241704, used 95311000, increment 17825792
+Pygoscelis_adeliae_2 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 196636648, used 95916056, increment 605056
+linearPredictor: max memory 1073741824, total allocated 292552704, free 196636648, used 95916056, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 196636648, used 95916056, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 196636648, used 95916056, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,084000 loss = 6,068405 testLoss 5,754919
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 124809184, used 167743520, increment 71827464
+Pygoscelis_adeliae_2 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 124284896, used 168267808, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 124284896, used 168267808, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 124284896, used 168267808, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 124284896, used 168267808, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+260: time = 0,090000 loss = 6,149299 testLoss 5,878925
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 225495272, used 67057432, increment -101210376
+Pygoscelis_adeliae_2 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 225407952, used 67144752, increment 87320
+linearPredictor: max memory 1073741824, total allocated 292552704, free 225407952, used 67144752, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 225407952, used 67144752, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 225407952, used 67144752, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+480: time = 0,141000 loss = 6,082669 testLoss 5,619502
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 253039960, used 39512744, increment -27632008
+Pygoscelis_adeliae_2 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 252608184, used 39944520, increment 431776
+linearPredictor: max memory 1073741824, total allocated 292552704, free 252608184, used 39944520, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 252608184, used 39944520, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 252608184, used 39944520, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,121000 loss = 6,108626 testLoss 5,786872
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 122492352, used 170060352, increment 130115832
+Pygoscelis_adeliae_2 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 122492352, used 170060352, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 122492352, used 170060352, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 122492352, used 170060352, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 122492352, used 170060352, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+300: time = 0,053000 loss = 6,276020 testLoss 6,129898
+Res.gain: 0.2793364609972713
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 245700296, used 46852408, increment -123207944
+Pygoscelis_adeliae_2 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 245700296, used 46852408, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 245700296, used 46852408, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 245700296, used 46852408, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 245700296, used 46852408, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+260: time = 0,025000 loss = 6,348915 testLoss 6,338128
+Res.gain: 0.20644179473462554
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 225877024, used 66675680, increment 19823272
+Pygoscelis_adeliae_2 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 225352736, used 67199968, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 225352736, used 67199968, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 225352736, used 67199968, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 225352736, used 67199968, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+80: time = 0,013000 loss = 6,432116 testLoss 6,324008
+Res.gain: 0.12324075875403562
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 218536992, used 74015712, increment 6815744
+Pygoscelis_adeliae_2 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 218536992, used 74015712, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 218536992, used 74015712, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 218536992, used 74015712, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 218536992, used 74015712, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+180: time = 0,020000 loss = 6,508239 testLoss 6,498277
+Res.gain: 0.04711830956626173
+getSamples: max memory 1073741824, total allocated 292552704, free 201235488, used 91317216, increment 17301504
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 201235488, used 91317216, increment 0
+Pygoscelis_adeliae_3: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 200711200, used 91841504, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 200711200, used 91841504, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 200711200, used 91841504, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 200711200, used 91841504, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+460: time = 0,157000 loss = 5,959719 testLoss 6,127778
+Resulting gain: 0.5956379680808057
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_3.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_3.png
+Time since start: 5.31
+Pygoscelis_adeliae_3 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 177403512, used 115149192, increment 23307688
+Pygoscelis_adeliae_3 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 177403512, used 115149192, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 177403512, used 115149192, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 177403512, used 115149192, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 177403512, used 115149192, increment 0
+Initial loss: 6.555356891810665
+320: time = 0,052000 loss = 6,275692
+Resulting gain: 0.27966527014338194
+Pygoscelis_adeliae_3 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 123284232, used 169268472, increment 54119280
+Pygoscelis_adeliae_3 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 123284232, used 169268472, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 123284232, used 169268472, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 123284232, used 169268472, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 123284232, used 169268472, increment 0
+Initial loss: 6.555356891810665
+220: time = 0,023000 loss = 6,377025
+Resulting gain: 0.17833178950895512
+Pygoscelis_adeliae_3 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 104527480, used 188025224, increment 18756752
+Pygoscelis_adeliae_3 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 104527480, used 188025224, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 104527480, used 188025224, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 104527480, used 188025224, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 104527480, used 188025224, increment 0
+Initial loss: 6.555356891810665
+60: time = 0,008000 loss = 6,428885
+Resulting gain: 0.12647233975979866
+Pygoscelis_adeliae_3 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 98115752, used 194436952, increment 6411728
+Pygoscelis_adeliae_3 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 97711736, used 194840968, increment 404016
+linearPredictor: max memory 1073741824, total allocated 292552704, free 97711736, used 194840968, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 97711736, used 194840968, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 97711736, used 194840968, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,031000 loss = 6,476541
+Resulting gain: 0.07881575685352527
+Pygoscelis_adeliae_3 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 249140272, used 43412432, increment -151428536
+Pygoscelis_adeliae_3 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 249140272, used 43412432, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 249140272, used 43412432, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 249140272, used 43412432, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 249140272, used 43412432, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,092000 loss = 6,016459 testLoss 6,213337
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 155292720, used 137259984, increment 93847552
+Pygoscelis_adeliae_3 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 155292720, used 137259984, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 155292720, used 137259984, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 155292720, used 137259984, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 155292720, used 137259984, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,096000 loss = 6,111804 testLoss 6,244177
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 247374488, used 45178216, increment -92081768
+Pygoscelis_adeliae_3 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 246748776, used 45803928, increment 625712
+linearPredictor: max memory 1073741824, total allocated 292552704, free 246748776, used 45803928, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 246748776, used 45803928, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 246748776, used 45803928, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,136000 loss = 5,998786 testLoss 6,308794
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 268837056, used 23715648, increment -22088280
+Pygoscelis_adeliae_3 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 268312768, used 24239936, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 268312768, used 24239936, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 268312768, used 24239936, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 268312768, used 24239936, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+480: time = 0,127000 loss = 6,109407 testLoss 5,783006
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 119939264, used 172613440, increment 148373504
+Pygoscelis_adeliae_3 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 119414976, used 173137728, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 119414976, used 173137728, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 119414976, used 173137728, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 119414976, used 173137728, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,055000 loss = 6,275692 testLoss 6,152182
+Res.gain: 0.27966527014338194
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 240706528, used 51846176, increment -121291552
+Pygoscelis_adeliae_3 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 240599232, used 51953472, increment 107296
+linearPredictor: max memory 1073741824, total allocated 292552704, free 240599232, used 51953472, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 240599232, used 51953472, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 240599232, used 51953472, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+220: time = 0,023000 loss = 6,377025 testLoss 6,100287
+Res.gain: 0.17833178950895512
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 224453600, used 68099104, increment 16145632
+Pygoscelis_adeliae_3 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 224453600, used 68099104, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 224453600, used 68099104, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 224453600, used 68099104, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 224453600, used 68099104, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+60: time = 0,009000 loss = 6,428885 testLoss 6,328881
+Res.gain: 0.12647233975979866
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 219210720, used 73341984, increment 5242880
+Pygoscelis_adeliae_3 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 219210720, used 73341984, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 219210720, used 73341984, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 219210720, used 73341984, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 219210720, used 73341984, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,031000 loss = 6,476541 testLoss 6,643278
+Res.gain: 0.07881575685352527
+getSamples: max memory 1073741824, total allocated 292552704, free 194569184, used 97983520, increment 24641536
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 194569184, used 97983520, increment 0
+Pygoscelis_adeliae_4: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 194044896, used 98507808, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 194044896, used 98507808, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 194044896, used 98507808, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 194044896, used 98507808, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 6.351
+460: time = 0,162000 loss = 6,000905 testLoss 5,724323
+Resulting gain: 0.5544516712907628
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_4.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_4.png
+Pygoscelis_adeliae_4 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 171634160, used 120918544, increment 22410736
+Pygoscelis_adeliae_4 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 171520488, used 121032216, increment 113672
+linearPredictor: max memory 1073741824, total allocated 292552704, free 171109872, used 121442832, increment 410616
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 171109872, used 121442832, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 171109872, used 121442832, increment 0
+Initial loss: 6.555356891810665
+380: time = 0,062000 loss = 6,305864
+Resulting gain: 0.249492641183771
+Pygoscelis_adeliae_4 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 108195312, used 184357392, increment 62914560
+Pygoscelis_adeliae_4 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 108195312, used 184357392, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 108195312, used 184357392, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 108195312, used 184357392, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 108195312, used 184357392, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,028000 loss = 6,373888
+Resulting gain: 0.18146853203734725
+Pygoscelis_adeliae_4 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 262599352, used 29953352, increment -154404040
+Pygoscelis_adeliae_4 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 262487392, used 30065312, increment 111960
+linearPredictor: max memory 1073741824, total allocated 292552704, free 262487392, used 30065312, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 262487392, used 30065312, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 262487392, used 30065312, increment 0
+Initial loss: 6.555356891810665
+60: time = 0,010000 loss = 6,432014
+Resulting gain: 0.12334332866379771
+Pygoscelis_adeliae_4 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 255901224, used 36651480, increment 6586168
+Pygoscelis_adeliae_4 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 255901224, used 36651480, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 255901224, used 36651480, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 255901224, used 36651480, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 255901224, used 36651480, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,031000 loss = 6,504887
+Resulting gain: 0.0504696314571893
+Pygoscelis_adeliae_4 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 230735400, used 61817304, increment 25165824
+Pygoscelis_adeliae_4 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 230211112, used 62341592, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 230211112, used 62341592, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 230211112, used 62341592, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 230211112, used 62341592, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,070000 loss = 6,069546 testLoss 5,707388
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 158383656, used 134169048, increment 71827456
+Pygoscelis_adeliae_4 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 157859368, used 134693336, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 157859368, used 134693336, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 157859368, used 134693336, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 157859368, used 134693336, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+360: time = 0,105000 loss = 6,153175 testLoss 5,746073
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 235274280, used 57278424, increment -77414912
+Pygoscelis_adeliae_4 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 234749992, used 57802712, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 234749992, used 57802712, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 234749992, used 57802712, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 234749992, used 57802712, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,137000 loss = 6,055478 testLoss 5,785959
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 259455968, used 33096736, increment -24705976
+Pygoscelis_adeliae_4 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 259358216, used 33194488, increment 97752
+linearPredictor: max memory 1073741824, total allocated 292552704, free 259358216, used 33194488, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 259358216, used 33194488, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 259358216, used 33194488, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,117000 loss = 6,128775 testLoss 5,622622
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 129956832, used 162595872, increment 129401384
+Pygoscelis_adeliae_4 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 129956832, used 162595872, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 129956832, used 162595872, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 129956832, used 162595872, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 129956832, used 162595872, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+380: time = 0,065000 loss = 6,305864 testLoss 5,886497
+Res.gain: 0.249492641183771
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 244407456, used 48145248, increment -114450624
+Pygoscelis_adeliae_4 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 244313288, used 48239416, increment 94168
+linearPredictor: max memory 1073741824, total allocated 292552704, free 244313288, used 48239416, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 244313288, used 48239416, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 243789000, used 48763704, increment 524288
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,028000 loss = 6,373888 testLoss 6,144055
+Res.gain: 0.18146853203734725
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 222813816, used 69738888, increment 20975184
+Pygoscelis_adeliae_4 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 222813816, used 69738888, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 222813816, used 69738888, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 222813816, used 69738888, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 222813816, used 69738888, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+60: time = 0,010000 loss = 6,432014 testLoss 6,300556
+Res.gain: 0.12334332866379771
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 217668768, used 74883936, increment 5145048
+Pygoscelis_adeliae_4 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 217144480, used 75408224, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 217144480, used 75408224, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 217144480, used 75408224, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 217144480, used 75408224, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,032000 loss = 6,504887 testLoss 6,402095
+Res.gain: 0.0504696314571893
+Time since start: 7.36
+getSamples: max memory 1073741824, total allocated 292552704, free 191978656, used 100574048, increment 25165824
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 191978656, used 100574048, increment 0
+Pygoscelis_adeliae_5: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 191454368, used 101098336, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 191454368, used 101098336, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 191454368, used 101098336, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 191454368, used 101098336, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+480: time = 0,158000 loss = 5,907416 testLoss 6,549375
+Resulting gain: 0.64794061370291
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_5.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_5.png
+Pygoscelis_adeliae_5 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 160998168, used 131554536, increment 30456200
+Pygoscelis_adeliae_5 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 160998168, used 131554536, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 160998168, used 131554536, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 160998168, used 131554536, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 160998168, used 131554536, increment 0
+Initial loss: 6.555356891810665
+420: time = 0,064000 loss = 6,259398
+Resulting gain: 0.29595911220863425
+Pygoscelis_adeliae_5 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 90861192, used 201691512, increment 70136976
+Pygoscelis_adeliae_5 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 90861192, used 201691512, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 90861192, used 201691512, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 90861192, used 201691512, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 90861192, used 201691512, increment 0
+Initial loss: 6.555356891810665
+340: time = 0,031000 loss = 6,340115
+Resulting gain: 0.2152421516276002
+Pygoscelis_adeliae_5 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 240486416, used 52066288, increment -149625224
+Pygoscelis_adeliae_5 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 240486416, used 52066288, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 240486416, used 52066288, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 240486416, used 52066288, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 240486416, used 52066288, increment 0
+Initial loss: 6.555356891810665
+80: time = 0,011000 loss = 6,378923
+Resulting gain: 0.1764340418841357
+Pygoscelis_adeliae_5 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 232181400, used 60371304, increment 8305016
+Pygoscelis_adeliae_5 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 232181400, used 60371304, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 232181400, used 60371304, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 232181400, used 60371304, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 232181400, used 60371304, increment 0
+Initial loss: 6.555356891810665
+320: time = 0,033000 loss = 6,486872
+Resulting gain: 0.06848509898859945
+Pygoscelis_adeliae_5 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 203463968, used 89088736, increment 28717432
+Pygoscelis_adeliae_5 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 203345384, used 89207320, increment 118584
+linearPredictor: max memory 1073741824, total allocated 292552704, free 203345384, used 89207320, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 203345384, used 89207320, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 203345384, used 89207320, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+380: time = 0,083000 loss = 5,960159 testLoss 6,687878
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 117480736, used 175071968, increment 85864648
+Pygoscelis_adeliae_5 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 117362328, used 175190376, increment 118408
+linearPredictor: max memory 1073741824, total allocated 292552704, free 117362328, used 175190376, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 117362328, used 175190376, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 117362328, used 175190376, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,140000 loss = 6,086503 testLoss 6,447729
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 151816896, used 140735808, increment -34454568
+Pygoscelis_adeliae_5 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 151292608, used 141260096, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 151292608, used 141260096, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 151292608, used 141260096, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 151292608, used 141260096, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,136000 loss = 5,979882 testLoss 6,385543
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 175417856, used 117134848, increment -24125248
+Pygoscelis_adeliae_5 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 175001344, used 117551360, increment 416512
+linearPredictor: max memory 1073741824, total allocated 292552704, free 175001344, used 117551360, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 175001344, used 117551360, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 175001344, used 117551360, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 8.39
+380: time = 0,110000 loss = 6,025202 testLoss 6,580797
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 231602304, used 60950400, increment -56600960
+Pygoscelis_adeliae_5 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 231078016, used 61474688, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 231078016, used 61474688, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 231078016, used 61474688, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 231078016, used 61474688, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,068000 loss = 6,259398 testLoss 6,268073
+Res.gain: 0.29595911220863425
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 162920576, used 129632128, increment 68157440
+Pygoscelis_adeliae_5 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 162808568, used 129744136, increment 112008
+linearPredictor: max memory 1073741824, total allocated 292552704, free 162808568, used 129744136, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 162808568, used 129744136, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 162808568, used 129744136, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+340: time = 0,031000 loss = 6,340115 testLoss 6,401103
+Res.gain: 0.2152421516276002
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 136706176, used 155846528, increment 26102392
+Pygoscelis_adeliae_5 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 136069856, used 156482848, increment 636320
+linearPredictor: max memory 1073741824, total allocated 292552704, free 136069856, used 156482848, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 136069856, used 156482848, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 136069856, used 156482848, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+80: time = 0,011000 loss = 6,378923 testLoss 6,845955
+Res.gain: 0.1764340418841357
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 129890432, used 162662272, increment 6179424
+Pygoscelis_adeliae_5 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 129366144, used 163186560, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 129366144, used 163186560, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 129366144, used 163186560, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 129366144, used 163186560, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,035000 loss = 6,486872 testLoss 6,551451
+Res.gain: 0.06848509898859945
+getSamples: max memory 1073741824, total allocated 292552704, free 275113488, used 17439216, increment -145747344
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 274720312, used 17832392, increment 393176
+Pygoscelis_adeliae_6: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 274196024, used 18356680, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 274196024, used 18356680, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 274196024, used 18356680, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 274196024, used 18356680, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+360: time = 0,124000 loss = 5,962109 testLoss 6,077574
+Resulting gain: 0.593248135032022
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_6.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_6.png
+Pygoscelis_adeliae_6 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 116385336, used 176167368, increment 157810688
+Pygoscelis_adeliae_6 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 116385336, used 176167368, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 116385336, used 176167368, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 116385336, used 176167368, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 116385336, used 176167368, increment 0
+Initial loss: 6.555356891810665
+320: time = 0,051000 loss = 6,282101
+Resulting gain: 0.2732560452075603
+Pygoscelis_adeliae_6 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 237025672, used 55527032, increment -120640336
+Pygoscelis_adeliae_6 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 237025672, used 55527032, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 237025672, used 55527032, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 237025672, used 55527032, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 237025672, used 55527032, increment 0
+Initial loss: 6.555356891810665
+300: time = 0,026000 loss = 6,377121
+Resulting gain: 0.17823593142954586
+Pygoscelis_adeliae_6 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 213432712, used 79119992, increment 23592960
+Pygoscelis_adeliae_6 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 212908424, used 79644280, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 212908424, used 79644280, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 212908424, used 79644280, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 212908424, used 79644280, increment 0
+Initial loss: 6.555356891810665
+60: time = 0,009000 loss = 6,389274
+Resulting gain: 0.1660829267458963
+Pygoscelis_adeliae_6 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 206616968, used 85935736, increment 6291456
+Pygoscelis_adeliae_6 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 206616968, used 85935736, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 206616968, used 85935736, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 206616968, used 85935736, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 206616968, used 85935736, increment 0
+Initial loss: 6.555356891810665
+300: time = 0,030000 loss = 6,492169
+Resulting gain: 0.0631877176455431
+Pygoscelis_adeliae_6 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 178829704, used 113723000, increment 27787264
+Pygoscelis_adeliae_6 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 178188408, used 114364296, increment 641296
+linearPredictor: max memory 1073741824, total allocated 292552704, free 178188408, used 114364296, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 178188408, used 114364296, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 178188408, used 114364296, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+380: time = 0,078000 loss = 6,029276 testLoss 6,017457
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 91273608, used 201279096, increment 86914800
+Pygoscelis_adeliae_6 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 91273608, used 201279096, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 91273608, used 201279096, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 91273608, used 201279096, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 91273608, used 201279096, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+380: time = 0,103000 loss = 6,085575 testLoss 6,419856
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 163233280, used 129319424, increment -71959672
+Pygoscelis_adeliae_6 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 162708992, used 129843712, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 162708992, used 129843712, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 162708992, used 129843712, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 162708992, used 129843712, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,117000 loss = 6,049912 testLoss 5,882840
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 211676736, used 80875968, increment -48967744
+Pygoscelis_adeliae_6 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 211026112, used 81526592, increment 650624
+linearPredictor: max memory 1073741824, total allocated 292552704, free 211026112, used 81526592, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 211026112, used 81526592, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 211026112, used 81526592, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 9.507
+500: time = 0,137000 loss = 6,060642 testLoss 6,259686
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 230411656, used 62141048, increment -19385544
+Pygoscelis_adeliae_6 bio18: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 230411656, used 62141048, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 230411656, used 62141048, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 230411656, used 62141048, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 230411656, used 62141048, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,053000 loss = 6,282101 testLoss 6,123144
+Res.gain: 0.2732560452075603
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 177982824, used 114569880, increment 52428832
+Pygoscelis_adeliae_6 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 177982824, used 114569880, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 177982824, used 114569880, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 177982824, used 114569880, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 177982824, used 114569880, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+300: time = 0,031000 loss = 6,377121 testLoss 6,123291
+Res.gain: 0.17823593142954586
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 153987040, used 138565664, increment 23995784
+Pygoscelis_adeliae_6 kaya: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 153987040, used 138565664, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 153987040, used 138565664, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 153987040, used 138565664, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 153987040, used 138565664, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+60: time = 0,010000 loss = 6,389274 testLoss 6,685835
+Res.gain: 0.1660829267458963
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 148744160, used 143808544, increment 5242880
+Pygoscelis_adeliae_6 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.400, hinge: 0.500
+60 samples
+Density: max memory 1073741824, total allocated 292552704, free 148744160, used 143808544, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 148744160, used 143808544, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 148744160, used 143808544, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 148744160, used 143808544, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+300: time = 0,031000 loss = 6,492169 testLoss 6,489517
+Res.gain: 0.0631877176455431
+getSamples: max memory 1073741824, total allocated 292552704, free 123054048, used 169498656, increment 25690112
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 122529760, used 170022944, increment 524288
+Pygoscelis_adeliae_7: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 122408312, used 170144392, increment 121448
+linearPredictor: max memory 1073741824, total allocated 292552704, free 122408312, used 170144392, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 122408312, used 170144392, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 122408312, used 170144392, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,174000 loss = 5,940791 testLoss 6,240410
+Resulting gain: 0.6145657399400672
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_7.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_7.png
+Pygoscelis_adeliae_7 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 260210120, used 32342584, increment -137801808
+Pygoscelis_adeliae_7 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 260210120, used 32342584, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 260210120, used 32342584, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 260210120, used 32342584, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 260210120, used 32342584, increment 0
+Initial loss: 6.555356891810665
+340: time = 0,053000 loss = 6,256805
+Resulting gain: 0.2985516831991184
+Pygoscelis_adeliae_7 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 204918424, used 87634280, increment 55291696
+Pygoscelis_adeliae_7 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 204635592, used 87917112, increment 282832
+linearPredictor: max memory 1073741824, total allocated 292552704, free 204635592, used 87917112, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 204635592, used 87917112, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 204635592, used 87917112, increment 0
+Initial loss: 6.555356891810665
+120: time = 0,013000 loss = 6,300751
+Resulting gain: 0.2546055501495843
+Pygoscelis_adeliae_7 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 194149832, used 98402872, increment 10485760
+Pygoscelis_adeliae_7 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 193625544, used 98927160, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 193625544, used 98927160, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 193625544, used 98927160, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 193625544, used 98927160, increment 0
+Initial loss: 6.555356891810665
+80: time = 0,012000 loss = 6,406274
+Resulting gain: 0.14908324733716505
+Pygoscelis_adeliae_7 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 185761224, used 106791480, increment 7864320
+Pygoscelis_adeliae_7 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 185637520, used 106915184, increment 123704
+linearPredictor: max memory 1073741824, total allocated 292552704, free 185637520, used 106915184, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 185637520, used 106915184, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 185637520, used 106915184, increment 0
+Initial loss: 6.555356891810665
+200: time = 0,019000 loss = 6,496469
+Resulting gain: 0.05888808356526809
+Pygoscelis_adeliae_7 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 165838280, used 126714424, increment 19799240
+Pygoscelis_adeliae_7 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 165714608, used 126838096, increment 123672
+linearPredictor: max memory 1073741824, total allocated 292552704, free 165714608, used 126838096, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 165714608, used 126838096, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 165714608, used 126838096, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+420: time = 0,095000 loss = 5,978896 testLoss 6,557061
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 244717144, used 47835560, increment -79002536
+Pygoscelis_adeliae_7 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 244717144, used 47835560, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 244717144, used 47835560, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 244717144, used 47835560, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 244717144, used 47835560, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+360: time = 0,103000 loss = 6,093816 testLoss 6,357823
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 132519512, used 160033192, increment 112197632
+Pygoscelis_adeliae_7 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 132402816, used 160149888, increment 116696
+linearPredictor: max memory 1073741824, total allocated 292552704, free 132402816, used 160149888, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 132402816, used 160149888, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 132402816, used 160149888, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 10.544
+500: time = 0,141000 loss = 6,019812 testLoss 6,063285
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 171808176, used 120744528, increment -39405360
+Pygoscelis_adeliae_7 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 171283888, used 121268816, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 171283888, used 121268816, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 171283888, used 121268816, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 171283888, used 121268816, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,145000 loss = 6,030842 testLoss 6,469690
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 189648384, used 102904320, increment -18364496
+Pygoscelis_adeliae_7 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 189648384, used 102904320, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 189648384, used 102904320, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 189648384, used 102904320, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 189648384, used 102904320, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+340: time = 0,057000 loss = 6,256805 testLoss 6,292446
+Res.gain: 0.2985516831991184
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 134598144, used 157954560, increment 55050240
+Pygoscelis_adeliae_7 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 134598144, used 157954560, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 134598144, used 157954560, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 134598144, used 157954560, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 134598144, used 157954560, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+120: time = 0,015000 loss = 6,300751 testLoss 6,832159
+Res.gain: 0.2546055501495843
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 125158304, used 167394400, increment 9439840
+Pygoscelis_adeliae_7 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 125044616, used 167508088, increment 113688
+linearPredictor: max memory 1073741824, total allocated 292552704, free 125044616, used 167508088, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 125044616, used 167508088, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 125044616, used 167508088, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+80: time = 0,012000 loss = 6,406274 testLoss 6,533365
+Res.gain: 0.14908324733716505
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 118345216, used 174207488, increment 6699400
+Pygoscelis_adeliae_7 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 118345216, used 174207488, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 118345216, used 174207488, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 118345216, used 174207488, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 118345216, used 174207488, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+200: time = 0,026000 loss = 6,496469 testLoss 6,557708
+Res.gain: 0.05888808356526809
+getSamples: max memory 1073741824, total allocated 292552704, free 273034320, used 19518384, increment -154689104
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 273034320, used 19518384, increment 0
+Pygoscelis_adeliae_8: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 272634176, used 19918528, increment 400144
+linearPredictor: max memory 1073741824, total allocated 292552704, free 272634176, used 19918528, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 272634176, used 19918528, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 272634176, used 19918528, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+460: time = 0,156000 loss = 6,007141 testLoss 5,576642
+Resulting gain: 0.5482159305450214
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_8.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_8.png
+Pygoscelis_adeliae_8 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 249705616, used 42847088, increment 22928560
+Pygoscelis_adeliae_8 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 249590296, used 42962408, increment 115320
+linearPredictor: max memory 1073741824, total allocated 292552704, free 249590296, used 42962408, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 249590296, used 42962408, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 249590296, used 42962408, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,040000 loss = 6,271550
+Resulting gain: 0.2838067509678259
+Pygoscelis_adeliae_8 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 203568272, used 88984432, increment 46022024
+Pygoscelis_adeliae_8 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 203568272, used 88984432, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 203568272, used 88984432, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 203568272, used 88984432, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 203568272, used 88984432, increment 0
+Initial loss: 6.555356891810665
+280: time = 0,023000 loss = 6,359064
+Resulting gain: 0.1962926031163077
+Pygoscelis_adeliae_8 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 181021232, used 111531472, increment 22547040
+Pygoscelis_adeliae_8 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 181021232, used 111531472, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 181021232, used 111531472, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 181021232, used 111531472, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 181021232, used 111531472, increment 0
+Initial loss: 6.555356891810665
+80: time = 0,011000 loss = 6,442152
+Resulting gain: 0.11320442153417076
+Pygoscelis_adeliae_8 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 172635280, used 119917424, increment 8385952
+Pygoscelis_adeliae_8 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 172635280, used 119917424, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 172635280, used 119917424, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 172635280, used 119917424, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 172635280, used 119917424, increment 0
+Initial loss: 6.555356891810665
+320: time = 0,032000 loss = 6,499959
+Resulting gain: 0.05539803054510717
+Pygoscelis_adeliae_8 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 143275152, used 149277552, increment 29360128
+Pygoscelis_adeliae_8 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 143275152, used 149277552, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 143275152, used 149277552, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 143275152, used 149277552, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 143275152, used 149277552, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+400: time = 0,089000 loss = 6,076896 testLoss 5,596159
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 230565456, used 61987248, increment -87290304
+Pygoscelis_adeliae_8 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 229929488, used 62623216, increment 635968
+linearPredictor: max memory 1073741824, total allocated 292552704, free 229929488, used 62623216, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 229929488, used 62623216, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 229929488, used 62623216, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 11.57
+420: time = 0,117000 loss = 6,142728 testLoss 5,864361
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 99493456, used 193059248, increment 130436032
+Pygoscelis_adeliae_8 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 99493456, used 193059248, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 99493456, used 193059248, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 99493456, used 193059248, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 99493456, used 193059248, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,144000 loss = 6,047278 testLoss 5,787354
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 137736440, used 154816264, increment -38242984
+Pygoscelis_adeliae_8 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 137212152, used 155340552, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 137212152, used 155340552, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 137212152, used 155340552, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 137212152, used 155340552, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+440: time = 0,123000 loss = 6,111041 testLoss 5,675383
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 174402576, used 118150128, increment -37190424
+Pygoscelis_adeliae_8 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 174402576, used 118150128, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 174402576, used 118150128, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 174402576, used 118150128, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 174402576, used 118150128, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,047000 loss = 6,271550 testLoss 6,132132
+Res.gain: 0.2838067509678259
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 128265232, used 164287472, increment 46137344
+Pygoscelis_adeliae_8 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 128265232, used 164287472, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 128265232, used 164287472, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 128265232, used 164287472, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 128265232, used 164287472, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+280: time = 0,031000 loss = 6,359064 testLoss 6,214014
+Res.gain: 0.1962926031163077
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 279438800, used 13113904, increment -151173568
+Pygoscelis_adeliae_8 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 279307088, used 13245616, increment 131712
+linearPredictor: max memory 1073741824, total allocated 292552704, free 279307088, used 13245616, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 279307088, used 13245616, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 279307088, used 13245616, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+80: time = 0,013000 loss = 6,442152 testLoss 6,203455
+Res.gain: 0.11320442153417076
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 272623056, used 19929648, increment 6684032
+Pygoscelis_adeliae_8 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 272623056, used 19929648, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 272623056, used 19929648, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 272623056, used 19929648, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 272623056, used 19929648, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+320: time = 0,033000 loss = 6,499959 testLoss 6,501534
+Res.gain: 0.05539803054510717
+getSamples: max memory 1073741824, total allocated 292552704, free 244311504, used 48241200, increment 28311552
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 244311504, used 48241200, increment 0
+Pygoscelis_adeliae_9: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 243787216, used 48765488, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 243787216, used 48765488, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 243787216, used 48765488, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 243787216, used 48765488, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,163000 loss = 5,971168 testLoss 5,991937
+Resulting gain: 0.5841890666645284
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_9.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_9.png
+Pygoscelis_adeliae_9 response curves
+Response curve: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 205621784, used 86930920, increment 38165432
+Pygoscelis_adeliae_9 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 205097496, used 87455208, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 205097496, used 87455208, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 205097496, used 87455208, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 205097496, used 87455208, increment 0
+Initial loss: 6.555356891810665
+360: time = 0,056000 loss = 6,240170
+Resulting gain: 0.31518667768807074
+Pygoscelis_adeliae_9 response curves
+Response curve: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 144804376, used 147748328, increment 60293120
+Pygoscelis_adeliae_9 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 144673944, used 147878760, increment 130432
+linearPredictor: max memory 1073741824, total allocated 292552704, free 144673944, used 147878760, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 144673944, used 147878760, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 144673944, used 147878760, increment 0
+Initial loss: 6.555356891810665
+300: time = 0,025000 loss = 6,352391
+Resulting gain: 0.2029662453975556
+Pygoscelis_adeliae_9 response curves
+Response curve: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 121211416, used 171341288, increment 23462528
+Pygoscelis_adeliae_9 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 121211416, used 171341288, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 121211416, used 171341288, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 121080984, used 171471720, increment 130432
+Sequential: max memory 1073741824, total allocated 292552704, free 121080984, used 171471720, increment 0
+Initial loss: 6.555356891810665
+80: time = 0,009000 loss = 6,414659
+Resulting gain: 0.14069801371978397
+Pygoscelis_adeliae_9 response curves
+Response curve: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 112822808, used 179729896, increment 8258176
+Pygoscelis_adeliae_9 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 112822808, used 179729896, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 112822808, used 179729896, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 112822808, used 179729896, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 112822808, used 179729896, increment 0
+Initial loss: 6.555356891810665
+240: time = 0,022000 loss = 6,495604
+Resulting gain: 0.05975334851052683
+Pygoscelis_adeliae_9 response curves
+Jackknife: leave bio18 out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 90278424, used 202274280, increment 22544384
+Pygoscelis_adeliae_9 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 90278424, used 202274280, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 90278424, used 202274280, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 90278424, used 202274280, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 90278424, used 202274280, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+Time since start: 12.622
+400: time = 0,098000 loss = 6,029856 testLoss 6,072173
+Jackknife: leave buz_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 177053088, used 115499616, increment -86774664
+Pygoscelis_adeliae_9 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 176528800, used 116023904, increment 524288
+linearPredictor: max memory 1073741824, total allocated 292552704, free 176528800, used 116023904, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 176528800, used 116023904, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 176528800, used 116023904, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+340: time = 0,103000 loss = 6,093882 testLoss 6,386626
+Jackknife: leave kaya out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 262512032, used 30040672, increment -85983232
+Pygoscelis_adeliae_9 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 262512032, used 30040672, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 262512032, used 30040672, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 262512032, used 30040672, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 262512032, used 30040672, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,139000 loss = 6,021880 testLoss 6,033563
+Jackknife: leave sst_yillik out
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 109419936, used 183132768, increment 153092096
+Pygoscelis_adeliae_9 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 108769248, used 183783456, increment 650688
+linearPredictor: max memory 1073741824, total allocated 292552704, free 108769248, used 183783456, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 108769248, used 183783456, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 108769248, used 183783456, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+500: time = 0,143000 loss = 6,070131 testLoss 6,156957
+Jackknife: only bio18
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 128269168, used 164283536, increment -19499920
+Pygoscelis_adeliae_9 bio18: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 128269168, used 164283536, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 128269168, used 164283536, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 128269168, used 164283536, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 128269168, used 164283536, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+360: time = 0,061000 loss = 6,240170 testLoss 6,469793
+Res.gain: 0.31518667768807074
+Jackknife: only buz_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 244312232, used 48240472, increment -116043064
+Pygoscelis_adeliae_9 buz_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 244226784, used 48325920, increment 85448
+linearPredictor: max memory 1073741824, total allocated 292552704, free 244226784, used 48325920, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 244226784, used 48325920, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 244226784, used 48325920, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+300: time = 0,030000 loss = 6,352391 testLoss 6,295127
+Res.gain: 0.2029662453975556
+Jackknife: only kaya
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 221126688, used 71426016, increment 23100096
+Pygoscelis_adeliae_9 kaya: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 221126688, used 71426016, increment 0
+linearPredictor: max memory 1073741824, total allocated 292552704, free 221126688, used 71426016, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 221126688, used 71426016, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 221126688, used 71426016, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+80: time = 0,011000 loss = 6,414659 testLoss 6,506657
+Res.gain: 0.14069801371978397
+Jackknife: only sst_yillik
+Making features
+makeFeatures: max memory 1073741824, total allocated 292552704, free 214427816, used 78124888, increment 6698872
+Pygoscelis_adeliae_9 sst_yillik: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 1073741824, total allocated 292552704, free 214311112, used 78241592, increment 116704
+linearPredictor: max memory 1073741824, total allocated 292552704, free 214311112, used 78241592, increment 0
+FeaturedSpace: max memory 1073741824, total allocated 292552704, free 214311112, used 78241592, increment 0
+Sequential: max memory 1073741824, total allocated 292552704, free 214311112, used 78241592, increment 0
+Initial loss: 6.555356891810665
+Initial test loss: 6.555356891810665
+240: time = 0,025000 loss = 6,495604 testLoss 6,483883
+Res.gain: 0.05975334851052683
+Creating average grid, stddev grid etc.
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_avg.asc
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_stddev.asc
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_min.asc
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_max.asc
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/Pygoscelis_adeliae_median.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_avg.png
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_stddev.png
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_min.png
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_max.png
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_median.png
+Time since start: 13.629
+Pygoscelis_adeliae average response curves
+Ending
