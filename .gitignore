@@ -8,3 +8,8 @@ era5/hesaplama.log
 kaya/veri_ham/
 maxent.cache/
 harita/veri_ham/
+# MaxEnt programı (AMNH sitesinden indirilir, repoya konmaz)
+maxent/maxent.jar
+maxent/maxent.bat
+maxent/maxent.sh
+maxent/readme.txt
