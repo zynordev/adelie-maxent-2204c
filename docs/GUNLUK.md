@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-20 — QGIS için harita katmanları (Aşama 7 🟡)
+
+**Yapılanlar**
+- Laptop'ta QGIS kurulumu: CachyOS paket listesi eskiydi (16 Ekim) ve ilk ayna (mirror.bali0531.hu) paket yerine HTML yönlendirme döndürüyordu ("bozuk paket / imza hatası" sanıldı, gerçek bozulma yoktu). Çözüm: `cachyos-rate-mirrors` → `pacman -Syu` → `pacman -S qgis` (öğrenci yaptı).
+- `harita/hazirla.py` → `harita/qgis_katmanlari.gpkg` (kiyi: SCAR ADD kıyı çizgisi v7.11, Gerrish vd. 2025, doi:10.5285/7d6793c2-2513-4752-8f37-11db5b791fb5, alana kırpıldı; noktalar: 67; istasyonlar: Rothera, San Martín, Horseshoe Adası) + `harita/uygunluk_ortalama.tif` (deneme3 ortalaması, EPSG:4326 tanımlı). Vektörler EPSG:3031.
+
+**Sıradaki adım**
+- Öğrenci: QGIS'te harita (projeksiyon EPSG:3031, renk skalası, lejant, ölçek, kuzey oku, kaynaklar).
+
+---
+
 ## 2026-10-20 — İlk MaxEnt denemesi (Aşama 6 🟡)
 
 **Yapılanlar**
