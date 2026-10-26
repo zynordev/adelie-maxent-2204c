@@ -8,7 +8,8 @@ Girdiler:
   ../maxent/cikti/deneme3/Pygoscelis_adeliae_avg.asc — 10 katlı ÇD ortalama uygunluk (cloglog, 0–1)
   ../gbif/temiz/adelie_maxent.csv — 67 MaxEnt noktası
 Çıktılar (harita/):
-  qgis_katmanlari.gpkg  katmanlar: kiyi (kara/buz rafı poligonları), noktalar, istasyonlar
+  qgis_katmanlari.gpkg  katmanlar: kiyi_cizgi (kıyı çizgisi — haritada bunu kullan), kiyi (poligonlar),
+                        noktalar, istasyonlar
   uygunluk_ortalama.tif MaxEnt ortalaması, EPSG:4326 tanımlı (asc dosyasında koordinat sistemi yok)
 Tüm vektörler EPSG:3031'de (Antarktika Kutup Stereografik) — haritanın projeksiyonu da bu olmalı.
 """
@@ -47,9 +48,14 @@ def main():
     alan = gpd.GeoSeries([box(bati - PAY, guney - PAY, dogu + PAY, kuzey + PAY).segmentize(0.05)],
                          crs="EPSG:4326").to_crs(pyogrio.read_info(KIYI, layer=katman)["crs"])
     kiyi = pyogrio.read_dataframe(KIYI, layer=katman, bbox=tuple(alan.total_bounds))
-    kiyi = gpd.clip(kiyi.to_crs(KUTUP), alan.to_crs(KUTUP))
-    print(f"kıyı katmanı '{katman}': {len(kiyi)} poligon; sütunlar: {[k for k in kiyi.columns if k != 'geometry']}")
-    kiyi.to_file(CIKTI, layer="kiyi", driver="GPKG")
+    kiyi = kiyi.to_crs(KUTUP)
+    # Çizgi sürümü: sınır ÖNCE çıkarılır, SONRA kırpılır → kırpma kutusunun kenarları kıyı gibi çizilmez
+    cizgi = gpd.GeoDataFrame(kiyi[["surface"]], geometry=kiyi.boundary, crs=KUTUP)
+    cizgi = gpd.clip(cizgi, alan.to_crs(KUTUP))
+    kiyi = gpd.clip(kiyi, alan.to_crs(KUTUP))
+    print(f"kıyı katmanı '{katman}': {len(kiyi)} poligon, {len(cizgi)} çizgi")
+    kiyi.to_file(CIKTI, layer="kiyi", driver="GPKG")            # dolgu için (kırpma kenarları içerir)
+    cizgi.to_file(CIKTI, layer="kiyi_cizgi", driver="GPKG")     # haritada kıyı çizgisi olarak bu kullanılmalı
 
     m = pd.read_csv(NOKTALAR)
     gpd.GeoDataFrame(m, geometry=[Point(x, y) for x, y in zip(m.longitude, m.latitude)],

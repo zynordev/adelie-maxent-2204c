@@ -12,6 +12,8 @@
 
 - QGIS'te 4326 → 3031 anlık dönüşüm uygunluk hücrelerini bulanık gösterdi → `harita/uygunluk_ortalama_3031.tif`: 1 km ızgara, en yakın komşu (değerler değişmedi: 702 benzersiz değerin tamamı kaynaktakiyle aynı).
 
+- Öğrencinin ilk baskı düzeni taslağı (`harita2_A4.pdf`, 2026-10-26) incelendi. Kırpılmış kıyı poligonlarının kesim kenarları açık denizde çizgi olarak görünüyordu → `kiyi_cizgi` katmanı eklendi (sınır önce çıkarılıp sonra kırpılıyor).
+
 **Sıradaki adım**
 - Öğrenci: QGIS'te harita (projeksiyon EPSG:3031, renk skalası, lejant, ölçek, kuzey oku, kaynaklar).
 
