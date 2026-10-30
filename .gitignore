@@ -13,3 +13,4 @@ maxent/maxent.jar
 maxent/maxent.bat
 maxent/maxent.sh
 maxent/readme.txt
+*.aux.xml
