@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QGIS Adélie Harita Tasarım Rehberi (TÜBİTAK 2204-C)</title>
+  <style>
+    :root {
+      --bg-main: #0f172a;
+      --bg-card: #1e293b;
+      --bg-panel: #334155;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --qgis-green: #589632;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-main);
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border: 1px solid #334155;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .header-title h1 {
+      font-size: 24px;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-title p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .qgis-badge {
+      background: var(--qgis-green);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    /* Navigasyon Sekmeleri */
+    .steps-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .step-btn {
+      background: var(--bg-card);
+      border: 2px solid #334155;
+      color: var(--text-muted);
+      padding: 14px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .step-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-main);
+      transform: translateY(-2px);
+    }
+
+    .step-btn.active {
+      background: #1e3a5f;
+      border-color: var(--accent);
+      color: #38bdf8;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+    }
+
+    .step-num {
+      background: #334155;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .step-btn.active .step-num {
+      background: var(--accent);
+      color: #0f172a;
+    }
+
+    /* Ana İçerik Alanı */
+    .step-content {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .step-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-header {
+      border-bottom: 1px solid #334155;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .step-header h2 {
+      font-size: 20px;
+      color: #f1f5f9;
+    }
+
+    .pill-tag {
+      background: #334155;
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* QGIS Arayüz Mockup'ı */
+    .qgis-mockup {
+      background: #182234;
+      border: 2px solid #334155;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+
+    .mockup-header {
+      background: #0f172a;
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #334155;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .mockup-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+
+    .mockup-body {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 280px;
+    }
+
+    .mockup-sidebar {
+      background: #1e293b;
+      border-right: 1px solid #334155;
+      padding: 14px;
+      font-size: 13px;
+    }
+
+    .mockup-panel-title {
+      font-weight: bold;
+      color: #94a3b8;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .mockup-layer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+
+    .mockup-layer.highlight {
+      background: #0284c7;
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+    }
+
+    .mockup-canvas {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+      position: relative;
+    }
+
+    /* Talimat Kartları */
+    .instruction-card {
+      background: #0f172a;
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+    }
+
+    .instruction-card h4 {
+      color: #38bdf8;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .instruction-card ol, .instruction-card ul {
+      margin-left: 20px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .instruction-card li {
+      margin-bottom: 8px;
+    }
+
+    .copy-box {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: monospace;
+      color: #a5f3fc;
+      font-size: 13px;
+    }
+
+    .copy-btn {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .copy-btn:hover { background: #0369a1; }
+
+    .bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      border-top: 1px solid #334155;
+      padding-top: 16px;
+    }
+
+    .nav-btn {
+      background: var(--bg-panel);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .nav-btn.primary {
+      background: var(--accent);
+      color: #0f172a;
+    }
+
+    .nav-btn:hover { opacity: 0.9; }
+
+    /* Renk Skalası Önizleme */
+    .color-scale-bar {
+      width: 100%;
+      height: 24px;
+      border-radius: 6px;
+      background: linear-gradient(to right, #2b83ba, #abdda4, #ffffbf, #fdae61, #d7191c);
+      margin: 10px 0;
+    }
+
+    .scale-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="header-title">
+      <h1>🗺️ QGIS Adélie Harita Kartografi Rehberi</h1>
+      <p>TÜBİTAK 2204-C Kutup Araştırmaları — Adélie Pengueni MaxEnt Habitat Modeli</p>
+    </div>
+    <div class="qgis-badge">Proje: harita/a1.qgz</div>
+  </header>
+
+  <!-- Üst Sekmeler -->
+  <div class="steps-nav">
+    <button class="step-btn active" onclick="showStep(1)">
+      <span class="step-num">1</span>
+      <span>Kıyı Çizgisi Düzeltmesi</span>
+    </button>
+    <button class="step-btn" onclick="showStep(2)">
+      <span class="step-num">2</span>
+      <span>MaxEnt Renk Skalası</span>
+    </button>
+    <button class="step-btn" onclick="showStep(3)">
+      <span class="step-num">3</span>
+      <span>Noktalar & İstasyonlar</span>
+    </button>
+    <button class="step-btn" onclick="showStep(4)">
+      <span class="step-num">4</span>
+      <span>Baskı Düzeni & Izgara (Grid)</span>
+    </button>
+    <button class="step-btn" onclick="showStep(5)">
+      <span class="step-num">5</span>
+      <span>Parametre Kutusu & Export</span>
+    </button>
+  </div>
+
+  <!-- ADIM 1: Kıyı Sınırı -->
+  <div id="step-1" class="step-content active">
+    <div class="step-header">
+      <h2>1. Adım: Denizdeki Düz Çizgileri Temizleme (Kıyı Düzeltmesi)</h2>
+      <span class="pill-tag">Sorun: Poligon kırpma kenarları denizde çizgi yapıyordu</span>
+    </div>
+
+    <div class="instruction-card">
+      <h4>📌 Ne Yapacağız?</h4>
+      <p>Önceki taslakta anakaranın kenarları açık denizde düz çizgi olarak görünüyordu. Bunu çözmek için Pi'den <code>kiyi_cizgi</code> katmanını getirdik. Poligonların kenar çizgisini kapatıp, sadece bu temiz kıyı çizgisini göstereceğiz.</p>
+    </div>
+
+    <div class="qgis-mockup">
+      <div class="mockup-header">
+        <span class="mockup-dot dot-red"></span>
+        <span class="mockup-dot dot-yellow"></span>
+        <span class="mockup-dot dot-green"></span>
+        <span>QGIS - Sol Katmanlar Paneli (Layers)</span>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-sidebar">
+          <div class="mockup-panel-title">Katmanlar Paneli</div>
+          <div class="mockup-layer highlight">✨ kiyi_cizgi (Yeni Ekle!)</div>
+          <div class="mockup-layer">📍 istasyonlar</div>
+          <div class="mockup-layer">🟡 noktalar</div>
+          <div class="mockup-layer highlight" style="background:#475569;">⬛ kiyi (Çizgisini Kapat!)</div>
+          <div class="mockup-layer">🗺️ uygunluk_ortalama_3031</div>
+        </div>
+        <div class="mockup-canvas">
+          <p style="color:#38bdf8; font-weight:bold; margin-bottom:10px;">Yapılacak 2 Kolay İşlem:</p>
+          <div style="background:#0f172a; padding:16px; border-radius:8px; width:90%; font-size:13px;">
+            <p>1️⃣ Sol <strong>Tarayıcı (Browser)</strong> panelinden <code>qgis_katmanlari.gpkg</code> içine tıkla $\rightarrow$ <strong><code>kiyi_cizgi</code></strong>'yi sürükleyip katmanlara bırak.</p>
+            <p style="margin-top:10px;">2️⃣ <strong><code>kiyi</code></strong> katmanına çift tıkla $\rightarrow$ <strong>Semboloji</strong> $\rightarrow$ Dolgu rengi: <code>#f0f3f4</code> (Açık Gri) yap, <strong>Kontur Rengi (Stroke): "Çizgi Yok"</strong> seç!</p>
+            <p style="margin-top:10px;">3️⃣ <strong><code>kiyi_cizgi</code></strong> katmanına çift tıkla $\rightarrow$ Çizgi rengini koyu antrasit (<code>#334155</code>), kalınlığı <code>0.26 mm</code> yap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <span></span>
+      <button class="nav-btn primary" onclick="showStep(2)">Sonraki Adım: Renk Skalası ➔</button>
+    </div>
+  </div>
+
+  <!-- ADIM 2: Renk Skalası -->
+  <div id="step-2" class="step-content">
+    <div class="step-header">
+      <h2>2. Adım: MaxEnt Uygunluk Renk Skalası (Habitat Uygunluğu)</h2>
+      <span class="pill-tag">Katman: uygunluk_ortalama_3031</span>
+    </div>
+
+    <div class="instruction-card">
+      <h4>📌 Akademik Renk Skalası Ayarı</h4>
+      <ol>
+        <li>Katmanlar panelinde <strong><code>uygunluk_ortalama_3031</code></strong> raster katmanına çift tıklayın.</li>
+        <li>Soldan <strong>Semboloji (Symbology)</strong> sekmesine gelin.</li>
+        <li><strong>İşleme türü (Render type):</strong> <code>Tek Bant Yalancı Renk (Singleband pseudocolor)</code> seçin.</li>
+        <li><strong>Renk Rampası (Color ramp):</strong> <code>Spectral</code> (Ters Çevrilmiş: Mavi $\rightarrow$ Yeşil $\rightarrow$ Sarı $\rightarrow$ Kırmızı) veya <code>YlOrRd</code> (Sarı-Turuncu-Kırmızı) seçin.</li>
+        <li><strong>Mod:</strong> <code>Eşit Aralık (Equal Interval)</code> $\rightarrow$ <strong>Sınıflar: 5</strong> yapın.</li>
+      </ol>
+    </div>
+
+    <div style="background:#182234; padding:20px; border-radius:10px; border:1px solid #334155;">
+      <h4 style="color:#38bdf8; margin-bottom:8px;">Hedeflenen Renk Görünümü (0.0 – 1.0 Cloglog):</h4>
+      <div class="color-scale-bar"></div>
+      <div class="scale-labels">
+        <span>0.00 (Uygun Değil - Koyu Mavi)</span>
+        <span>0.25 (Düşük)</span>
+        <span>0.50 (Orta - Sarı)</span>
+        <span>0.75 (Yüksek)</span>
+        <span>1.00 (Mükemmel - Kırmızı)</span>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="nav-btn" onclick="showStep(1)">⬅ Geri</button>
+      <button class="nav-btn primary" onclick="showStep(3)">Sonraki Adım: Noktalar ➔</button>
+    </div>
+  </div>
+
+  <!-- ADIM 3: Noktalar & İstasyonlar -->
+  <div id="step-3" class="step-content">
+    <div class="step-header">
+      <h2>3. Adım: Penguen Gözlem Noktaları ve İstasyon Etiketleri</h2>
+      <span class="pill-tag">Katmanlar: noktalar & istasyonlar</span>
+    </div>
+
+    <div class="instruction-card">
+      <h4>📍 1. Penguen Noktaları (<code>noktalar</code>)</h4>
+      <ul>
+        <li>Çift tıkla $\rightarrow$ Semboloji $\rightarrow$ Boyut: <strong>1.8 mm</strong>.</li>
+        <li>Renk: Siyah ince kenarlı <strong>parlak sarı/turuncu nokta</strong> (Haritada raster üstünde pırıl pırıl parlar).</li>
+      </ul>
+    </div>
+
+    <div class="instruction-card">
+      <h4>🏛️ 2. Araştırma İstasyonları (<code>istasyonlar</code>)</h4>
+      <ul>
+        <li>Semboloji: Boyut <strong>3.0 mm</strong>, parlak kırmızı üçgen veya bayrak ikonu.</li>
+        <li><strong>Etiketler (Labels) Sekmesi:</strong>
+          <ul>
+            <li>En üstten <strong>Tek Etiket (Single Labels)</strong> seçin.</li>
+            <li>Değer (Value): <strong><code>name</code></strong> sütununu seçin.</li>
+            <li><strong>Tampon (Buffer) Sekmesi:</strong> "Metin tamponunu çiz" kutusunu işaretleyin, boyutunu <strong>1 mm beyaz</strong> yapın. (Yazı harita çizgilerine karışmaz, çok net okunur).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="nav-btn" onclick="showStep(2)">⬅ Geri</button>
+      <button class="nav-btn primary" onclick="showStep(4)">Sonraki Adım: Baskı Düzeni ➔</button>
+    </div>
+  </div>
+
+  <!-- ADIM 4: Baskı Düzeni & Grid -->
+  <div id="step-4" class="step-content">
+    <div class="step-header">
+      <h2>4. Adım: Baskı Düzeni & Enlem/Boylam Izgarası (Grid)</h2>
+      <span class="pill-tag">Düzen Yöneticisi: harita_A4</span>
+    </div>
+
+    <div class="instruction-card">
+      <h4>📌 Baskı Düzenini Açma</h4>
+      <p>Üst QGIS menüsünden: <strong>Proje $\rightarrow$ Düzen Yöneticisi (Layout Manager)</strong> $\rightarrow$ <strong><code>harita_A4</code></strong>'ü seçip <strong>Göster</strong>'e basın.</p>
+    </div>
+
+    <div class="instruction-card">
+      <h4>🌐 Haritayı Akademik Gösteren Kilit Özellik: Enlem/Boylam Izgarası (Grid)</h4>
+      <ol>
+        <li>Baskı düzenindeki harita çerçevesine (büyük haritaya) tıklayın.</li>
+        <li>Sağ taraftaki <strong>Öğe Özellikleri (Item Properties)</strong> panelinde aşağı kaydırıp <strong>Izgaralar (Grids)</strong> başlığına tıklayın.</li>
+        <li>Yeşil <strong>`+`</strong> butonuna basıp <strong>Grid 1</strong>'i ekleyin ve <strong>Izgarayı Değiştir (Modify Grid)</strong> deyin.</li>
+        <li><strong>CRS:</strong> Değiştir'e basıp <strong><code>EPSG:4326 (WGS 84)</code></strong> seçin.</li>
+        <li><strong>Aralık (Interval):</strong> X = <code>2.000000</code>, Y = <code>1.000000</code> derece yapın.</li>
+        <li><strong>Izgara Türü:</strong> <code>Yalnızca Çerçeve ve Açıklamalar</code> seçin.</li>
+        <li><strong>Çerçeve Stili:</strong> <code>Zebra</code> (Klasik siyah-beyaz denizcilik haritası çerçevesi) seçin.</li>
+        <li><strong>Koordinatları Çiz (Draw Coordinates):</strong> Kutusunu işaretleyin, Format: <code>Derece, Dakika, Sonek ile</code> seçin (Örn: 68°00'S).</li>
+      </ol>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="nav-btn" onclick="showStep(3)">⬅ Geri</button>
+      <button class="nav-btn primary" onclick="showStep(5)">Sonraki Adım: Bilgi Kutusu & PDF ➔</button>
+    </div>
+  </div>
+
+  <!-- ADIM 5: Bilgi Kutusu & Export -->
+  <div id="step-5" class="step-content">
+    <div class="step-header">
+      <h2>5. Adım: Hocanın İstediği Bilgi Kutusu & PDF Çıktısı</h2>
+      <span class="pill-tag">Final Adımı</span>
+    </div>
+
+    <div class="instruction-card">
+      <h4>📝 Metin Kutusu Ekleme (Hocanın "Parametreler Neler?" Sorusunun Yanıtı)</h4>
+      <p>Baskı ekranında sol araç çubuğundaki <strong>Metin Ekle (T)</strong> butonuna basın, haritanın kenarındaki boş bir alana tıklayıp kutu açın ve içine aşağıdaki metni kopyalayıp yapıştırın:</p>
+      
+      <div class="copy-box">
+        <span id="box-text">ADÉLIE PENGUENİ (Pygoscelis adeliae) HABİTAT UYGUNLUK MODELİ
+Bölge: Marguerite Körfezi, Antarktika Yarımadası
+Algoritma: MaxEnt 3.4.4 (10 Katlı Çapraz Doğrulama, Test AUC: 0.77 ± 0.11)
+
+Modelleme Parametreleri & Katkıları:
+• Yıllık Ortalama Deniz Buzu Örtüsü (SIC): %55.6
+• Çıplak Kaya Yuvalama Alanları (SCAR ADD v7.11)
+• Deniz Yüzeyi Sıcaklığı (SST, ERA5)
+• En Sıcak Çeyrek Yağışı (Bio18, ERA5)
+
+Projeksiyon: EPSG:3031 WGS 84 / Antarctic Polar Stereographic</span>
+        <button class="copy-btn" onclick="copyText()">Kopyala</button>
+      </div>
+    </div>
+
+    <div class="instruction-card">
+      <h4>🖨️ PDF Olarak Dışa Aktar</h4>
+      <p>Üst menüden: <strong>Düzen $\rightarrow$ PDF Olarak Dışa Aktar (Export as PDF)</strong> $\rightarrow$ Çözünürlüğü <strong>300 DPI</strong> bırakın ve <code>/home/halil/adelie-maxent-2204c/harita2_A4.pdf</code> üzerine kaydedin.</p>
+    </div>
+
+    <div style="background:#064e3b; border:1px solid #10b981; padding:16px; border-radius:8px; margin-top:20px;">
+      <h4 style="color:#6ee7b7;">🎉 Tebrikler!</h4>
+      <p style="color:#ecfdf5; font-size:14px; margin-top:4px;">Bu harita çıktısını hocanıza attığınızda hem parametreleri, hem model kalitesini, hem de profesyonel kartografiyi tek sayfada görecek ve tam not verecektir!</p>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="nav-btn" onclick="showStep(4)">⬅ Geri</button>
+      <span></span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function showStep(n) {
+    document.querySelectorAll('.step-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx === (n - 1));
+    });
+    document.querySelectorAll('.step-content').forEach((content, idx) => {
+      content.classList.toggle('active', idx === (n - 1));
+    });
+  }
+
+  function copyText() {
+    const text = document.getElementById('box-text').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Metin kopyalandı! QGIS metin kutusuna yapıştırabilirsiniz.');
+    });
+  }
+</script>
+
+</body>
+</html>

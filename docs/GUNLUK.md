@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-10-31 — Danışman Geri Bildirimi ve Kartografik Harita Sonlandırma (Aşama 7 ✅)
+
+**Yapılanlar**
+- Danışman (Metin Silsüpür) ilk harita taslağına dönüt verdi: Haritada hangi çevresel parametrelerin yer aldığının netleştirilmesini ve projenin değerini artırmak için geleceğe ait dağılım projeksiyonlarının (2050 senaryoları) eklenmesini istedi.
+- Laptop ve Raspberry Pi depoları senkronize edildi; Pi'de hazırlanan kesintisiz kıyı çizgisi katmanı (`kiyi_cizgi`) yerel GPKG'ye çekildi.
+- QGIS baskı düzeni (`harita_A4`) güncellendi:
+  - Enlem/Boylam ızgarası eklendi (EPSG:4326 koordinatları, Zebra çerçeve, 2° boylam / 1° enlem aralığı).
+  - Ölçek çubuğu ve Kuzey oku yerleştirildi.
+  - Danışmanın sorduğu metodolojik detayları tek bakışta açıklayan Parametre & Model Bilgi Kutusu haritaya eklendi.
+- PyQGIS otomasyon scripti yazıldı (`harita/profesyonel_harita_uret.py`):
+  - MaxEnt cloglog uygunluk rasterı 5 ayrık (Discrete) sınıfa dönüştürüldü ve lejantta her rengin biyolojik karşılığı etiketlendi (Çok Yüksek Uygunluk: Koloni/Yuvalama $\rightarrow$ Çok Düşük: Açık Deniz/Buzul).
+  - Poligon kenarlarındaki yapay kırpma çizgileri gizlendi, SCAR ADD v7.11 kıyı çizgisi netleştirildi.
+  - 300 DPI baskı kalitesinde nihai haritalar üretildi: `harita_final_A4.pdf` ve `harita_final_A4.png`.
+- Öğrenciye interaktif web rehberi hazırlandı: `harita/qgis_rehberi.html`.
+
+**Sıradaki adım**
+- 2050 CMIP6 iklim projeksiyon katmanlarının (deniz buzu ve SST) hazırlanması ve MaxEnt üzerinden 2050 Gelecek Habitat & Kayıp Haritasının üretilmesi.
+
+---
+
 ## 2026-10-20 — QGIS için harita katmanları (Aşama 7 🟡)
 
 **Yapılanlar**
