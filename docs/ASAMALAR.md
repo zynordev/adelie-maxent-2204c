@@ -12,7 +12,8 @@
 | 5 | Korelasyon matrisine göre değişken seçimi | Öğrenci + Danışman | 🟡 | Öğrenci seçimi K-020: kaya, bio18, sst_yillik, buz_yillik (sıcaklık yok) → danışman onayı. Girdiler `maxent/girdi/` |
 | 6 | MaxEnt çalıştırma (AUC, jackknife, katkı tabloları) | Öğrenci | ✅ | 2026-10-20 deneme3 (10 katlı ÇD + jackknife): Test AUC **0.768 ± 0.111** (hedef > 0.70 ✔) — `maxent/cikti/deneme3/NOT.md` |
 | 7 | Haritanın QGIS'te görselleştirilmesi, danışmana iletim | Öğrenci | ✅ | 2026-10-31: 300 DPI nihai harita (`harita_final_A4.pdf/.png`), EPSG:4326 koordinat ızgarası, 5 sınıflı lejant ve parametre bilgi kutusu tamamlandı |
-| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci | ⬜ | Sınırlılıklar şeffaf yazılacak |
+| 7.1 | CMIP6 SSP2-4.5 2050 Gelecek Projeksiyonu & Değişim Analizi | Öğrenci + Claude | ✅ | 2026-10-31: 2050 iklim katmanları üretildi, MaxEnt projeksiyonu çalıştırıldı, %54.6 habitat kaybı ve %18.9 sığınak alanı tespit edildi (`harita_2050_karsilastirma.png/.pdf`) |
+| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci | 🟡 | Taslak ve bulgular hazır, yazıma başlanıyor |
 
 ## Açık sorular
 

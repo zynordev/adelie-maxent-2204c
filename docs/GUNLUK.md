@@ -4,6 +4,28 @@
 
 ---
 
+## 2026-10-31 — IPCC CMIP6 2050 Gelecek Projeksiyonu ve Habitat Kayıp Haritası (Aşama 7.1 ✅)
+
+**Yapılanlar**
+- Danışmanın *"Gelecek dağılım alanlarını da gösteren haritalar çıkarsa proje yazılabilir bir hale gelir"* önerisi hayata geçirildi.
+- IPCC AR6 CMIP6 SSP2-4.5 senaryosuna göre Marguerite Körfezi / Batı Antarktika Yarımadası için 2050 gelecek çevre katmanları üretildi (`maxent/hazirla_2050_katmanlari.py`):
+  - `buz_yillik`: %20 bölgesel erime/azalma (ortalama %47.0 $\rightarrow$ %37.6).
+  - `sst_yillik`: +0.8 °C deniz yüzeyi ısınması (-1.36 °C $\rightarrow$ -0.56 °C).
+  - `bio18`: %15 yaz yağışı artışı (sıvı yağış / civciv mortalite riski; 262.5 mm $\rightarrow$ 301.8 mm).
+  - `kaya`: Jeolojik çıplak kaya yuvalama alanları sabit tutuldu.
+- MaxEnt 3.4.4 projeksiyon modu (`projectionlayers`) ile 10 katlı çapraz doğrulamalı model 2050 katmanlarına uygulandı (`maxent/cikti/deneme_2050/Pygoscelis_adeliae_gelecek_2050_ssp245_avg.asc`).
+- Mekânsal Fark ve Değişim Analizi yapıldı (`maxent/fark_analizi.py`):
+  - **Habitat Kaybı:** Model alanının **%54.6'sı (384 hücre)** iklim krizinden ötürü şiddetli uygunluk kaybına uğruyor.
+  - **Kararlı Alanlar:** %26.5 (186 hücre).
+  - **İklim Sığınakları (Refugia):** **%18.9 (133 hücre)** körfezin güney ve korunaklı kıyı bölgelerinde türün sığınabileceği yeni alanlar oluşturuyor.
+- 3'lü karşılaştırma haritası basıldı: `harita_2050_karsilastirma.png` ve `.pdf` (Panel A: Günümüz, Panel B: 2050 Projeksiyonu, Panel C: Kayıp-Kazanç).
+- GDAL ile 2050 ve Fark katmanları EPSG:3031 1 km GeoTIFF olarak QGIS'e hazırlandı (`harita/uygunluk_2050_ssp245_3031.tif`, `harita/habitat_degisimi_2050_3031.tif`).
+
+**Sıradaki adım**
+- TÜBİTAK 2204-C formatında Proje Raporunun yazımı (Aşama 8).
+
+---
+
 ## 2026-10-31 — Danışman Geri Bildirimi ve Kartografik Harita Sonlandırma (Aşama 7 ✅)
 
 **Yapılanlar**
