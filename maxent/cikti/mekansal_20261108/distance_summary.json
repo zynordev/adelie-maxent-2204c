@@ -1,0 +1,18 @@
+{
+  "spatial4": {
+    "n_test_assignments": 67,
+    "adjacent_train_8_count": 24,
+    "same_train_cell_count": 0,
+    "nearest_train_km_min": 10.173243386437653,
+    "nearest_train_km_median": 45.39117557632475,
+    "nearest_train_km_max": 241.2502998039553
+  },
+  "baseline10": {
+    "n_test_assignments": 67,
+    "adjacent_train_8_count": 61,
+    "same_train_cell_count": 0,
+    "nearest_train_km_min": 0.8216128394901535,
+    "nearest_train_km_median": 12.642242370600732,
+    "nearest_train_km_max": 45.20412856417022
+  }
+}

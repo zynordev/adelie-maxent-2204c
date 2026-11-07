@@ -1,0 +1,44 @@
+<title>Maxent model for Pygoscelis_adeliae</title>
+<CENTER><H1>Maxent model for Pygoscelis_adeliae</H1></CENTER>
+<br> This page contains some analysis of the Maxent model for Pygoscelis_adeliae, created Sun Nov 08 00:27:31 TRT 2026 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+Some common thresholds and corresponding omission rates are as follows.  If test data are available, binomial probabilities are calculated exactly if the number of test samples is at most 25, otherwise using a normal approximation to the binomial.  These are 1-sided p-values for the null hypothesis that test points are predicted no better than by a random prediction with the same fractional predicted area.  The "Balance" threshold minimizes 6 * training omission rate + .04 * cumulative threshold + 1.6 * fractional predicted area.<br>
+<br><table border cols=4 cellpadding=3><tr><th>Cumulative threshold</th><th>Cloglog threshold</th><th>Description</th><th>Fractional predicted area</th><th>Training omission rate</th><tr align=center><td>1.000</td><td>0.058</td><td>Fixed cumulative value 1</td><td>0.632</td><td>0.000</td><tr align=center><td>5.000</td><td>0.205</td><td>Fixed cumulative value 5</td><td>0.482</td><td>0.000</td><tr align=center><td>10.000</td><td>0.309</td><td>Fixed cumulative value 10</td><td>0.408</td><td>0.000</td><tr align=center><td>14.736</td><td>0.363</td><td>Minimum training presence</td><td>0.358</td><td>0.000</td><tr align=center><td>31.351</td><td>0.461</td><td>10 percentile training presence</td><td>0.213</td><td>0.100</td><tr align=center><td>35.840</td><td>0.506</td><td>Equal training sensitivity and specificity</td><td>0.182</td><td>0.180</td><tr align=center><td>31.351</td><td>0.461</td><td>Maximum training sensitivity plus specificity</td><td>0.213</td><td>0.100</td><tr align=center><td>3.523</td><td>0.162</td><td>Balance training omission, predicted area and threshold value</td><td>0.515</td><td>0.000</td><tr align=center><td>7.477</td><td>0.269</td><td>Equate entropy of thresholded and original distributions</td><td>0.442</td><td>0.000</td></table><br>
+<br><HR><H2>Pictures of the model</H2>
+This is a representation of the Maxent model for Pygoscelis_adeliae.  Warmer colors show areas with better predicted conditions.  White dots show the presence locations used for training, while violet dots show test locations.  Click on the image for a full-size version.<br>
+<br><a href = "plots/Pygoscelis_adeliae.png"> <img src="plots/Pygoscelis_adeliae.png" width=600></a><br>
+<br>Click <a href=Pygoscelis_adeliae_explain.bat type=application/bat>here<a> to interactively explore this prediction using the Explain tool.  If clicking from your browser does not succeed in starting the tool, try running the script in /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/LQ_RM1/fold_3/Pygoscelis_adeliae_explain.bat directly.  This tool requires the environmental grids to be small enough that they all fit in memory.<br><br>
+<br><HR><H2>Analysis of variable contributions</H2><br>
+The following table gives estimates of relative contributions of the environmental variables to the Maxent model.  To determine the first estimate, in each iteration of the training algorithm, the increase in regularized gain is added to the contribution of the corresponding variable, or subtracted from it if the change to the absolute value of lambda is negative.  For the second estimate, for each environmental variable in turn, the values of that variable on training presence and background data are randomly permuted.  The model is reevaluated on the permuted data, and the resulting drop in training AUC is shown in the table, normalized to percentages.  As with the variable jackknife, variable contributions should be interpreted with caution when the predictor variables are correlated.<br>
+<br><table border cols=3><tr><th>Variable</th><th>Percent contribution</th><th>Permutation importance</th><tr align=right><td>buz_yillik</td><td>74.7</td><td>81.9</td></tr><tr align=right><td>bio18</td><td>10.5</td><td>0</td></tr><tr align=right><td>kaya</td><td>9.6</td><td>6.7</td></tr><tr align=right><td>sst_yillik</td><td>5.2</td><td>11.4</td></tr></table><br><br>
+<br><HR><H2>Raw data outputs and control parameters</H2><br>
+The data used in the above analysis is contained in the next links.  Please see the Help button for more information on these.<br>
+<a href = "Pygoscelis_adeliae.asc">The model applied to the training environmental layers</a><br>
+<a href = "Pygoscelis_adeliae.lambdas">The coefficients of the model</a><br>
+<a href = "Pygoscelis_adeliae_omission.csv">The omission and predicted area for varying cumulative and raw thresholds</a><br>
+<a href = "Pygoscelis_adeliae_samplePredictions.csv">The prediction strength at the training and (optionally) test presence sites</a><br>
+<a href = "maxentResults.csv">Results for all species modeled in the same Maxent run, with summary statistics and (optionally) jackknife results</a><br>
+<br><br>
+Regularized training gain is 0.814, training AUC is 0.880, unregularized training gain is 0.979.<br>
+Algorithm converged after 440 iterations (0 seconds).<br>
+<br>
+The follow settings were used during the run:<br>
+50 presence records used for training.<br>
+703 points used to determine the Maxent distribution (background points).<br>
+Environmental layers used (all continuous): bio18 buz_yillik kaya sst_yillik<br>
+Regularization values: linear/quadratic/product: 0.193, categorical: 0.250, threshold: 1.500, hinge: 0.500<br>
+Feature types used: linear quadratic<br>
+outputdirectory: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/LQ_RM1/fold_3<br>
+samplesfile: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/fold_3/train.csv<br>
+environmentallayers: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/layers<br>
+warnings: false<br>
+removeduplicates: false<br>
+product: false<br>
+hinge: false<br>
+addsamplestobackground: false<br>
+autorun: true<br>
+visible: false<br>
+autofeature: false<br>
+plots: false<br>
+Command line used:  -z autorun nowarnings samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/fold_3/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/layers outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/LQ_RM1/fold_3 autofeature=false linear=true quadratic=true product=false threshold=false hinge=false betamultiplier=1 randomseed=false threads=1 maximumbackground=10000 addsamplestobackground=false removeduplicates=false outputformat=cloglog outputfiletype=asc plots=false responsecurves=false jackknife=false writeplotdata=false warnings=false visible=false<br>
+<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Pygoscelis_adeliae outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/LQ_RM1/fold_3 samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/fold_3/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/repro_check/layers nowarnings noremoveduplicates noproduct nohinge noaddsamplestobackground autorun novisible noautofeature noplots<br>

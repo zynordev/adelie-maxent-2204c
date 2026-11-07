@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-11-08 — 2050 haritası ve genel proje denetimi; uygulama planı
+
+### Aynı gün sonraki oturum — Kullanıcının “Tamam başla” talebiyle uygulama
+
+- Başlangıç hash envanteri oluşturuldu; özgün veri/model/harita dosyaları değişmeden korundu.
+- Varsayımsal senaryo etiketleri, ızgara kontrolleri, WGS84 alan hesabı, eşlenik fark/belirsizlik ve QGIS düzeni düzeltildi.
+- 67 temsilci tam mevcut metadata'yla aynı koordinatlarda yeniden çıkarıldı: 36'sında belirsizlik boş, 62'si DJF.
+- Gerçek Java MaxEnt coğrafi4 ve aynı ayarlı random4 karşılaştırmaları tamamlandı. AUTO/RM1 AUC 0,47742 / 0,76543: coğrafi aktarım zayıf; nihai model seçilmedi.
+- Gerçek IPSL-CM6A-LR r1i1p1f1 SSP245 aylık bölgesel verileri indirildi. 2000-2025 tabanına 2041-2060 aylık delta/yağış oranı uygulandı; BIO18 tekrar hesaplandı, 29 hücrede sıcak çeyrek değişti.
+- Kayıtlı on kat modeli yeni girdilere eğitim yapmadan aktarıldı; kontrol projeksiyonlarında eski fold0 çıktılarıyla fark sıfır. 357/703 aralık uyarısı, 246/703 değişim yönü uyuşmazlığı.
+- `harita/cmip6_ipsl_2050_v1/` PNG/PDF/QGIS paketi hazır ve görsel kontrol edildi. Kaynak çözünürlük 0,25°; sürekli gösterim yumuşatması yalnız görsel.
+- 17 birim testi + 19 biyoklimatik değişken testi geçti. Rapor iskeleti ve kanıt tablosu, resmî 2026 rehber kontrol notu hazırlandı.
+- Güncel ayrıntı: `UYGULAMA_DURUMU_2026-11-08.md`; kalan bilimsel iş araştırma hedefi, kayıt/alan tasarımı ve nihai model doğrulaması. Commit/push yapılmadı.
+
+**Yapılanlar**
+- Kullanıcının isteğiyle salt okunur veri/kod/çıktı incelemesi yapıldı; iki kapsamlı çözüm planı `ANALIZ_VE_COZUM_PLANI_2026-11-08.md` içine kaydedildi.
+- Sabit delta gelecek senaryosu, 37×19 kaynak ızgara, bozuk QGIS yerleşimi, uygunluk farkının habitat kaybı diye yorumlanması ve ekstrapolasyon sorunları doğrulandı.
+- 19 biyoklimatik değişkenin sentetik testi geçti; dört MaxEnt girdisinin kaynak kopyaları ve iki koşudaki günümüz ortalama rasterı eşleşti.
+- Model hedefi, örnekleme/arka plan, mekânsal doğrulama, belirsizlik, ortam ve rapor eksikleri için bağımlılıkları ve kabul ölçütleri olan plan hazırlandı.
+
+**Önceki kayıtlara düzeltme**
+- 2026-10-31'deki “CMIP6 SSP2-4.5 tamamlandı” kaydı nihai bilimsel doğrulama anlamına gelmiyor: mevcut gelecek girdileri +0,8°C SST, ×0,80 buz ve ×1,15 BIO18 dönüşümleridir; izlenebilir CMIP6 verisi bu betikte yok.
+- %54,6 / %26,5 / %18,9, ±0,05 uygunluk farkına göre hücre oranlarıdır; habitat alanı kaybı, koloni kaybı veya doğrulanmış iklim sığınağı yüzdeleri değildir.
+- 2050 A4 PNG'leri yerleşim sorunları nedeniyle baskıya hazır kabul edilmemeli.
+
+**Sıradaki adım**
+- Kullanıcı sonraki oturumda planın uygulanmasını isteyecek. Bu oturumda model/harita düzeltmesi, indirme, eğitim, commit veya push yapılmadı.
+
+---
+
 ## 2026-10-31 — IPCC CMIP6 2050 Gelecek Projeksiyonu ve Habitat Kayıp Haritası (Aşama 7.1 ✅)
 
 **Yapılanlar**

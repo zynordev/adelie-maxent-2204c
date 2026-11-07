@@ -1,0 +1,212 @@
+{
+  "checked_at_utc": "2026-11-07T21:35:34.821582+00:00",
+  "file_sha256_checks_passed": 16,
+  "series_climatology_checks": [
+    {
+      "variable": "tas",
+      "period": "baseline_2000_2025",
+      "monthly_series_length": 312,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "tas",
+      "period": "future_2041_2060",
+      "monthly_series_length": 240,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "pr",
+      "period": "baseline_2000_2025",
+      "monthly_series_length": 312,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "pr",
+      "period": "future_2041_2060",
+      "monthly_series_length": 240,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "tos",
+      "period": "baseline_2000_2025",
+      "monthly_series_length": 312,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "tos",
+      "period": "future_2041_2060",
+      "monthly_series_length": 240,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "siconc",
+      "period": "baseline_2000_2025",
+      "monthly_series_length": 312,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    },
+    {
+      "variable": "siconc",
+      "period": "future_2041_2060",
+      "monthly_series_length": 240,
+      "climatology_matches_series": true,
+      "npz_matches_netcdf": true,
+      "full_year_count_on_valid_cells": true
+    }
+  ],
+  "independent_small_ASCII_source_checks": [
+    {
+      "variable": "tas",
+      "year": 2000,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/tas/gr/v20180803/tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc.ascii?tas[1800:1:1800][18:1:18][117:1:117]",
+      "response_sha256": "5dd6bc50978064976a4ad32d550bd0b849b068f16c0f7b258ea35a91c2b68a0d",
+      "original_value": 272.72293,
+      "normalized_local_value": -0.42706909179685226,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "tas",
+      "year": 2015,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/tas/gr/v20190119/tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc.ascii?tas[0:1:0][18:1:18][117:1:117]",
+      "response_sha256": "6f5e253824ca85c484f27510b59de399041976412162ca7d5085b1ed4d8f755e",
+      "original_value": 272.99765,
+      "normalized_local_value": -0.15234985351560226,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "tas",
+      "year": 2041,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/tas/gr/v20190119/tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc.ascii?tas[312:1:312][18:1:18][117:1:117]",
+      "response_sha256": "c97779e36ab47caf3ad6fd55072ec994d0935162972ccdcefd621ee328c39ac9",
+      "original_value": 274.08154,
+      "normalized_local_value": 0.9315429687500227,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "pr",
+      "year": 2000,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/pr/gr/v20180803/pr_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc.ascii?pr[1800:1:1800][18:1:18][117:1:117]",
+      "response_sha256": "c8edda9bea8bac731bd13ed7bc16a4defcf15f619d8e21221a4b9049164a80a4",
+      "original_value": 9.70619e-06,
+      "normalized_local_value": 25.997059865039773,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "pr",
+      "year": 2015,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/pr/gr/v20190119/pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc.ascii?pr[0:1:0][18:1:18][117:1:117]",
+      "response_sha256": "d37603a2def850eb9b221a7c2062e94416bab28db99329a1fa8e40da6e75466e",
+      "original_value": 1.4799719e-05,
+      "normalized_local_value": 39.63956705702003,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "pr",
+      "year": 2041,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/pr/gr/v20190119/pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc.ascii?pr[312:1:312][18:1:18][117:1:117]",
+      "response_sha256": "fb86fd4d155f183d82a993a41843f34caeef9ab69c915c5d56be3fe9c4bf675c",
+      "original_value": 1.739778e-05,
+      "normalized_local_value": 46.59821539535187,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "tos",
+      "year": 2000,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Omon/tos/gn/v20180803/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc.ascii?tos[1800:1:1800][78:1:78][219:1:219]",
+      "response_sha256": "c9157a305fabd951a59781667abcbc1c7d1a3048932c30ea483f45e3f55f376b",
+      "original_value": 4.0364146,
+      "normalized_local_value": 4.036414623260498,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "tos",
+      "year": 2015,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190119/tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc.ascii?tos[0:1:0][78:1:78][219:1:219]",
+      "response_sha256": "7ad7a4a5350931b1194c7a20488bd7fa685624c2749814b03bd683ece12be9af",
+      "original_value": 4.1603513,
+      "normalized_local_value": 4.160351276397705,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "tos",
+      "year": 2041,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190119/tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc.ascii?tos[312:1:312][78:1:78][219:1:219]",
+      "response_sha256": "f1e74340d5095496aee525064d6f69e59e5e82b514107052436f95768cafefcb",
+      "original_value": 4.8346577,
+      "normalized_local_value": 4.834657669067383,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "siconc",
+      "year": 2000,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/SImon/siconc/gn/v20180803/siconc_SImon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc.ascii?siconc[1800:1:1800][78:1:78][219:1:219]",
+      "response_sha256": "fd04e27e7cbc9fd68fa5bf096a5c339caec86863560d785151a785ff7dbbfcea",
+      "original_value": 1.4233997e-05,
+      "normalized_local_value": 1.4233996807888616e-05,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "siconc",
+      "year": 2015,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190119/siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc.ascii?siconc[0:1:0][78:1:78][219:1:219]",
+      "response_sha256": "b00e9d1115ea2cf16e3ab8ee0e661697546ec1db2c57beb66f6af068ade955f7",
+      "original_value": 0.0,
+      "normalized_local_value": 0.0,
+      "matches_with_ascii_precision": true
+    },
+    {
+      "variable": "siconc",
+      "year": 2041,
+      "url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190119/siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc.ascii?siconc[312:1:312][78:1:78][219:1:219]",
+      "response_sha256": "b00e9d1115ea2cf16e3ab8ee0e661697546ec1db2c57beb66f6af068ade955f7",
+      "original_value": 0.0,
+      "normalized_local_value": 0.0,
+      "matches_with_ascii_precision": true
+    }
+  ],
+  "production_scope": "regional normalized monthly series and climatologies only; no remapping or MaxEnt ASC",
+  "final_script_sha256": "06c54ed8db015bbd5ab9f98bcd279b4082695aba4ef0d3314f780cfec14e6f52",
+  "final_script_note": "After successful extraction, help text was clarified and receipt paths made relative to the chosen output directory; scientific extraction logic and existing climate outputs unchanged.",
+  "isolated_environment_packages": {
+    "MarkupSafe": "3.0.4",
+    "legacy-cgi": "2.6.4",
+    "typing_extensions": "4.16.0",
+    "soupsieve": "4.0.1",
+    "platformdirs": "4.14.5",
+    "certifi": "2026.10.23",
+    "idna": "3.20",
+    "WebOb": "1.8.11",
+    "beautifulsoup4": "4.15.0",
+    "charset-normalizer": "3.5.2",
+    "requests": "2.34.2",
+    "Jinja2": "3.1.6",
+    "url-normalize": "3.1.0",
+    "urllib3": "2.8.0",
+    "requests-cache": "1.3.3",
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "pydap": "3.5.11",
+    "lxml": "6.1.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "packaging": "26.3",
+    "cftime": "1.6.6.1",
+    "python-dateutil": "4.0.0",
+    "xarray": "2026.9.0",
+    "tzdata": "2026.6",
+    "pandas": "3.1.1"
+  }
+}

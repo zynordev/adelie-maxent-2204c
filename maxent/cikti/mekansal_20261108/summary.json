@@ -1,0 +1,27 @@
+{
+  "candidates": [
+    {
+      "candidate": "L_RM1",
+      "auc_macro_mean": 0.579624613003096,
+      "auc_fold_sd_population": 0.1975288547988604,
+      "omission_macro_mean": 0.2821691176470588,
+      "omission_pooled": 0.2835820895522388
+    },
+    {
+      "candidate": "LQ_RM1",
+      "auc_macro_mean": 0.5298484436448833,
+      "auc_fold_sd_population": 0.20031135767921804,
+      "omission_macro_mean": 0.35661764705882354,
+      "omission_pooled": 0.3582089552238806
+    },
+    {
+      "candidate": "LQ_RM2",
+      "auc_macro_mean": 0.557101654673249,
+      "auc_fold_sd_population": 0.21014360680882574,
+      "omission_macro_mean": 0.34375,
+      "omission_pooled": 0.34328358208955223
+    }
+  ],
+  "blocker": null,
+  "complete": true
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scenario_id": "varsayimsal_delta_20261031",
+  "kind": "hypothetical_sensitivity",
+  "label_tr": "Varsayımsal çevresel değişim denemesi",
+  "climate_model": null,
+  "ssp": null,
+  "target_period": null,
+  "baseline_period": "2000-2025",
+  "source_grid_crs": "EPSG:4326",
+  "legacy_input_directory": "maxent/girdi/gelecek_2050_ssp245",
+  "legacy_run_directory": "maxent/cikti/deneme_2050",
+  "transformations": {
+    "sst_yillik": {"operation": "add", "value": 0.8, "unit": "degC"},
+    "buz_yillik": {"operation": "multiply", "value": 0.8, "unit": "%", "clip": [0, 100]},
+    "bio18": {"operation": "multiply", "value": 1.15, "unit": "mm"},
+    "kaya": {"operation": "identity", "unit": "%"}
+  },
+  "warning_tr": "Eski dosya adlarındaki 2050/SSP245 etiketi veri kökeni değildir. Gerçek CMIP6/SSP projeksiyonu değildir."
+}

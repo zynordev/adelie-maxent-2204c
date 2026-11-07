@@ -1,0 +1,44 @@
+population,group,value,n,uncertainty_missing,uncertainty_known
+clean,datasetKey,4fa7b334-ce0d-4e88-aaae-2e0c138d049e,282,282,0
+clean,datasetKey,50c9509d-22c7-4a22-a47d-8c48425ef4a7,297,65,232
+clean,datasetKey,6ddba1a7-e34d-41ae-a14b-017e3c565c87,1,0,1
+clean,datasetKey,6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b,8,8,0
+clean,datasetKey,8a863029-f435-446a-821e-275f4f641165,12,0,12
+clean,datasetKey,8ff9e5d1-cc0e-4f3a-90c2-274039353f84,69,68,1
+clean,datasetKey,f7c30fac-cf80-471f-8343-4ec5d8594661,35,0,35
+clean,basisOfRecord,HUMAN_OBSERVATION,634,355,279
+clean,basisOfRecord,MACHINE_OBSERVATION,1,0,1
+clean,basisOfRecord,MATERIAL_CITATION,69,68,1
+clean,season,DJF,651,379,272
+clean,season,MAM,41,34,7
+clean,season,SON,11,9,2
+clean,season,unknown,1,1,0
+clean,datasetKey+basisOfRecord,4fa7b334-ce0d-4e88-aaae-2e0c138d049e | HUMAN_OBSERVATION,282,282,0
+clean,datasetKey+basisOfRecord,50c9509d-22c7-4a22-a47d-8c48425ef4a7 | HUMAN_OBSERVATION,297,65,232
+clean,datasetKey+basisOfRecord,6ddba1a7-e34d-41ae-a14b-017e3c565c87 | HUMAN_OBSERVATION,1,0,1
+clean,datasetKey+basisOfRecord,6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b | HUMAN_OBSERVATION,8,8,0
+clean,datasetKey+basisOfRecord,8a863029-f435-446a-821e-275f4f641165 | HUMAN_OBSERVATION,12,0,12
+clean,datasetKey+basisOfRecord,8ff9e5d1-cc0e-4f3a-90c2-274039353f84 | MATERIAL_CITATION,69,68,1
+clean,datasetKey+basisOfRecord,f7c30fac-cf80-471f-8343-4ec5d8594661 | HUMAN_OBSERVATION,34,0,34
+clean,datasetKey+basisOfRecord,f7c30fac-cf80-471f-8343-4ec5d8594661 | MACHINE_OBSERVATION,1,0,1
+representatives,datasetKey,4fa7b334-ce0d-4e88-aaae-2e0c138d049e,29,29,0
+representatives,datasetKey,50c9509d-22c7-4a22-a47d-8c48425ef4a7,25,2,23
+representatives,datasetKey,6ddba1a7-e34d-41ae-a14b-017e3c565c87,1,0,1
+representatives,datasetKey,6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b,1,1,0
+representatives,datasetKey,8a863029-f435-446a-821e-275f4f641165,1,0,1
+representatives,datasetKey,8ff9e5d1-cc0e-4f3a-90c2-274039353f84,5,4,1
+representatives,datasetKey,f7c30fac-cf80-471f-8343-4ec5d8594661,5,0,5
+representatives,basisOfRecord,HUMAN_OBSERVATION,61,32,29
+representatives,basisOfRecord,MACHINE_OBSERVATION,1,0,1
+representatives,basisOfRecord,MATERIAL_CITATION,5,4,1
+representatives,season,DJF,62,34,28
+representatives,season,MAM,2,0,2
+representatives,season,SON,3,2,1
+representatives,datasetKey+basisOfRecord,4fa7b334-ce0d-4e88-aaae-2e0c138d049e | HUMAN_OBSERVATION,29,29,0
+representatives,datasetKey+basisOfRecord,50c9509d-22c7-4a22-a47d-8c48425ef4a7 | HUMAN_OBSERVATION,25,2,23
+representatives,datasetKey+basisOfRecord,6ddba1a7-e34d-41ae-a14b-017e3c565c87 | HUMAN_OBSERVATION,1,0,1
+representatives,datasetKey+basisOfRecord,6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b | HUMAN_OBSERVATION,1,1,0
+representatives,datasetKey+basisOfRecord,8a863029-f435-446a-821e-275f4f641165 | HUMAN_OBSERVATION,1,0,1
+representatives,datasetKey+basisOfRecord,8ff9e5d1-cc0e-4f3a-90c2-274039353f84 | MATERIAL_CITATION,5,4,1
+representatives,datasetKey+basisOfRecord,f7c30fac-cf80-471f-8343-4ec5d8594661 | HUMAN_OBSERVATION,4,0,4
+representatives,datasetKey+basisOfRecord,f7c30fac-cf80-471f-8343-4ec5d8594661 | MACHINE_OBSERVATION,1,0,1

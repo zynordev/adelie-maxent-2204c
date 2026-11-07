@@ -1,0 +1,46 @@
+Sun Nov 08 00:26:50 TRT 2026
+MaxEnt version 3.4.4
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers/bio18.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers/buz_yillik.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers/kaya.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers/sst_yillik.asc
+Reading samples from train.csv
+Read samples: max memory 536870912, total allocated 258998272, free 247548584, used 11449688, increment 11449688
+Extractor: max memory 536870912, total allocated 258998272, free 246957344, used 12040928, increment 591240
+Extracting random background and sample data
+703 points with values for all grids
+Making features
+makeFeatures: max memory 536870912, total allocated 258998272, free 246474976, used 12523296, increment 482368
+Command line used:  -z autorun nowarnings samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/fold_2/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/LQ_RM1/fold_2 autofeature=false linear=true quadratic=true product=false threshold=false hinge=false betamultiplier=1 randomseed=false threads=1 maximumbackground=10000 addsamplestobackground=false removeduplicates=false outputformat=cloglog outputfiletype=asc plots=false responsecurves=false jackknife=false writeplotdata=false warnings=false visible=false
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/LQ_RM1/fold_2 samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/fold_2/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers nowarnings noremoveduplicates noproduct nohinge noaddsamplestobackground autorun novisible noautofeature noplots
+Species: Pygoscelis_adeliae
+Layers: bio18 buz_yillik kaya sst_yillik
+Layertypes: Continuous Continuous Continuous Continuous
+outputdirectory: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/LQ_RM1/fold_2
+samplesfile: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/fold_2/train.csv
+environmentallayers: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/layers
+warnings: false
+removeduplicates: false
+product: false
+hinge: false
+addsamplestobackground: false
+autorun: true
+visible: false
+autofeature: false
+plots: false
+
+getSamples: max memory 536870912, total allocated 258998272, free 246474976, used 12523296, increment 0
+Pygoscelis_adeliae: 
+Regularization values: linear/quadratic/product: 0.190, categorical: 0.250, threshold: 1.490, hinge: 0.500
+51 samples
+Density: max memory 536870912, total allocated 258998272, free 245936288, used 13061984, increment 538688
+linearPredictor: max memory 536870912, total allocated 258998272, free 245936288, used 13061984, increment 0
+FeaturedSpace: max memory 536870912, total allocated 258998272, free 245936288, used 13061984, increment 0
+Sequential: max memory 536870912, total allocated 258998272, free 245936288, used 13061984, increment 0
+Initial loss: 6.555356891810665
+160: time = 0.020000 loss = 6.138228
+Resulting gain: 0.4171293452955167
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/LQ_RM1/fold_2/Pygoscelis_adeliae.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/LQ_RM1/fold_2/plots/Pygoscelis_adeliae.png
+Ending

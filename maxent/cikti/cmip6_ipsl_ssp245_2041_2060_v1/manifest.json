@@ -1,0 +1,379 @@
+{
+  "commands": [
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_0.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/katmanlar",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/control_current_fold0.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_0.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/gelecek_2050_ssp245",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/control_legacy_sensitivity_fold0.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_0.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_0.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_1.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_1.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_2.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_2.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_3.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_3.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_4.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_4.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_5.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_5.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_6.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_6.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_7.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_7.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_8.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_8.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ],
+    [
+      "/usr/lib/jvm/java-21-openjdk/bin/java",
+      "-Djava.awt.headless=true",
+      "-cp",
+      "/home/halil/adelie-maxent-2204c/maxent/maxent.jar",
+      "density.Project",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme_2050/Pygoscelis_adeliae_9.lambdas",
+      "/home/halil/adelie-maxent-2204c/maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1",
+      "/home/halil/adelie-maxent-2204c/maxent/cikti/cmip6_ipsl_ssp245_2041_2060_v1/fold_9.asc",
+      "outputformat=cloglog",
+      "doclamp=true",
+      "writeclampgrid=true",
+      "extrapolate=true"
+    ]
+  ],
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+  "input_files": [
+    {
+      "path": "maxent/maxent.jar",
+      "sha256": "4c856e55412f70c5597b03cf9aaaf27e0782e0921f937262273b68bdcb8fee5e"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/manifest.json",
+      "sha256": "bef68c84021cd1a0ee25086571bb367c4a4bc7547bfc2cbbc74bec221b344955"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/scenario.json",
+      "sha256": "7548d1ab3f426f76dc7ed096832b947360144f095c29f17893677f62bcafa3e3"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_avg.asc",
+      "sha256": "c7f330726d52909bb14f498b5385fd8df885648fa790d1ed2381aeb3bdfaf7bb"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_0_gelecek_2050_ssp245.asc",
+      "sha256": "28252549c560de5293ab65e810872c35b2d059439c923c92cd476941d1a0b15a"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/bio18.asc",
+      "sha256": "41f32b574629153ef005ae364583b3dd2288d653867ac0e5e05931d3fc88c9df"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/buz_yillik.asc",
+      "sha256": "38ed064da2e0dabfae26feb88f4d6c47b0fd58db9e549a12a3435066ddf1c60c"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/kaya.asc",
+      "sha256": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e"
+    },
+    {
+      "path": "maxent/girdi/cmip6_ipsl_ssp245_2041_2060_v1/sst_yillik.asc",
+      "sha256": "77b42379ba1513b6199b229b362e9c1ea717df2f655327b2b2b60dce9703cb22"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/bio18.asc",
+      "sha256": "39bdc6fb0a34a5b28bd98a04f2c437797fb7c94aa2a3a75fac7d349ad228ae46"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/buz_yillik.asc",
+      "sha256": "bd65ee468db71f99505d73376e4b2d51c7a08dc5c50fb669078f0903891ef3e9"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/kaya.asc",
+      "sha256": "ba37ec7822b827e6575dfd299697651702db4b31c9f1fa77c7778bce0d69a7c7"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/sst_yillik.asc",
+      "sha256": "9500569412d4e6b802c6a2eac6c28d66c1df1ffec78406671a748cb8f461861d"
+    },
+    {
+      "path": "maxent/girdi/gelecek_2050_ssp245/bio18.asc",
+      "sha256": "90acd7eb52a73ca5a4e419fa326217d9d8cb68d79353cb512c74a2fdf8d8ab7a"
+    },
+    {
+      "path": "maxent/girdi/gelecek_2050_ssp245/buz_yillik.asc",
+      "sha256": "2bec9015b286929d075b875e14c109f7f025e8d6c71a9e083b99739d152629fb"
+    },
+    {
+      "path": "maxent/girdi/gelecek_2050_ssp245/kaya.asc",
+      "sha256": "ba37ec7822b827e6575dfd299697651702db4b31c9f1fa77c7778bce0d69a7c7"
+    },
+    {
+      "path": "maxent/girdi/gelecek_2050_ssp245/sst_yillik.asc",
+      "sha256": "7678de83c5814e82dcb960541721571ec7eec8538c41655c0610a769572b90cf"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_0.lambdas",
+      "sha256": "4ad3b0387a7763518859c969b3048da9b7c94ca0f69d84c4c95b23ab25f06a01"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_0.asc",
+      "sha256": "a10c4a861b945b3c484055a0453149c8dff5f9cc1cc6cbb3745cf83eced14fbb"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_1.lambdas",
+      "sha256": "101f2dcc6c09c78a5f5746a095d001f55b1d370928df64e75ff8a0cb9b04f840"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_1.asc",
+      "sha256": "e489ed9e9e0b179978e1a9177ed6e77fb7b90f6636431ad0ac04e91e053d839b"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_2.lambdas",
+      "sha256": "66efe54071bd0ad960dae1311211b98a353ce37ba65da8114140595ac0df2c2d"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_2.asc",
+      "sha256": "858b1fca6e3efa121dfef511ff38cbde103f7a2ac06a56675f3ff1dc3dd42de2"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_3.lambdas",
+      "sha256": "e3c61f444816d8534c043caddb4f95e5e14f1044c214cdb28cbe8dbd2140af27"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_3.asc",
+      "sha256": "03923117ec7090c09d99adf0911e258e450bc57886e92ca19f39aebc54d7eb39"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_4.lambdas",
+      "sha256": "b5495c25bc9d93818a90b52bcb9c8314412f4796ff362e1f0078ce9da4cea319"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_4.asc",
+      "sha256": "618de182e8925d199a63a778c16c3bfead9c76d7b192990dd2e4ff2231b000d2"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_5.lambdas",
+      "sha256": "c87610e68e1395968c40c7ec4f681e122a867193da966b18812e1360d35066f7"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_5.asc",
+      "sha256": "1f820563e4127c99e23587999e9dc63903ff73ee9d4b8b4dd6a0ed1dc10d94e0"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_6.lambdas",
+      "sha256": "86a3dd061f3107f1ba0821a98bfe8400ca77f1950a76026bd42a678364fd72c8"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_6.asc",
+      "sha256": "ce0e8e74521e8cf18015cfa427fcfe8a589cd46461065540d80d24e5ccf0cfeb"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_7.lambdas",
+      "sha256": "70016c4af49e4843407e8468457e0000ea21dad745bf2f7f88458e4523c57f66"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_7.asc",
+      "sha256": "8b940426869f0e9687220055247bfb8f6317ea128f0485f50c973396ed55ba91"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_8.lambdas",
+      "sha256": "9a2ee335c8d8c037eb57fbdf5e1edbfbdcc177ba0308220bb184d7ea77405f0c"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_8.asc",
+      "sha256": "68c8e082aacebaae99e3511447b27236bbd770154245ca96adadc676a7133aa0"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_9.lambdas",
+      "sha256": "c2c7674db59328e26cc1d775c9512365e02b046b971bcf4b23f41de65ce3806a"
+    },
+    {
+      "path": "maxent/cikti/deneme_2050/Pygoscelis_adeliae_9.asc",
+      "sha256": "73a18224b6d437ecbe9adec11fd0f50a9e232ba932b646511ef189047b13a827"
+    }
+  ],
+  "source_scripts": {
+    "maxent/cmip6_projeksiyon.py": "d42fc677d11bfa97082dada225dd2c462ad8175c984db251322d017f425edc90",
+    "maxent/izgara.py": "760cf19185830534f14664c7deb79390fa196ccb43d0cc20a441c97626d35214",
+    "maxent/fark_analizi.py": "5b8673bc2a712d1a7697fdc230ec7d8e8d74547db9906b09998740315f158cf8"
+  },
+  "output_files": {
+    "clamping_max.asc": "6f567b5a883e734a5ba3327619f6632a9dfcec86dde58eb5f4ebcd4e10cc881a",
+    "control_current_fold0.asc": "a10c4a861b945b3c484055a0453149c8dff5f9cc1cc6cbb3745cf83eced14fbb",
+    "control_current_fold0.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "control_current_fold0_clamping.asc": "e8ff631b90674066b5f59f0afb720e377727a615c3bfeadde77715a6b1ecf574",
+    "control_legacy_sensitivity_fold0.asc": "28252549c560de5293ab65e810872c35b2d059439c923c92cd476941d1a0b15a",
+    "control_legacy_sensitivity_fold0.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "control_legacy_sensitivity_fold0_clamping.asc": "ecc05c4c74d0889f65bd501dbd3c2d34e16a43f0729c31b27cdacc91393cd616",
+    "duyarlilik.asc": "e9a8b476c99494eda08a51e4bf031d59883effd2909131fb82405c9d1c50b9ce",
+    "ekstrapolasyon.asc": "13f5b53ebe71c6cd29ba5808ceeb3b03f638ed127b847dd990e40fd2c4b3e2e6",
+    "fark_q10.asc": "6ea09c710e4f42ed854bbab94c937a55786c37158931e41512dd03ae633bcb29",
+    "fark_q90.asc": "aba33f08e4247f7094228c63759668634eebff9d488b67e6fbcf58d9512ab166",
+    "fark_sd.asc": "702484998e3842c84d83ca740fcb406af1a3dde358f98623c81339ce13e5c253",
+    "fold_0.asc": "e416afc00bf21a0292a2f8446486264c887073d7d892fa49408e5128176b01b0",
+    "fold_0.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_0_clamping.asc": "416f006444d93cc284544e4b58060d1fc2fb6ae91c16c7623ec3683ba2636a2f",
+    "fold_1.asc": "59c34a399245a04c5c3b893da89d6ad4675178aa1e346e275eacb9c60b388380",
+    "fold_1.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_1_clamping.asc": "e00cfaa1a9dcd0e42c83f393d7c692b7e956b5cec6d6df9aa1c543f3dd46eced",
+    "fold_2.asc": "e94339f661cf313d7b9819687ed20d57b994b561a3a154e18ffb1013e741466b",
+    "fold_2.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_2_clamping.asc": "3ea6bfff8d4847da846d2a497566c42dc38d9f44752ab922169fef8a619855e7",
+    "fold_3.asc": "365eb37328b82859e6d9a1a6336c69a9fa70624f4c796e304eff5523383ab1d7",
+    "fold_3.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_3_clamping.asc": "1af6272c34964852650a70b3ec68d73a42b93e509daf84d0da0f20433868fae4",
+    "fold_4.asc": "bbcf89104c9fb1acd6b76d002f0febbd7342c10ee5fbbdd971fbff8638b7dc27",
+    "fold_4.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_4_clamping.asc": "4a18674d896271de9ace9e88df8ddea8e664ec4c009a0285314568dc1f9a5162",
+    "fold_5.asc": "13d296ee483482cb74b53a6f3b80eb6d80fa9bdc59c6c1fd941755aa37e61542",
+    "fold_5.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_5_clamping.asc": "e0bb92b8461582fdb92c8a6a75a33d801262bc829ea632760e5c33b9097fa5dc",
+    "fold_6.asc": "23b80f9e5ae1c39e3bf7f0aafe80681565b2e94602784cbad1a61091361a349e",
+    "fold_6.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_6_clamping.asc": "6a53c617d99303db35b49f179ef92504ca177e1f54fc1774b2e175c2972059c4",
+    "fold_7.asc": "1e8c5b4f6073f11f8d0c05c085e6e69efacae12882b4f368e8478d36aa22c46f",
+    "fold_7.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_7_clamping.asc": "69ddc05026f9c388d235d1f42af394b5d055188ccfb0bb90387192f43723a9a9",
+    "fold_8.asc": "b9365404ab99353c62380a07904c8bd1f65f02625cf14ea843c5bba58db8a116",
+    "fold_8.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_8_clamping.asc": "628a63d059e508c239500703a55236ba582ea1d7e3d54c095f72b16ffc799381",
+    "fold_9.asc": "e145741145bcc1c2fe5bec5789d20b6ad287f09e72d1247fd437bf3ba7d1e702",
+    "fold_9.log": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "fold_9_clamping.asc": "b9a64e1dba3c01d55a50b56ba021185592cebff97a65f2c235b6bad6ad6874d3",
+    "gunumuz.asc": "345e768a54f24fe601c9607dbfc0afe95686f1e21a19154f7bac3ca3a7aeba4d",
+    "hucre_analizi.csv": "6cce8ac319e142ebe23ce082f0860dc539786b359c8705a920ba6b22ed64f626",
+    "isaret_belirsiz.asc": "fb993ea949dd33f3fc14a1063fe4cd9105b79dd20b48961cc125bbfb9da1d638",
+    "isaret_uyumu.asc": "ed0074a2e5334e4770f41c6c2bc6902e8b317dd80ef33e6dc055975ca7957793",
+    "ozet.json": "f8f21be133ccb10b3c20f7802fdf9402a7a99a44ab86b979e27f3f8ff78a6b42",
+    "tanisal_sinif.asc": "db51f4c17c89f903ce42ef43e1638f01d4118036346a298be04f8df9f10ad6cd",
+    "uygunluk_farki.asc": "d65dcf12c06a9f0574c4fc9767bc25822d3826ed0bc6a40559a29a058f681145"
+  }
+}

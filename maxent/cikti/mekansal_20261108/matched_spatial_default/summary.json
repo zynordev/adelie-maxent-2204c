@@ -1,0 +1,13 @@
+{
+  "candidates": [
+    {
+      "candidate": "AUTO_RM1",
+      "auc_macro_mean": 0.4774234373692578,
+      "auc_fold_sd_population": 0.16821478163405784,
+      "omission_macro_mean": 0.5625,
+      "omission_pooled": 0.5671641791044776
+    }
+  ],
+  "blocker": null,
+  "complete": true
+}

@@ -1,0 +1,155 @@
+{
+  "scenario": {
+    "schema_version": 1,
+    "scenario_id": "varsayimsal_delta_20261031",
+    "kind": "hypothetical_sensitivity",
+    "label_tr": "Varsayımsal çevresel değişim denemesi",
+    "climate_model": null,
+    "ssp": null,
+    "target_period": null,
+    "baseline_period": "2000-2025",
+    "source_grid_crs": "EPSG:4326",
+    "legacy_input_directory": "maxent/girdi/gelecek_2050_ssp245",
+    "legacy_run_directory": "maxent/cikti/deneme_2050",
+    "transformations": {
+      "sst_yillik": {
+        "operation": "add",
+        "value": 0.8,
+        "unit": "degC"
+      },
+      "buz_yillik": {
+        "operation": "multiply",
+        "value": 0.8,
+        "unit": "%",
+        "clip": [
+          0,
+          100
+        ]
+      },
+      "bio18": {
+        "operation": "multiply",
+        "value": 1.15,
+        "unit": "mm"
+      },
+      "kaya": {
+        "operation": "identity",
+        "unit": "%"
+      }
+    },
+    "warning_tr": "Eski dosya adlarındaki 2050/SSP245 etiketi veri kökeni değildir. Gerçek CMIP6/SSP projeksiyonu değildir."
+  },
+  "valid_cells": 703,
+  "domain": "entire original rectangular model domain; not ecologically masked habitat",
+  "domain_area_km2": 202681.6371774113,
+  "area_method": "WGS84 ellipsoid lat/lon rectangle surface integral",
+  "threshold_unit": "absolute cloglog score difference (not relative percent change)",
+  "by_difference_threshold": {
+    "0.025": {
+      "azalma": {
+        "cells": 415,
+        "cell_percent": 59.03271692745377,
+        "domain_area_km2": 122312.65636386996,
+        "domain_area_percent": 60.347181948608025
+      },
+      "kararli": {
+        "cells": 127,
+        "cell_percent": 18.06543385490754,
+        "domain_area_km2": 34637.5532821767,
+        "domain_area_percent": 17.089635629821636
+      },
+      "artis": {
+        "cells": 161,
+        "cell_percent": 22.90184921763869,
+        "domain_area_km2": 45731.42753136463,
+        "domain_area_percent": 22.563182421570332
+      }
+    },
+    "0.05": {
+      "azalma": {
+        "cells": 384,
+        "cell_percent": 54.62304409672831,
+        "domain_area_km2": 113506.46377845181,
+        "domain_area_percent": 56.002342076552964
+      },
+      "kararli": {
+        "cells": 186,
+        "cell_percent": 26.458036984352773,
+        "domain_area_km2": 51289.61470402767,
+        "domain_area_percent": 25.305506417995254
+      },
+      "artis": {
+        "cells": 133,
+        "cell_percent": 18.91891891891892,
+        "domain_area_km2": 37885.55869493182,
+        "domain_area_percent": 18.69215150545179
+      }
+    },
+    "0.1": {
+      "azalma": {
+        "cells": 325,
+        "cell_percent": 46.23044096728307,
+        "domain_area_km2": 96543.67057871267,
+        "domain_area_percent": 47.63316101211777
+      },
+      "kararli": {
+        "cells": 278,
+        "cell_percent": 39.5448079658606,
+        "domain_area_km2": 77594.65022363115,
+        "domain_area_percent": 38.28400604229923
+      },
+      "artis": {
+        "cells": 100,
+        "cell_percent": 14.22475106685633,
+        "domain_area_km2": 28543.31637506747,
+        "domain_area_percent": 14.082832945582993
+      }
+    },
+    "0.25": {
+      "azalma": {
+        "cells": 146,
+        "cell_percent": 20.76813655761024,
+        "domain_area_km2": 43843.27483867119,
+        "domain_area_percent": 21.631596946443793
+      },
+      "kararli": {
+        "cells": 507,
+        "cell_percent": 72.11948790896159,
+        "domain_area_km2": 143885.20198499097,
+        "domain_area_percent": 70.99074390199709
+      },
+      "artis": {
+        "cells": 50,
+        "cell_percent": 7.112375533428165,
+        "domain_area_km2": 14953.160353749157,
+        "domain_area_percent": 7.37765915155913
+      }
+    }
+  },
+  "novel_any_fold_cells": 386,
+  "sign_disagreement_cells": 260,
+  "clamping_nonzero_any_fold_cells": 386,
+  "max_clamping_effect": 0.592886,
+  "not_extrapolated": {
+    "azalma": {
+      "cells": 54,
+      "cell_percent": 17.034700315457414,
+      "domain_area_km2": 15181.086573456829,
+      "domain_area_percent": 17.334328746468167
+    },
+    "kararli": {
+      "cells": 153,
+      "cell_percent": 48.26498422712934,
+      "domain_area_km2": 41758.60569905341,
+      "domain_area_percent": 47.68152764816913
+    },
+    "artis": {
+      "cells": 110,
+      "cell_percent": 34.70031545741325,
+      "domain_area_km2": 30638.470086675108,
+      "domain_area_percent": 34.98414360536271
+    }
+  },
+  "replicate_uncertainty": "paired overlapping cross-validation folds; not GCM ensemble or confidence interval",
+  "habitat_area_loss": null,
+  "habitat_area_loss_note": "No ecologically justified domain or independently justified suitability threshold; not calculated."
+}

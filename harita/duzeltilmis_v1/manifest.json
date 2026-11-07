@@ -1,0 +1,29 @@
+{
+  "original_project_sha256": "af06ca30da04cb08108db159f89abd4a0bc82e1b1eae8077f9a430dde4b0c5c4",
+  "source_resolution_degrees": 0.25,
+  "display_interpolation": "bilinear for continuous suitability only",
+  "statistics": "maxent/cikti/duyarlilik_analizi_v1/ozet.json",
+  "analytical_manifest_sha256": "df5864f7d670a49e563e3f78fbc47e67adf4a880afa616ec66e1031bb2625445",
+  "vector_source_sha256": "02b913490fb1f4e21ec964833cac96e49a4f2e43013ebe932a46e7fc395517ac",
+  "qgis_version": "4.2.3-Bel\u00e9m do Par\u00e1",
+  "script_sha256": "64195e09c79c1e26884b7b4d7855cc8b3d6a39d618463ce19d978ca703efe3a5",
+  "output_files": {
+    "README.md": "dae75a0c17d946f0ffd52ada0b2452a0949ac23b4ba148b4b7150fabe014fb09",
+    "belirsizlik.qgz": "9419b70255601f67fc2fee449b1a27f9c2fa10363aea29cf2a60bea1f21d7cdf",
+    "belirsizlik_A4.pdf": "cefeb89f48e3b3ed051a4c63b7d3cb96a748a30337fd61270d42026e4c3b8ae1",
+    "belirsizlik_A4.png": "0b014bd9023cd152b88c4873c49f9ac26a4fbbcb553a98d2286fb858c23ffb81",
+    "degisim.qgz": "a74c1042de09661f4271eacd76b8be0331c5b872af5c60196d55916f6d47f3e8",
+    "degisim_A4.pdf": "155779aec1d060d7ccfdd36723b769db1aa5aef6a87005e39a139d5cd9ce935c",
+    "degisim_A4.png": "f549da704cdce67eec3b36ecf57dd9ec08d4756b9b945d5dd2c4274f8f1f5428",
+    "duyarlilik.qgz": "e6edc032e66aec0c995ed1c53c060f1d9818fd54f98325b3cff9b87f3ec172c2",
+    "duyarlilik_A4.pdf": "60db742f5038c6ff048200087504031fa4f0dcaed9a410a3c057a443eaa0a670",
+    "duyarlilik_A4.png": "b8e4729fa57663cc5a562584e1161b0ba0e1603f19c48a6a363aafbe6df022a6",
+    "duyarlilik_yalniz_gosterim_1km.tif": "ebac4339d04326ae9ffde25e6de27742a4c9c7ff07763c3e4f9a14c63fbe52ae",
+    "duyarlilik_yalniz_gosterim_1km.tif.aux.xml": "7744f8e780b20bb9081b7f88d00db8cc0570d1ae6069daab760159e8d8da6a8c",
+    "gunumuz.qgz": "aa9d2ff67a20736e30c04db54809c1830c9b373bf6ec4d3936cbfd0df71af4fe",
+    "gunumuz_A4.pdf": "66d303581e7abb8f8f128d25e4150b9f88d96b8bdbb110802cc409bc603a8e3b",
+    "gunumuz_A4.png": "4c68dc4ec7894abf6098652a8b2fb0bed24c0009a74bf270c804a9e158895ad4",
+    "gunumuz_yalniz_gosterim_1km.tif": "ef72c38ada3f90f7c3b5dca3287a4c959f6513e699dac9d9dc7d095b75ad9001",
+    "gunumuz_yalniz_gosterim_1km.tif.aux.xml": "27b1ac69d2f0ece5433a08661c9403073dd8446a9c507bf4400504e5ac3f98e6"
+  }
+}

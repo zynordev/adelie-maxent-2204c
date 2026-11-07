@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "gbif/kalite_envanteri.py": "461f5114f959f410815ad3f5b5068a2e57d6c546cf9cab6ed2817666e15f294e",
+    "gbif/temiz/adelie_maxent.csv": "318ae0a934e1033f5f16c144dfa99ec4c6c0f925f6cd230039611d60b6967e28",
+    "gbif/temiz/kayitlar_temiz.csv": "027993157bca8adfefb6c88d4b8dbdf36743f60ffec7d2bf80520c9b0eb568f8",
+    "gbif/temizle.py": "3f41593f95fbbb84c4477980fb93021c0bb97b50d4fa01714e95ca49287df4fd",
+    "maxent/girdi/katmanlar/sst_yillik.asc": "9500569412d4e6b802c6a2eac6c28d66c1df1ffec78406671a748cb8f461861d"
+  },
+  "originals_unchanged": true,
+  "output_sha256": {
+    "gbif/temiz/kalite_20261108/adelie_maxent_reconstructed.csv": "b0dffbfd8c4731ffd5be8241108eaeb35bf43510359b3b2abef38365b6ca9318",
+    "gbif/temiz/kalite_20261108/quality_groups.csv": "f4ef8b1327a7694d35d3c92b0efb4b1729e02ab6368bb3712ae47686058d241a",
+    "gbif/temiz/kalite_20261108/summary.json": "1b208778633d8baa4067866b78f9746bf3e2b9d452187159a2629878a4a09e56",
+    "gbif/temiz/kalite_20261108/temsilciler_metadata.csv": "a06c8adfc416a07530e170c1c1f60147ea768027b065940e0b79d5c0d35c3bce"
+  },
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "platform": "Linux-7.2.11-1-cachyos-x86_64-with-glibc2.44",
+  "command": [
+    "gbif/kalite_envanteri.py"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "chosen_axis": "latitude",
+  "alternatives": {
+    "latitude": {
+      "squared_imbalance": 0.75,
+      "cuts_grid_index": [
+        2.5,
+        5.5,
+        7.5
+      ],
+      "counts": [
+        17,
+        17,
+        16,
+        17
+      ]
+    },
+    "longitude": {
+      "squared_imbalance": 18.75,
+      "cuts_grid_index": [
+        17.5,
+        22.5,
+        24.5
+      ],
+      "counts": [
+        16,
+        20,
+        14,
+        17
+      ]
+    }
+  },
+  "tie_rule": "latitude first",
+  "uses_scores": false,
+  "partition": "spatial",
+  "reference_spatial_counts": [
+    17,
+    17,
+    16,
+    17
+  ],
+  "partition_seed": null,
+  "partition_rng": null,
+  "actual_counts": [
+    17,
+    17,
+    16,
+    17
+  ],
+  "old_outputs_provisional": true,
+  "final_winner_selected": false,
+  "target": "provisional general occurrence",
+  "ecological_M_final": false,
+  "background": "all valid cells in existing full domain, equal cell weights",
+  "n_background": 703,
+  "seed": "partition_seed above; Java randomseed=false",
+  "candidates": [
+    "AUTO_RM1"
+  ],
+  "threshold": "linear training-score 0.10 quantile; omission score < threshold",
+  "limitations": "No buffer; shared full-domain background; not nested CV; tuning bias; no independent optimum"
+}

@@ -1,0 +1,77 @@
+{
+  "scenario": {
+    "schema_version": 1,
+    "scenario_id": "varsayimsal_delta_20261031",
+    "kind": "hypothetical_sensitivity",
+    "label_tr": "Varsayımsal çevresel değişim denemesi",
+    "climate_model": null,
+    "ssp": null,
+    "target_period": null,
+    "baseline_period": "2000-2025",
+    "source_grid_crs": "EPSG:4326",
+    "legacy_input_directory": "maxent/girdi/gelecek_2050_ssp245",
+    "legacy_run_directory": "maxent/cikti/deneme_2050",
+    "transformations": {
+      "sst_yillik": {
+        "operation": "add",
+        "value": 0.8,
+        "unit": "degC"
+      },
+      "buz_yillik": {
+        "operation": "multiply",
+        "value": 0.8,
+        "unit": "%",
+        "clip": [
+          0,
+          100
+        ]
+      },
+      "bio18": {
+        "operation": "multiply",
+        "value": 1.15,
+        "unit": "mm"
+      },
+      "kaya": {
+        "operation": "identity",
+        "unit": "%"
+      }
+    },
+    "warning_tr": "Eski dosya adlarındaki 2050/SSP245 etiketi veri kökeni değildir. Gerçek CMIP6/SSP projeksiyonu değildir."
+  },
+  "inputs": [
+    {
+      "path": "maxent/girdi/katmanlar/sst_yillik.asc",
+      "sha256": "9500569412d4e6b802c6a2eac6c28d66c1df1ffec78406671a748cb8f461861d"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/buz_yillik.asc",
+      "sha256": "bd65ee468db71f99505d73376e4b2d51c7a08dc5c50fb669078f0903891ef3e9"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/bio18.asc",
+      "sha256": "39bdc6fb0a34a5b28bd98a04f2c437797fb7c94aa2a3a75fac7d349ad228ae46"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/kaya.asc",
+      "sha256": "ba37ec7822b827e6575dfd299697651702db4b31c9f1fa77c7778bce0d69a7c7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "maxent/girdi/duyarlilik_delta_v1/sst_yillik.asc",
+      "sha256": "f29aac649e14e5604673c9a78e3aef9294271b6e818f5e6024730dbf3d6532dc"
+    },
+    {
+      "path": "maxent/girdi/duyarlilik_delta_v1/buz_yillik.asc",
+      "sha256": "fdbb8c9cbb52e9c508d0985e262f6ddaba4ac3bcf754075e78f10e391d86a2d5"
+    },
+    {
+      "path": "maxent/girdi/duyarlilik_delta_v1/bio18.asc",
+      "sha256": "c0cb46d565bd8db567baf6188e3b8726658c563fac1960051c369c12a80cf0fb"
+    },
+    {
+      "path": "maxent/girdi/duyarlilik_delta_v1/kaya.asc",
+      "sha256": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e"
+    }
+  ]
+}

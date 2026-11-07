@@ -162,3 +162,20 @@
 - **Karar:** SCAR Antarctic Digital Database "High resolution vector polygons of Antarctic rock outcrop" v7.11 (Skachkova vd. 2025, doi:10.5285/815525ca-cefe-4fbf-9224-3ee784e7de4e, CC BY 4.0; bu bölgede 2024/25 Sentinel-2'den otomatik çıkarılmış) → her ERA5 hücresinde **% kaya örtüsü** (eşit alanlı Lambert azimutal projeksiyonda kesişim alanı / hücre alanı). Denizde/buzla kaplı hücreler 0. `kaya/kaya_hesapla.py` → `era5/output/kaya.asc`.
 - **Sonuç:** 343/703 hücrede kaya; en yüksek %15.3; toplam 1856 km². 67 MaxEnt noktasının 51'inin hücresinde kaya var. ERA5'in "deniz" saydığı 48 penguen hücresinin 33'ünde kaya var (ERA5 kaba maskesinde görünmeyen küçük adalardaki koloniler); kaya olmayan 16 hücre büyük olasılıkla deniz gözlemleri → K-018'deki kara/deniz sorusu için önemli bilgi.
 - **Eşdoğrusallık:** Diğer tüm katmanlarla |r| ≤ 0.29.
+
+### K-022 — Denetim planının teknik uygulanması ve yorum düzeltmesi
+- **Tarih:** 2026-11-08
+- **Karar veren:** Öğrenci ("Tamam başla"); teknik uygulama Codex
+- **Durum:** Geçerli
+- **Karar:** Özgün veri/model/haritaları koruyarak analiz planının teknik işlerini uygula. Eski sabit delta denemesi CMIP6 diye, uygunluk farkı hücre oranları habitat kaybı/sığınak diye sunulmayacak. Mevcut genel bulunuş/alan/katmanlar kontrollü başlangıç olarak korunacak; nihai ekolojik M veya koloni hedefi sessizce değiştirilmeyecek.
+- **Sonuç:** Izgara/senaryo kontrolleri, kalite envanteri, mekânsal/random eşit ayar karşılaştırması ve ayrı QGIS düzenleri üretildi. Coğrafi performans zayıf; yeni nihai model kabul edilmedi.
+- **Kayıt:** `docs/UYGULAMA_DURUMU_2026-11-08.md`.
+
+### K-023 — Kaynaklı tek-GCM gelecek girdisi ve deneysel aktarım
+- **Tarih:** 2026-11-08
+- **Karar veren:** Codex (öğrencinin onayladığı uygulama planının teknik başlangıç seçimi)
+- **Durum:** Teknik üretim tamam; nihai bilimsel kullanım/onay bekliyor
+- **Karar:** Gerçek kaynağı ve tam zaman kapsamı doğrulanan IPSL-CM6A-LR r1i1p1f1 SSP245 2041-2060, historical+SSP devamıyla 2000-2025 referansına eşlenecek. Aylık delta/yağış oranı, kıyı maskesini koruyan en yakın tam native hücre eşlemesi, yeniden BIO18 hesabı; yıllık denizel anomaliler ve statik kaya varsayımı açık kaydedilecek.
+- **Gerekçe:** Tam dört-değişken erişimi, tutarlı model/üye ve yerel veri doğrulaması mevcut. Bu veri erişimi seçimi bağımsız bölgesel model başarısı veya ensemble anlamına gelmiyor.
+- **Sonuç:** Dört ASC ve kayıtlı eski on kat modelin yeniden eğitilmeden projeksiyonu hazır. Sonuçlar keşif amaçlı; nihai habitat kaybı/sığınak iddiası yok.
+- **Kaynak:** `docs/CMIP6_DELTA_VE_PROJEKSIYON_2026-11-08.md`, `maxent/girdi/cmip6_2041_2060/bolgesel_uretim_envanteri.json`.

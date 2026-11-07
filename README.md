@@ -1,5 +1,7 @@
 # Adélie Pengueni Ekolojik Niş Modeli — Marguerite Körfezi
 
+> **2026-11-08 güncel durum:** [Uygulama kapsamı](docs/KAPSAM_VE_YONTEM_2026-11-08.md), [mekânsal değerlendirme](docs/MEKANSAL_DOGRULAMA_2026-11-08.md), [gerçek CMIP6 veri/deneme aktarımı](docs/CMIP6_DELTA_VE_PROJEKSIYON_2026-11-08.md). Yeni haritalar `harita/cmip6_ipsl_2050_v1/` içinde. Kök dizindeki eski `harita_2050*`/`harita_degisim*` dosyaları arşiv niteliğinde, hatalı etiketli önceki denemedir; raporda kullanılmamalı. Gerçek iklim kaynağı düzeltildi; modelin coğrafi aktarımı zayıf ve nihai biyolojik sonuç henüz doğrulanmadı.
+
 **Program:** TÜBİTAK 2204-C
 **Tür:** *Pygoscelis adeliae* (Adélie pengueni)
 **Yöntem:** GBIF bulunuş kayıtları (2000–2026) + çevresel katmanlar → klasik MaxEnt → habitat uygunluk haritası + AUC

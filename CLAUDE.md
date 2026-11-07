@@ -1,5 +1,7 @@
 # CLAUDE.md — Adélie Pengueni MaxEnt Niş Modeli (TÜBİTAK 2204-C)
 
+> **2026-11-08 güncellemesi:** Kullanıcı analiz planının uygulanmasını açıkça istedi. Tarihsel kapsam notlarının güncel düzeltmeleri `docs/KAPSAM_VE_YONTEM_2026-11-08.md`, `docs/MEKANSAL_DOGRULAMA_2026-11-08.md` ve `docs/CMIP6_DELTA_VE_PROJEKSIYON_2026-11-08.md` içindedir. Gerçek IPSL-CM6A-LR SSP245 2041-2060 girdileri ve eski modele deneysel aktarım üretildi; eski sabit delta denemesi CMIP6 sayılmaz. Eşit ayarlı AUTO modelde mekânsal4 AUC 0,477, random4 0,765: aktarım zayıf. Nihai model/M/koloni yorumu kesinleşmedi. Güncel haritalar `harita/cmip6_ipsl_2050_v1/`; eski kök dizin haritaları arşivdir. Eski dosyalar korunur; aşağıdaki tarihsel kayıtlar bu notla birlikte okunur.
+
 > Bu dosya, önceki bir Claude sohbetinin (16–18 Ekim 2026) **tüm bağlamını** tek yerde toplar. Claude Code'da sıfırdan başlayan bir oturum, bu dosyayı okuyarak projeyi, alınan kararları ve yapılacak teknik işi eksiksiz anlamalıdır.
 > **Dil:** Türkçe. **Kullanıcı:** Linux kullanan lise öğrencisi; ekipte algoritma/kod tarafından sorumlu ("1024").
 

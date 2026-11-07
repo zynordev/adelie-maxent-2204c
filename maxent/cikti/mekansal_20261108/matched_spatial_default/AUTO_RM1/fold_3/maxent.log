@@ -1,0 +1,43 @@
+Sun Nov 08 00:32:19 TRT 2026
+MaxEnt version 3.4.4
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers/bio18.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers/buz_yillik.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers/kaya.asc
+Checking header of /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers/sst_yillik.asc
+Reading samples from train.csv
+Read samples: max memory 536870912, total allocated 258998272, free 248537480, used 10460792, increment 10460792
+Extractor: max memory 536870912, total allocated 258998272, free 247539976, used 11458296, increment 997504
+Extracting random background and sample data
+703 points with values for all grids
+Making features
+makeFeatures: max memory 536870912, total allocated 258998272, free 247488904, used 11509368, increment 51072
+Command line used:  -z autorun nowarnings samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/fold_3/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/AUTO_RM1/fold_3 autofeature=true betamultiplier=1 randomseed=false threads=1 maximumbackground=10000 addsamplestobackground=false removeduplicates=false outputformat=cloglog outputfiletype=asc plots=false responsecurves=false jackknife=false writeplotdata=false warnings=false visible=false
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/AUTO_RM1/fold_3 samplesfile=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/fold_3/train.csv environmentallayers=/home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers nowarnings noremoveduplicates noaddsamplestobackground autorun novisible noplots
+Species: Pygoscelis_adeliae
+Layers: bio18 buz_yillik kaya sst_yillik
+Layertypes: Continuous Continuous Continuous Continuous
+outputdirectory: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/AUTO_RM1/fold_3
+samplesfile: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/fold_3/train.csv
+environmentallayers: /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/layers
+warnings: false
+removeduplicates: false
+addsamplestobackground: false
+autorun: true
+visible: false
+plots: false
+
+getSamples: max memory 536870912, total allocated 258998272, free 246990160, used 12008112, increment 498744
+Pygoscelis_adeliae: 
+Regularization values: linear/quadratic/product: 0.193, categorical: 0.250, threshold: 1.500, hinge: 0.500
+50 samples
+Density: max memory 536870912, total allocated 258998272, free 246502176, used 12496096, increment 487984
+linearPredictor: max memory 536870912, total allocated 258998272, free 246502176, used 12496096, increment 0
+FeaturedSpace: max memory 536870912, total allocated 258998272, free 246502176, used 12496096, increment 0
+Sequential: max memory 536870912, total allocated 258998272, free 246440328, used 12557944, increment 61848
+Initial loss: 6.555356891810665
+280: time = 0.091000 loss = 5.343768
+Resulting gain: 1.2115889926012358
+Projecting...
+Writing file /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/AUTO_RM1/fold_3/Pygoscelis_adeliae.asc
+Writing /home/halil/adelie-maxent-2204c/maxent/cikti/mekansal_20261108/matched_spatial_default/AUTO_RM1/fold_3/plots/Pygoscelis_adeliae.png
+Ending

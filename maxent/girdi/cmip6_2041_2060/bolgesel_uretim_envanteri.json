@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-11-07T21:33:54.771161+00:00",
+  "source_id": "IPSL-CM6A-LR",
+  "member_id": "r1i1p1f1",
+  "regional_monthly_fields_complete": true,
+  "maxent_future_inputs_complete": false,
+  "remapping_performed": false,
+  "source_access": "ESGF CEDA DAP2 server-side regional hyperslabs",
+  "packages": {
+    "xarray": "2026.9.0",
+    "pydap": "3.5.11",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "cftime": "1.6.6.1",
+    "requests": "2.34.2"
+  },
+  "script_sha256": "2dc469e1bfc034f4fb2c137f229efb78da4bc3cf92096ccbf9fcc2c99ab504f1",
+  "variables": [
+    {
+      "variable_id": "tas",
+      "status": "regional_monthly_fields_produced",
+      "sources": [
+        {
+          "catalog_record": {
+            "activity_id": "CMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "historical",
+            "member_id": "r1i1p1f1",
+            "table_id": "Amon",
+            "variable_id": "tas",
+            "grid_label": "gr",
+            "zstore": "gs://cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/tas/gr/v20180803/",
+            "dcpp_init_year": "",
+            "version": "20180803"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:33:55.964033+00:00",
+            "bytes_received": 8396,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "cd95e3bc60735038b975f9436a23639e297fa68b87d610fca600b28cbf476ac4"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/tas/gr/v20180803/tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "original_file_id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Amon.tas.gr.v20180803.tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "original_file_bytes": 95369614,
+          "original_file_checksum": [
+            "7264c228560257b32d44dcc611d92976da7214af7e879586a78f969848c8c375"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/285a3a27-0287-4e3b-8232-69ddc89cebef"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "lat": [
+              15,
+              20
+            ],
+            "lon": [
+              114,
+              120
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "K",
+          "variable_attributes": {
+            "online_operation": "average",
+            "cell_methods": "area: time: mean",
+            "interval_operation": "900 s",
+            "interval_write": "1 month",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "air_temperature",
+            "description": "Near-Surface Air Temperature",
+            "long_name": "Near-Surface Air Temperature",
+            "history": "none",
+            "units": "K",
+            "cell_measures": "area: areacella",
+            "_ChunkSizes": [
+              1,
+              143,
+              144
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_historical",
+              "start": [
+                2000,
+                1
+              ],
+              "end": [
+                2014,
+                12
+              ],
+              "months": 180,
+              "shape": [
+                180,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "catalog_record": {
+            "activity_id": "ScenarioMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "ssp245",
+            "member_id": "r1i1p1f1",
+            "table_id": "Amon",
+            "variable_id": "tas",
+            "grid_label": "gr",
+            "zstore": "gs://cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/tas/gr/v20190119/",
+            "dcpp_init_year": "",
+            "version": "20190119"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:34:01.089915+00:00",
+            "bytes_received": 12134,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "36efbb504bb7504daa7271673d9a1dafc41df77749a154e2697f30fd4c4942a9"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/tas/gr/v20190119/tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "original_file_id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Amon.tas.gr.v20190119.tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "original_file_bytes": 49504299,
+          "original_file_checksum": [
+            "e217b96d76a1e65c0d99cfb6f1897e5bc45a9e27beb8beee052277be6725c77f"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/1af86fe0-e971-4c29-a3bf-7ecd31542ef9"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "lat": [
+              15,
+              20
+            ],
+            "lon": [
+              114,
+              120
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "K",
+          "variable_attributes": {
+            "online_operation": "average",
+            "cell_methods": "area: time: mean",
+            "interval_operation": "900 s",
+            "interval_write": "1 month",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "air_temperature",
+            "description": "near-surface (usually, 2 meter) air temperature",
+            "long_name": "Near-Surface Air Temperature",
+            "history": "none",
+            "units": "K",
+            "cell_measures": "area: areacella",
+            "_ChunkSizes": [
+              1,
+              143,
+              144
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_scenario",
+              "start": [
+                2015,
+                1
+              ],
+              "end": [
+                2025,
+                12
+              ],
+              "months": 132,
+              "shape": [
+                132,
+                5,
+                6
+              ]
+            },
+            {
+              "role": "future",
+              "start": [
+                2041,
+                1
+              ],
+              "end": [
+                2060,
+                12
+              ],
+              "months": 240,
+              "shape": [
+                240,
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tas_baseline_2000_2025.nc",
+          "bytes": 81072,
+          "sha256": "e06c5aa350c9f0754c7835df0a46da434975ea51911213dcd4885f64b91fc111"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tas_future_2041_2060.nc",
+          "bytes": 62620,
+          "sha256": "3cc2754e69afa9b91666454574260e7ee2f3ff6377f85a704643d7304e7fc4aa"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tas_aylik_klimatoloji.nc",
+          "bytes": 10584,
+          "sha256": "d6f754837cebef5dcd0e62ba97352e186c98cae025f3a10f07bfd2d1d1bc5e04"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tas_aylik_klimatoloji.npz",
+          "bytes": 6294,
+          "sha256": "87e6d180e33b1f3c7342eae4d4048c04ad9b61cf83583c233de2c611192becad"
+        }
+      ],
+      "statistics": {
+        "baseline_2000_2025": {
+          "shape": [
+            312,
+            5,
+            6
+          ],
+          "finite_values": 9360,
+          "nan_values": 0,
+          "min": -37.17717590332029,
+          "max": 6.060327148437523
+        },
+        "future_2041_2060": {
+          "shape": [
+            240,
+            5,
+            6
+          ],
+          "finite_values": 7200,
+          "nan_values": 0,
+          "min": -32.1573547363281,
+          "max": 5.409509277343773
+        }
+      },
+      "climatology_dimensions": {
+        "y": 5,
+        "x": 6,
+        "month": 12,
+        "period": 2
+      },
+      "units": "degC"
+    },
+    {
+      "variable_id": "pr",
+      "status": "regional_monthly_fields_produced",
+      "sources": [
+        {
+          "catalog_record": {
+            "activity_id": "CMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "historical",
+            "member_id": "r1i1p1f1",
+            "table_id": "Amon",
+            "variable_id": "pr",
+            "grid_label": "gr",
+            "zstore": "gs://cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/pr/gr/v20180803/",
+            "dcpp_init_year": "",
+            "version": "20180803"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:33:56.123332+00:00",
+            "bytes_received": 12106,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "ed4cb999c9f0ca9ba0592c038d12e218ba6914dcc71760f7640e5d7c2f9cdba4"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/pr/gr/v20180803/pr_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "original_file_id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Amon.pr.gr.v20180803.pr_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "original_file_bytes": 130229815,
+          "original_file_checksum": [
+            "f11e63dd16bde40afb457cca766cce4b57f6d88cd0e73b1ce6ae190bd6d47f3b"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/f63dbc41-c629-41a4-8646-c3423a1f1379"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "lat": [
+              15,
+              20
+            ],
+            "lon": [
+              114,
+              120
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "kg m-2 s-1",
+          "variable_attributes": {
+            "long_name": "Precipitation",
+            "units": "kg m-2 s-1",
+            "online_operation": "average",
+            "cell_methods": "area: time: mean",
+            "interval_operation": "900 s",
+            "interval_write": "1 month",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "precipitation_flux",
+            "description": "at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)",
+            "history": "none",
+            "cell_measures": "area: areacella",
+            "_ChunkSizes": [
+              1,
+              143,
+              144
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_historical",
+              "start": [
+                2000,
+                1
+              ],
+              "end": [
+                2014,
+                12
+              ],
+              "months": 180,
+              "shape": [
+                180,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "catalog_record": {
+            "activity_id": "ScenarioMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "ssp245",
+            "member_id": "r1i1p1f1",
+            "table_id": "Amon",
+            "variable_id": "pr",
+            "grid_label": "gr",
+            "zstore": "gs://cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/pr/gr/v20190119/",
+            "dcpp_init_year": "",
+            "version": "20190119"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:34:01.107307+00:00",
+            "bytes_received": 12071,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "0384cc91d707875288c1c82566818c2c06dcdd304d617ec9a4e4f053a6ea7dca"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/pr/gr/v20190119/pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "original_file_id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Amon.pr.gr.v20190119.pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "original_file_bytes": 67953667,
+          "original_file_checksum": [
+            "6c2a48c2d1837fff1e983b72c5c12805dc0e6c4e278beabbba3e94f980c86457"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/0f6cc6b0-dc08-4ce4-9afa-3701a4c60108"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "lat": [
+              15,
+              20
+            ],
+            "lon": [
+              114,
+              120
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "kg m-2 s-1",
+          "variable_attributes": {
+            "long_name": "Precipitation",
+            "units": "kg m-2 s-1",
+            "online_operation": "average",
+            "cell_methods": "area: time: mean",
+            "interval_operation": "900 s",
+            "interval_write": "1 month",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "precipitation_flux",
+            "description": "at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)",
+            "history": "none",
+            "cell_measures": "area: areacella",
+            "_ChunkSizes": [
+              1,
+              143,
+              144
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_scenario",
+              "start": [
+                2015,
+                1
+              ],
+              "end": [
+                2025,
+                12
+              ],
+              "months": 132,
+              "shape": [
+                132,
+                5,
+                6
+              ]
+            },
+            {
+              "role": "future",
+              "start": [
+                2041,
+                1
+              ],
+              "end": [
+                2060,
+                12
+              ],
+              "months": 240,
+              "shape": [
+                240,
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/pr_baseline_2000_2025.nc",
+          "bytes": 81088,
+          "sha256": "9e39ffa3bb6b5afd96609f08ac649928c983101d877359d4a40102bafcb098ef"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/pr_future_2041_2060.nc",
+          "bytes": 62636,
+          "sha256": "2085b487d0048cb18b913d1e9c6d82db4084a75665be672b89ad33d25b43da61"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/pr_aylik_klimatoloji.nc",
+          "bytes": 10616,
+          "sha256": "835e14cac3b1e1203d10d699a6620c787e21833b3cc4981e4f15516ff16bcc4f"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/pr_aylik_klimatoloji.npz",
+          "bytes": 7483,
+          "sha256": "a80e43c51cd90be7623f2738aee27ee7d893b6a99797fad4b990013b3664a2b5"
+        }
+      ],
+      "statistics": {
+        "baseline_2000_2025": {
+          "shape": [
+            312,
+            5,
+            6
+          ],
+          "finite_values": 9360,
+          "nan_values": 0,
+          "min": 0.0,
+          "max": 368.97544409148395
+        },
+        "future_2041_2060": {
+          "shape": [
+            240,
+            5,
+            6
+          ],
+          "finite_values": 7200,
+          "nan_values": 0,
+          "min": 0.4367632961475465,
+          "max": 397.46519224718213
+        }
+      },
+      "climatology_dimensions": {
+        "y": 5,
+        "x": 6,
+        "month": 12,
+        "period": 2
+      },
+      "units": "mm month-1"
+    },
+    {
+      "variable_id": "tos",
+      "status": "regional_monthly_fields_produced",
+      "sources": [
+        {
+          "catalog_record": {
+            "activity_id": "CMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "historical",
+            "member_id": "r1i1p1f1",
+            "table_id": "Omon",
+            "variable_id": "tos",
+            "grid_label": "gn",
+            "zstore": "gs://cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Omon/tos/gn/v20180803/",
+            "dcpp_init_year": "",
+            "version": "20180803"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:33:56.123665+00:00",
+            "bytes_received": 12310,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "a76f207d8692934b0386fea0e8fbdf47d62b797823f0e7502b315b2f0e17b11f"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Omon/tos/gn/v20180803/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "original_file_id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Omon.tos.gn.v20180803.tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "original_file_bytes": 392835151,
+          "original_file_checksum": [
+            "ec7c3db92ff53196cb57f8efcaca578b6cf7694ad3b0b2caf871edd4b62409d0"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/01f4d96a-9054-4974-b8dd-4f91e73989d2"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "y": [
+              69,
+              84
+            ],
+            "x": [
+              214,
+              225
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "degC",
+          "variable_attributes": {
+            "standard_name": "sea_surface_temperature",
+            "long_name": "Sea Surface Temperature",
+            "units": "degC",
+            "online_operation": "average",
+            "cell_methods": "area: mean where sea time: mean",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "cell_measures": "area: areacello",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "description": "This may differ from \\\"surface temperature\\\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "history": "none",
+            "_ChunkSizes": [
+              1,
+              332,
+              362
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_historical",
+              "start": [
+                2000,
+                1
+              ],
+              "end": [
+                2014,
+                12
+              ],
+              "months": 180,
+              "shape": [
+                180,
+                15,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "catalog_record": {
+            "activity_id": "ScenarioMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "ssp245",
+            "member_id": "r1i1p1f1",
+            "table_id": "Omon",
+            "variable_id": "tos",
+            "grid_label": "gn",
+            "zstore": "gs://cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190119/",
+            "dcpp_init_year": "",
+            "version": "20190119"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:34:06.256846+00:00",
+            "bytes_received": 12278,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "397ee0236adf1456beb1b5a342b024359894bd811227456d628dfb4955983b99"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190119/tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "original_file_id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Omon.tos.gn.v20190119.tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "original_file_bytes": 205749147,
+          "original_file_checksum": [
+            "0a1f426568e55b8aa9c1b547585444bc57589f0d65ff5f75c3a39af707f02f21"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/d0cf25a0-2c33-4730-bffa-de0fadcbed68"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "y": [
+              69,
+              84
+            ],
+            "x": [
+              214,
+              225
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "degC",
+          "variable_attributes": {
+            "standard_name": "sea_surface_temperature",
+            "long_name": "Sea Surface Temperature",
+            "units": "degC",
+            "online_operation": "average",
+            "cell_methods": "area: mean where sea time: mean",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "cell_measures": "area: areacello",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "description": "This may differ from \\\"surface temperature\\\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "history": "none",
+            "_ChunkSizes": [
+              1,
+              332,
+              362
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_scenario",
+              "start": [
+                2015,
+                1
+              ],
+              "end": [
+                2025,
+                12
+              ],
+              "months": 132,
+              "shape": [
+                132,
+                15,
+                11
+              ]
+            },
+            {
+              "role": "future",
+              "start": [
+                2041,
+                1
+              ],
+              "end": [
+                2060,
+                12
+              ],
+              "months": 240,
+              "shape": [
+                240,
+                15,
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tos_baseline_2000_2025.nc",
+          "bytes": 419172,
+          "sha256": "cc584115111a5852d267bf215e2bf8473ecee0acb5e27c89d201602530a40ae6"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tos_future_2041_2060.nc",
+          "bytes": 322960,
+          "sha256": "98e93731f5436fd20bfe399aa29fa54932faeee5d2597b5c4f5dda09943298f1"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tos_aylik_klimatoloji.nc",
+          "bytes": 50604,
+          "sha256": "e0717b650733f62d4c4d2de0b2af5915efedaee96f9088012f2587ef2035207b"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/tos_aylik_klimatoloji.npz",
+          "bytes": 14286,
+          "sha256": "4c127e37fe54f83f74b74007ba6db577460a985416d8af29e36ca62e62af735d"
+        }
+      ],
+      "statistics": {
+        "baseline_2000_2025": {
+          "shape": [
+            312,
+            15,
+            11
+          ],
+          "finite_values": 23712,
+          "nan_values": 27768,
+          "min": -1.8982110023498535,
+          "max": 8.781146049499512
+        },
+        "future_2041_2060": {
+          "shape": [
+            240,
+            15,
+            11
+          ],
+          "finite_values": 18240,
+          "nan_values": 21360,
+          "min": -1.8861044645309448,
+          "max": 10.936180114746094
+        }
+      },
+      "climatology_dimensions": {
+        "y": 15,
+        "x": 11,
+        "month": 12,
+        "period": 2
+      },
+      "units": "degC"
+    },
+    {
+      "variable_id": "siconc",
+      "status": "regional_monthly_fields_produced",
+      "sources": [
+        {
+          "catalog_record": {
+            "activity_id": "CMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "historical",
+            "member_id": "r1i1p1f1",
+            "table_id": "SImon",
+            "variable_id": "siconc",
+            "grid_label": "gn",
+            "zstore": "gs://cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/SImon/siconc/gn/v20180803/",
+            "dcpp_init_year": "",
+            "version": "20180803"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:33:56.124101+00:00",
+            "bytes_received": 12544,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "f1baab458141ec36cb4b8bf2ed92a441efc2b1b3706a9b4a24ca87c914d6027f"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/SImon/siconc/gn/v20180803/siconc_SImon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "original_file_id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.SImon.siconc.gn.v20180803.siconc_SImon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "original_file_bytes": 134118621,
+          "original_file_checksum": [
+            "009f3ddac3efbe31cbe505addd2942b1516f0adebd010cdc9b0f96a47f92f512"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/7aedb752-12e5-4f9f-bf07-e6947579061d"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "y": [
+              69,
+              84
+            ],
+            "x": [
+              214,
+              225
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "%",
+          "variable_attributes": {
+            "online_operation": "average",
+            "cell_methods": "area: mean where sea time: mean",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "cell_measures": "area: areacello",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "sea_ice_area_fraction",
+            "description": "Sea Ice Area Fraction (Ocean Grid)",
+            "long_name": "Sea Ice Area Fraction (Ocean Grid)",
+            "history": "none",
+            "units": "%",
+            "_ChunkSizes": [
+              1,
+              332,
+              362
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_historical",
+              "start": [
+                2000,
+                1
+              ],
+              "end": [
+                2014,
+                12
+              ],
+              "months": 180,
+              "shape": [
+                180,
+                15,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "catalog_record": {
+            "activity_id": "ScenarioMIP",
+            "institution_id": "IPSL",
+            "source_id": "IPSL-CM6A-LR",
+            "experiment_id": "ssp245",
+            "member_id": "r1i1p1f1",
+            "table_id": "SImon",
+            "variable_id": "siconc",
+            "grid_label": "gn",
+            "zstore": "gs://cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190119/",
+            "dcpp_init_year": "",
+            "version": "20190119"
+          },
+          "search_response": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-07T21:34:06.175610+00:00",
+            "bytes_received": 12471,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "14785d7fc5b08b11e8e9e577f041d9603d37c3a8dceb9796368dcfba81bd4f00"
+          },
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190119/siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "original_file_id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.SImon.siconc.gn.v20190119.siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "original_file_bytes": 63231928,
+          "original_file_checksum": [
+            "65b6e690b9561c7b34140a6d47420bf7f3a82d8c8b94479d8fc4abeb12524474"
+          ],
+          "original_file_checksum_type": [
+            "SHA256"
+          ],
+          "original_tracking_id": [
+            "hdl:21.14100/7e96b4fc-0a63-498a-a5b9-7a36706b91bd"
+          ],
+          "retracted": false,
+          "native_spatial_slice": {
+            "y": [
+              69,
+              84
+            ],
+            "x": [
+              214,
+              225
+            ]
+          },
+          "time_calendar": "gregorian",
+          "source_units": "%",
+          "variable_attributes": {
+            "online_operation": "average",
+            "cell_methods": "area: mean where sea time: mean",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "cell_measures": "area: areacello",
+            "_FillValue": 1e+20,
+            "missing_value": 1e+20,
+            "standard_name": "sea_ice_area_fraction",
+            "description": "Area fraction of grid cell covered by sea ice",
+            "long_name": "Sea Ice Area Fraction (Ocean Grid)",
+            "history": "none",
+            "units": "%",
+            "_ChunkSizes": [
+              1,
+              332,
+              362
+            ]
+          },
+          "regional_requests": [
+            {
+              "role": "baseline_scenario",
+              "start": [
+                2015,
+                1
+              ],
+              "end": [
+                2025,
+                12
+              ],
+              "months": 132,
+              "shape": [
+                132,
+                15,
+                11
+              ]
+            },
+            {
+              "role": "future",
+              "start": [
+                2041,
+                1
+              ],
+              "end": [
+                2060,
+                12
+              ],
+              "months": 240,
+              "shape": [
+                240,
+                15,
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/siconc_baseline_2000_2025.nc",
+          "bytes": 419176,
+          "sha256": "8f1ec70a6aa8139219d3e987e2fc2d2167cfdf200a5ee341f0655c811e70ef5b"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/siconc_future_2041_2060.nc",
+          "bytes": 322964,
+          "sha256": "4b4963823bbad65ff2243f401952657b0b19571ec206e7438b7c5fabe0aad957"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/siconc_aylik_klimatoloji.nc",
+          "bytes": 50608,
+          "sha256": "37fa644080f08444274c8c157e813bf5ff91231dad223526023c032a56865679"
+        },
+        {
+          "path": "IPSL-CM6A-LR_r1i1p1f1/siconc_aylik_klimatoloji.npz",
+          "bytes": 15750,
+          "sha256": "e9f4f55eb5ee93869a1ff2ccdbeefda16e5ff86d3cfee219fe21abd03bfba888"
+        }
+      ],
+      "statistics": {
+        "baseline_2000_2025": {
+          "shape": [
+            312,
+            15,
+            11
+          ],
+          "finite_values": 23712,
+          "nan_values": 27768,
+          "min": 0.0,
+          "max": 95.0
+        },
+        "future_2041_2060": {
+          "shape": [
+            240,
+            15,
+            11
+          ],
+          "finite_values": 18240,
+          "nan_values": 21360,
+          "min": 0.0,
+          "max": 94.99736022949219
+        }
+      },
+      "climatology_dimensions": {
+        "y": 15,
+        "x": 11,
+        "month": 12,
+        "period": 2
+      },
+      "units": "%"
+    }
+  ],
+  "finished_at_utc": "2026-11-07T21:34:18.619193+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "input_files": [
+    {
+      "path": "maxent/girdi/cmip6_2041_2060/bolgesel_uretim_envanteri.json",
+      "sha256": "f59bee8d768e358465d8f1ab57137e542469d6d0face8e795269d2f66770ee70"
+    },
+    {
+      "path": "maxent/girdi/cmip6_2041_2060/IPSL-CM6A-LR_r1i1p1f1/tas_aylik_klimatoloji.npz",
+      "sha256": "87e6d180e33b1f3c7342eae4d4048c04ad9b61cf83583c233de2c611192becad"
+    },
+    {
+      "path": "maxent/girdi/cmip6_2041_2060/IPSL-CM6A-LR_r1i1p1f1/pr_aylik_klimatoloji.npz",
+      "sha256": "a80e43c51cd90be7623f2738aee27ee7d893b6a99797fad4b990013b3664a2b5"
+    },
+    {
+      "path": "maxent/girdi/cmip6_2041_2060/IPSL-CM6A-LR_r1i1p1f1/tos_aylik_klimatoloji.npz",
+      "sha256": "4c127e37fe54f83f74b74007ba6db577460a985416d8af29e36ca62e62af735d"
+    },
+    {
+      "path": "maxent/girdi/cmip6_2041_2060/IPSL-CM6A-LR_r1i1p1f1/siconc_aylik_klimatoloji.npz",
+      "sha256": "e9f4f55eb5ee93869a1ff2ccdbeefda16e5ff86d3cfee219fe21abd03bfba888"
+    },
+    {
+      "path": "era5/ara/aylik_normaller.nc",
+      "sha256": "4f4548163aba628e95af7ec7f0ac6eae3ac5ca5071a4357ba240612f888074b9"
+    },
+    {
+      "path": "era5/ara/kara_maskesi.npy",
+      "sha256": "1bda046150c2d0051db35a604afedc7d9daba562895a1477c1daa8ee7d43716b"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/kaya.asc",
+      "sha256": "ba37ec7822b827e6575dfd299697651702db4b31c9f1fa77c7778bce0d69a7c7"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/bio18.asc",
+      "sha256": "39bdc6fb0a34a5b28bd98a04f2c437797fb7c94aa2a3a75fac7d349ad228ae46"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/sst_yillik.asc",
+      "sha256": "9500569412d4e6b802c6a2eac6c28d66c1df1ffec78406671a748cb8f461861d"
+    },
+    {
+      "path": "maxent/girdi/katmanlar/buz_yillik.asc",
+      "sha256": "bd65ee468db71f99505d73376e4b2d51c7a08dc5c50fb669078f0903891ef3e9"
+    }
+  ],
+  "script_sha256": "25679c4ca8488eec07e1face570d7beb4e94f95be6e06cd3ba10d35c71a3f87f",
+  "output_files": {
+    "kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "bio18.asc": "41f32b574629153ef005ae364583b3dd2288d653867ac0e5e05931d3fc88c9df",
+    "sst_yillik.asc": "77b42379ba1513b6199b229b362e9c1ea717df2f655327b2b2b60dce9703cb22",
+    "buz_yillik.asc": "38ed064da2e0dabfae26feb88f4d6c47b0fd58db9e549a12a3435066ddf1c60c",
+    "monthly_delta_diagnostics.npz": "f4443a5d3536205b3afd9f917d87b04d0658726ed115fa7f26a643228e251120",
+    "scenario.json": "7548d1ab3f426f76dc7ed096832b947360144f095c29f17893677f62bcafa3e3"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "candidates": [
+    {
+      "candidate": "L_RM1",
+      "auc_macro_mean": 0.715451374361978,
+      "auc_fold_sd_population": 0.05760735706188762,
+      "omission_macro_mean": 0.09099264705882354,
+      "omission_pooled": 0.08955223880597014
+    },
+    {
+      "candidate": "LQ_RM1",
+      "auc_macro_mean": 0.7456175215463141,
+      "auc_fold_sd_population": 0.06316528747404063,
+      "omission_macro_mean": 0.1360294117647059,
+      "omission_pooled": 0.13432835820895522
+    },
+    {
+      "candidate": "LQ_RM2",
+      "auc_macro_mean": 0.7204588005187851,
+      "auc_fold_sd_population": 0.059902799184437173,
+      "omission_macro_mean": 0.12132352941176472,
+      "omission_pooled": 0.11940298507462686
+    },
+    {
+      "candidate": "AUTO_RM1",
+      "auc_macro_mean": 0.7654328089699607,
+      "auc_fold_sd_population": 0.017127101695327548,
+      "omission_macro_mean": 0.1920955882352941,
+      "omission_pooled": 0.19402985074626866
+    }
+  ],
+  "blocker": null,
+  "complete": true
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "kind": "cmip6_delta_projection",
+  "status": "exploratory_inputs_not_validated_final_model",
+  "scenario_id": "IPSL-CM6A-LR_r1i1p1f1_ssp245_2041_2060_delta_v1",
+  "source_id": "IPSL-CM6A-LR",
+  "member_id": "r1i1p1f1",
+  "ssp": "ssp245",
+  "future_period": "2041-2060",
+  "baseline_period": "2000-2025",
+  "baseline_continuation": "historical 2000-2014 + ssp245 2015-2025",
+  "reference_source": "ERA5 2000-2025; SCAR rock static",
+  "grid_crs": "EPSG:4326",
+  "grid_cellsize_degrees": 0.25,
+  "regridding": "nearest complete native cell on sphere; land marine anomalies follow nearest ERA5 sea cell",
+  "methods": {
+    "tas": "monthly additive anomalies applied to ERA5 tavg",
+    "pr": "monthly future/baseline total precipitation ratio applied to ERA5 monthly totals; refuses baseline<1 mm",
+    "bio18": "recomputed precipitation sum in warmest quarter of future monthly tavg",
+    "sst_yillik": "equal-month annual mean native SST anomaly added to ERA5 annual SST",
+    "buz_yillik": "equal-month annual sea-ice difference in percentage points, additive to ERA5 annual ice then clipped0-100",
+    "kaya": "static original rock fraction"
+  },
+  "limitations": [
+    "single GCM/member/SSP",
+    "nearest-cell anomalies do not add spatial climate information",
+    "annual marine bias adjustment is not monthly clipping",
+    "baseline geographic validation weak",
+    "calibration M and final model not resolved",
+    "no colony/population/refugium claim"
+  ],
+  "diagnostics": {
+    "tas": {
+      "unique_native_cells": 20,
+      "nearest_distance_km_min": 3.742347678945397,
+      "nearest_distance_km_max": 85.83148967553055,
+      "nearest_distance_km_median": 49.36463972316102,
+      "native_units": "degC"
+    },
+    "pr": {
+      "unique_native_cells": 20,
+      "nearest_distance_km_min": 3.742347678945397,
+      "nearest_distance_km_max": 85.83148967553055,
+      "nearest_distance_km_median": 49.36463972316102,
+      "native_units": "mm month-1"
+    },
+    "tos": {
+      "unique_native_cells": 62,
+      "nearest_distance_km_min": 1.7550430799211394,
+      "nearest_distance_km_max": 44.709341238466,
+      "nearest_distance_km_median": 21.415111910757023,
+      "native_units": "degC"
+    },
+    "siconc": {
+      "unique_native_cells": 62,
+      "nearest_distance_km_min": 1.7550430799211394,
+      "nearest_distance_km_max": 44.709341238466,
+      "nearest_distance_km_median": 21.415111910757023,
+      "native_units": "%"
+    }
+  },
+  "warmest_quarter_changed_cells": 29,
+  "ice_clipped_cells": 0,
+  "precip_ratio_minmax": [
+    0.794697092728072,
+    1.5107837610688164
+  ],
+  "future_ranges": {
+    "kaya": [
+      0.0,
+      15.280759
+    ],
+    "bio18": [
+      77.58992487344858,
+      756.5489992621214
+    ],
+    "sst_yillik": [
+      -1.886790682267704,
+      0.20790919068560176
+    ],
+    "buz_yillik": [
+      9.278522307227249,
+      53.01814184339972
+    ]
+  }
+}

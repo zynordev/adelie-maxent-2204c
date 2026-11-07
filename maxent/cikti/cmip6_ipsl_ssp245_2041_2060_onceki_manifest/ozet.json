@@ -1,0 +1,187 @@
+{
+  "scenario": {
+    "schema_version": 1,
+    "kind": "cmip6_delta_projection",
+    "status": "exploratory_inputs_not_validated_final_model",
+    "scenario_id": "IPSL-CM6A-LR_r1i1p1f1_ssp245_2041_2060_delta_v1",
+    "source_id": "IPSL-CM6A-LR",
+    "member_id": "r1i1p1f1",
+    "ssp": "ssp245",
+    "future_period": "2041-2060",
+    "baseline_period": "2000-2025",
+    "baseline_continuation": "historical 2000-2014 + ssp245 2015-2025",
+    "reference_source": "ERA5 2000-2025; SCAR rock static",
+    "grid_crs": "EPSG:4326",
+    "grid_cellsize_degrees": 0.25,
+    "regridding": "nearest complete native cell on sphere; land marine anomalies follow nearest ERA5 sea cell",
+    "methods": {
+      "tas": "monthly additive anomalies applied to ERA5 tavg",
+      "pr": "monthly future/baseline total precipitation ratio applied to ERA5 monthly totals; refuses baseline<1 mm",
+      "bio18": "recomputed precipitation sum in warmest quarter of future monthly tavg",
+      "sst_yillik": "equal-month annual mean native SST anomaly added to ERA5 annual SST",
+      "buz_yillik": "equal-month annual sea-ice difference in percentage points, additive to ERA5 annual ice then clipped0-100",
+      "kaya": "static original rock fraction"
+    },
+    "limitations": [
+      "single GCM/member/SSP",
+      "nearest-cell anomalies do not add spatial climate information",
+      "annual marine bias adjustment is not monthly clipping",
+      "baseline geographic validation weak",
+      "calibration M and final model not resolved",
+      "no colony/population/refugium claim"
+    ],
+    "diagnostics": {
+      "tas": {
+        "unique_native_cells": 20,
+        "nearest_distance_km_min": 3.742347678945397,
+        "nearest_distance_km_max": 85.83148967553055,
+        "nearest_distance_km_median": 49.36463972316102,
+        "native_units": "degC"
+      },
+      "pr": {
+        "unique_native_cells": 20,
+        "nearest_distance_km_min": 3.742347678945397,
+        "nearest_distance_km_max": 85.83148967553055,
+        "nearest_distance_km_median": 49.36463972316102,
+        "native_units": "mm month-1"
+      },
+      "tos": {
+        "unique_native_cells": 62,
+        "nearest_distance_km_min": 1.7550430799211394,
+        "nearest_distance_km_max": 44.709341238466,
+        "nearest_distance_km_median": 21.415111910757023,
+        "native_units": "degC"
+      },
+      "siconc": {
+        "unique_native_cells": 62,
+        "nearest_distance_km_min": 1.7550430799211394,
+        "nearest_distance_km_max": 44.709341238466,
+        "nearest_distance_km_median": 21.415111910757023,
+        "native_units": "%"
+      }
+    },
+    "warmest_quarter_changed_cells": 29,
+    "ice_clipped_cells": 0,
+    "precip_ratio_minmax": [
+      0.794697092728072,
+      1.5107837610688164
+    ],
+    "future_ranges": {
+      "kaya": [
+        0.0,
+        15.280759
+      ],
+      "bio18": [
+        77.58992487344858,
+        756.5489992621214
+      ],
+      "sst_yillik": [
+        -1.886790682267704,
+        0.20790919068560176
+      ],
+      "buz_yillik": [
+        9.278522307227249,
+        53.01814184339972
+      ]
+    }
+  },
+  "valid_cells": 703,
+  "interpretation": "EXPLORATORY transfer of original random10-fold model; geographic validation weak; not final scientific result",
+  "model_source": "immutable 2026-10-31 fold lambda files; no retraining",
+  "control_max_abs_error": {
+    "current": 0.0,
+    "legacy_sensitivity": 0.0
+  },
+  "domain": "entire rectangular calibration domain, not habitat area",
+  "area_method": "WGS84 ellipsoid lat/lon rectangle surface integral",
+  "domain_area_km2": 202681.6371774113,
+  "by_difference_threshold": {
+    "0.025": {
+      "azalma": {
+        "cells": 318,
+        "cell_percent": 45.23470839260313,
+        "domain_area_km2": 95323.45766720033,
+        "domain_area_percent": 47.031126743742355
+      },
+      "kararli": {
+        "cells": 102,
+        "cell_percent": 14.509246088193457,
+        "domain_area_km2": 27818.675129138897,
+        "domain_area_percent": 13.725306108904505
+      },
+      "artis": {
+        "cells": 283,
+        "cell_percent": 40.25604551920341,
+        "domain_area_km2": 79539.50438107207,
+        "domain_area_percent": 39.24356714735314
+      }
+    },
+    "0.05": {
+      "azalma": {
+        "cells": 297,
+        "cell_percent": 42.2475106685633,
+        "domain_area_km2": 89155.40811658006,
+        "domain_area_percent": 43.987906037358755
+      },
+      "kararli": {
+        "cells": 163,
+        "cell_percent": 23.186344238975817,
+        "domain_area_km2": 45066.113733545106,
+        "domain_area_percent": 22.234926834589277
+      },
+      "artis": {
+        "cells": 243,
+        "cell_percent": 34.56614509246088,
+        "domain_area_km2": 68460.11532728613,
+        "domain_area_percent": 33.77716712805197
+      }
+    },
+    "0.1": {
+      "azalma": {
+        "cells": 220,
+        "cell_percent": 31.294452347083926,
+        "domain_area_km2": 65777.71799044157,
+        "domain_area_percent": 32.45371357093638
+      },
+      "kararli": {
+        "cells": 290,
+        "cell_percent": 41.25177809388336,
+        "domain_area_km2": 82600.17221206026,
+        "domain_area_percent": 40.753653543738984
+      },
+      "artis": {
+        "cells": 193,
+        "cell_percent": 27.453769559032718,
+        "domain_area_km2": 54303.74697490946,
+        "domain_area_percent": 26.792632885324636
+      }
+    },
+    "0.25": {
+      "azalma": {
+        "cells": 102,
+        "cell_percent": 14.509246088193457,
+        "domain_area_km2": 30628.377254631352,
+        "domain_area_percent": 15.11156988919609
+      },
+      "kararli": {
+        "cells": 531,
+        "cell_percent": 75.53342816500711,
+        "domain_area_km2": 151660.86347331695,
+        "domain_area_percent": 74.82713559322849
+      },
+      "artis": {
+        "cells": 70,
+        "cell_percent": 9.95732574679943,
+        "domain_area_km2": 20392.39644946301,
+        "domain_area_percent": 10.061294517575432
+      }
+    }
+  },
+  "novel_any_fold_cells": 357,
+  "novelty_method": "any native predictor outside lambda min/max; univariate range flag, not MESS",
+  "sign_disagreement_cells": 246,
+  "max_clamping_effect": 0.629902,
+  "clamping_nonzero_any_fold_cells": 357,
+  "habitat_area_loss": null,
+  "replicate_uncertainty": "paired overlapping saved model folds, not climate ensemble"
+}

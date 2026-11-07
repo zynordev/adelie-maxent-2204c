@@ -1,4 +1,6 @@
 .venv/
+.venv-*/
+work/
 __pycache__/
 veri_ham/
 indirme.log
