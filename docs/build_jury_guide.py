@@ -669,6 +669,11 @@ def create_guide_pdf(output_path):
     ))
 
     doc.build(story, canvasmaker=NumberedCanvas)
+    # CUPS pdftopdf uyumluluğu için pdftocairo ile akış filtrelerini normalize et
+    import subprocess
+    tmp_clean = output_path + '.tmp.pdf'
+    subprocess.run(['pdftocairo', '-pdf', output_path, tmp_clean], check=True)
+    os.replace(tmp_clean, output_path)
     print(f"PDF Rehberi başarıyla oluşturuldu: {output_path}")
 
 if __name__ == "__main__":
