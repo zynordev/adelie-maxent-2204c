@@ -15,7 +15,33 @@ from reportlab.platypus import (
     SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, KeepTogether, HRFlowable
 )
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase.pdfmetrics import registerFontFamily
 import subprocess
+
+# Türkçe Unicode desteği için LiberationSans font ailesini kaydet
+FONT_DIR = "/usr/share/fonts/liberation"
+if os.path.exists(os.path.join(FONT_DIR, "LiberationSans-Regular.ttf")):
+    pdfmetrics.registerFont(TTFont('LiberationSans', os.path.join(FONT_DIR, 'LiberationSans-Regular.ttf')))
+    pdfmetrics.registerFont(TTFont('LiberationSans-Bold', os.path.join(FONT_DIR, 'LiberationSans-Bold.ttf')))
+    pdfmetrics.registerFont(TTFont('LiberationSans-Italic', os.path.join(FONT_DIR, 'LiberationSans-Italic.ttf')))
+    pdfmetrics.registerFont(TTFont('LiberationSans-BoldItalic', os.path.join(FONT_DIR, 'LiberationSans-BoldItalic.ttf')))
+    registerFontFamily('LiberationSans', normal='LiberationSans', bold='LiberationSans-Bold', italic='LiberationSans-Italic', boldItalic='LiberationSans-BoldItalic')
+    F_NORM = 'LiberationSans'
+    F_BOLD = 'LiberationSans-Bold'
+    F_ITAL = 'LiberationSans-Italic'
+else:
+    # Alternatif /usr/share/fonts/TTF/DejaVuSans
+    ALT_DIR = "/usr/share/fonts/TTF"
+    pdfmetrics.registerFont(TTFont('DejaVuSans', os.path.join(ALT_DIR, 'DejaVuSans.ttf')))
+    pdfmetrics.registerFont(TTFont('DejaVuSans-Bold', os.path.join(ALT_DIR, 'DejaVuSans-Bold.ttf')))
+    pdfmetrics.registerFont(TTFont('DejaVuSans-Italic', os.path.join(ALT_DIR, 'DejaVuSans-Oblique.ttf')))
+    pdfmetrics.registerFont(TTFont('DejaVuSans-BoldItalic', os.path.join(ALT_DIR, 'DejaVuSans-BoldOblique.ttf')))
+    registerFontFamily('DejaVuSans', normal='DejaVuSans', bold='DejaVuSans-Bold', italic='DejaVuSans-Italic', boldItalic='DejaVuSans-BoldItalic')
+    F_NORM = 'DejaVuSans'
+    F_BOLD = 'DejaVuSans-Bold'
+    F_ITAL = 'DejaVuSans-Italic'
 
 class NumberedCanvas(canvas.Canvas):
     """
@@ -42,7 +68,7 @@ class NumberedCanvas(canvas.Canvas):
         
         # Üst bilgi (Header) - Sayfa 1 hariç
         if self._pageNumber > 1:
-            self.setFont("Helvetica", 8)
+            self.setFont(F_NORM, 8)
             self.setFillColor(colors.HexColor("#4A5568"))
             self.drawString(36, 815, "TÜBİTAK 2204-C Kutup Araştırmaları Proje Yarışması — Proje Raporu")
             self.drawRightString(559, 815, "Marguerite Körfezi Adélie Pengueni MaxEnt Modeli")
@@ -51,7 +77,7 @@ class NumberedCanvas(canvas.Canvas):
             self.line(36, 810, 559, 810)
 
         # Alt bilgi (Footer)
-        self.setFont("Helvetica", 8)
+        self.setFont(F_NORM, 8)
         self.setFillColor(colors.HexColor("#4A5568"))
         page_str = f"Sayfa {self._pageNumber} / {page_count}"
         self.drawRightString(559, 25, page_str)
@@ -95,7 +121,7 @@ def build_perfect_18_page_report():
     title_style = ParagraphStyle(
         'DocTitle',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
+        fontName=F_BOLD,
         fontSize=13,
         leading=16,
         textColor=C_PRIMARY,
@@ -106,7 +132,7 @@ def build_perfect_18_page_report():
     meta_style = ParagraphStyle(
         'DocMeta',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
+        fontName=F_BOLD,
         fontSize=8.5,
         leading=11,
         textColor=C_SECONDARY,
@@ -117,7 +143,7 @@ def build_perfect_18_page_report():
     sec_head = ParagraphStyle(
         'SecHead',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
+        fontName=F_BOLD,
         fontSize=11,
         leading=14,
         textColor=C_PRIMARY,
@@ -129,7 +155,7 @@ def build_perfect_18_page_report():
     subsec_head = ParagraphStyle(
         'SubSecHead',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
+        fontName=F_BOLD,
         fontSize=9.5,
         leading=12.5,
         textColor=C_SECONDARY,
@@ -141,7 +167,7 @@ def build_perfect_18_page_report():
     subsubsec_head = ParagraphStyle(
         'SubSubSecHead',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
+        fontName=F_BOLD,
         fontSize=8.5,
         leading=11,
         textColor=C_TEXT,
@@ -153,7 +179,7 @@ def build_perfect_18_page_report():
     body = ParagraphStyle(
         'Body',
         parent=styles['Normal'],
-        fontName='Helvetica',
+        fontName=F_NORM,
         fontSize=8,
         leading=10.5,
         textColor=C_TEXT,
@@ -164,7 +190,7 @@ def build_perfect_18_page_report():
     body_bold = ParagraphStyle(
         'BodyBold',
         parent=body,
-        fontName='Helvetica-Bold'
+        fontName=F_BOLD
     )
 
     bullet = ParagraphStyle(
@@ -178,7 +204,7 @@ def build_perfect_18_page_report():
     caption = ParagraphStyle(
         'Caption',
         parent=styles['Normal'],
-        fontName='Helvetica-Oblique',
+        fontName=F_ITAL,
         fontSize=7.2,
         leading=9.2,
         textColor=C_MUTED,
@@ -190,7 +216,7 @@ def build_perfect_18_page_report():
     table_cell = ParagraphStyle(
         'TableCell',
         parent=styles['Normal'],
-        fontName='Helvetica',
+        fontName=F_NORM,
         fontSize=6.8,
         leading=8.5,
         textColor=C_TEXT
@@ -199,7 +225,7 @@ def build_perfect_18_page_report():
     table_cell_b = ParagraphStyle(
         'TableCellB',
         parent=table_cell,
-        fontName='Helvetica-Bold'
+        fontName=F_BOLD
     )
 
     table_cell_c = ParagraphStyle(
@@ -217,7 +243,7 @@ def build_perfect_18_page_report():
     ref_style = ParagraphStyle(
         'RefStyle',
         parent=styles['Normal'],
-        fontName='Helvetica',
+        fontName=F_NORM,
         fontSize=6.5,
         leading=8.3,
         leftIndent=12,
