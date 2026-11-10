@@ -200,6 +200,29 @@
 
 ---
 
+## 2026-11-10 — Resmî TÜBİTAK 2204-C Raporu 18 Sayfa Olarak Üretildi ve 12 Maddelik Jüri Revizyonu Tamamlandı
+
+**Yapılanlar**
+- Danışman Metin Silsüpür'ün 18 sayfalık örnek derece raporu şablonu incelendi; TÜBİTAK 2204-C kurallarına uygun 18 sayfalık tam metin rapor motoru (`rapor/make_perfect_report.py`) sıfırdan geliştirildi.
+- Bağımsız akademik denetimden gelen 12 maddelik metodolojik ve sayısal eleştiri projenin kendi ham çıktılarıyla (`maxentResults.csv`, `.dat` tepki eğrileri, `manifest.json`, QGIS GeoTIFF'leri) tek tek incelendi ve doğrulandı:
+  1. Mekânsal Blok CV AUC (0.477–0.580) ve rastgele CV AUC (0.768) dürüstçe sunuldu; 2050 projeksiyonları "keşifsel (exploratory)" senaryo seviyesine çekildi.
+  2. Clamping (%50.8 / 357 hücre) ve ekstrapolasyon belirsizliği açıkça raporlandı.
+  3. Hücre sayısı tutarsızlığı giderildi (67 varlık + 636 arka plan = 703 grid hücresi).
+  4. Tablo 4 katkı (buz %43.1, kaya %30.0) ve permütasyon (buz %55.6, kaya %9.1) metrikleri dengeli biçimde yorumlandı.
+  5. Jackknife grafiğiyle metin tam uyumlu kılındı (bio18 tek başına en yüksek ~0.287, buz çıkarılınca en çok düşüren 0.592→0.441).
+  6. Tepki eğrileri sayıları grafikteki .dat değerleriyle (buz %20–30 optimum, kaya taban 0.38) eşitlendi.
+  7. George VI Boğazı sığınak eğilimi doğrudan nedensel ispat yerine "bölgesel hipotez" olarak çerçevelendi.
+  8. Meridyen yakınsaması jeodeziği (68°G enleminde 0.25° boylam = 10.4 km, hücre alanı ~288 km², komşu hücre medyan mesafesi 12.6 km) matematiksel olarak açıklandı.
+  9. ERA5 referans periyodu 2000–2025 olarak tekleştirildi; Gantt iş-zaman tablosu 6 aylık periyotta yapılandırıldı.
+  10. Fretwell (2014) imparator penguen atıfı çıkarılıp Southwell vd. (2015) ve Lyver vd. (2014) eklendi; Cimino vd. (2016) ifadesi "daralma ve geri çekilme riski" olarak düzeltildi; Wang vd. (2026, PMID: 42209243) doğrulandı.
+  11. Tek model (IPSL-CM6A-LR) ve tek senaryo (SSP2-4.5) sınırlılığı tartışılarak ensemble gerekliliği vurgulandı.
+  12. Bilimsel dil nesnel, ölçülü ve akademik temkine kavuşturuldu.
+- `rapor/TUBITAK_2204C_PROJE_RAPORU.pdf` (18 sayfa) ve `TUBITAK_2204C_PROJE_RAPORU.md` derlendi.
+- Obsidian Vault'a tam metin rapor ve 12 maddelik jüri revizyon notu aktarıldı.
+- Danışman Metin Hoca'ya WhatsApp üzerinden 8 temel akademik makale listesi ve linkleri iletildi.
+
+---
+
 ## 2026-10-19 — Proje klasörü ve kayıt sistemi kuruldu
 
 **Yapılanlar**
