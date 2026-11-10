@@ -1,3 +1,5 @@
+> ⚠️ **GEÇERSİZ / KULLANMA (2026-11-10):** Bu rehberde proje kayıtlarıyla uyuşmayan sayılar ve yorumlar var (ör. %54,6 / %18,9 habitat kaybı-sığınak, değişken katkıları, senaryo değerleri). Doğru kaynak: `rapor/RAPOR_TASLAK_v1.md` ve `docs/UYGULAMA_DURUMU_2026-11-08.md`.
+
 # 🎓 TÜBİTAK 2204-C Kutup Araştırmaları — Jüri Savunma ve Öğrenim Rehberi
 
 > **Proje Başlığı:** Marguerite Körfezi'nde (Batı Antarktika) Adélie Penguenlerinin (*Pygoscelis adeliae*) Ekolojik Niş Modellenmesi ve CMIP6 SSP2-4.5 Senaryosu Altında 2050 Habitat Değişim Dinamikleri  

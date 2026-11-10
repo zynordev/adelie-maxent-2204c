@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-11-10 — Rapor taslağı v1 ve danışman yönlendirmesi
+
+**Yapılanlar**
+- Danışman (Metin Silsüpür) 9–10 Kasım'da Wang vd. (2026) makalesini (PMID 42209243, DOI 10.13287/j.1001-9332.202603.037) gönderdi: metodoloji ve yazım (literatür/giriş) için kaynak olacak; **makale dışı referanssız cümle yazılmayacak**. Yalnızca özet okunabildi; tam metin okunmadı.
+- `rapor/RAPOR_TASLAK_v1.md` ve `.pdf` (6 sayfa) yazıldı; her sayı proje kayıtlarından alındı (10 kat AUC 0,768; mekânsal4 0,477–0,580; random4 0,715–0,765; IPSL SSP245 hücre payları %42,2/%23,2/%34,6). `rapor/build_rapor_pdf.py` PDF'i üretir.
+- **Düzeltme:** 8 Kasım'da hazırlanan `JURI_SAVUNMA_VE_OGRENIM_REHBERI` içinde doğrulanmamış/yanlış ifadeler vardı (%54,6 / %18,9 "habitat kaybı/sığınak", kaya %26,4 / bio18 %10,8 / sst %7,2 katkıları, "+0,8 °C / %20 buz" senaryosu, bölge adları, "her şeyi bizzat ben yaptım" cevabı). Bu rehber **kullanılmamalı**; rapor taslağı esas alınmalı. Danışmana giden mesajdaki "nereler kayboluyo nereler sıgınak oluyo" ifadesi de proje kayıtlarıyla uyumsuzdur (sığınak iddiası yok).
+
+**Sıradaki adım**
+- Öğrenci taslağı inceler; Wang vd. tam metni (PDF) alınıp yöntem adımları eşleştirilir; makale dışı kaynakların (Cimino 2016 vb.) kabul edilip edilmediği danışmana sorulur.
+
+---
+
 ## 2026-11-08 — 2050 haritası ve genel proje denetimi; uygulama planı
 
 ### Aynı gün sonraki oturum — Kullanıcının “Tamam başla” talebiyle uygulama
