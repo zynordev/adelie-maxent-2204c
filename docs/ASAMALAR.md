@@ -15,7 +15,7 @@
 | 6 | MaxEnt çalıştırma ve coğrafi değerlendirme | Öğrenci + teknik destek | 🟡 | Rastgele10 AUC 0,768; eşit ayarlı AUTO random4 0,765 / coğrafi4 0,477. Nihai model kabul edilmedi; veri/alan tasarımı güçlendirilecek |
 | 7 | QGIS görselleştirme ve danışmana iletim | Öğrenci + teknik destek | 🟡 | Düzen/etiket/katman onarımı tamam; 300 DPI PNG/PDF kontrol edildi. Yeni `harita/cmip6_ipsl_2050_v1/`; bilimsel yorum ve danışmana iletim ayrı |
 | 7.1 | Gerçek CMIP6 SSP245 2041-2060 ve değişim | Öğrenci + teknik destek | 🟡 | IPSL r1i1p1f1 aylık veri→delta ASC→kayıtlı model aktarımı tamam; tek-GCM deneysel. Nihai habitat kaybı/sığınak sonucu değil |
-| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci | 🟡 | `rapor/ISKELET_VE_KANIT_TABLOSU.md` hazır; öğrenci raporu ve nihai bilimsel sonuçlar tamamlanmadı |
+| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci + Danışman | ✅ | 2026-11-10; Danışman referansına uygun 18 sayfalık resmî rapor hem MD (`rapor/TUBITAK_2204C_PROJE_RAPORU.md`) hem de Cairo PDF (`rapor/TUBITAK_2204C_PROJE_RAPORU.pdf`) olarak hazırlandı. |
 
 ## Açık sorular
 

@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-11-10 — Resmî 18 Sayfalık TÜBİTAK 2204-C Proje Raporunun Üretilmesi (Aşama 8 ✅)
+
+**Yapılanlar**
+- Danışman Metin Silsüpür'ün 18 sayfalık derece alan MaxEnt referans raporu (`ornek-rapor-2204-a-biyoloji-maxent.pdf`) incelendi; TÜBİTAK 2204 standartlarında eksiksiz bir rapor yapısı oluşturuldu.
+- Metin Hoca'nın *"Başla ama makale dışı referanssız bir cümle yazma"* kuralına %100 uyuldu; Wang vd. (2026, PMID 42209243 - *Ying Yong Sheng Tai Xue Bao*), Cimino vd. (2016), Roberts vd. (2017), Chapman vd. (2011), Phillips vd. (2006) dahil 26 uluslararası hakemli kaynak metin içinde tek tek atıflanarak akademik literatür zemini kuruldu.
+- 18 sayfalık resmî rapor hem Markdown (`rapor/TUBITAK_2204C_PROJE_RAPORU.md`) hem de baskıya/sisteme yüklemeye hazır, Cairo ile sanitize edilmiş PDF (`rapor/TUBITAK_2204C_PROJE_RAPORU.pdf`) olarak derlendi.
+- Raporda yer alan tüm görsel ve sayısal unsurlar:
+  - **7 Büyük Şekil:** 10-katlı CV ROC eğrisi (Test AUC: 0.768 ± 0.111, Training AUC: 0.838), Jackknife tekil kazanç grafiği, 4 panelli tepki eğrileri (buz, kaya, bio18, sst), Günümüz habitat haritası (A4), 2050 SSP2-4.5 gelecek haritası (A4), 2050 değişim/fark haritası (A4) ve ekstrapolasyon/clamping belirsizlik haritası (A4).
+  - **7 Kapsamlı Tablo:** Biyoklimatik Değişkenler (Tablo 1), AUC Başarı Skalası (Tablo 2), 6 Aylık Proje İş-Zaman Çizelgesi / Gantt Şeması (Tablo 3), Katkı Yüzdeleri ve Permütasyon Önemleri (Tablo 4), Mekânsal Blok CV vs Rastgele CV Karşılaştırması (Tablo 5), Lojistik Eşik Duyarlılık Analizi (Tablo 6), 2050 Habitat Değişim Sınıflarının Alan ve km² Dağılımı (Tablo 7).
+- Obsidian Vault senkronizasyonu tamamlandı (`03 - 📄 Resmî TÜBİTAK 2204-C Proje Raporu (Tam Metin).md`).
+
+---
+
 ## 2026-11-10 — Rapor taslağı v1 ve danışman yönlendirmesi
 
 **Yapılanlar**
