@@ -1,0 +1,27 @@
+{
+  "source_sha256": "b4889cb7ea48dc214c8a1076b1fffc9b4bb448889d70122021f9c789e5e23c50",
+  "source_doi": "10.24381/cds.f17050d7",
+  "script_sha256": "1bb1c2b17c73e92086c732e8b9a730fded06c0b4cb27c90c7d284f3501184b6e",
+  "outputs": {
+    "marine_donor_distance_km.asc": "b804117cb105503fa07c4604a765da24eaf80d27047a3d7b861998668a2a897a",
+    "source_monthly_sst_min.asc": "6a94272626e5b3935f0dd75770772e204cf2817246829393b0e932f3a786af02",
+    "ice_baseline_comparison.json": "128504b341370309503cfdb963c8b478c222508da2c3f4ea772beda021b57fb5",
+    "definitions.json": "cf45cae4b4817b81e1418b1519550dda6f7558aad1b871be98e8cecebfe1f5c3",
+    "current/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "current/bio18.asc": "cfaa6fb86abd73278f48b607341d709acfdc2c90a22692bed52a70be67397fd3",
+    "current/buz_yillik.asc": "84b086588a743bfd6438303ecbd0bc553607330d82e6d32722be8a415f693ef0",
+    "current/sst_yillik.asc": "7b74002808a0b0e0bf5367099176347394659a7e510eccdb888385f0eaaa895c",
+    "current/buz_breeding.asc": "44688c24157f7ba4cee794ff64f100f4cbd46b62cfe5086abe6aba7abe67dab4",
+    "current/sst_breeding.asc": "14ebdbe9c87e7ca46bdec3d5ee68e0dd62ef530a02cf06595964ae5804ff91d9",
+    "current/buz_son.asc": "85cf19b4a28884fdb35d49022f0085a69e8ecfa12ce318bc97863e15e7181aa9",
+    "current/buz_kis.asc": "6835140e7c17d195e632f6b5c5f287ac228e2a46074bfddd6eeaff9b9d19915d",
+    "future_MPI/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "future_MPI/bio18.asc": "42f5d2a797c9479776734048132390a0fbbcf2e8cf90209f8d17be1033ffca86",
+    "future_MPI/buz_yillik.asc": "3a6ab235ba490fb93d192b77342bc229602ab0c65c0d215b13ea4842a62b35fb",
+    "future_MPI/sst_yillik.asc": "a477ac91c203fb3ca6938e1038a3238107b47f25cfa2a44a5071c6301a2d0cf2",
+    "future_MPI/buz_breeding.asc": "6259c0ffb599d8301b698518c40d23e29c4575409b97bf41adab517dd6ff2ed6",
+    "future_MPI/sst_breeding.asc": "f4bed9cea59a07aa86c1e564cb05e047d511ff0d10d061926a5815f894edfe5e",
+    "future_MPI/buz_son.asc": "8698a0bc91059351bc433e0f150e24d849055ac554d3e114654f3cd9f0db49da",
+    "future_MPI/buz_kis.asc": "980b915d71f10875d11e0d9f62442fd8232ad31dc047e487be11e99fcef8a701"
+  }
+}

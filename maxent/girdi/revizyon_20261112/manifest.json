@@ -1,0 +1,26 @@
+{
+  "source_sha256": "b4889cb7ea48dc214c8a1076b1fffc9b4bb448889d70122021f9c789e5e23c50",
+  "source_doi": "10.24381/cds.f17050d7",
+  "script_sha256": "4e52b829be7ce826ef12f3b9e0dcc482f56c4a9d4a1339de7ac29395dc9f0eaa",
+  "outputs": {
+    "marine_donor_distance_km.asc": "b804117cb105503fa07c4604a765da24eaf80d27047a3d7b861998668a2a897a",
+    "source_monthly_sst_min.asc": "6a94272626e5b3935f0dd75770772e204cf2817246829393b0e932f3a786af02",
+    "definitions.json": "a959211e87c878c9118dee7b9def859d151dd661218e1b5bb968763cd9e2e2de",
+    "current/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "current/bio18.asc": "cfaa6fb86abd73278f48b607341d709acfdc2c90a22692bed52a70be67397fd3",
+    "current/buz_yillik.asc": "84b086588a743bfd6438303ecbd0bc553607330d82e6d32722be8a415f693ef0",
+    "current/sst_yillik.asc": "7b74002808a0b0e0bf5367099176347394659a7e510eccdb888385f0eaaa895c",
+    "current/buz_breeding.asc": "44688c24157f7ba4cee794ff64f100f4cbd46b62cfe5086abe6aba7abe67dab4",
+    "current/sst_breeding.asc": "14ebdbe9c87e7ca46bdec3d5ee68e0dd62ef530a02cf06595964ae5804ff91d9",
+    "current/buz_son.asc": "85cf19b4a28884fdb35d49022f0085a69e8ecfa12ce318bc97863e15e7181aa9",
+    "current/buz_kis.asc": "6835140e7c17d195e632f6b5c5f287ac228e2a46074bfddd6eeaff9b9d19915d",
+    "future_IPSL/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "future_IPSL/bio18.asc": "41f32b574629153ef005ae364583b3dd2288d653867ac0e5e05931d3fc88c9df",
+    "future_IPSL/buz_yillik.asc": "0602fbd7890528c6334e7f666cf3e1dc256771d9cca9d734b83a3817e5518046",
+    "future_IPSL/sst_yillik.asc": "af6f961db5877491f0a2c341398d86b5fc98c9ccaf5ee6d1afd7c6f481b6f011",
+    "future_IPSL/buz_breeding.asc": "4335c1713bf817cf7e9493a53de1c26c7d6cffe96062bbb52b9d4944ba473cbf",
+    "future_IPSL/sst_breeding.asc": "44a4ec9a1756dd2cf6ba369e95c1b40c0316cfa378995d58737060575778d89d",
+    "future_IPSL/buz_son.asc": "862161a3f05c496c547b949259845d11aae09dc101f9cf5c5c93cb857039f8c9",
+    "future_IPSL/buz_kis.asc": "d02adfd9c2a906986593020b759603bc800b19b2fecf4fb14f3bc355d7458273"
+  }
+}

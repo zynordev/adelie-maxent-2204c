@@ -1,0 +1,108 @@
+{
+  "target": "provisional overall occurrence; breeding not inferred",
+  "record_years": [
+    2000,
+    2025
+  ],
+  "n_presence_cells": 61,
+  "n_background_cells": 579,
+  "presence_cells_in_background": true,
+  "background": "uniform valid coastal support cells",
+  "bias_correction": "not yet; target-group data being audited separately",
+  "validation_background": "heldout spatial region only",
+  "training_background": "heldout spatial region excluded",
+  "candidate_selection": "fixed grid; no winner selected, no test-fold tuning",
+  "models": {
+    "L_RM1": [
+      "L",
+      1
+    ],
+    "LQ_RM1": [
+      "LQ",
+      1
+    ],
+    "LQ_RM2": [
+      "LQ",
+      2
+    ],
+    "LQH_RM1": [
+      "LQH",
+      1
+    ],
+    "LQH_RM2": [
+      "LQH",
+      2
+    ]
+  },
+  "partitions": [
+    {
+      "scheme": "latitude",
+      "test_counts": [
+        17,
+        16,
+        16,
+        12
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    },
+    {
+      "scheme": "longitude",
+      "test_counts": [
+        15,
+        15,
+        14,
+        17
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    },
+    {
+      "scheme": "checker_40km_shift0",
+      "test_counts": [
+        13,
+        14,
+        15,
+        19
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    },
+    {
+      "scheme": "checker_40km_shift0.5",
+      "test_counts": [
+        11,
+        20,
+        15,
+        15
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    },
+    {
+      "scheme": "checker_80km_shift0",
+      "test_counts": [
+        15,
+        12,
+        12,
+        22
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    },
+    {
+      "scheme": "checker_80km_shift0.5",
+      "test_counts": [
+        16,
+        13,
+        20,
+        12
+      ],
+      "accepted": true,
+      "rule": "at least 5 heldout and 20 training presence cells; fixed before model scores"
+    }
+  ],
+  "small_sample_warning": "per-fold Boyce and partial ROC diagnostic; unstable with small test samples",
+  "interval": "paired spatial-fold cluster resampling, conditional on scheme; not independent repeated datasets",
+  "originals_modified": false
+}

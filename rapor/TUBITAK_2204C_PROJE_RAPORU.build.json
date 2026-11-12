@@ -1,0 +1,12 @@
+{
+  "markdown_sha256": "95aed5e2b662f7b55b771a46e7dce3cd7a8e89505372e7ee2b4fe2f593ff2051",
+  "docx_sha256": "12bc0754a3078c506f5aeae55297840e17d89f306484dd39b7e83b24187b80c0",
+  "source": "/home/halil/adelie-maxent-2204c/rapor/TUBITAK_2204C_PROJE_RAPORU.md",
+  "output": "/home/halil/adelie-maxent-2204c/rapor/TUBITAK_2204C_PROJE_RAPORU.docx",
+  "figures": [
+    "/home/halil/adelie-maxent-2204c/maxent/cikti/revizyon_20261112/figures/spatial_null_comparison.png",
+    "/home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_jacknife.png"
+  ],
+  "model_run_performed": false,
+  "report_status": "completed audits; colony results pending"
+}

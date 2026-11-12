@@ -2,6 +2,48 @@
 
 Şablon: [`README.md`](README.md). En yeni kayıt en üstte.
 
+## 2026-11-13 — Kullanıcı isteğiyle yerel commit
+
+- Bilimsel yeniden analiz kodları, rapor MD/Word/PDF, üretim/doğrulama betikleri, çalışma kayıtları ve rapor tablolarını destekleyen küçük kanıt dosyaları yerel commit için seçildi. Push istenmedi ve yapılmadı.
+- Büyük NetCDF/NPZ/GPKG girdileri, binlerce ara model çıktısı, ham PDF ve yerel rapor yedekleri diskte korundu; commit kapsamına alınmadı. Kaynak makbuzları ve manifestler dahil edildi. Yeni koloni sonuçları hâlâ bekleniyor.
+- Commit öncesinde sistem GDAL yolu eklenen mevcut bilimsel ortamda 28 test geçti. Raporun 69 sayısal hücreli doğrulaması geçti; kod/Markdown/JSON değişikliklerinin whitespace kontrolü temiz. Üretilen CSV/ASC dosyalarının mevcut satır sonları ve hash'leri değiştirilmedi.
+
+## 2026-11-12 — Veri beklemeyen rapor bölümlerinin gerçek revizyonu
+
+**Yapılanlar**
+- Kullanıcı iki paralel seçenekten yalnız rapor çalışmasını seçti ("tmm 1 devam et"). Yeni indirme/model çalıştırılmadan giriş, amaç, kaynaklar, veri-hedef/ölçek açıklamaları ve mevcut denetim bulguları düzeltildi.
+- VIF, 240 eğitimde coğrafi null kıyası, üç GCM'deki model yapısı duyarlılığı ve yerel buz sapması gerçek dosyalardan rapora aktarıldı. Jackknife renkleri grafiğin lejantına göre düzeltildi. LQH/LQTH, REMA/SCAR ve kayıt dönemi hataları giderildi.
+- Eski kayıp/sığınak iddiaları ve eski gelecek haritalarının yeni koloni sonucu gibi sunulması kaldırıldı. Bekleyen koloni analizleri ilk sayfada ve ilgili bölümlerde açıkça belirtildi.
+
+**Dosyalar ve güvence**
+- Ana rapor MD, Word ve PDF yenilendi. Son renderin 10 sayfası görsel olarak kontrol edildi; 69 sayısal tablo hücresi kaynak dosyalarıyla doğrulandı. Önceki üç biçim ve üretici `rapor/arsiv/2026-11-12_veri_oncesi/` altında korundu.
+- Yeni `rapor/rapor_derle.py` tek Markdown kaynağını kullanıyor; eski sabit metin üreticisinin güncel raporu tekrar bozması engellendi. Ayrıntılar `docs/RAPOR_REVIZYONU_VERI_BAGIMSIZ_2026-11-12.md`.
+- `rapor/rapor_dogrula.py` ile metin/Word tablo eşitliği, sayısal kanıtlar, 5 tablo/2 şekil/10 sayfa ve MD/Word/PDF hash'leri kontrol edildi; sonuç `.verification.json` dosyasında. Obsidian'a güncel rapor revizyon notu eklendi; eski rapor notu arşiv olarak işaretlendi.
+
+**Sıradaki adım**
+- Yeni koloni sonuçları hazır olduğunda doğrulama ve Marguerite haritalarını rapora eklemek. Mevcut sürüm nihai rapor değildir.
+
+## 2026-11-12 — Bilimsel yeniden analiz ve koloni hedefinin ayrılması (devam ediyor)
+
+**Yapılanlar**
+- Kullanıcının düzeltilmiş planı uygulama isteği üzerine özgün veriler korunarak kaynak denetimi, VIF, altı mekânsal bölme, coğrafi referanslar ve beş açık MaxEnt ayarıyla 240 eğitim tamamlandı. Mevcut genel bulunuş tasarımında çevresel modellerin ortalama AUC'si hiçbir şemada uzaklık null modelini geçmedi.
+- Gerçek AUTO özellikleri LQH; eşik özelliği yok. SST kaynak kimliği SST/K olarak doğrulandı; fiziksel uç değerlerin nedeni henüz çözülemedi. 2026 kayıtları dönem eşlemesinden çıkarıldı.
+- IPSL-CM6A-LR, GFDL-ESM4 ve MPI-ESM1-2-LR girdileriyle yapısal duyarlılık ve 720 kat-dışı gelecek aktarımı üretildi. Bunlar eski genel bulunuş tasarımının denetimidir; nihai koloni sonucu değildir.
+- MAPPPD pozitif yuva sayımları yerelde 19 yerleşim/14 ızgara hücresi verdi. Kullanıcı eğitim alanının genişletilmesini, raporlama odağının Marguerite'de kalmasını açıkça seçti (K-025).
+
+**Üretilen / değişen dosyalar**
+- Betikler: `maxent/revizyon_*.py`, `maxent/cmip6_cokdosya.py`, `maxent/koloni_hazirla.py`, `era5/denetim_indir.py`, `gbif/koloni_denetimi.py`, `harita/bas_kaynak_indir.py`.
+- Geçerli yerel denetimler: `maxent/cikti/revizyon_20261112/` altındaki `denetim_v2`, `comparison_v3`, `projection_IPSL`, `projection_GFDL`, `projection_MPI`, `crossfit_delta`.
+
+**Sorunlar / notlar**
+- Eski raporun önceki oturumdan kalan düzenlemeleri korunuyor; rapor henüz bilimsel olarak düzeltilmiş sayılmıyor. Nihai PDF bu oturumda yeniden üretilmedi.
+- Geniş alan ERA5 aylık veri ve günlük buz fenolojisi CDS işleri bekleniyor. Günlük tarihler aylık veriden uydurulmayacak. Geniş alan üç GCM verileri hazır.
+- Dokuz yeni sayısal, dokuz mekânsal ve üç delta testi geçti. Enlem/boylam blokları ve kaydırılmış checkerboard değerlendirmeleri bağımsız tekrarlar değildir.
+
+**Sıradaki adım**
+- Geniş alan doğrulanmış koloni modeli, kayalık kıyı ve hedef-grup arka planlarını karşılaştırmak; ardından Marguerite odaklı sonuç/şekilleri ve raporu güncellemek.
+- Oturum içi ek ilerleme: geniş SCAR geometrisi tamamlandı (deniz uzaklığı filtresi öncesi 85 yerleşim/51 hücre); iki arka planlı koloni çalışma zinciri yazıldı ve mevcut ERA5 indirmesini en fazla bir saat bekleyecek şekilde başlatıldı. Disk kapasitesi nedeniyle yeni büyük sonuç yolu `/home/halil/Documents/2204c_revizyon_20261112/analiz`. Toplam 28 test geçti. Ayrıntılı komutlar ve devam koşulları bilimsel revizyon kaydında.
+
 ---
 
 ## 2026-11-10 — Resmî 18 Sayfalık TÜBİTAK 2204-C Proje Raporunun Üretilmesi (Aşama 8 ✅)
@@ -240,6 +282,53 @@
 
 **Sıradaki adım**
 - Öğrenci: danışmana ERA5 yaklaşımını sormak (Aşama 1), CDS hesabını hazırlamak (Aşama 2).
+
+---
+
+## 2026-11-12 — Nihai PDF raporu yeni doğrulamalarla güncellendi
+
+**Yapılanlar**
+- Kullanıcının işaret ettiği 18 sayfalık nihai 2204-C PDF raporunun kaynak üreticisi (`rapor/make_perfect_report.py`) güncellendi.
+- Rastgele katlamalı AUC ile mekânsal blok AUC arasındaki fark ana bulguya taşındı; presence-only AUC'nin gerçek yokluk doğrulaması olmadığı açıklandı.
+- 2050 fark sınıfları “habitat kaybı” yerine “uygunluk azalması/artışı” olarak adlandırıldı. Bu sınıfların gerçek koloni, nüfus veya habitat alanı kaybı ölçmediği belirtildi.
+- George VI Boğazı artışı kesin refugium değil, saha doğrulaması gerektiren bölgesel hipotez olarak korundu.
+- Güncel doğrudan PDF yeniden üretildi ve 18 sayfa olarak görsel kontrolden geçirildi.
+
+**Çıktılar**
+- `rapor/TUBITAK_2204C_PROJE_RAPORU.md`
+- `rapor/TUBITAK_2204C_PROJE_RAPORU.pdf`
+
+**Sıradaki adım**
+- Danışmanla model hedefinin “genel bulunuş” mu yoksa “üreme kolonisi habitatı” mı olacağı kesinleştirilecek.
+
+---
+
+## 2026-11-12 — Eleştiri temelli ikinci 2204-C revizyonu
+
+**Yapılanlar**
+- Dış hakem eleştirisi mevcut rapor ve proje çıktılarıyla karşılaştırıldı; yalnızca desteklenen sorunlar rapora işlendi.
+- Mekânsal CV omission (%56.7) ile sürekli uygunluk delta sınıfı (%42.2) farklı paydaları olan ayrı metrikler olarak açıklandı.
+- 357/703 (%50.8) clamping ve 246/703 yön uyuşmazlığı raporlandı; tek GCM (IPSL-CM6A-LR) ve model-özgül ısınma belirsizliği açıklandı.
+- CMIP6 historical 2000–2014 ile SSP2-4.5 devamı 2015–2025'in birleştirilerek 2000–2025 referansı oluşturduğu belirtildi.
+- LQTH/RM1 seçiminin ENMeval/AICc ile optimize edilmediği ve mekânsal testte L/RM1'nin daha dayanıklı göründüğü açıkça yazıldı; LQTH “en iyi model” olarak sunulmadı.
+- Bio18'in yağış fazını ayırt etmeyen geniş bir vekil olduğu, mevsimsel buzun yıllık ortalamayla sınırlı kaldığı ve bathymetry/kıyıya uzaklık/klorofil-kril değişkenlerinin bulunmadığı eklendi.
+- Koloni ve beslenme kayıtlarının karıştığı, thinning'in bias-grid/target-group arka planı yerine geçmediği ve presence hücrelerinin arka plandan çıkarılmasının varsayım olduğu belirtildi.
+- ±0.05 delta eşiğinin biyolojik eşik olmadığı; grid alanlarının koloni veya gerçek habitat alanı olmadığı açıklandı.
+- Wang vd. (2026) PMID ve DOI'si PubMed üzerinden doğrulandı; rapordaki DOI düzeltildi ve farklı senaryo/dönem/ölçek nedeniyle doğrudan karşılaştırma yapılmadı.
+- Adelaide/iç fiyortlar için “tüm biyolojik gereksinimler” iddiası kaldırıldı; kuzeydeki artış blokları nedeniyle artışın yalnızca George VI'ya atfedilmesi düzeltildi. PDF'deki ham LaTeX gösterimleri temizlendi.
+
+**Çıktılar**
+- \`rapor/make_perfect_report.py\`
+- \`rapor/TUBITAK_2204C_PROJE_RAPORU.md\`
+- \`rapor/TUBITAK_2204C_PROJE_RAPORU.pdf\`
+- \`/home/halil/Downloads/TUBITAK_2204C_PROJE_RAPORU_guncel.pdf\`
+
+**Doğrulama**
+- PDF 18 sayfa ve A4 olarak yeniden üretildi.
+- Jackknife görseli ayrıca kontrol edildi; mevcut mavi/turkuaz lejant açıklaması görselle uyumlu bulundu.
+
+**Açık karar**
+- L/RM1'nin ana model olarak seçilip seçilmeyeceği ve koloni-özel model hedefi öğrenci/danışman kararıdır; bu revizyonda model çıktısı sessizce değiştirilmedi.
 
 ---
 

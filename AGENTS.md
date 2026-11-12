@@ -107,6 +107,9 @@ Toplantı not alınmadı; öğrencinin aktarımıdır.
 | Kara hücresi doldurma (2026-10-19) | Küre üzerinde en yakın deniz hücresi (K-015) |
 | GBIF indirme (2026-10-19) | API, öğrencinin hesabı; 1001 kayıt, DOI 10.15468/dl.jt3gt7 (K-017) |
 | GBIF temizlik (2026-10-19, onay bekliyor) | 1001 → 704 temiz → 67 MaxEnt noktası, ERA5 hücresi başına 1 (K-018) |
+| Bilimsel revizyon (2026-11-12, öğrenci açık onayı) | Gerçek yeniden analiz; LQH/AUTO doğrulandı, üç GCM ve coğrafi null karşılaştırmaları üretildi. Nihai model seçilmedi (K-024). |
+| Koloni hedefi ve alan (2026-11-12, öğrenci açık onayı) | Eğitim alanını genişlet, Marguerite rapor odağını koru; yalnız doğrulanmış pozitif yuva sayımları. İndirme dikdörtgeni ekolojik M sayılmaz (K-025). |
+| Veri bağımsız rapor revizyonu (2026-11-12 akşamı) | Öğrenci seçenek 1'i onayladı. Güncel raporun tek metin kaynağı MD, üretici `rapor/rapor_derle.py`; önceki rapor arşivde. Tamamlanan genel bulunuş denetimleri ile bekleyen koloni sonuçları ayrılır; nihai rapor değildir (K-026). |
 | Değişkenler (2026-10-20, danışman onayı bekliyor) | kaya, bio18, sst_yillik, buz_yillik; sıcaklık yok (K-020). Buzsuz kaya katmanı SCAR ADD v7.11 (K-021) |
 
 Numaralı, gerekçeli tam karar kaydı: `docs/KARARLAR.md`.

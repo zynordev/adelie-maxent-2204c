@@ -179,3 +179,27 @@
 - **Gerekçe:** Tam dört-değişken erişimi, tutarlı model/üye ve yerel veri doğrulaması mevcut. Bu veri erişimi seçimi bağımsız bölgesel model başarısı veya ensemble anlamına gelmiyor.
 - **Sonuç:** Dört ASC ve kayıtlı eski on kat modelin yeniden eğitilmeden projeksiyonu hazır. Sonuçlar keşif amaçlı; nihai habitat kaybı/sığınak iddiası yok.
 - **Kaynak:** `docs/CMIP6_DELTA_VE_PROJEKSIYON_2026-11-08.md`, `maxent/girdi/cmip6_2041_2060/bolgesel_uretim_envanteri.json`.
+
+### K-024 — Sözel savunma yerine bilimsel yeniden analiz
+- **Tarih:** 2026-11-12
+- **Karar veren:** Öğrenci ("Tamam düzeltilmiş planı uygulamaya başla"); teknik uygulama Codex
+- **Durum:** Geçerli; uygulama sürüyor
+- **Karar:** Model/regularizasyon, mekânsal bölme ve coğrafi null modeller, arka plan, mevsimsel buz, kaynak SST kalite kontrolü, çoklu GCM ve ekstrapolasyon duyarlılığı gerçekten hesaplanacak. Aktarılabilirlik gösterilemezse kayıp yüzdesi doğrulanmış ekolojik sonuç diye sunulmayacak. L doğrusal olduğu için otomatik olarak biyolojik açıdan geçersiz, LQH karmaşık olduğu için doğru kabul edilmeyecek.
+- **Gerekçe:** Model seçiminin metinle gerekçelendirilmesi test başarısızlığını veya veri tasarımı sorununu gidermez. Ortak yönlü modeller de ortak veri yanlılığından etkilenebilir.
+- **Kayıt:** `docs/BILIMSEL_REVIZYON_2026-11-12.md`.
+
+### K-025 — Koloni eğitim alanını genişlet, Marguerite odağını koru
+- **Tarih:** 2026-11-12
+- **Karar veren:** Öğrenci (sunulan seçenekten açık onay)
+- **Durum:** Geçerli; danışmana sunulacak yeni model tasarımı
+- **Karar:** MAPPPD doğrulanmış pozitif yuva sayımlarına dayalı ayrı koloni modelinin eğitim alanı Antarktika Yarımadası çevresine genişletilecek; sonuçlar Marguerite odağında raporlanacak. GBIF deniz ve koloni kayıtları tek hedef olarak karıştırılmayacak.
+- **Gerekçe:** Yerel 2000–2025 pozitif yuva kayıtları 14 ERA5 hücresine düşüyor. Daha geniş eğitim de kendiliğinden başarı sağlamaz; bölgesel test ve coğrafi null karşılaştırması zorunlu.
+- **Uygulama:** [-60, -78, -74, -53] NWSE veri indirme zarfıdır; tamamı ekolojik M değildir. Kayalık kıyı/şelf/marine-donor maskesi ile bütün Pygoscelis pozitif yuva sayımlarından hedef-grup arka planı ayrı karşılaştırılacak. Arka plan gerçek yokluk değildir; Adélie varlık hücreleri çıkarılmayacak.
+
+### K-026 — Veri bağımsız rapor revizyonunu ayrı tamamla
+- **Tarih:** 2026-11-12
+- **Karar veren:** Öğrenci ("tmm 1 devam et"); teknik uygulama Codex
+- **Durum:** Geçerli
+- **Karar:** Veri beklemeyen rapor bölümleri ve tamamlanmış denetim bulguları güncellenecek. Bu adımda alternatif veri kaynağına geçilmeyecek, yeni koloni sonucu uydurulmayacak. Önceki rapor korunarak yeni MD/Word/PDF aynı metinden üretilecek.
+- **Gerekçe:** Veri kuyruğu bilimsel metin hatalarının ve mevcut kanıtın rapora aktarılmasının bekletilmesini gerektirmiyor. Kısmi raporun nihai diye algılanmaması için tamamlanan/planlanan/bekleyen ayrımı metin içinde korunacak.
+- **Kayıt:** `docs/RAPOR_REVIZYONU_VERI_BAGIMSIZ_2026-11-12.md`.

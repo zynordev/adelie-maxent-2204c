@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "numeric_cells_checked": 69,
+  "tables": 5,
+  "figures": 2,
+  "pdf_pages": 10,
+  "visual_qa": "all 10 pages reviewed from v2 render",
+  "sha256": {
+    "md": "95aed5e2b662f7b55b771a46e7dce3cd7a8e89505372e7ee2b4fe2f593ff2051",
+    "docx": "12bc0754a3078c506f5aeae55297840e17d89f306484dd39b7e83b24187b80c0",
+    "pdf": "e500c5155330b5c7dc527711b69443cff429cc9a9f8fed34d78791feef4a1000"
+  },
+  "scientific_status": "colony results pending; not final"
+}

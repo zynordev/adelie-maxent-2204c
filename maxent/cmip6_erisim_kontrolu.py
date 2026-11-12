@@ -261,6 +261,10 @@ def extract_regional(variable, items, output, timeout):
     import requests
     import xarray as xr
     sources, pieces, geo = [], {}, None
+    identities={item['catalog_record']['source_id'] for item in items}
+    if len(identities)!=1:
+        raise ValueError('Regional extraction requires one source model')
+    source_id=identities.pop()
     session = requests.Session()
     session.trust_env = False  # no .netrc, cloud credentials, or authentication
     for experiment in PERIODS:
@@ -355,7 +359,7 @@ def extract_regional(variable, items, output, timeout):
     climatologies, daymeans, counts = [], [], []
     files, stats = [], {}
     for name, dataset in (("baseline_2000_2025", baseline), ("future_2041_2060", future)):
-        dataset.attrs.update(source_id="IPSL-CM6A-LR", member_id=MEMBER, native_grid_preserved="true")
+        dataset.attrs.update(source_id=source_id, member_id=MEMBER, native_grid_preserved="true")
         path = output / f"{variable}_{name}.nc"
         if path.exists():
             raise FileExistsError("regional output exists; choose another output directory")
@@ -374,7 +378,7 @@ def extract_regional(variable, items, output, timeout):
     clim["period_start_year"] = ("period", [2000, 2041])
     clim["period_end_year"] = ("period", [2025, 2060])
     clim[variable].attrs["units"] = {"tos": "degC", "tas": "degC", "siconc": "%", "pr": "mm month-1"}[variable]
-    clim.attrs = {"source_id": "IPSL-CM6A-LR", "member_id": MEMBER,
+    clim.attrs = {"source_id": source_id, "member_id": MEMBER,
                   "period_labels": "0=baseline_2000_2025;1=future_ssp245_2041_2060",
                   "climatology_method": "arithmetic mean across years for each calendar month; pr converted before averaging",
                   "spatial_method": "native bounding rectangle with one native cell halo; no interpolation",

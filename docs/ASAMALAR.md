@@ -2,6 +2,10 @@
 
 **Durumlar:** ⬜ Başlamadı · 🟡 Devam ediyor · ⏸️ Bekliyor · ✅ Tamamlandı
 
+> **2026-11-12 akşamı rapor revizyonu:** Kullanıcının seçtiği veri bağımsız rapor işi tamamlandı; MD/Word/PDF yenilendi, 10 sayfa görsel kontrolden ve 69 sayısal hücre kaynak doğrulamasından geçti. Bu, henüz eğitilmemiş geniş koloni modelinin veya nihai raporun tamamlandığı anlamına gelmez. [Değişiklik ve kanıt kaydı](RAPOR_REVIZYONU_VERI_BAGIMSIZ_2026-11-12.md).
+
+> **2026-11-12 bilimsel revizyonu 🟡:** Önceki Aşama 8 ✅ yalnızca rapor dosyalarının oluşturulduğunun tarihsel kaydıdır; bilimsel sorunların çözüldüğü anlamına gelmez. Üç GCM, gerçek özellik sınıfları, arka plan ve null-model denetimleri üretildi. Kullanıcı onayıyla eğitim alanı genişletilmiş, yuva sayımına dayalı koloni modeline geçiliyor. [Canlı uygulama kaydı](BILIMSEL_REVIZYON_2026-11-12.md). Nihai model/rapor henüz kabul edilmedi.
+
 > **2026-11-08 güncellemesi:** [Analiz planı](ANALIZ_VE_COZUM_PLANI_2026-11-08.md) teknik olarak uygulandı; [güncel durum ve kalan işler](UYGULAMA_DURUMU_2026-11-08.md). Gerçek tek-GCM IPSL SSP245 girdileri/deneysel aktarımı hazır, haritalar onarıldı. Coğrafi doğrulama zayıf: nihai bilimsel sonuç henüz hazır değil. Eski 2026-10-31 “habitat kaybı/sığınak” yorumları geçerli sonuç olarak kullanılmayacak; geçmiş günlük kayıtları korunur.
 
 | # | Aşama | Sorumlu | Durum | Not |
@@ -15,8 +19,8 @@
 | 6 | MaxEnt çalıştırma ve coğrafi değerlendirme | Öğrenci + teknik destek | 🟡 | Rastgele10 AUC 0,768; eşit ayarlı AUTO random4 0,765 / coğrafi4 0,477. Nihai model kabul edilmedi; veri/alan tasarımı güçlendirilecek |
 | 7 | QGIS görselleştirme ve danışmana iletim | Öğrenci + teknik destek | 🟡 | Düzen/etiket/katman onarımı tamam; 300 DPI PNG/PDF kontrol edildi. Yeni `harita/cmip6_ipsl_2050_v1/`; bilimsel yorum ve danışmana iletim ayrı |
 | 7.1 | Gerçek CMIP6 SSP245 2041-2060 ve değişim | Öğrenci + teknik destek | 🟡 | IPSL r1i1p1f1 aylık veri→delta ASC→kayıtlı model aktarımı tamam; tek-GCM deneysel. Nihai habitat kaybı/sığınak sonucu değil |
-| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci + Danışman | ✅ | 2026-11-10; Danışman referansına uygun 18 sayfalık resmî rapor hem MD (`rapor/TUBITAK_2204C_PROJE_RAPORU.md`) hem de Cairo PDF (`rapor/TUBITAK_2204C_PROJE_RAPORU.pdf`) olarak hazırlandı. |
+| 8 | Rapor (Özet → Amaç → Giriş → Yöntem → Bulgular → Sonuç ve Tartışma → Öneriler → Kaynaklar) | Öğrenci + Danışman | 🟡 | 2026-11-12; veri bağımsız revizyon MD/Word/PDF olarak hazır, 10 sayfa kontrol edildi. Eski 18 sayfalık sürüm arşivde. Yeni koloni sonuçları ve danışman değerlendirmesi bekleniyor; nihai rapor değil. |
 
 ## Açık sorular
 
-Güncel liste `CLAUDE.md` Bölüm 8'dedir.
+Güncel liste `AGENTS.md` Bölüm 8 ve bilimsel revizyon kaydındadır.

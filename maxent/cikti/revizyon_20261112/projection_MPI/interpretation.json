@@ -1,0 +1,14 @@
+{
+  "status": "exploratory structural sensitivity; no selected final model",
+  "target": "provisional overall occurrence; breeding not inferred",
+  "sst_quality_control_resolved": false,
+  "n_gcm": 1,
+  "gcm": "MPI",
+  "independent_climate_ensemble": false,
+  "presence_delta": "full-fit/resubstitution, NOT independent validation",
+  "isolated_predictor_changes": "statistical perturbations, not causal effects; contributions need not sum",
+  "aicc": "raw prediction normalized over same 579-cell support; n = distinct occupied cells; k = nonzero feature coefficients",
+  "aicc_scope": "same domain and same presence sample only; descriptive, never replaces external validation",
+  "threshold_areas": "full grid rectangles above training P10 score, NOT colony or habitat area",
+  "originals_overwritten": false
+}

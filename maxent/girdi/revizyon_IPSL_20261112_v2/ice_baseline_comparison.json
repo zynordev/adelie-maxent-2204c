@@ -1,0 +1,22 @@
+{
+  "reference": "ERA5 monthly sea ice; not independent in-situ validation",
+  "region": "available Marguerite-domain native ocean cells, not whole Bellingshausen sector",
+  "n_ERA5_cells": 339,
+  "n_native_GCM_cells": 62,
+  "mean_bias_percentage_points": 10.140474443770833,
+  "rmse_percentage_points": 22.054902205980767,
+  "monthly_mean_bias_percentage_points": [
+    -10.067532134455627,
+    -6.389193904805436,
+    -2.0281698168485516,
+    8.954556405576039,
+    38.442356161942556,
+    42.29184048447023,
+    22.131565914690704,
+    8.349505036765004,
+    4.2497761191655234,
+    11.688863933826893,
+    7.4969941973257095,
+    -3.4348690724030697
+  ]
+}

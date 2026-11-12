@@ -1,0 +1,69 @@
+{
+  "breeding_months": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "seasonal_definition": "unweighted arithmetic month means",
+  "current_years": [
+    2000,
+    2025
+  ],
+  "future_years": [
+    2041,
+    2060
+  ],
+  "baseline_GCM": "historical 2000-2014 plus ssp245 2015-2025",
+  "gcm_label": "MPI",
+  "GCM_source_directory": "maxent/girdi/cmip6_revizyon_20261112/MPI_v3",
+  "future_annual_ice": "monthly anomalies added, then monthly clipping 0..100; differs from legacy annual clipping",
+  "sst_source_confirmed": true,
+  "sst_physical_QC_resolved": false,
+  "SST_use": "flagged sensitivity candidate; no SST correction or clipping invented",
+  "mapping": {
+    "tos": {
+      "native_cells": 25,
+      "max_distance_km": 81.17604536085933
+    },
+    "siconc": {
+      "native_cells": 25,
+      "max_distance_km": 81.17604536085933
+    },
+    "tas": {
+      "native_cells": 18,
+      "max_distance_km": 108.20834096160034
+    },
+    "pr": {
+      "native_cells": 18,
+      "max_distance_km": 108.20834096160034
+    }
+  },
+  "phenology_days_inferred_from_monthly": false,
+  "predictor_sets": {
+    "annual": [
+      "bio18",
+      "buz_yillik",
+      "kaya",
+      "sst_yillik"
+    ],
+    "seasonal": [
+      "bio18",
+      "buz_breeding",
+      "kaya",
+      "sst_breeding"
+    ],
+    "seasonal_no_sst": [
+      "bio18",
+      "buz_breeding",
+      "kaya"
+    ],
+    "ice_seasonality": [
+      "buz_breeding",
+      "buz_kis",
+      "kaya"
+    ]
+  },
+  "final_model_selected": false
+}

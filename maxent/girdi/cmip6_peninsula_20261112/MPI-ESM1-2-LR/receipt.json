@@ -1,0 +1,656 @@
+{
+  "model": "MPI-ESM1-2-LR",
+  "area_NWSE": [
+    -60.0,
+    -78.0,
+    -74.0,
+    -53.0
+  ],
+  "variables": [
+    {
+      "variable": "tas",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Amon.tas.gn.v20190710.tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "file_checksum": [
+            "1ac59e6111ee29b7209ebcf321619d2c7dceb4b7d91c5fb387a8f0dbec599c87"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 199001,
+          "last_month": 200912,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.542202+00:00",
+            "bytes_received": 65969,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "b775e4cf1d0ec3bbf6f44f1b262da848c33e89e555446537fd49d6de17ee6803"
+          },
+          "source_units": "K",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Amon.tas.gn.v20190710.tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "file_checksum": [
+            "6296fb12871b41b6a0aecce6db606338e66afe654a2626b01d2a043791602aa5"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.542202+00:00",
+            "bytes_received": 65969,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "b775e4cf1d0ec3bbf6f44f1b262da848c33e89e555446537fd49d6de17ee6803"
+          },
+          "source_units": "K",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.tas.gn.v20190710.tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "file_checksum": [
+            "637345f951a6d0b125c9f4b5b9d6e4b97494f7a6d6433374b537d679face4fe5"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 203412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:16.456137+00:00",
+            "bytes_received": 37053,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "8de5ec8bbe943998d6b7b73ae01cd1cc941447c7f4009fd17b1c6d4449c8e346"
+          },
+          "source_units": "K",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.tas.gn.v20190710.tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "file_checksum": [
+            "8c1277761466154497e33b589fd278e48750ac766c1aa196347db6a84be835e9"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 203501,
+          "last_month": 205412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:16.456137+00:00",
+            "bytes_received": 37053,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "8de5ec8bbe943998d6b7b73ae01cd1cc941447c7f4009fd17b1c6d4449c8e346"
+          },
+          "source_units": "K",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.tas.gn.v20190710.tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "file_checksum": [
+            "3af54ea8adfa4e4eb869771dda0697964a73704e8a5b13e0a428960ca8416921"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 205501,
+          "last_month": 207412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:16.456137+00:00",
+            "bytes_received": 37053,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "8de5ec8bbe943998d6b7b73ae01cd1cc941447c7f4009fd17b1c6d4449c8e346"
+          },
+          "source_units": "K",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "tas_baseline_2000_2025.nc": "173fa3f31ca9d36ea1afda867867193916977491db6101ef9c0a0290d3d9b069",
+        "tas_future_2041_2060.nc": "a32f9fd73696a0b820c0190d69eac15ad6569202a37e3595fa77e99e9cbe345d",
+        "tas_aylik_klimatoloji.npz": "ae7f10484eb7dc7a78551cdea64d9dd623ac30457c17e6537f48c621c838ead3"
+      }
+    },
+    {
+      "variable": "pr",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Amon.pr.gn.v20190710.pr_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/pr/gn/v20190710/pr_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "file_checksum": [
+            "b406ddb7ea92026f2249134cfbe9f107821d606dc301dd4d37f48b1edccc4f8f"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 199001,
+          "last_month": 200912,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.540435+00:00",
+            "bytes_received": 65624,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "9c21e3380a7b46e0f1840a15ae816a2c04dabb43d7e37fcf2fb6733be05ec9c1"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Amon.pr.gn.v20190710.pr_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/pr/gn/v20190710/pr_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "file_checksum": [
+            "46dab1e628656b49cc68c4d267f4643b70a270c98acc8fc3659a24c11321c459"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.540435+00:00",
+            "bytes_received": 65624,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "9c21e3380a7b46e0f1840a15ae816a2c04dabb43d7e37fcf2fb6733be05ec9c1"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.pr.gn.v20190710.pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/pr/gn/v20190710/pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "file_checksum": [
+            "23172c1701a81559b89d46aaf9e10b1166e51216142630bd0c0ebaf11a99e412"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 203412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:18.942600+00:00",
+            "bytes_received": 36675,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "d1c0398776b576e6aef116454f64b9d8dc7696e5ef90e755e1cce587e4e7a8b9"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.pr.gn.v20190710.pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/pr/gn/v20190710/pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "file_checksum": [
+            "a7f292c4e8b6c345205aa04196b830b7a7ac9b7c0fe1592b1e4d56b181bd3bfb"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 203501,
+          "last_month": 205412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:18.942600+00:00",
+            "bytes_received": 36675,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "d1c0398776b576e6aef116454f64b9d8dc7696e5ef90e755e1cce587e4e7a8b9"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Amon.pr.gn.v20190710.pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Amon/pr/gn/v20190710/pr_Amon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "file_checksum": [
+            "8a32e97c5712306e85cb92bd4236fc7597165c0a0e04d631c93e23c27e916253"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 205501,
+          "last_month": 207412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:18.942600+00:00",
+            "bytes_received": 36675,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "d1c0398776b576e6aef116454f64b9d8dc7696e5ef90e755e1cce587e4e7a8b9"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            7,
+            17,
+            150,
+            165
+          ],
+          "calendar": "proleptic_gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "pr_baseline_2000_2025.nc": "dc12ba498c460fc7267a2bd56ce5f0aa7a4d8555919fcea63fbc301ac45b1c75",
+        "pr_future_2041_2060.nc": "b6629148934787ad17d4830e8a276e4f119575b3adae8380738de4893ded24ff",
+        "pr_aylik_klimatoloji.npz": "a43acf2c5e54b3d23fcca6de7286074ee15b56f35e151a910cf2d13a1f9ca9f0"
+      }
+    },
+    {
+      "variable": "siconc",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.SImon.siconc.gn.v20190710.siconc_SImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/SImon/siconc/gn/v20190710/siconc_SImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "file_checksum": [
+            "56af4a9aeb6612b754d1eace43cec896f9466038fda63f5417c9b606cf677164"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 199001,
+          "last_month": 200912,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.496355+00:00",
+            "bytes_received": 67461,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "7f595c303260c935bba3d954f4fd7629be1091e6f75ca9abcc2fbf38eff38b45"
+          },
+          "source_units": "%",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.SImon.siconc.gn.v20190710.siconc_SImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/SImon/siconc/gn/v20190710/siconc_SImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "file_checksum": [
+            "30ed551257741974504deea9e45acb89ab504f09b787b077601627ed30721e38"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.496355+00:00",
+            "bytes_received": 67461,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "7f595c303260c935bba3d954f4fd7629be1091e6f75ca9abcc2fbf38eff38b45"
+          },
+          "source_units": "%",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.SImon.siconc.gn.v20190710.siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190710/siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "file_checksum": [
+            "2b0712c566cda29ca2ba2feabaa200cfda9a5df4fa9079e76c95a71763a556e8"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 203412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:21.879593+00:00",
+            "bytes_received": 37885,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "aca00663f36cd71b7165453701d4b022f5a297eeda20d04b3566b79b62b762bd"
+          },
+          "source_units": "%",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.SImon.siconc.gn.v20190710.siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190710/siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "file_checksum": [
+            "6168f56b7c76b23aeedba920c0d13b7cfc8c276e972da620facc1b2506fe48b1"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 203501,
+          "last_month": 205412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:21.879593+00:00",
+            "bytes_received": 37885,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "aca00663f36cd71b7165453701d4b022f5a297eeda20d04b3566b79b62b762bd"
+          },
+          "source_units": "%",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.SImon.siconc.gn.v20190710.siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190710/siconc_SImon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "file_checksum": [
+            "a083088c5ffae388cf117528c1b034f4769927cf4bf8df06302fde782f249bbd"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 205501,
+          "last_month": 207412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:21.879593+00:00",
+            "bytes_received": 37885,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "aca00663f36cd71b7165453701d4b022f5a297eeda20d04b3566b79b62b762bd"
+          },
+          "source_units": "%",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "siconc_baseline_2000_2025.nc": "27efcb454a4efbd90ed78afe69ce5b44aaa4f60fa19a5775d65c88505060c80f",
+        "siconc_future_2041_2060.nc": "5d666b96c7b0c8c21a4556151e66e03271aaec764511e74ac1326a3be872c7d4",
+        "siconc_aylik_klimatoloji.npz": "4294177c304ee4af0f6ff036704e0710ff5e0fa747a752a2c59fcc8992b0e315"
+      }
+    },
+    {
+      "variable": "tos",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Omon.tos.gn.v20190710.tos_Omon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Omon/tos/gn/v20190710/tos_Omon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+          "file_checksum": [
+            "8873ee0c216642b94ec9ce7bf75f4056d0fec322a8154af2efc59c51d64af555"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 199001,
+          "last_month": 200912,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.478600+00:00",
+            "bytes_received": 66093,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "836c73bf290be4021ccfc0e34a4ed4c3ccc66ebe41ca9fd718522b5544a0b14e"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r1i1p1f1.Omon.tos.gn.v20190710.tos_Omon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Omon/tos/gn/v20190710/tos_Omon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+          "file_checksum": [
+            "1c6579581bf0c3b397a75efeb8b000af56807b3c61f6109c6137820c2deca02d"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.478600+00:00",
+            "bytes_received": 66093,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "836c73bf290be4021ccfc0e34a4ed4c3ccc66ebe41ca9fd718522b5544a0b14e"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Omon.tos.gn.v20190710.tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190710/tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_201501-203412.nc",
+          "file_checksum": [
+            "2737a538c99c7deb6e8d3b4d27c6e656dd38483abd40277c65251baa11a5df70"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 203412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:29.199052+00:00",
+            "bytes_received": 36938,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "ac379de59ee8f40ec93a3a738951f4c6e646f4c570265583f67beb89738e70a7"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Omon.tos.gn.v20190710.tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190710/tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_203501-205412.nc",
+          "file_checksum": [
+            "d07ecae8b18df9bf51f7ae805ee13a085ed07906ce2d54ccbfa687ad984953a4"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 203501,
+          "last_month": 205412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:29.199052+00:00",
+            "bytes_received": 36938,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "ac379de59ee8f40ec93a3a738951f4c6e646f4c570265583f67beb89738e70a7"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp245.r1i1p1f1.Omon.tos.gn.v20190710.tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190710/tos_Omon_MPI-ESM1-2-LR_ssp245_r1i1p1f1_gn_205501-207412.nc",
+          "file_checksum": [
+            "20deb4265a8480fd23121668d7873b9d283f95cd580485111816cf3299df7e3d"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 205501,
+          "last_month": 207412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:29.199052+00:00",
+            "bytes_received": 36938,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "ac379de59ee8f40ec93a3a738951f4c6e646f4c570265583f67beb89738e70a7"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            174,
+            201,
+            77,
+            98
+          ],
+          "calendar": "proleptic_gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "tos_baseline_2000_2025.nc": "b78d4d4ae15b29a53daa864f357f9d4eb840f455c75a29358966359a9a02c612",
+        "tos_future_2041_2060.nc": "a4869cf3ea01b6ea613ef289c0bf0a1a940a24c62a1eb8bc5bf8d2b1b58c7397",
+        "tos_aylik_klimatoloji.npz": "9b68928a669999a8dddb5994d4bc0a78a6d7b72bd400edfa9f91486fd2acc149"
+      }
+    }
+  ],
+  "complete": true
+}

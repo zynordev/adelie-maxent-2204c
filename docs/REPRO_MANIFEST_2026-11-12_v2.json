@@ -1,0 +1,269 @@
+{
+  "timestamp_UTC": "2026-11-12T17:03:49.116664+00:00",
+  "base_commit": "1e064a8fa6743b10f43eb578aebc9142c4c94ce3",
+  "worktree_committed": false,
+  "python": "3.14.8",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "xarray": "2026.9.0",
+    "pydap": "3.5.11",
+    "cftime": "1.6.6.1",
+    "requests": "2.34.2",
+    "h5netcdf": "1.8.3",
+    "h5py": "3.16.0",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0",
+    "matplotlib": "3.11.2",
+    "cdsapi": "0.7.7",
+    "ecmwf-datastores-client": "0.6.0"
+  },
+  "inputs": [
+    {
+      "path": "era5/denetim_indir.py",
+      "bytes": 3844,
+      "sha256": "e32cde473858ff0ab02327905125ec2ca61621239fb096cdbd1fb80a95256be4"
+    },
+    {
+      "path": "era5/veri_ham/denetim_20261112/marine_monthly_2000_2025.nc",
+      "bytes": 426779,
+      "sha256": "b4889cb7ea48dc214c8a1076b1fffc9b4bb448889d70122021f9c789e5e23c50"
+    },
+    {
+      "path": "era5/veri_ham/denetim_20261112/receipt.json",
+      "bytes": 1140,
+      "sha256": "7b0193209529ef71dca8e97cdc9ade770204fcf993baaba6ff254f1d916edb4e"
+    },
+    {
+      "path": "era5/veri_ham/denetim_20261112/receipt_daily.json",
+      "bytes": 1504,
+      "sha256": "f15e66d30bca1d40c8a489696e6eeadae1380c75a928aecaeb431b881aaeda68"
+    },
+    {
+      "path": "era5/veri_ham/peninsula_20261112/receipt_monthly.json",
+      "bytes": 1143,
+      "sha256": "5dcce44c5103195ea348dbb5affd19ce37967fe6e241de43f22a2ba8dc6ebc8d"
+    },
+    {
+      "path": "gbif/koloni_denetimi.py",
+      "bytes": 2908,
+      "sha256": "1cd6687a771056047cc845c60b06a4836fd7c5c2bd3999d09d326218b40f61ba"
+    },
+    {
+      "path": "gbif/revizyon_kaynaklari.py",
+      "bytes": 1859,
+      "sha256": "d601ec6359a6eb65380a91b3ccb6854064bf4c0a326e1e009bf18b8f6e0ad275"
+    },
+    {
+      "path": "gbif/veri_ham/revizyon_20261112/gbif_original.zip",
+      "bytes": 51266,
+      "sha256": "c1e3dbd59f8923a97ea9efc8720f3400047fa9008487a4da123e66c79a2383c9"
+    },
+    {
+      "path": "gbif/veri_ham/revizyon_20261112/mapppd_all_counts.csv",
+      "bytes": 2114238,
+      "sha256": "d169c409cf278b137d6df35fbeb9ab3409bdea15f41c39bcaec549a4d4dbca89"
+    },
+    {
+      "path": "gbif/veri_ham/revizyon_20261112/receipts.json",
+      "bytes": 518,
+      "sha256": "e656b035a66d63577d5add2176b43ae9f20b716276f3fea5d8a5caf030fec71e"
+    },
+    {
+      "path": "harita/bas_kaynak_indir.py",
+      "bytes": 2056,
+      "sha256": "6d1d47f2e60acfe3708d616bac2982f26be35249d21d8f22970a65fb24bbe1d9"
+    },
+    {
+      "path": "harita/veri_ham/revizyon_20261112/coast_v7_11.shp.zip",
+      "bytes": 58562693,
+      "sha256": "ce8746cb9066616d25a730716c7cee54b66f02660e3164f19c7a96a3c34ae502"
+    },
+    {
+      "path": "harita/veri_ham/revizyon_20261112/receipts.json",
+      "bytes": 919,
+      "sha256": "a1c0a53f50e4e99fcd1b0d08424f84de0f9cfcd079f11199e66bc9874e2e61aa"
+    },
+    {
+      "path": "harita/veri_ham/revizyon_20261112/rock_v7_11.shp.zip",
+      "bytes": 150690794,
+      "sha256": "e21f76b886e723ba5009d971946de55a6f6eb43fd0e9c9d2920bb265a6df9d76"
+    },
+    {
+      "path": "maxent/cmip6_cokdosya.py",
+      "bytes": 9971,
+      "sha256": "8899c8e56df1f2bc65d6a7a9d6ba8f04f048a713d7763eabeb394d4917d30aab"
+    },
+    {
+      "path": "maxent/cmip6_erisim_kontrolu.py",
+      "bytes": 33518,
+      "sha256": "36b2b5bfc2a0d2d026453ea97a4a0867b6a79a4c05b8d2540577416b98719501"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/GFDL-ESM4/pr_aylik_klimatoloji.npz",
+      "bytes": 59958,
+      "sha256": "9d52f5212836ade80790bb8abe06c8f6ee4356ac5ba77619268cc8a6a536123c"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/GFDL-ESM4/receipt.json",
+      "bytes": 17384,
+      "sha256": "227eebfc0c294303b433a2fdb806bf51763fead30d0db2af32f6b2213f22db19"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/GFDL-ESM4/siconc_aylik_klimatoloji.npz",
+      "bytes": 405856,
+      "sha256": "ef753ed07ae67a39dfae94e1dde4004c0ba5a442b88a7e3c11ab11e7b840e45e"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/GFDL-ESM4/tas_aylik_klimatoloji.npz",
+      "bytes": 41925,
+      "sha256": "3b23fc619d848f78ea7f9a234bcbf2c92f1ee316aa5f2b967650cb4c2c0363df"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/GFDL-ESM4/tos_aylik_klimatoloji.npz",
+      "bytes": 341303,
+      "sha256": "3f0b53f7ac2e471a92a42c69f4e38232ecb5ebfe1653fbcce32b8d395ab8e77c"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/IPSL-CM6A-LR/pr_aylik_klimatoloji.npz",
+      "bytes": 28498,
+      "sha256": "fbcf6da248bb25e99eaa3bf1b7fe818f9e7f7f850a7260e861c82350cc3c9c47"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/IPSL-CM6A-LR/receipt.json",
+      "bytes": 13225,
+      "sha256": "9b5e3217f3ac5f46d0c6ebba974fc21f15b03c0ae6af9de38c857facfc848eaf"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/IPSL-CM6A-LR/siconc_aylik_klimatoloji.npz",
+      "bytes": 109384,
+      "sha256": "2214f7cf55f437d7142e0d8b33e4bbfd389985c22f688b0b8f0294dd4c6ec8ce"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/IPSL-CM6A-LR/tas_aylik_klimatoloji.npz",
+      "bytes": 21082,
+      "sha256": "c37c46b71e20211a5436a2fbfaa151439484c23f514804876711601c29c858e5"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/IPSL-CM6A-LR/tos_aylik_klimatoloji.npz",
+      "bytes": 104619,
+      "sha256": "ed14d898d5da2133211077504400035958bff9805990fc788e4d2c8f119d11b4"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/MPI-ESM1-2-LR/pr_aylik_klimatoloji.npz",
+      "bytes": 24916,
+      "sha256": "a43acf2c5e54b3d23fcca6de7286074ee15b56f35e151a910cf2d13a1f9ca9f0"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/MPI-ESM1-2-LR/receipt.json",
+      "bytes": 30546,
+      "sha256": "fc42e818981d52c0b73ab8752726de7dea9301def6cb79ace12c1fd353e24839"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/MPI-ESM1-2-LR/siconc_aylik_klimatoloji.npz",
+      "bytes": 53555,
+      "sha256": "4294177c304ee4af0f6ff036704e0710ff5e0fa747a752a2c59fcc8992b0e315"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/MPI-ESM1-2-LR/tas_aylik_klimatoloji.npz",
+      "bytes": 19704,
+      "sha256": "ae7f10484eb7dc7a78551cdea64d9dd623ac30457c17e6537f48c621c838ead3"
+    },
+    {
+      "path": "maxent/girdi/cmip6_peninsula_20261112/MPI-ESM1-2-LR/tos_aylik_klimatoloji.npz",
+      "bytes": 67441,
+      "sha256": "9b68928a669999a8dddb5994d4bc0a78a6d7b72bd400edfa9f91486fd2acc149"
+    },
+    {
+      "path": "maxent/izgara.py",
+      "bytes": 3419,
+      "sha256": "760cf19185830534f14664c7deb79390fa196ccb43d0cc20a441c97626d35214"
+    },
+    {
+      "path": "maxent/koloni_calistir.py",
+      "bytes": 5791,
+      "sha256": "309ad509c6bb34b8b14f7dd2ff4f445ebd47e2f86c3e8b6d678e4e7f83c62584"
+    },
+    {
+      "path": "maxent/koloni_gelecek.py",
+      "bytes": 6628,
+      "sha256": "5a31825acb9d4ae2a84bc362873265b284f9872a3c7a6ce09bdd23da34141953"
+    },
+    {
+      "path": "maxent/koloni_hazirla.py",
+      "bytes": 9642,
+      "sha256": "53a5ff29e35a440b68eb754905b16e0f1081294c8472215b5905eba8fa382f34"
+    },
+    {
+      "path": "maxent/maxent.jar",
+      "bytes": 675926,
+      "sha256": "4c856e55412f70c5597b03cf9aaaf27e0782e0921f937262273b68bdcb8fee5e"
+    },
+    {
+      "path": "maxent/mekansal_dogrulama.py",
+      "bytes": 24397,
+      "sha256": "3173eab3c2f3f8e4110e6a1b77c2a4116419f0bd6da0b3d685bcb3cef329bf0a"
+    },
+    {
+      "path": "maxent/revizyon_denetimi.py",
+      "bytes": 12043,
+      "sha256": "24d2a2445b951f1d3767331155d6aa9c3ddbea826b616c2e1999914059b36c8e"
+    },
+    {
+      "path": "maxent/revizyon_figurlari.py",
+      "bytes": 2966,
+      "sha256": "c39fd9f640c12ae4294285c746834358dea2aa600ff533084d89c45757e66df2"
+    },
+    {
+      "path": "maxent/revizyon_karsilastirma.py",
+      "bytes": 15206,
+      "sha256": "069bf52f974e13ccb978e1decc5d140d8376e29af83829918cdef34ff7c10adc"
+    },
+    {
+      "path": "maxent/revizyon_katmanlari.py",
+      "bytes": 11188,
+      "sha256": "1bb1c2b17c73e92086c732e8b9a730fded06c0b4cb27c90c7d284f3501184b6e"
+    },
+    {
+      "path": "maxent/revizyon_manifest.py",
+      "bytes": 2632,
+      "sha256": "1719e53902e496815ad0eb48c0e04e9d7d51accd7fefaeb07bc11225c24c719c"
+    },
+    {
+      "path": "maxent/revizyon_oof.py",
+      "bytes": 6301,
+      "sha256": "ab2d4eef6b95b94ac2edd28cd4a99e3ff9b70c66b8f2f0654f6e8b8fbc78832d"
+    },
+    {
+      "path": "maxent/revizyon_projeksiyon.py",
+      "bytes": 10990,
+      "sha256": "eb87c0c27f2b603f614f8b0fc34403a76e84a349ad133f020006e1a9af4d7f60"
+    },
+    {
+      "path": "maxent/test_cmip6_delta.py",
+      "bytes": 1166,
+      "sha256": "ec5c3010abf1783c6d6fa5688578348e03a5ce460999280f1b5dc49746dbba33"
+    },
+    {
+      "path": "maxent/test_fark_analizi.py",
+      "bytes": 2083,
+      "sha256": "dd3783d3b04ff26da9a00d8c0b421a56fe41e17e54c1be7e4db6ea393c4ea5a7"
+    },
+    {
+      "path": "maxent/test_mekansal_dogrulama.py",
+      "bytes": 6784,
+      "sha256": "34c034de5c6a0a9b0ec8d0ca41a9dfa852bd399be68a5001abcdd9f2f1b1bc6d"
+    },
+    {
+      "path": "maxent/test_revizyon.py",
+      "bytes": 3930,
+      "sha256": "40f921be14414dee91c0ae06d1829e2795a59e0edd9323ad8fb181f326a7e7d5"
+    }
+  ],
+  "MAPPPD_version": "5.0",
+  "MAPPPD_license": "CC BY 4.0",
+  "SST_QC_resolved": false,
+  "daily_phenology_ready": false,
+  "source_snapshots_not_refreshed": true,
+  "final_report_released": false
+}

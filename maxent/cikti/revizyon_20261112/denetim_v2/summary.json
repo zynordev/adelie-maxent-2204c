@@ -1,0 +1,27 @@
+{
+  "purpose": "source and design audit; no final model selection",
+  "features_in_original_folds": [
+    "hinge linear quadratic"
+  ],
+  "sst_raw_ocean_min_c": -2.421918,
+  "sst_raw_below_minus2_cells": 6,
+  "sst_bad_is_from_unfilled_grid": true,
+  "raw_source_monthly_files_present": false,
+  "n_raw_ocean_cells": 339,
+  "n_marine_support_cells": 325,
+  "n_coastal_support_cells": 579,
+  "clean_records": 704,
+  "record_surface_counts": {
+    "land": 403,
+    "marine": 301,
+    "ice_shelf": 0
+  },
+  "records_2026": 163,
+  "verified_breeding_records_from_existing_metadata": 0,
+  "legacy_increase_cells": 243,
+  "legacy_increase_novel_cells": 59,
+  "legacy_increase_disagreement_cells": 22,
+  "legacy_domain_area_km2": 202681.6371774113,
+  "mask_status": "candidate support masks based on existing SCAR polygon; ecological M not finalized",
+  "scientific_gate": "SST source audit and record evidence must precede a new ecological conclusion"
+}

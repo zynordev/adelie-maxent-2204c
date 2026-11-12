@@ -1,0 +1,27 @@
+{
+  "source_sha256": "b4889cb7ea48dc214c8a1076b1fffc9b4bb448889d70122021f9c789e5e23c50",
+  "source_doi": "10.24381/cds.f17050d7",
+  "script_sha256": "1bb1c2b17c73e92086c732e8b9a730fded06c0b4cb27c90c7d284f3501184b6e",
+  "outputs": {
+    "marine_donor_distance_km.asc": "b804117cb105503fa07c4604a765da24eaf80d27047a3d7b861998668a2a897a",
+    "source_monthly_sst_min.asc": "6a94272626e5b3935f0dd75770772e204cf2817246829393b0e932f3a786af02",
+    "ice_baseline_comparison.json": "e6a93815734820b9df00ad1889d50348025cc4dd93f5d4d52030f1b9c07f763c",
+    "definitions.json": "3bdb5835055b642a08773eb3248631febad71081387f51ee489ce4d00cc4a397",
+    "current/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "current/bio18.asc": "cfaa6fb86abd73278f48b607341d709acfdc2c90a22692bed52a70be67397fd3",
+    "current/buz_yillik.asc": "84b086588a743bfd6438303ecbd0bc553607330d82e6d32722be8a415f693ef0",
+    "current/sst_yillik.asc": "7b74002808a0b0e0bf5367099176347394659a7e510eccdb888385f0eaaa895c",
+    "current/buz_breeding.asc": "44688c24157f7ba4cee794ff64f100f4cbd46b62cfe5086abe6aba7abe67dab4",
+    "current/sst_breeding.asc": "14ebdbe9c87e7ca46bdec3d5ee68e0dd62ef530a02cf06595964ae5804ff91d9",
+    "current/buz_son.asc": "85cf19b4a28884fdb35d49022f0085a69e8ecfa12ce318bc97863e15e7181aa9",
+    "current/buz_kis.asc": "6835140e7c17d195e632f6b5c5f287ac228e2a46074bfddd6eeaff9b9d19915d",
+    "future_GFDL/kaya.asc": "b6b7fc7b4f7a2ed989f34239de75c5d40ab707c682b3a9e3390dc0eaa2b4f43e",
+    "future_GFDL/bio18.asc": "829380f958de441a97297bedf23b07ce2ee46695c986e527c90f619dd0528791",
+    "future_GFDL/buz_yillik.asc": "6d4f13b9919969c8d5a22adc93912700d152e91da8612b24cdafa229bd5bfb6f",
+    "future_GFDL/sst_yillik.asc": "7f8cbb922f2ac6af66570dd589fdea4de16c6c2d91b2e52308b1784e966df338",
+    "future_GFDL/buz_breeding.asc": "5d6e72c6b86b743d721a1dfada3b6bb6762eb4620c21880eb9c5ea8f867d6818",
+    "future_GFDL/sst_breeding.asc": "0c87007b0e4be5f45bc28af3b58301b594bf2582841d603debb2780c3cff77e8",
+    "future_GFDL/buz_son.asc": "ee8f7d0dc7ae95158dea6ca12f7655451608f0a9e1da3d2f825f914178e192ba",
+    "future_GFDL/buz_kis.asc": "814095c228332b9caee28e0737b3c849b5a4f06a7eb84b319bf8794a312d087b"
+  }
+}

@@ -1,309 +1,264 @@
-# TÜBİTAK 2204-C KUTUP ARAŞTIRMALARI PROJE RAPORU
+# TÜBİTAK 2204 C Kutup Araştırmaları Proje Raporu
 
-Proje Ana Alanı: Kutup Araştırmaları (Biyoloji ve Ekoloji) | Proje Tematik Alanı: Kutup Biyoçeşitliliği ve Ekosistem Dinamikleri
+**Proje ana alanı:** Kutup Araştırmaları - Biyoloji ve Ekoloji
 
-MaxEnt Algoritması ve CMIP6 İklim Senaryoları Kullanılarak Marguerite Körfezi'nde (Batı Antarktika) Adélie Pengueni (*Pygoscelis adeliae*) Potansiyel Habitat Uygunluğunun ve İklim Değişim Eğilimlerinin Modellenmesi
+**Proje tematik alanı:** Kutup Biyoçeşitliliği ve Ekosistem Dinamikleri
 
-# TÜBİTAK 2204-C KUTUP ARAŞTIRMALARI PROJE RAPORU
+**Proje adı:** Marguerite Körfezi odaklı Adélie pengueni koloni bulunuşunun modellenmesi ve iklim projeksiyonlarının güvenilirliğinin değerlendirilmesi
 
-**Proje Ana Alanı:** Kutup Araştırmaları (Biyoloji ve Ekoloji)
-**Proje Tematik Alanı:** Kutup Biyoçeşitliliği ve Ekosistem Dinamikleri
-**Proje Adı:** MaxEnt Algoritması ve CMIP6 İklim Senaryoları Kullanılarak Marguerite Körfezi'nde (Batı Antarktika) Adélie Pengueni (*Pygoscelis adeliae*) Potansiyel Habitat Uygunluğunun ve İklim Değişim Eğilimlerinin Modellenmesi
-
----
-
+**Analiz durumu:** 12 Kasım 2026. Aşağıda tamamlanan genel bulunuş denetimleri ile henüz sonuçlanmamış koloni modellemesi ayrı sunulmaktadır. Geniş alan koloni modeli, buna ait 2050 haritaları ve nihai ekolojik sonuçlar beklenmektedir.
 
 # Özet
 
-Batı Antarktika Yarımadası, 20. yüzyılın ikinci yarısında 50 yıllık süreçte yaklaşık 2.5°C'lik (on yılda ~0.5°C) sıcaklık artışıyla yeryüzünün en hızlı bölgesel ısınma yaşayan sahalarından biridir (Vaughan vd., 2003). Bu çalışmada, deniz buzu zorunlu (sea-ice obligate) tepe avcı ve kutup biyo-indikatörü olan Adélie pengueninin (*Pygoscelis adeliae*), Batı Antarktika Yarımadası'ndaki (WAP) Marguerite Körfezi sahasında (65.88°–70.63°G, 63.88°–73.13°B) günümüz habitat uygunluğu mezo-ölçekte modellenmiş; CMIP6 iklim projeksiyonu altında 2050 yılı olası çevresel değişim eğilimleri keşifsel düzeyde incelenmiştir. GBIF ve SCAR veri tabanlarından derlenen türün yaşam döngüsündeki genel bulunuş (üreme kolonileri ve neritik beslenme gözlemleri), 0.25° grid ölçeğinde mekânsal inceltme uygulanarak örnekleme yığılmasından arındırılmış ve 67 adet bağımsız varlık hücresi elde edilmiştir. Çevresel katman olarak ECMWF ERA5 yeniden analizlerinden yıllık ortalama deniz buzu konsantrasyonu (*buz_yillik*), deniz yüzeyi sıcaklığı (*sst_yillik*), en sıcak çeyrek toplam yağışı (*bio18*) ve REMA modelinden çıplak kaya yüzdesi (*kaya*) üretilmiştir.
+Bu çalışma, Marguerite Körfezi çevresinde Adélie pengueninin (*Pygoscelis adeliae*) koloni bulunuşunu çevresel değişkenlerle ilişkilendirmeyi ve geleceğe aktarılacak modellerin güvenilirliğini sınamayı amaçlamaktadır. İlk genel bulunuş modelinin denetiminde, kıyı ve deniz gözlemlerinin doğrulanmış üreme kayıtlarından ayrılmadığı, kayıt döneminin iklim dönemiyle tam eşleşmediği ve model seçiminin coğrafi aktarılabilirlik kanıtıyla yeterince desteklenmediği belirlenmiştir. Bu nedenle önceki uygunluk değişimi yüzdeleri koloni veya habitat kaybı sonucu olarak kullanılmamıştır.
 
-Maksimum Entropi (MaxEnt 3.4.4) algoritmasıyla yürütülen 10 katlı çapraz doğrulamada **0.768 ± 0.111** test AUC ve 0.838 eğitim AUC değeri elde edilmiştir. Permütasyon öneminde modelin birincil belirleyicisi **%55.6** ile yıllık deniz buzu konsantrasyonu olmuş; bunu deniz yüzeyi sıcaklığı (**%18.3**), yaz mevsimi yağışı (**%17.1**) ve çıplak kaya alanı (**%9.1**) izlemiştir. Çevresel tepki eğrileri, türün en yüksek uygunluğa %20–%25 marjinal buz konsantrasyonunda, -1.94°C su sıcaklığında ve 184 mm yaz yağışında ulaştığını göstermiştir. Buz konsantrasyonu arttıkça uygunluk kademeli düşerek %60.8'de 0.154 ile taban seviyesine inmekte; kapalı kütlesel buz örtüsünde dalış erişiminin kısıtlanmasını yansıtmaktadır.
+Tamamlanan yeniden analizde, 2000-2025 dönemine ait 61 genel bulunuş hücresi ve 579 hücrelik aday kıyı desteği üzerinde iki değişken seti, beş özellik-düzenlileştirme ayarı ve altı mekânsal bölme şeması karşılaştırılmıştır. Toplam 240 eğitimde çevresel adayların hiçbirinin şema bazındaki ortalama AUC değeri, en yakın eğitim kaydına uzaklık referansını aşmamıştır. Üç CMIP6 modeliyle yapılan duyarlılık analizinde aynı iklim modeli altında dahi MaxEnt ayarına göre ortalama uygunluk farkının yönü değişmiştir. Bu sonuç, doğrulanmış bir ekolojik daralma değil, mevcut çıkarımın veri ve model tasarımına duyarlılığıdır.
 
-Roberts vd. (2017) yaklaşımıyla uygulanan 4 enlem bandı mekânsal blok çapraz doğrulaması (Spatial Block CV), ana modelin (AUTO/RM1, LQTH) test AUC değerinin **0.477'ye (rastgele tahmin eşiğinin altına)** gerilediğini ve omission oranının %56.7'ye çıktığını belgeleyerek karmaşık kutup modellerinde coğrafi aktarılabilirlik kısıtlarının açıkça kabul edilmesinin zorunluluğunu ortaya koymuştur. CMIP6 IPSL-CM6A-LR SSP2-4.5 (2041–2060) delta projeksiyonunda, 703 grid hücresinin **297 adedinde (%42.2)** uygunluk azalması, **163 adedinde (%23.2)** kararlılık, **243 adedinde (%34.6)** ise deniz buzu incelmesine bağlı kuramsal uygunluk artışı belirlenmiştir. Ancak iklim delta anomalisinin GCM'in ~1° kaba çözünürlüğünü taşıması, hücrelerin %50.8'inde clamping görülmesi ve George VI Boğazı'nın kalıcı şelf buzuyla kaplı olması sebebiyle artış alanları kesin bir 'sığınak' sayılamaz; Ulusal Antarktika Bilim Seferleri (TAE) kapsamında sahada doğrulanması gereken birer **bölgesel hipotezdir**.
+Yeni hedef yalnızca MAPPPD pozitif yuva sayımlarına dayalı koloni bulunuşudur. Yerel kayıtlar 19 yerleşimden 14 çevresel hücreye düştüğü için eğitim alanının genişletilmesi, sonuçların ise Marguerite odağında raporlanması benimsenmiştir. Geniş alanın çevresel girdileri ve koloni doğrulaması tamamlanmadığından bu sürümde yeni koloni uygunluğu, kayıp alanı veya sığınak haritası sunulmamaktadır.
 
-**Anahtar Kelimeler:** Adélie Pengueni (*Pygoscelis adeliae*), MaxEnt Ekolojik Niş Modeli, Marguerite Körfezi, CMIP6 SSP2-4.5, Mekânsal Blok Çapraz Doğrulama, İklim Değişimi, Ekstrapolasyon Belirsizliği.
-
+**Anahtar kelimeler:** Adélie pengueni, koloni bulunuşu, MaxEnt, Marguerite Körfezi, mekânsal doğrulama, model belirsizliği.
 
 # Amaç
 
-Bu projenin temel amacı; küresel iklim değişikliğine bağlı olarak oşinografik ve atmosferik süreçlerin hızla dönüştüğü Batı Antarktika Yarımadası'ndaki (WAP) Marguerite Körfezi'nde, deniz buzu dinamiklerine duyarlı tepe indikatör tür olan Adélie pengueninin (*Pygoscelis adeliae*) günümüz (2000–2025) potansiyel habitat uygunluğunu Maksimum Entropi (MaxEnt 3.4.4) algoritmasıyla mezo-ölçekte modellemek; CMIP6 IPSL-CM6A-LR SSP2-4.5 (2041–2060) projeksiyonu altında türün çevresel uygunluk gradyanındaki olası değişim eğilimlerini keşifsel düzeyde incelemek; model aktarılabilirliğini mekânsal blok çapraz doğrulama yöntemiyle sınamak ve elde edilen kuramsal değişimlerin sahadaki ekolojik fizibilitesini değerlendirmektir.
+Araştırmanın temel amacı, Adélie pengueninin doğrulanmış yuva sayımlarına dayalı koloni bulunuşunu modellemek ve bu modelin Marguerite Körfezi'ne aktarılabilirliğini değerlendirmektir. Koloni bulunuşu, bir çevresel hücrede 2000-2025 arasında en az bir pozitif yuva sayımının bulunması olarak tanımlanır. Bu hedef koloni büyüklüğü, her yıl kesintisiz işgal, civciv sağkalımı veya denizde beslenme dağılımı değildir.
 
-Bu genel amaç doğrultusunda şu hedefler belirlenmiştir:
+Çalışma şu soruları sınar: Çevresel değişkenler, yalnız coğrafi yakınlığa dayalı bir referanstan daha fazla ayırt edici bilgi sağlıyor mu? Özellik sınıfı, düzenlileştirme ve arka plan tasarımı değiştirilince günümüz ve gelecek çıktıları ne kadar değişiyor? SSP2-4.5 altında 2041-2060 aktarımında görülen değişimler hangi hücrelerde yeni çevresel koşullara veya clamping işlemine bağımlı kalıyor?
 
-- • 1. GBIF ve SCAR veri tabanlarından Marguerite Körfezi'ne ait 2000–2025 dönemini kapsayan Adélie pengueni genel bulunuş (üreme kolonisi ve neritik beslenme) koordinatlarını derlemek; 0.25° grid ölçeğinde mekânsal inceltme uygulayarak 67 adet bağımsız varlık hücresi belirlemek.
-- • 2. ECMWF ERA5 yeniden analizlerinden ve REMA sayısal yükseklik modelinden penguenlerin üreme ve beslenme ekolojisini kontrol eden 4 temel çevresel katmanı (*buz_yillik*, *kaya*, *bio18*, *sst_yillik*) üretmek; değişkenler arası çoklu eşdoğrusallığı (VIF ve Pearson korelasyonu) denetlemek.
-- • 3. MaxEnt 3.4.4 algoritmasıyla günümüz habitat uygunluk modelini kurmak; standart rastgele 10 katlı çapraz doğrulama (10-fold CV) ve Roberts vd. (2017) yöntemine dayalı 4 enlem bandı mekânsal blok çapraz doğrulama (Spatial Block CV) uygulayarak model başarımını ve coğrafi aktarılabilirlik sınırlarını karşılaştırmak.
-- • 4. CMIP6 IPSL-CM6A-LR SSP2-4.5 (2041–2060) iklim projeksiyonunu delta aşağı ölçekleme yöntemiyle ERA5 referansına entegre ederek 2050 yılı potansiyel habitat değişim haritalarını üretmek; novel climate ve clamping alanlarını haritalandırarak ekstrapolasyon belirsizliklerini ortaya koymak.
-- • 5. Model sonuçlarını ve mekânsal kısıtları, Türkiye'nin düzenlediği Ulusal Antarktika Bilim Seferleri (TAE) kapsamında yürütülecek izleme ve koruma stratejileri için sahada doğrulanabilir bir araştırma çerçevesine dönüştürmek.
+Amaç belirli bir kayıp yüzdesini yeniden üretmek veya daha yüksek AUC elde etmek değildir. Aktarılabilirlik gösterilemezse bu durum ana sonuç olarak raporlanacak; geleceğe ilişkin çıktılar doğrulanmış habitat değişimi olarak sunulmayacaktır.
 
 # Giriş
 
-Antarktika kıtası ve onu çevreleyen Güney Okyanusu, küresel termohalin sirkülasyonu düzenleyen ve gezegenin ısı bütçesini dengeleyen hayati bir ekosistemdir (IPCC, 2021). Güney Okyanusu'nun en dinamik denizel sahalarından biri olan Batı Antarktika Yarımadası (WAP), 20. yüzyılın ikinci yarısında 50 yıllık süreçte yaklaşık 2.5°C'lik (on yılda ~0.5°C) sıcaklık artışıyla yeryüzünün en hızlı bölgesel ısınma yaşayan sahalarından biridir (Vaughan vd., 2003; Turner vd., 2014). Her ne kadar 21. yüzyılın başlarında doğal atmosferik dolaşım modlarındaki (SAM ve IPO) salınımlara bağlı olarak bölgesel sıcaklıklarda geçici duraklama ve yavaşlamalar gözlense de (Turner vd., 2016), uzun dönemli eğilimler deniz buzu mevsimsel örtüsünün kısalması, kıyı buz sahanlıklarının geri çekilmesi ve Antarktika krili (*Euphausia superba*) biyokütlesindeki dalgalanmalar yönündedir (Stammerjohn vd., 2008, 2012; Atkinson vd., 2004; Rignot vd., 2019).
+Adélie pengueninin üreme alanı ile beslenme ortamı farklı ölçüm süreçleri gerektirir. Koloniler karasal yuvalama alanlarında bulunurken bireyler çevredeki denizel koşullardan da yararlanır. Gallagher vd. (2025), Batı Antarktika Yarımadası'nda bu iki ortamı birlikte ele almış; MAPPPD koloni kayıtları, karasal özellikler ve denizel değişkenlerle lojistik regresyon modelleri kurmuştur. Bu yaklaşım, genel gözlem koordinatlarını doğrudan koloni varlığı saymamak için gerekçe oluşturmaktadır.
 
-Denizel besin ağının üst basamaklarında yer alan kutup penguenleri (*Pygoscelis* cinsi), fiziksel çevre koşullarındaki değişimlere karşı duyarlı indikatör türlerdir (Ainley, 2002; Fraser & Hofmann, 2003). Bu cins içerisinde Adélie pengueni (*Pygoscelis adeliae*), yaşam döngüsü deniz buzuna endeksli bir penguen türüdür (Ainley, 2002). Adélie penguenleri; kış aylarında açık denizdeki paket buz (pack-ice) üzerinde dinlenmekte ve tüy dökmekte, ilkbahar ve yaz aylarında ise kıyı şeridindeki kardan arınmış çıplak kayalık zeminlerde koloni kurarak çakıl taşlarından inşa ettikleri yuvalarda kuluçkaya yatmaktadır (Ainley, 2002; Southwell vd., 2015; Lyver vd., 2014). Türün temel besinini oluşturan Antarktika krili, larva ve jüvenil evrelerinde kış deniz buzunun alt yüzeyindeki mikroalgleri otlayarak hayatta kaldığından, deniz buzu dinamikleri penguenlerin besin teminini doğrudan etkilemektedir (Fraser & Hofmann, 2003; Atkinson vd., 2004; Trivelpiece vd., 2011).
+Deniz buzu ile ilişkiler mevsime, konuma ve incelenen yaşam evresine göre değerlendirilmelidir. Yıllık ortalama buzdan elde edilen tek bir tepki eğrisi, üreme dönemindeki denize erişimi veya kış koşullarını tek başına açıklamaz. Bir modelin yüksek puanı da kril bolluğunu, üreme başarısını veya bir alanın bütün biyolojik gereksinimleri karşıladığını göstermez. Bu araştırmada bu süreçler doğrudan ölçülmediği için bunlara ilişkin nedensel sonuç çıkarılmamaktadır.
 
-İklimsel süreçlerin Batı Antarktika Yarımadası'ndaki etkileri deniz buzu dinamikleriyle sınırlı değildir. Isınan atmosferin nem taşıma kapasitesinin artması neticesinde, kutup ortamında aşırı yağış anomalileri, ıslak kar ve sıvı yağmur olayları gözlenmektedir (IPCC, 2021; Massom vd., 2006). Kuluçkadan yeni çıkan Adélie yavruları su geçirmez yetişkin tüylerine sahip olmayıp yalnızca ısı yalıtımı sağlayan hav tüyleri ile kaplıdır. Aşırı sıvı yağış veya eriyik çamur altında kalan yavruların tüyleri ıslandığında yalıtım özelliğini yitirmekte; dondurucu rüzgar altında hipotermiye girerek ölüm riskiyle karşılaşmaktadır (Chapman vd., 2011).
+Tür dağılım modellerinde varlık kayıtları, kullanılan arka planın çevresel dağılımına göre değerlendirilir (Phillips vd., 2006; Elith vd., 2011). Arka plan gerçek yokluk değildir. Aynı hücrede yinelenen kayıtları azaltmak, gözlem yapılmayan alanları temsil eder hâle getirmez. Ayrıca mekânsal yakınlık rastgele bölmelerde değerlendirmeyi iyimserleştirebilir; coğrafi referanslar ve yapılandırılmış çapraz doğrulama bu nedenle gereklidir (Hijmans, 2012; Roberts vd., 2017).
 
-Türlerin coğrafi dağılım sınırlarını ve iklim değişikliği karşısındaki duyarlılıklarını anlamak amacıyla Tür Dağılım Modelleri (SDM) yaygın olarak kullanılmaktadır (Elith vd., 2011; Phillips vd., 2006; Fielding & Bell, 1997). Yalnızca varlık (presence-only) verileriyle çalışabilen Maksimum Entropi (MaxEnt) algoritması ekoloji literatüründe sıkça tercih edilmektedir (Phillips vd., 2006).
+Cimino vd. (2016) Adélie penguenlerinin iklim değişimine bölgesel olarak farklı yanıt verebileceğini modellemiştir. Wang vd. (2026) ise OBIS kayıtlarıyla 2010-2020 ve SSP5-8.5 altında 2090-2100 dönemlerini incelemiştir. Bu çalışmalar, burada hedeflenen yerel SSP2-4.5 ve 2041-2060 analizi için bağlam sağlar; farklı kayıt hedefleri, dönemler ve ölçekler nedeniyle yerel sonuçların bağımsız doğrulaması sayılmaz.
 
-Uluslararası literatür incelendiğinde; **Wang, Hu ve Yang (Mart 2026, PMID: 42209243 - *Ying Yong Sheng Tai Xue Bao*)**, günümüz (2010–2020) ve gelecekteki (2090–2100 SSP5-8.5) iklim senaryoları altında MaxEnt kullanarak üç *Pygoscelis* penguen türünün tüm Antarktika ölçeğinde potansiyel habitatlarını modellemiş; deniz yüzeyi sıcaklığı ve buz örtüsünün kritik belirleyiciler olduğunu ve yüksek emisyon koşullarında türlerin uygun habitat alanlarında kıta genelinde belirgin daralmalar yaşanacağını bildirmişlerdir (Wang vd., 2026). Benzer şekilde, **Cimino, Lynch, Saba ve Oliver (2016 - *Scientific Reports*)**, CMIP5 modelleri ve varlık-yokluk kayıtlarıyla yaptıkları çalışmada, 2060 yılına kadar mevcut Adélie pengueni kolonilerinin yaklaşık üçte birinin (mevcut popülasyonun ~%20'si) iklim ısınması nedeniyle gerileme sürecine girebileceğini öngörmüşlerdir.
-
-Kıtasal veya yarımada ölçeğindeki bu makro araştırmalar (Wang vd., 2026; Cimino vd., 2016), 100–200 km'lik kaba iklim hücreleri nedeniyle yerel çıplak kaya ve topografik dinamikleri temsil edememektedir. Bu çalışma, Marguerite Körfezi'ne odaklanarak günümüz koşullarını 0.25° grid (~288 km²) ölçeğinde mezo-ölçekli bir yerel çözünürlükle modellemektedir. Ancak 2050 iklim projeksiyonunda kullanılan delta anomalileri, küresel iklim modelinin (GCM) yerel ~1° (~100 km) kaba çözünürlüğünü yansıtmaktadır. Dolayısıyla mezo-ölçek avantajı temel olarak günümüz çevresel ve topografik katmanlarımız için geçerlidir; gelecek projeksiyonları mezo-topografya ile kaba iklim anomalisinin bir sentezini temsil etmektedir.
-
+Gallagher vd. (2025) 500 m karasal hücrelerle çalışırken burada çevresel analiz 0,25° ızgaraya dayanmaktadır. ERA5'in yaklaşık 31 km yerel yatay çözünürlüğü, daha sık bir çıktı ızgarası kullanılarak koloni ölçeğine indirgenmiş olmaz (Hersbach vd., 2020). Çalışmanın katkısı yüksek çözünürlüklü koloni habitatı iddiası değil; Marguerite odaklı aktarımda veri hedefi, arka plan, model yapısı ve ekstrapolasyonun birlikte denetlenmesidir.
 
 # Yöntem
 
+## Araştırma alanı ve ölçek
 
-## 1.1. Araştırma Sahası ve Biyocoğrafik Sınırlar
+Raporlama odağı Marguerite Körfezi ve çevresidir. Özgün çevresel ızgara 37 sütun ve 19 satırdan oluşur; hücre merkezleri 66,00-70,50°G ve 64,00-73,00°B arasındadır. Dış hücre kenarları 65,875-70,625°G ve 63,875-73,125°B'dir. Adelaide Adası körfezin batı/kuzeybatı tarafında ele alınır; yalnızca “kuzeyde” diye tanımlanmaz.
 
-Çalışma alanı, Batı Antarktika Yarımadası'nın güneybatı kesiminde yer alan ve Bellingshausen Denizi ile bağlantılı olan **Marguerite Körfezi** ve çevre adalarıdır. Modelleme ızgarası; **65.875°G – 70.625°G enlemleri** ile **63.875°B – 73.125°B boylamları** arasında tanımlanmıştır (xllcorner: -73.125°, yllcorner: -70.625°, cellsize: 0.25°, 37 sütun × 19 satır, toplam 703 grid hücresi). Bu bölge; kuzeyde Adelaide Adası, doğuda Fallières Kıyısı, güneyde George VI Boğazı ve batıda Alexander Adası ile çevrili fiyort ve ada sistemidir (Ducklow vd., 2007; Stammerjohn vd., 2012).
+WGS84 üzerinde paralel ve meridyenlerle sınırlı hücrelerin jeodezik alanları ayrı hesaplanmıştır. Tam dikdörtgen 202.681,64 km²'dir; bu değer deniz, kara ve şelf buzu hücrelerini birlikte kapsayan çevresel ızgara alanıdır. Koloni veya kullanılabilir habitat alanı değildir. Hücre alanları enleme göre değişir; yuvarlanmış ortalama alan bütün hücrelerle çarpılarak sonuç üretilmez. EPSG:3031 harita gösterimi ile jeodezik alan hesabı birbirinden ayrılır.
 
-Kutup enlemlerinde meridyenlerin birbirine yaklaşması (enlem daralması - meridian convergence) nedeniyle, 68°G enleminde $\cos(68^\circ) \approx 0.3746$'dır. Bu coğrafi durum neticesinde 0.25° boylam genişliği yalnızca yaklaşık 10.4 km'ye, 0.25° enlem yüksekliği ise 27.8 km'ye karşılık gelmektedir. WGS84 elipsoidi üzerinde bir grid hücresinin yüzölçümü ortalama ~288.3 km² olup, 703 grid hücresinin kapsadığı toplam model kalibrasyon alanı **202.681 km²**'dir. Boylamsal komşu iki hücre merkezi arasındaki mesafe yalnızca ~10.4 km olduğundan, modelin mekânsal inceltme sonrası hücreler arası komşuluk mesafeleri kutup jeodeziği ile tam uyumludur.
+Yeni veri indirme zarfı 60-74°G ve 53-78°B arasındadır. Bu zarf doğu kıyısını da içerir; tek başına Batı Yarımada'ya özgü erişilebilir alan, yani ekolojik M, değildir. Nihai kalibrasyon desteği ve bölgesel kapsam duyarlılığı henüz kesinleştirilmemiştir. Daha geniş alandan eğitim almak yerel aktarımı kendiliğinden geçerli kılmaz.
 
+## Biyolojik kayıtlar ve yeni koloni hedefi
 
-## 1.2. Biyolojik Varlık (Presence) Verilerinin Temini ve Mekânsal İnceltme
+İlk modelde kullanılan GBIF genel bulunuş kayıtlarının indirme DOI'si 10.15468/dl.jt3gt7'dir. Temizlenmiş 704 kaydın 163'ü 2026 yılına aittir. Dolayısıyla eski 67 hücrelik kümenin tamamını 2000-2025 dönemi olarak tanımlamak doğru değildir. Mevcut metadata, kıyıda görülen her bireyin veya karaya düşen her koordinatın üreme kolonisi olduğunu doğrulamamaktadır.
 
-Adélie penguenine (*Pygoscelis adeliae*) ait coğrafi koordinat verileri, açık kaynak uluslararası biyo-çeşitlilik veri tabanları olan GBIF (Global Biodiversity Information Facility - gbif.org) ve SCAR (Scientific Committee on Antarctic Research) Antarktika Biyo-çeşitlilik Portalı üzerinden derlenmiştir. 2000–2025 yılları arasındaki kayıtlar taranmıştır. Bu veri seti, türün yaşam döngüsündeki **genel bulunuşunu (overall occurrence)** temsil etmekte olup hem kıyı şeridindeki üreme kolonisi yerleşimlerini hem de şelf sahası üzerindeki neritik beslenme/hareket gözlemlerini içermektedir. Ham veri setine ekolojik modelleme standartlarına uygun olarak şu filtreleme protokolü uygulanmıştır:
+Tamamlanan yöntem denetimi için kayıtlar 2000-2025 ile sınırlandırılmış, hücre başına temsilci yeniden seçilmiş ve aday kıyı desteğinde 61 varlık hücresi kullanılmıştır. Bu küme genel bulunuş denetimine aittir; yeni koloni örneklemi değildir. Hücre başına tek kayıt bırakılması istatistiksel bağımsızlığı veya Rothera çevresindeki gözlem yanlılığının giderildiğini kanıtlamaz.
 
-- • Koordinat doğruluğu belirsiz (belirsizlik > 5 km) veya hatalı girilmiş kayıtlar ayıklanmıştır.
-- • Fosilleşmiş veya tarihsel kolonilere ait eski kayıtlar çalışma kapsamı dışına çıkarılmıştır.
-- • Araştırma istasyonları (örn. Rothera İstasyonu) çevresinde yoğunlaşan insan kaynaklı örnekleme yanlılığını (sampling bias) ve mekânsal yığılmayı önlemek amacıyla, çalışma için belirlenen 0.25° × 0.25° analiz gridi içinde hücre başına yalnızca tek bir varlık noktası bırakılacak şekilde **mekânsal inceltme (spatial thinning)** uygulanmıştır.
-- • Çalışma alanı sınırları dışındaki açık okyanus derinliklerine hatalı koordinatlanmış kayıtlar elenmiştir.
-Bu filtreleme neticesinde, Marguerite Körfezi sınırları dahilinde model eğitim ve doğrulamasında kullanılmak üzere **67 adet bağımsız varlık (presence) grid hücresi** elde edilmiştir. Çalışma alanındaki toplam 703 grid hücresinin geri kalan 636 hücresi modelin arka plan (background) çevresel matrisini oluşturmuştur.
+Yeni koloni verisi Oceanites MAPPPD v5.0'ın tarihli CSV görüntüsünden hazırlanır. Yalnızca yıl alanı 2000-2025 olan, sayım türü “nests” ve sayım değeri sıfırdan büyük kayıtlar kabul edilir. Tekrarlanan sayımlar koloni büyüklüğü modeli kurmak için kullanılmaz; çevresel hücre başına bir temsilci bırakılır. Yerleşim kimlikleri, sayım yılı ve kaynak satırları saklanır. MAPPPD sayım yılı ile iki takvim yılına yayılabilen üreme sezonu aynı kavram değildir (Oceanites, 2026).
 
+Yerel envanter 45 uygun sayım, 19 yerleşim ve 14 farklı çevresel hücre vermiştir. Bu nedenle eğitim alanının genişletilmesi onaylanmıştır. Geniş alanın yalnız kaya/şelf ön kontrolünde 85 Adélie yerleşimi 51 hücreye düşmektedir. Deniz verisine uzaklık filtresi ve son kapsam kontrolü tamamlanmadığından 51 nihai eğitim sayısı olarak kullanılmaz. GBIF deniz gözlemleri bu koloni modeline eklenmeyecektir.
 
-## 1.3. Çevresel ve Oşinografik Katmanların Üretimi
+## Çevresel veriler ve tamamlanma durumu
 
-Adélie pengueninin üreme ve beslenme ekolojisini kontrol eden biyoklimatik ve çevresel değişkenler, ECMWF ERA5 atmosferik ve denizel yeniden analiz veri setlerinden derlenmiştir. ERA5 verileri 2000–2025 dönemini kapsayan 26 yıllık uzun dönemli aylık ortalamaların sentezlenmesiyle üretilmiştir. Denizel katmanlar olarak; penguenlerin kışlama platformunu ve açık su çatlaklarında avlanmasını temsil eden yıllık ortalama deniz buzu konsantrasyonu (*buz_yillik*, % oran) ve Güney Okyanusu su kütlesi termal rejimini temsil eden deniz yüzeyi sıcaklığı (*sst_yillik*, °C) hesaplanmıştır. Burada SST, endotermik bir kuş olan penguen için doğrudan öldürücü bir fizyolojik sınır olmaktan ziyade, penguenin ana besini olan krilin ve pelajik besin ağının su kütlesi vekili (proxy) niteliğindedir. Atmosferik katman olarak; kuluçka evresindeki civcivlerin ıslanma ve hipotermi riskini temsil eden en sıcak çeyrek (Aralık–Ocak–Şubat yaz mevsimi) toplam yağış miktarı (*bio18*, mm cinsinden) türetilmiştir. Topografik katman olarak ise; Antarktika REMA sayısal yükseklik modeli ve SCAR kaya yüzeyi veri tabanı kullanılarak her bir 0.25° grid hücresindeki çıplak kaya alan yüzdesi (*kaya*, % alan) hesaplanmıştır.
+Kaya yüzdesi SCAR Antarctic Digital Database v7.11 kaya poligonlarının eşit alanlı projeksiyonda hücrelerle kesişiminden hesaplanır. Kıyı ve şelf sınıfları aynı sürümün kıyı poligonlarından alınır (Skachkova vd., 2025; Gerrish vd., 2025). Bu çalışmada REMA yükseklik modeli kullanılarak kaya üretilmemiştir; yükseklik, eğim ve bakı değişkenleri de modele eklenmiş değildir.
 
-*Tablo 1. Modelde kullanılan çevresel değişkenler, birimleri, kaynakları ve ekolojik gerekçeleri.*
+Tablo 1. Değişkenlerin bu sürümdeki kullanımı
 
+| Değişken | Kaynak ve birim | Kullanım |
+|---|---|---|
+| Kaya yüzdesi | SCAR ADD v7.11, hücre alanının yüzdesi | Kayalık kıyı desteği ve koloni aday seti; gelecek için sabit |
+| Üreme dönemi deniz buzu | ERA5, Kasım-Mart aylık ortalamalarının ortalaması, % | Yerelde üretildi; geniş alan girdisi bekleniyor |
+| Kış deniz buzu | ERA5, Haziran-Ağustos aylık ortalamalarının ortalaması, % | Yerelde üretildi; geniş alan girdisi bekleniyor |
+| Üreme dönemi SST | ERA5, Kasım-Mart ortalaması, °C | Fiziksel kalite kontrolü çözülmedi; yalnız duyarlılık adayı |
+| BIO18 | ERA5, en sıcak ardışık üç ayın toplam yağışı, mm | Eski genel bulunuş denetiminde; ana koloni setinde yok |
 
-## 1.4. CMIP6 İklim Modeli, Delta Aşağı Ölçekleme ve Çözünürlük Yapısı
+Aylık kaynaklarda SST Kelvin'den °C'ye, deniz buzu 0-1 ölçeğinden yüzdeye çevrilir. Normaller her takvim ayı için 2000-2025 ortalamasından oluşturulur; mevsimsel göstergelerde aylara eşit ağırlık verilir. BIO18 her hücrenin en sıcak ardışık üç ayına göre hesaplanır; zorunlu olarak Aralık-Şubat değildir. Toplam yağışın kar/yağmur fazını ve olay şiddetini ayırmaması nedeniyle bu değişkenden civciv hipotermisi çıkarımı yapılmaz.
 
-2050 yılı iklim projeksiyonu için Dünya İklim Araştırma Programı (WCRP) CMIP6 veri tabanından **IPSL-CM6A-LR** küresel iklim modeli (ensemble üyesi: r1i1p1f1, senaryo: SSP2-4.5 orta emisyon yolu) temin edilmiştir. Projeksiyon dönemi **2041–2060** (20 yıllık ortalama), tarihsel referans dönemi ise ERA5 ile uyumlu olarak **2000–2025** olarak belirlenmiştir. GCM çıktılarının 0.25° gridimize aktarılmasında küre üzerinde en yakın komşu (nearest complete native cell on sphere) regridding ve delta aşağı ölçekleme yöntemi uygulanmıştır:
+Deniz değişkenleri karasal hücrelerde tanımsız olabildiğinden en yakın geçerli deniz hücresi küre üzerinde belirlenir ve uzaklığı kaydedilir. Koloni tasarımında 50 km'yi aşan deniz verisi aktarımı dışlama ölçütüdür; 50 km ekolojik olarak doğrulanmış bir beslenme yarıçapı değildir. Bu doldurma işlemi yeni kıyısal iklim bilgisi üretmez.
 
-- • **Deniz Buzu (buz_yillik):** Gelecek ve referans dönem arasındaki mutlak fark yüzdesi, ERA5 günümüz deniz buzu katmanına eklenmiş ve değerler [0, 100] aralığında sınırlandırılmıştır.
-- • **Deniz Yüzeyi Sıcaklığı (sst_yillik):** Aylık yerel SST anomalisi ERA5 yıllık deniz suyu sıcaklığına additif olarak eklenmiştir.
-- • **Yaz Yağışı (bio18):** Aylık yağış oranları ERA5 aylık yağışlarına uygulanmış; gelecekteki en sıcak çeyrek ayları (tas) yeniden tespit edilerek bio18 gelecekte dinamik olarak baştan hesaplanmıştır.
-- • **Çıplak Kaya (kaya):** Jeolojik kaya substratı 2050 yılı projeksiyonunda statik kabul edilmiştir.
-Burada dikkat edilmesi gereken husus; iklim değişikliği sinyalinin (delta anomalisi) GCM'in yerel ~1° (~100 km) kaba çözünürlüğünü taşımasıdır. Dolayısıyla değişim haritalarındaki bloklu görünüm bu enterpolasyonun doğal bir sonucudur.
+Günlük 00 UTC buz örnekleri için ayrı veri isteği beklemektedir. Buz ilerleme/çekilme günü ve buzsuz süre henüz üretilmiş bulgu olarak sunulmaz. Aylık veriden kesin gün çıkarılmayacak; günlük veri geldiğinde %15 buz ve beş ardışık gün kuralı gibi operasyonel tanımlar ve sansürlenen olaylar ayrıca açıklanacaktır. Batimetri, kıyıya uzaklık, klorofil/kril ve koloni ölçeğinde topoğrafya henüz bu modele dahil değildir.
 
+## Arka plan ve gözlem yanlılığı
 
-## 1.5. Çoklu Eşdoğrusallık ve MaxEnt Matematiksel Temelleri
+Tamamlanan genel bulunuş denetiminde 579 hücrelik aday kıyı desteği kullanılmıştır. Varlık hücreleri bu arka planda tutulmuştur. Bu, önceki 703 hücrelik dikdörtgenden varlıkları çıkarıp kalan 636 hücreyi kullanma yaklaşımından farklı bir deneydir; iki deneyin sayıları karıştırılmaz.
 
-Ekolojik modellemede yüksek korelasyonlu değişkenlerin kullanımı model parametrelerinin varyansını artırabilmektedir (Dormann vd., 2013). Değişkenler arasında Pearson korelasyon matrisi ve Varyans Şişme Faktörü (VIF) analizi uygulanmış; Dormann vd. (2013) uyarınca **|r| < 0.70** ve VIF < 5 kuralı işletilmiştir. Aday katmanlardan kış minimum sıcaklığı (Bio6) elenmiş; modeldeki 4 değişkenin ikili korelasyonlarının |r| < 0.62 seviyesinde kalarak çoklu eşdoğrusallık riskinin giderildiği doğrulanmıştır.
+Yeni koloni modelinde iki arka plan tasarımı karşılaştırılacaktır. İlk tasarım kaya bulunan, şelf buzu oranı %50'nin altında ve geçerli deniz verisi uzaklığı en çok 50 km olan hücrelerdir. İkinci tasarım aynı destek içinde herhangi bir *Pygoscelis* türünün pozitif yuva sayımı bulunan hücrelerden oluşur; Adélie hücreleri de korunur. Bunlar gerçek yokluk değil, farklı kullanılabilirlik ve gözlenme varsayımlarıdır.
 
-Maksimum Entropi (MaxEnt 3.4.4) algoritması, Shannon bilgi entropisi ilkesine dayanır (Phillips vd., 2006). Algoritma, türün varlık koordinatlarındaki çevresel ortalamaları kısıt kabul ederek, bu kısıtları sağlayan olasılık dağılımları içerisinden entropisi en yüksek dağılımı $\hat{\pi}(x)$ hesaplar:
+Kaya/şelf ön kontrolünde 957 aday kıyı hücresi ve 111 hedef-grup hücresi bulunmaktadır; bir Adélie yerleşimi bu ön filtreye takılmaktadır. Dışlamalar kaynak kimliğiyle kaydedilir. Hedef-grup tasarımı da bütün gözlem yanlılığını ortadan kaldırmış kabul edilmeyecek; aynı örneklem üzerindeki sonuç değişimi raporlanacaktır.
 
-$$H(\hat{\pi}) = -\sum_{x \in X} \hat{\pi}(x) \ln \hat{\pi}(x) \quad \text{ve} \quad \mathbb{E}_{\hat{\pi}}[f_j] = \mathbb{E}_{\tilde{\pi}}[f_j]$$
+## MaxEnt ayarları ve model seçimi
 
-Aşırı öğrenmeyi (overfitting) engellemek amacıyla MaxEnt, objektif fonksiyonuna bir $L_1$ Lasso düzenlileştirme cezası ekler (Phillips vd., 2006): $\max_{\lambda} ( \sum_{i=1}^n \ln P(x_i) - \sum_{j=1}^m \beta_j |\lambda_j| )$. Model çıktısı, türün göreceli uygunluğunu 0 ile 1 arasında ölçekleyen Cloglog dönüşümü ile elde edilmiştir: $P(x) = 1 - \exp(-\exp(\eta(x)))$.
+Özgün MaxEnt 3.4.4 HTML kayıtlarında kullanılan özellikler “hinge linear quadratic”, yani LQH'dir. Eşik özelliği T doğrulanmamıştır. Bu nedenle eski rapordaki AUTO=LQTH etiketi düzeltilmiştir. Yeni denetimde otomatik seçime dayanmak yerine L/RM1, LQ/RM1, LQ/RM2, LQH/RM1 ve LQH/RM2 açıkça tanımlanmıştır.
 
+L yalnızca doğrusal özellikler içerir; Cloglog dönüşümü nedeniyle çıktı puanı bir doğru olmak zorunda değildir. Bir değişkene ait tek tepede optimumu temsil kapasitesi sınırlı olsa da bu özellik L modelini otomatik olarak biyolojik açıdan geçersiz yapmaz. LQ veya LQH'nin daha esnek olması da öğrenilen eğrinin gerçek tolerans ilişkisi olduğunu kanıtlamaz (Elith vd., 2011).
 
-## 1.6. Model Eğitimi, Hiperparametreler ve 10-Katlı Doğrulama
+Denetimde iki değişken seti kullanılmıştır: yıllık set BIO18, yıllık buz, kaya ve yıllık SST; SST'siz mevsimsel set BIO18, üreme dönemi buzu ve kayadır. İkinci set yeni koloni ana setiyle aynı değildir. Koloni için hazırlanan ana aday seti kaya, üreme dönemi buzu ve kış buzudur; SST içeren set ayrı duyarlılık adayıdır. Hiçbir koloni ayarı henüz nihai model seçilmemiştir.
 
-Ekolojik niş modellemesi bağımsız Java ortamında MaxEnt 3.4.4 yazılımıyla yürütülmüştür. 67 adet varlık hücresi ve çalışma alanındaki 636 adet arka plan hücresi (toplam 703 grid hücresi) modele girdi olarak verilmiştir. 60'tan fazla örneklem bulunduğu için model hiperparametreleri olarak varsayılan **LQTH (Linear, Quadratic, Threshold, Hinge)** özellik sınıfları kullanılmış; aşırı öğrenmeyi önlemek için düzenlileştirme çarpanı (Regularization Multiplier = 1.0) seçilmiştir. Model performansı **10 katlı çapraz doğrulama (10-fold CV)** ile sınanmış ve ROC altındaki alan (AUC) hesaplanmıştır (Fielding & Bell, 1997). Presence-only modellerde AUC, varlıkların rastgele arka plana karşı ayırt edilmesini temsil eder. AUC değerlendirmesinde Swets (1988) kriterleri esas alınmıştır (Tablo 2).
+Tam genel bulunuş eğitimleri için ham yoğunluğun aynı destek üzerinde normalize edildiği ve sıfır olmayan özellik katsayılarının parametre sayısı kabul edildiği AICc hesapları üretilmiştir. Örneklem parametre sayısına yetmezse AICc geçersiz bırakılır. Bu hesap ENMeval çalıştırılması değildir; yalnız RM1/RM2 adaylarıyla yapılan duyarlılık taraması küresel hiperparametre optimumunu göstermez. AICc, dış doğrulamanın yerine kullanılmaz.
 
-*Tablo 2. AUC değer aralığının model simülasyon başarısına etkisi (Swets, 1988).*
+## Mekânsal doğrulama ve değerlendirme
 
+Tamamlanan 61 hücrelik genel bulunuş denetiminde dört katlı enlem bantları, boylam bantları ve 40/80 km'lik iki farklı başlangıç kaydırmalı checkerboard şemaları kullanılmıştır. İki değişken seti, beş aday ve altı şema toplam 240 eğitim verir. Test bölgesinin arka planı da eğitimden çıkarılır; değerlendirme yalnız o bölgenin varlık ve arka plan hücrelerinde yapılır.
 
-## 1.7. Mekânsal Çapraz Doğrulama (Spatial Block CV) Tasarımı
+İki coğrafi referans aynı bölmelerde değerlendirilmiştir: en yakın eğitim varlığına uzaklığın negatifi ve yalnız koordinatlarla eğitilen düzenlileştirilmiş lojistik referans. Uzaklık referansı çevresel modelin coğrafi yakınlığın ötesinde bilgi sağlama iddiasını sınar; rastgele tahminle özdeş değildir (Hijmans, 2012).
 
-Standart rastgele çapraz doğrulamada, mekânsal otokorelasyon nedeniyle test noktaları eğitim noktalarına yakın düşmekte ve AUC değerleri iyimser tahmin edilebilmektedir (Roberts vd., 2017). Modelin coğrafi aktarılabilirliğini sınamak amacıyla, çalışma alanı 4 coğrafi enlem bandına (-66.625°, -67.375°, -67.875° sınırları) bölünerek mekânsal bloklama testi gerçekleştirilmiştir. Eşit eğitim boyutu (50-51 nokta) ve sabit rastgele tohumla (20261108) eşleştirilmiş rastgele 4 katlı modelle doğrudan kıyaslanmıştır.
+AUC, eğitim varlık puanlarının 10. yüzdeliğine göre test omission oranı, sabit on kutulu Boyce ve duyarlılığın en az 0,95 olduğu ROC bölümüne ait tanımı açık oran hesaplanmıştır. Son iki ölçüt küçük test örneklemleriyle kararsız olabilir; kullanılan sabit kutulu Boyce, sürekli kayan pencereli bir Boyce uygulaması diye sunulmaz.
 
+Aynı şema içindeki dört katın eşlenik yeniden örneklemesiyle aralıklar hesaplanmıştır. Bunlar bağımsız veri tekrarlarından elde edilen genel güven aralıkları değildir; farklı şemalar da aynı kayıtları yeniden kullanır. Adaylar bu test sonuçlarına bakılarak seçilmediğinden testteki en yüksek puan “nihai kazanan” ilan edilmemiştir (Roberts vd., 2017).
 
-## 1.8. CBS ve Kartografik Projeksiyon Altyapısı
+## CMIP6 aktarımı ve belirsizlik tasarımı
 
-MaxEnt'ten üretilen ham Cloglog ASCII raster çıktıları, QGIS 3.x açık kaynak Coğrafi Bilgi Sistemleri yazılımına aktarılmıştır. Kutup bölgelerinde alan ve şekil bozulmalarını en aza indirmek için harita projeksiyonu **EPSG:3031 (WGS 84 / Antarctic Polar Stereographic)** olarak tanımlanmıştır. Günümüz (2000–2025), 2050 gelecek, mekânsal fark (Gelecek − Günümüz) ve belirsizlik haritaları 300 DPI çözünürlükte, koordinat gridi, istasyon katmanları ve standart lejantlarıyla kartografik standartta üretilmiştir.
+CMIP6 kapsamındaki IPSL-CM6A-LR, GFDL-ESM4 ve MPI-ESM1-2-LR kaynaklarıyla SSP2-4.5 için 2041-2060 aylık girdileri hazırlanmıştır. Referans 2000-2025, historical 2000-2014 ile aynı model/üye SSP2-4.5 devamı 2015-2025 birleştirilerek oluşturulmuştur. Böylece 2014 sonrası aylar historical diye etiketlenmez. Bu referans saf tarihsel deney değildir (Eyring vd., 2016).
 
+Denizel değişkenlerde her ayın gelecek-referans farkı ERA5 normaline eklenir; buz değeri ardından %0-100 ile sınırlandırılır. Kaynak kıyı maskelerini koruyan en yakın tam yerel GCM hücresi eşlemesi uygulanır. Farklı modellerin yerel ızgaraları tek bir “1°/100 km” çözünürlükle tanımlanmaz. Yeniden örnekleme veya delta yöntemi GCM'de bulunmayan fiyort ölçeği fiziğini üretmez.
 
-## 1.9. Proje İş-Zaman Çizelgesi ve Gerçekleşme Takvimi
+Mevcut genel bulunuş modeli için üç GCM'de toplam 30 tam eğitim/aktarım ve 720 kat-dışı gelecek aktarımı tamamlanmıştır. Clamping açık/kapalı farkları, tek değişken grubu değiştirme deneyleri ve tek değişken aralığına dayalı MESS haritaları üretilmiştir. Bu MESS çok değişkenli korelasyon yapısındaki her yeni birleşimi saptamaz. Yalnız buzun değiştirilmesi nedensel bir etki ölçümü değildir; etkileşimler nedeniyle ayrı değişken etkileri toplam deltaya eşit olmak zorunda değildir.
 
-Projenin araştırma, veri hazırlığı, modelleme, analiz ve raporlama süreçleri aşağıdaki 8 temel iş paketi çerçevesinde 6 aylık periyotta planlanmış ve başarıyla yürütülmüştür (Tablo 3):
+Her GCM için tek üye kullanılmıştır. Üç GCM'nin bulunması üyeler arası iç değişkenliği, model bağımlılıklarını veya yirmi yıllık pencerelerin belirsizliğini çözmez. Bütün adayların aynı yönde sonuç vermesi de ortak veri yanlılıkları nedeniyle tek başına doğruluk kanıtı olmayacaktır. Geniş koloni modelinin üç GCM aktarımı henüz yapılmamıştır.
 
-*Tablo 3. Proje iş-zaman çizelgesi ve gerçekleşme takvimi.*
+## Tekrarlanabilirlik
 
+Kod, maske ve ayarlar proje deposunda tutulmaktadır. Genel denetimin betikleri ve 12 Kasım kaynak/paket SHA256 manifestleri mevcuttur; bu sürümdeki yerel değişikliklerin tamamı yayımlanmış bir sürüm veya DOI'li arşiv değildir. Kod testlerinin geçmesi ekolojik doğrulamanın yerine kullanılmaz.
+
+Ek teknik kayıtta, sayısal tablolara karşılık gelen dosyalar, kaynak DOI/URL'leri ve değişiklik listesi verilmiştir. Nihai sürüm öncesi koloni girdileri, dışlamalar, model komutları, kaynak model/üye/ızgara/sürüm bilgileri ve üretim ortamı aynı sürüme sabitlenecektir.
 
 # Bulgular
 
+## Veri hedefi ve kaynak denetimi
 
-## 2.1. Alıcı İşletim Karakteristiği (ROC) Eğrisi ve Model Doğruluğu
+MAPPPD yerel pozitif yuva sayımları yalnız 14 çevresel hücreyi desteklemektedir. Bu sayı, genel gözlemlerden türetilen 67 eski veya 61 yeniden seçilmiş hücreyle eşdeğer değildir. Daha fazla genel gözlem, doğrulanmış koloni örnekleminin yerine geçirilemez.
 
-Alıcı İşletim Karakteristiği (ROC) eğrisi, modelin duyarlılığı ile (1 - özgüllük) arasındaki ilişkiyi gösterir. 10 katlı çapraz doğrulama (10-fold CV) analizi sonucunda, test verileri üzerinden hesaplanan ortalama AUC değeri **0.768 ± 0.111** olarak gerçekleşmiştir (Şekil 1). Eğitim verilerine ait AUC değeri ise **0.838** olarak belirlenmiştir. Swets (1988) kriterlerine göre 0.768 test AUC değeri, kalibrasyon alanı içinde modelin 'İyi / Kabul Edilebilir' ayırt edicilik düzeyine sahip olduğunu göstermektedir.
+Resmî CDS kaynağının yeniden indirilmesi SST kimliğini paramId 34 ve birimini Kelvin olarak doğrulamıştır. Doldurulmamış yerel yıllık SST'nin minimumu yaklaşık -2,422 °C'dir; altı deniz hücresinde -2 °C altında yıllık değer vardır. Bu nedenle sorun yalnız grafik ekseniyle açıklanamamaktadır. Uç değerlerin fiziksel/işlemsel nedeni henüz çözülmediğinden SST ana koloni aday setine alınmamış; duyarlılık adayı olarak işaretlenmiştir. Kaynak türü doğrulanmış olması fiziksel kalite kontrolünün tamamlandığı anlamına gelmez.
 
+## Gerçek VIF değerleri
 
-![Şekil 1. ROC Eğrisi](/home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_roc.png)
-*Şekil 1. Adélie pengueni MaxEnt modeline ait 10 katlı çapraz doğrulama ROC eğrisi.*
+Tablo 2. Eski yıllık değişken setinin farklı arka plan desteklerindeki VIF değerleri
 
-## 2.2. Biyoklimatik Değişkenlerin Göreceli Katkı ve Permütasyon Önemleri
+| Değişken | Tam dikdörtgen 703 hücre | Aday kıyı 579 hücre | Deniz desteği 325 hücre |
+|---|---|---|---|
+| BIO18 | 1,986 | 2,036 | 1,760 |
+| Yıllık buz | 2,521 | 2,801 | 5,637 |
+| Kaya | 1,071 | 1,160 | 1,235 |
+| Yıllık SST | 1,556 | 2,012 | 5,246 |
 
-MaxEnt algoritması, çevresel değişkenlerin modele etkisini iki tamamlayıcı metrikle raporlamaktadır: **Göreceli Katkı Yüzdesi (Percent Contribution)** ve **Permütasyon Önemi (Permutation Importance)**. Katkı yüzdesi, eğitim algoritmasının yinelemeleri sırasında ilgili değişkenin düzenlenmiş kazançta (gain) yarattığı artışa dayanır. Permütasyon önemi ise eğitim verilerindeki değişken değerlerinin rastgele karıştırılması sonucu AUC değerindeki düşüşü ölçer ve değişkenler arası korelasyondan daha az etkilenen bir göstergedir. 10 kat modelinin değişken önem metrikleri Tablo 4'te sunulmuştur.
+Buz ve SST'nin VIF değerleri deniz desteğinde 5'i aşmaktadır. Dolayısıyla “tüm değişkenler VIF<5 koşulunu sağlıyor” ifadesi destek alanından bağımsız kullanılamaz. Bu tablo eski yıllık setin denetimidir; yeni koloni setinin VIF'i değildir. Kat bazlı VIF tabloları da ayrıca üretilmiştir.
 
-*Tablo 4. Çevresel değişkenlerin MaxEnt modeline katkı yüzdeleri ve permütasyon önemleri (10 kat ortalaması).*
+## Coğrafi referanslarla karşılaştırma
 
-Tablo 4 verileri incelendiğinde; hem göreceli katkı yüzdesinde (%43.1) hem de permütasyon öneminde (%55.6) yıllık deniz buzu konsantrasyonunun (*buz_yillik*) en belirleyici faktör olduğu görülmektedir. Çıplak kaya alanı (*kaya*) ise eğitim yinelemelerinde %30.0 katkı yüzdesi sağlamasına rağmen permütasyon öneminde %9.1 seviyesinde kalmıştır. Bu durum, kayalık alanların kıyı şeridinde kolonileşme için zorunlu bir fiziksel ön koşul teşkil ettiğini, ancak çalışma alanının tamamındaki habitat uygunluk gradyanını asıl şekillendiren etkenlerin denizel oşinografik değişkenler (deniz buzu %55.6 ve deniz sıcaklığı %18.3) olduğunu ortaya koymaktadır.
+Tablo 3. Yıllık genel bulunuş setinde dört test katının ortalama AUC değerleri
 
+| Bölme şeması | L/RM1 | LQ/RM1 | LQ/RM2 | LQH/RM1 | LQH/RM2 | Uzaklık |
+|---|---|---|---|---|---|---|
+| Enlem bantları | 0,488 | 0,479 | 0,492 | 0,602 | 0,600 | 0,751 |
+| Boylam bantları | 0,650 | 0,656 | 0,653 | 0,712 | 0,702 | 0,772 |
+| Checkerboard 40 km | 0,725 | 0,760 | 0,727 | 0,797 | 0,783 | 0,856 |
+| Checkerboard 40 km kaydırılmış | 0,730 | 0,763 | 0,737 | 0,775 | 0,772 | 0,852 |
+| Checkerboard 80 km | 0,729 | 0,769 | 0,735 | 0,758 | 0,768 | 0,828 |
+| Checkerboard 80 km kaydırılmış | 0,670 | 0,729 | 0,692 | 0,744 | 0,741 | 0,839 |
 
-## 2.3. Jackknife Yöntemiyle Değişken Kazanç Analizleri
+AUC bölme şemasına belirgin biçimde bağlıdır. Örneğin enlem şemasında L/RM1 için katlar arası standart sapma 0,180, LQ/RM1 için 0,240'tır. Bu tabloda tek bir en yüksek ortalamayı seçmek modelin aktarılabilirliğini kanıtlamaz. Her iki değişken setinde de bütün çevresel adayların şema bazındaki ortalama AUC'si uzaklık referansının altında kalmıştır (Şekil 1).
 
-Jackknife testi, her bir çevresel değişkenin model kazancına (gain) olan etkisini iki tamamlayıcı yaklaşımla inceler: (1) Değişken modelde tek başına kullanıldığında sağladığı kazanç (turkuaz çubuk), (2) İlgili değişken modelden çıkarıldığında toplam kazançta meydana gelen kayıp (mavi çubuk). 10 katlı modelin Jackknife test sonuçları Şekil 2'de gösterilmiştir.
+![Şekil 1 Çevresel modellerin ve coğrafi referansların test AUC karşılaştırması](/home/halil/adelie-maxent-2204c/maxent/cikti/revizyon_20261112/figures/spatial_null_comparison.png)
 
+Şekil 1. Tamamlanan 61 hücrelik genel bulunuş denetiminde çevresel adayların, koordinat referansının ve uzaklık referansının ortalama test AUC değerleri. Hücrelerdeki sayılar AUC'dir; AUC farkı değildir. Şemalar bağımsız veri tekrarları değildir. Bu şekil yeni koloni modelinin sonucu değildir.
 
-![Şekil 2. Jackknife Grafiği](/home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_jacknife.png)
-*Şekil 2. Çevresel değişkenlerin Jackknife kazanç analizi.*
-Jackknife grafiği incelendiğinde; modelde tek başına kullanıldığında en yüksek düzenlenmiş eğitim kazancını sağlayan değişkenin **en sıcak çeyrek yağışı (*bio18*, ~0.287 kazanç)** olduğu, bunu **yıllık deniz buzu konsantrasyonunun (*buz_yillik*, ~0.210 kazanç)** izlediği görülmektedir. Çıplak kaya (*kaya*) tek başına ~0.139, deniz yüzeyi sıcaklığı (*sst_yillik*) ise ~0.058 kazanç sağlamıştır.
+Bu sonuç bütün olası koloni modellerinin başarısız olduğunu göstermez. Mevcut kayıt hedefi, aday değişkenler ve değerlendirme tasarımı altında çevresel değişkenlerle coğrafi referansın ötesinde aktarılabilirlik gösterilemediğini belirtir. Eski 67 hücreli enlem testindeki L/RM1=0,580 ve AUTO=0,477 değerleri farklı bir deneydir; yeni tablonun satırları veya koloni doğrulaması olarak kullanılamaz.
 
-Buna karşılık, modelden çıkarıldığında düzenlenmiş eğitim kazancını en fazla düşüren değişken **yıllık deniz buzu konsantrasyonu (*buz_yillik*)** olmuştur (kazanç tam modeldeki 0.592'den 0.441'e gerilemektedir). Bunu deniz yüzeyi sıcaklığı (*sst_yillik*, 0.483'e gerileme) izlemiştir. Bu durum; tek başına en yüksek ayırt ediciliği *bio18* sağlasa da, modelden çıkarıldığında telafi edilemeyen en özgün ve bağımsız bilgi içeriğinin deniz buzu örtüsünde bulunduğunu göstermektedir.
+## Eski Jackknife ve tepki eğrilerinin düzeltilmiş yorumu
 
+![Şekil 2 Eski genel bulunuş modelinin Jackknife grafiği](/home/halil/adelie-maxent-2204c/maxent/cikti/deneme3/plots/Pygoscelis_adeliae_jacknife.png)
 
-## 2.4. Çevresel Değişkenlerin Biyolojik Tepki Eğrileri (Response Curves)
+Şekil 2. Eski genel bulunuş modeli için Jackknife eğitim kazancı. Grafiğin kendi lejantında mavi tek değişkenle eğitim, turkuaz değişken çıkarılarak eğitim, kırmızı bütün değişkenlerle eğitimdir. Turkuaz çubuk doğrudan “kazanç kaybı” değil, değişken çıkarıldığında kalan kazançtır. Bu eski grafik yeni koloni değişken önemini göstermez.
 
-Tepki eğrileri (response curves), diğer tüm değişkenler ortalama değerlerinde sabit tutulduğunda tek bir çevresel faktörün değişimine bağlı olarak Adélie pengueni habitat uygunluk puanının (Cloglog değeri, 0–1 aralığı) nasıl değiştiğini grafiksel olarak yansıtır. Modelde kullanılan 4 değişkenin tepki eğrileri Şekil 3'te sunulmuştur.
+BIO18'in tek başına daha yüksek eğitim kazancı vermesi doğrudan yağış mekanizmasını veya nedensel üstünlüğünü kanıtlamaz; coğrafi vekillik olasılığı dışlanmamıştır. Kaya sıfırken model puanının sıfırlanmaması da belirli bir mekanizmayla açıklanmış değildir. Genel kayıt hedefi, ölçek ve özellik yapısı birlikte etkili olabilir.
 
+Eski buz eğrisinin yaklaşık %20 alt sınırında yüksek olması, %20-25'in türün evrensel optimumu olduğunu göstermez. %20 altındaki yanıt gözlenmemiştir; üst uçtaki yeniden yükseliş ve belirsizlik de çan eğrisi iddiasını desteklemez. L modeline geçmek bu ekstrapolasyon sorununu kendiliğinden çözmez. Model puanlarından açık denizde yaşayamama, kesin dalış sınırı veya %80 buzda biyolojik imkânsızlık sonucu çıkarılmamaktadır.
 
-![Şekil 3. Tepki Eğrileri](/home/halil/adelie-maxent-2204c/rapor/fig_response_4panel.png)
-*Şekil 3. Çevresel değişkenlere ait biyolojik tepki eğrileri.*
-Tepki eğrileri ham model verileri (.dat) ve grafiklerdeki gerçek sayısal değerler doğrultusunda incelendiğinde türün çevresel tepkileri şu şekilde özetlenmektedir:
+## Üç GCM ve model yapısı duyarlılığı
 
-- • **Deniz Buzu Konsantrasyonu (Şekil 3a):** Habitat uygunluğu %20–%25 marjinal buz konsantrasyonunda zirveye ulaşmakta (~0.997 Cloglog puanı); konsantrasyon arttıkça uygunluk kademeli olarak düşerek %40'ta ~0.74, %50'de ~0.43 seviyesine gerilemekte ve %60.8'de minimum ~0.154 değerine inmektedir. %65–%69 bandında ise ~0.34 seviyesinde seyretmektedir. Bu eğilim, Adélie penguenlerinin dalış ve avlanma için polinyalara ve marjinal buz kenarlarına ihtiyaç duymasıyla uyumludur (Ainley, 2002).
-- • **Çıplak Kaya Yüzdesi (Şekil 3b):** Çıplak kaya eğrisinde sıfır kaya kesişiminde uygunluk ~0.46 seviyesindedir ve düşük kaya yüzdelerinde hızla ~0.76'ya yükselerek %15–17 aralığında 0.948 zirvesine ulaşmaktadır. Sıfır kayada taban uygunluğunun sıfırlanmaması (~0.46), model kalibrasyonunda kolonilerin yanı sıra açık denizel beslenme gözlemlerinin de bulunmasından kaynaklanmaktadır.
-- • **Yaz Yağışı / Bio18 (Şekil 3c):** Uygunluk 184 mm civarında zirveye (~0.960 puan) ulaşmakta; 400 mm seviyesinde ~0.81 puan ile yüksek kalmaya devam etmekte, ancak 600 mm'nin üzerine çıktığında ~0.55–0.60 bandına gerilemektedir. Bu durum, aşırı yağış koşullarında yavru hipotermi riskini yansıtmaktadır (Chapman vd., 2011).
-- • **Deniz Sıcaklığı / SST (Şekil 3d):** -1.94°C ile -1.50°C arasındaki soğuk kutup sularında en yüksek uygunluk (0.903–0.816 puan) gözlenirken, deniz suyu sıcaklığı -0.80°C'nin üzerine çıktığında uygunluk hızla düşerek -0.50°C'de 0.118 seviyesine inmektedir. Bu bulgu, pelajik kril ekolojisiyle uyumlu oşinografik su kütlesi toleransını temsil etmektedir (Cimino vd., 2016).
+Tablo 4. Yıllık genel bulunuş setinde 61 varlık hücresinin ortalama gelecek eksi günümüz puanı
 
-## 2.5. Mekânsal Çapraz Doğrulama (Spatial Block CV) Bulguları
+| MaxEnt ayarı | IPSL-CM6A-LR | GFDL-ESM4 | MPI-ESM1-2-LR |
+|---|---|---|---|
+| L/RM1 | +0,115 | +0,053 | +0,033 |
+| LQ/RM1 | -0,174 | -0,029 | +0,003 |
+| LQ/RM2 | +0,007 | +0,021 | +0,019 |
+| LQH/RM1 | -0,318 | -0,089 | -0,004 |
+| LQH/RM2 | -0,137 | -0,021 | +0,006 |
 
-Modelin mekânsal otokorelasyona karşı duyarlılığını ve coğrafi aktarılabilirliğini sınamak amacıyla Roberts vd. (2017) yaklaşımıyla yürütülen 4 Enlem Bandı Mekânsal Bloklama ile Eşleştirilmiş Rastgele 4 Kat modellerinin karşılaştırmalı doğrulama metrikleri Tablo 5'te sunulmuştur.
+Tablo 4 tam eğitimde kullanılan varlık hücrelerindeki, clamping açık, Cloglog puanı farklarını gösterir. Değerler yüzde değildir; eğitim örneklemi üzerinde hesaplandığı için bağımsız test başarısı da değildir. Yeni koloni modelinin veya koloni nüfusunun değişimini ifade etmez. Aynı IPSL girdisinde L/RM1 artış, LQH/RM1 azalış üretmektedir. Bu fark model bağımlılığıdır; habitatın hangi yönde değiştiğini belirlemez.
 
-*Tablo 5. Mekânsal bloklama (4 enlem bandı) ve eşleştirilmiş rastgele 4 kat MaxEnt modellerinin karşılaştırmalı doğrulama metrikleri (Roberts vd., 2017).*
+Tablo 5. Yerel deniz hücrelerinde GCM referans buzu ile ERA5 aylık buzu arasındaki ön karşılaştırma
 
-Tablo 5'teki sonuçlar, ekolojik modelleme metodolojisi açısından hayati bir gerçeği belgelemektedir: Ana model ile aynı özellik ailesini taşıyan AUTO/RM1 (LQTH) konfigürasyonu, standart rastgele doğrulamada 0.765 test AUC verirken, coğrafi enlem bantları ayrıştırıldığında test AUC değeri **0.477'ye (rastgele tahmin eşiği olan 0.50'nin altına)** gerilemekte ve test omission oranı %56.7'ye fırlamaktadır. Buna karşılık doğrusal kısıtlı model (L/RM1) mekânsal testte 0.580 AUC ile daha dirençli kalmaktadır. Rastgele bölmede eğitim-test noktaları arası medyan mesafe 12.6 km iken (68°G enleminde 0.25° boylam ~10.4 km'dir), mekânsal bloklamada bu mesafe 45.4 km'ye çıkmaktadır. Bu bulgu; karmaşık özellik sınıflarının (hinge/threshold) yerel enleme aşırı uyum sağladığını ve modelin eğitildiği enlem dışındaki farklı sahalara doğrudan aktarılmasında ciddi genelleme yetersizliği bulunduğunu dürüstçe kanıtlamaktadır.
+| GCM | Ortalama sapma yüzde puanı | RMSE yüzde puanı |
+|---|---|---|
+| IPSL-CM6A-LR | +10,14 | 22,05 |
+| GFDL-ESM4 | +27,89 | 35,39 |
+| MPI-ESM1-2-LR | -12,51 | 21,25 |
 
+Tablo 5, 339 yerel ERA5 deniz hücresinde eşlenmiş aylık klimatolojilerin eşit hücre ağırlıklı karşılaştırmasıdır. Bütün Bellingshausen Denizi'nin başarım testi veya bağımsız yerinde gözlem doğrulaması değildir. Modellerin buza ilişkin bölgesel farkları bulunduğunu gösterir; tek başına GCM eleme/ağırlıklandırma ölçütü yapılmamıştır. İnterannual değişkenlik ve farklı gözlemsel buz ürünleriyle karşılaştırma henüz tamamlanmamıştır.
 
-## 2.6. Kartografik Dağılım ve Değişim Haritaları
+## Eski haritaların denetimi ve bekleyen sonuçlar
 
+Eski tek-GCM değişim haritasındaki 243 artış hücresinin 59'u eğitim değişkenlerinin aralığı dışındadır; artış hücrelerinin 22'sinde eğitilmiş katların fark yönleri uyuşmamaktadır. Kuzeyde 66,00-66,50°G arasındaki bağlantılı artış bileşenlerinde bulunan 24 hücrenin tamamı yeni çevresel aralıktadır. Bu nedenle kuzey artış bloğu belirsizlikten bağımsız bir kazanım alanı olarak yorumlanamaz.
 
-### 2.6.1. Marguerite Körfezi Günümüz (2000–2025) Çevresel Uygunluk Haritası
+Eski belirsizlik haritasındaki toplam 246 hücrelik yön uyuşmazlığı, eşlenik eğitilmiş model katlarının gelecek-günümüz farkına aittir. Bu, farklı iklim değişkenlerinin veya GCM'lerin birbirine zıt yön verdiği anlamına gelmez. MESS ile saptanan aralık dışılık ve fiilen uygulanan clamping büyüklüğü de aynı ölçü değildir.
 
-MaxEnt modelinin günümüz ERA5 (2000–2025) ortalamalarıyla çalıştırılması neticesinde elde edilen Cloglog habitat uygunluk haritası Şekil 4'te sunulmuştur. Haritada 0.60 üzerindeki yüksek uygunluk alanlarının Adelaide Adası'nın kıyı kesimlerinde, körfezin iç fiyort girişlerinde ve George VI Boğazı'nın kuzey ağzında yoğunlaştığı gözlenmektedir. Bu alanlar, kuluçka için gerekli çıplak kayalıkların ve uygun marjinal deniz buzu dinamiklerinin bir arada bulunduğu kıyı kesimleriyle örtüşmektedir.
+Önceki değişim sınıfları belirli model/maske ve seçilmiş delta eşiğinin hücre sayımıdır. Bunlardan doğrulanmış habitat kaybı yüzdesi üretilmemektedir; eski haritalar yeni koloni haritası olarak sunulmaz. ±0,05 fark sınıfı biyolojik olarak doğrulanmış eşik değildir. İkili bulunuş eşiği seçimi, iki sürekli model puanının farkına aynı biyolojik anlamı kazandırmaz.
 
-
-![Şekil 4. Günümüz Haritası](/home/halil/adelie-maxent-2204c/harita/cmip6_ipsl_2050_v1/gunumuz_A4.png)
-*Şekil 4. Günümüz çevresel uygunluk haritası (2000–2025).*
-Günümüz haritası incelendiğinde; Bellingshausen Denizi'ne bakan batı açık deniz kesimlerinde uygunluk değerlerinin 0.10'un altında kaldığı görülmektedir. Bu düşüklük yalnızca kaya eksikliğinden değil; açık denizde daha ılık seyreden pelajik deniz suyu sıcaklığı (SST > -0.5°C) ve marjinal kış buz örtüsünün yokluğunun birleşik etkisinden kaynaklanmaktadır. Buna karşılık Adelaide Adası ve iç fiyortlar türün tüm biyolojik gereksinimlerini karşılamaktadır.
-
-
-### 2.6.2. CMIP6 IPSL-CM6A-LR SSP2-4.5 (2041–2060) Gelecek Projeksiyon Haritası
-
-CMIP6 IPSL-CM6A-LR modelinin orta düzey sera gazı emisyon senaryosu (SSP2-4.5) altında 2050 yılı (2041–2060 dönemi) potansiyel habitat uygunluk projeksiyonu Şekil 5'te sunulmuştur. Projeksiyon haritası incelendiğinde; kuzey ve batı fiyortlarında habitat uygunluğunda gerilemeler gözlenirken, körfezin güneyindeki korunaklı boğaz alanlarında uygunluk değerlerinin korunduğu veya kısmen arttığı görülmektedir.
-
-
-![Şekil 5. 2050 Projeksiyon Haritası](/home/halil/adelie-maxent-2204c/harita/cmip6_ipsl_2050_v1/2050_A4.png)
-*Şekil 5. 2050 yılı potansiyel habitat uygunluk haritası (CMIP6 SSP2-4.5).*
-2050 projeksiyonu, ısınan deniz suyu ve azalan kış deniz buzu nedeniyle türün geleneksel üreme ve avlanma alanlarında mekânsal baskıların artacağını ortaya koymaktadır. Özellikle Adelaide Adası'nın açık deniz etkisine açık batı kıyılarında uygunluk puanlarında belirgin azalmalar gözlenmiştir.
-
-
-### 2.6.3. 2050 Yılı Mekânsal Değişim ve Uygunluk Fark Haritası
-
-Gelecek uygunluk puanı ile günümüz uygunluk puanı arasındaki fark (Δ = Gelecek − Günümüz) piksel bazında hesaplanarak mekânsal değişim haritası oluşturulmuştur (Şekil 6). Fark değerleri ±0.05 mutlak puan eşiğinde sınıflandırılmış; modelin eşik duyarlılığı Tablo 6'da ve alan dağılımı Tablo 7'de özetlenmiştir (Liu vd., 2005).
-
-
-![Şekil 6. Değişim Haritası](/home/halil/adelie-maxent-2204c/harita/cmip6_ipsl_2050_v1/degisim_A4.png)
-*Şekil 6. 2050 yılı çevresel uygunluk değişim haritası.*
-Şekil 6'da görüldüğü üzere; körfezin kuzeybatı girişi ve Adelaide Adası batısında belirgin uygunluk kaybı (Δ < -0.05) gözlenirken, güneydeki George VI Boğazı ağzında yeşil tonlu uygunluk artış eğilimi (Δ > +0.05) belirmektedir. Haritadaki bloklu sınırlar, delta anomalisinin ~1° GCM hücrelerinden aktarılmasından kaynaklanmaktadır. George VI Boğazı günümüzde kalın şelf buzuyla kaplı olduğundan, buradaki matematiksel artış kesin bir sığınak değil, kuramsal bir değişim hipotezidir.
-
-*Tablo 6. Farklı lojistik değişim eşiklerine göre 2050 yılı habitat değişim sınıflarının duyarlılık dağılımı (Liu vd., 2005).*
-
-*Tablo 7. CMIP6 SSP2-4.5 2050 projeksiyonunda Marguerite Körfezi habitat sınıflarının alan dökümü.*
-
-
-### 2.6.4. Ekstrapolasyon, Novel Climate ve Clamping Belirsizlik Haritası
-
-İklim projeksiyonlarında çevresel değişkenlerin eğitim sınırlarını aşması durumunda model ekstrapolasyon uygular (Phillips vd., 2006). Çalışma alanındaki 703 grid hücresinin **357 adedinde (%50.8 / 102.500 km²)** clamping gerçekleşmiştir (Şekil 7). Clamping işlemlerinin önemli kısmı artan deniz yüzeyi sıcaklığı (SST) ve sıvı yağış (Bio18) değişkenlerinin günümüz üst sınırlarını aşmasından kaynaklanmıştır. Bu durum, 2050 yılı projeksiyonunun geniş bir ekstrapolasyon belirsizliği barındırdığını ve sonuçların temkinle yorumlanması gerektiğini göstermektedir.
-
-
-![Şekil 7. Belirsizlik Haritası](/home/halil/adelie-maxent-2204c/harita/cmip6_ipsl_2050_v1/belirsizlik_A4.png)
-*Şekil 7. Ekstrapolasyon ve Clamping belirsizlik haritası.*
+**Tamamlanması beklenen sonuçlar:** Geniş alan koloni örnekleminin son dışlama dökümü; iki arka planın koloni modelleri üzerindeki karşılaştırması; koloniye ait mekânsal metrikler ve belirsizlik aralıkları; günlük buz fenolojisi; üç GCM'de koloni günümüz/gelecek/delta ve MESS-clamping haritaları; Marguerite'deki doğrulanmış varlık hücrelerinde kat-dışı ortalama delta. Bu sonuçların hiçbiri tamamlanmış gibi yazılmamıştır.
 
 # Sonuç ve Tartışma
 
-Bu araştırmada, Batı Antarktika Yarımadası'nın hassas denizel sahalarından biri olan Marguerite Körfezi'nde Adélie pengueninin (*Pygoscelis adeliae*) günümüz (2000–2025) ve 2050 yılı potansiyel habitat uygunluğu, ERA5 yeniden analizleri, REMA topoğrafyası ve CMIP6 IPSL-CM6A-LR iklim projeksiyonları ile modellenmiştir. Elde edilen bulgular, kutup ekolojisi literatürü ve metodolojik sınırlılıklar ışığında değerlendirilmiştir.
+Tamamlanan genel bulunuş denetimi, çevresel model puanlarının coğrafi referanslara ve model yapısına göre değerlendirilmeden habitat değişimi olarak yorumlanamayacağını göstermiştir. Mevcut tasarımda coğrafi referansı aşan aktarılabilirlik ortaya konmamış; gelecekteki ortalama puan farkının işareti dahi ayarlara bağlı kalmıştır. Bu nedenle tek bir haritadan kesin kayıp oranı veya korunacak sığınak belirlenmemektedir.
 
-Model sonuçlarında yıllık deniz buzu konsantrasyonunun %43.1 katkı yüzdesi ve %55.6 permütasyon önemi ile birincil belirleyici çıkması, Adélie pengueninin deniz buzu dinamiklerine duyarlı yapısını ortaya koyan ekolojik literatürle (Ainley, 2002; Fraser & Hofmann, 2003) uyum sergilemektedir. Tepki eğrilerinde görülen %20–%25 marjinal buz optimumu; penguenlerin avlandığı kril sürülerinin buz altı algleriyle beslenmesi için yeterli buz örtüsüne ihtiyaç duymasını, ancak aynı zamanda dalış yapabilmek için açık su kanallarına ve polinyalara gereksinim duymasını yansıtmaktadır. Aşırı kapalı kütlesel buz örtüsünde dalış erişiminin düşmesi bu dengenin hassasiyetine işaret etmektedir.
+Doğrulanmış koloni bulunuşuna geçilmesi eski modelin yalnızca adını değiştirmek değildir. Farklı kayıt hedefi, arka plan, değişken seti ve yeniden doğrulama gerektirir. Yerelde 14 hücre bulunması eğitimin genişletilmesine gerekçe olmuştur; genişletme de örnekleme yanlılığını veya yerel aktarım sorununu otomatik çözmez. Yeni koloni sonuçları görülmeden bu tasarımın başarılı olduğu ileri sürülemez.
 
-Giriş bölümünde incelenen **Wang, Hu ve Yang'ın (2026, PMID: 42209243 - *Ying Yong Sheng Tai Xue Bao*)** bulgularıyla karşılaştırıldığında; Wang vd. (2026), CMIP6 SSP5-8.5 yüksek emisyon senaryosu altında yüzyıl sonuna doğru (2090–2100) Antarktika genelinde üç *Pygoscelis* türünün potansiyel uygun habitatlarında belirgin daralmalar bildirmişlerdir. Bizim çalışmamız, bu genel daralma eğilimiyle uyumlu olarak Marguerite Körfezi genelinde %42.2 oranında (89.155 km²) bir habitat uygunluk kaybı eğilimi tespit etmiştir.
+Esneklik ile aktarılabilirlik arasında genel bir ödünleşim bulunabilse de mevcut birkaç ortalama puan, LQH'nin “biyolojik olarak doğru”, L'nin “biyolojik olarak imkânsız” olduğunu kanıtlamaz. Zayıf bir testi yalnız “keşifsel” etiketiyle açıklamak yeterli değildir. Bu çalışmada etiket değişikliği yerine veri hedefi ayrılmış ve tamamlanan karşılaştırmalar açıkça raporlanmıştır.
 
-**'Refugia' ve George VI Boğazı Tartışması:** Model çıktılarında körfezin güneyindeki George VI Boğazı girişinde %34.6 oranında (68.460 km²) uygunluk artışı (Δ > +0.05) gözlenmiştir. Ancak bu artış kesin bir 'ekolojik sığınak' (refugium) olarak kabul edilemez. Bir hücrede taban uygunluğu çok düşükse (örn. 0.02), matematiksel bir artışla 0.08'e yükselse dahi mutlak uygunluk penguen için yetersiz kalacaktır. Dahası, George VI Boğazı günümüzde yüzlerce metre kalınlığında kalıcı şelf buzuyla kaplıdır ve kuluçka için zorunlu olan çıplak kaya substratından yoksundur. Buradaki uygunluk artışı, CMIP6 modelindeki deniz buzu incelmesine MaxEnt algoritmasının verdiği kuramsal bir tepkidir. Dolayısıyla George VI Boğazı bir 'ispatlanmış sığınak' değil, gelecekte şelf buzu erimesi durumunda potansiyel taşıyabilecek, sahada test edilmesi gereken bir **bölgesel hipotezdir**.
+Türün buzla ve denizel besin ağıyla ilişkisini araştıran literatür, bu modellerin ekolojik bağlamını sağlar. Ancak kril, yağış fazı, koloni topografyası ve demografik yanıt ölçülmediğinden aynı mekanizmaların burada gösterildiği iddia edilmemektedir. Modelin yüksek puanı Adelaide kıyıları veya iç fiyortların bütün gereksinimleri karşıladığının kanıtı değildir.
 
-Çalışmamızda yaz yağışlarının (*bio18*) %17.1'lik permütasyon önemine sahip olması, Chapman vd. (2011) ve Massom vd. (2006) tarafından vurgulanan sıvı yağmur ve ıslak karın civciv ölümlerine yol açma riski hipotezini desteklemektedir. Tepki eğrisinde yağış miktarı 600 mm'yi aştığında uygunluk puanının gerilemesi, iklim değişikliğiyle birlikte yağış fazının sıvıya kaymasının yaratabileceği olumsuz etkileri yansıtmaktadır.
-
-**Mekânsal Bloklama ve Sınırlılıklar:** Roberts vd. (2017) yaklaşımıyla gerçekleştirdiğimiz 4 enlem bandı mekânsal blok çapraz doğrulama testleri ekolojik metodoloji açısından kritik bir gerçeği vurgulamaktadır: Standart rastgele kat bölmelerinde 0.765 AUC veren ana model (AUTO/RM1, LQTH), coğrafi enlemler ayrıştırıldığında 0.477 AUC'ye gerilemekte ve omission oranı %56.7'ye çıkmaktadır. Bu sonuç; karmaşık özellik sınıflarının yerel enleme aşırı uyum sağladığını ve kutup modellerinde mekânsal otokorelasyon denetlenmeden üretilen projeksiyonlara şüpheyle yaklaşılması gerektiğini göstermektedir.
-
-Son olarak, 2050 iklim projeksiyonunda 357 hücrede (%50.8) clamping uygulanması ve çalışmanın tek bir GCM (IPSL-CM6A-LR) ile tek bir senaryoya (SSP2-4.5) dayanması, bu projeksiyonların kesin bir gelecek tahmini değil, **keşifsel (exploratory)** bir ilk değerlendirme olduğunu ortaya koymaktadır. Gelecek araştırmalarda çoklu model toplulukları (ensemble) dahil edilmesi belirsizlikleri azaltacaktır (Araújo & New, 2007).
-
+Bu aşamanın sonucu yöntemsel güvenilirlikle sınırlıdır. Geniş koloni modeli ve yerel aktarım testleri tamamlandıktan sonra ekolojik sonuç bölümü güncellenecektir. Benzerlik yalnız ortak yanlılıklardan, farklılık ise doğrulanmamış model seçiminden kaynaklanabileceği için, model uzlaşması veya ayrışması tek başına ekolojik kanıt sayılmayacaktır.
 
 # Öneriler
 
-Bu araştırma kapsamında elde edilen bulgular ve metodolojik sınırlılıklar doğrultusunda, ulusal ve uluslararası kutup araştırmaları için şu somut öneriler geliştirilmiştir:
+Öncelik, belirli bir bölgeyi sığınak veya kayıp alanı ilan etmek değil, kayıt türü ile model hedefinin tutarlılığını ve Marguerite'ye aktarımı sınamaktır. Bunun için dışlanan koloni kayıtları, deniz hücresinden aktarım uzaklıkları ve farklı arka planların etkisi gözden geçirilmelidir.
 
-- • 1. **TÜBİTAK MAM Kutup Araştırmaları Enstitüsü (KARE) ve Ulusal Seferler (TAE):** Türkiye'nin düzenlediği Ulusal Antarktika Bilim Seferleri (TAE) kapsamında, modelin mekânsal aktarılabilirlik sınırlarını test etmek ve George VI Boğazı çevresindeki şelf buzu-mikroklima etkileşiminin biyolojik fizibilitesini incelemek amacıyla, körfezin güney kesimlerinde bilimsel saha doğrulaması (ground truthing) ve oşinografik ölçüm çalışmaları planlanmalıdır.
-- • 2. **GPS Telemetri ve Uydu Vericileri ile İzleme:** Modelin genel bulunuş kısıtını aşmak ve üreme kolonileri ile denizel beslenme hareketlerini net olarak ayrıştırmak amacıyla, körfezdeki Adélie kolonilerine uydu bağlantılı GPS telemetri cihazları takılarak bireylerin kışlama ve beslenme rotaları gerçek zamanlı izlenmelidir (Cimino vd., 2016).
-- • 3. **Çoklu Model Toplulukları (Ensemble SDM) ve Bölgesel İklim Modelleri (RCM):** GCM delta anomalisinin ~1° kaba çözünürlük kısıtını ve clamping (%50.8) belirsizliğini azaltmak için birden fazla GCM (örn. MPI-ESM1-2-HR, CNRM-CM6-1) ve Bölgesel İklim Modelleri (RCM) bir araya getirilerek topluluk (ensemble) modellemesi yürütülmelidir (Araújo & New, 2007).
-- • 4. **Deniz Koruma Alanları (MPA) ve CCAMLR Kapsamı:** Antarktika Deniz Yaşamı Kaynaklarının Korunması Komisyonu (CCAMLR) nezdinde, modelimizin belirgin habitat daralması (Δ < -0.05) öngördüğü **kuzey körfez girişi ve Adelaide Adası çevresindeki mevcut kolonilerin hinterlandında** endüstriyel kril (*Euphausia superba*) avcılığı kotaları yakından takip edilmeli ve yerel koruma tamponları geliştirilmelidir.
-- • 5. **Yüksek Çözünürlüklü Optik Uydu ve İHA ile Koloni Takibi:** Ulaşımı güç fiyort adacıklarındaki kolonilerin tespiti için Sentinel-2 ve yüksek çözünürlüklü ticari uydu görüntüleri ile insansız hava araçları (İHA) üzerinden guano lekesi analizi ve sayım çalışmaları yürütülmelidir (Southwell vd., 2015).
-- • 6. **Otomatik Meteoroloji İstasyonları (AWS) ile Yerel Yağış İzleme:** Kuluçka döneminde civciv ölümlerine yol açabilecek aşırı sıvı yağış olaylarının takibi için körfez kıyısındaki üreme kolonilerine gerçek zamanlı mikroklimatik otomatik meteoroloji istasyonları (AWS) kurulması önerilmektedir (Chapman vd., 2011).
+Saha doğrulaması yapılabilirse yüksek ve düşük model puanları ile yüksek belirsizlik alanlarını birlikte kapsayan bir tasarım tercih edilmelidir. Bir bölgeye özgü doğrulanmamış harita nedeniyle George VI çevresine tek başına öncelik verilmez. Koloni sayımları ile denizdeki hareket/telemetri verileri ayrı araştırma hedefleri olarak tutulmalıdır.
+
+Kril avcılığı kotası, deniz koruma alanı sınırı veya koloni kaybı kararı bu analizden türetilmemektedir. Böyle uygulamalar için bağımsız biyolojik ve yönetim verileri gerekir. Daha ince kıyısal/topografik veriler ileride kullanılabilir; fakat yalnız ızgarayı küçültmek çevresel çözünürlüğü artırmaz.
+
+Nihai sonuçta farklı özellik ve RM ayarları, arka plan tasarımları ve GCM'lerin yayılımı gösterilmelidir. Birbirine yakın puanlar ortak yanlılıkları dışlamadıkça güven kanıtı olarak sunulmamalı; aktarılabilirlik başarısızsa 2050 çıktıları hipotez üretimi sınırında tutulmalıdır.
 
 # Kaynaklar
 
-Ainley, D. G. (2002). *The Adélie Penguin: Bellwether of Climate Change*. Columbia University Press, New York. https://doi.org/10.7312/ainl12304
-
-Araújo, M. B., & New, M. (2007). Ensemble forecasting of species distributions. *Trends in Ecology & Evolution*, 22(1), 42–47. https://doi.org/10.1016/j.tree.2006.09.010
-
-Atkinson, A., Siegel, V., Pakhomov, E., & Rothery, P. (2004). Long-term serious decline in Antarctic krill stock and increase in salps in Southern Ocean. *Nature*, 432(7013), 100–103. https://doi.org/10.1038/nature02996
-
-Chapman, E. W., Hofmann, E. E., Patterson, D. L., & Fraser, W. R. (2011). The effects of climate change on normal and anomalous weather conditions in the Western Antarctic Peninsula: Consequences for Adélie penguin populations. *Marine Ecology Progress Series*, 429, 247–260. https://doi.org/10.3354/meps09108
-
 Cimino, M. A., Lynch, H. J., Saba, V. S., & Oliver, M. J. (2016). Projected asymmetric response of Adélie penguins to Antarctic climate change. *Scientific Reports*, 6, 28785. https://doi.org/10.1038/srep28785
 
-Dormann, C. F., Elith, J., Bacher, S., Buchmann, C., Carl, G., Carré, G., Marquéz, J. R. G., Gruber, B., Lafourcade, B., Leitão, P. J., Münkemüller, T., McClean, C., Osborne, P. E., Reineking, B., Schröder, B., Skidmore, A. K., Zurell, D., & Lautenbach, S. (2013). Collinearity: A review of methods to deal with it and a simulation study evaluating their performance. *Ecography*, 36(1), 27–46. https://doi.org/10.1111/j.1600-0587.2012.07348.x
+Copernicus Climate Change Service. (2019). *ERA5 monthly averaged data on single levels from 1940 to present*. Climate Data Store. https://doi.org/10.24381/cds.f17050d7
 
-Ducklow, H. W., Baker, K., Martinson, D. G., Quetin, L. B., Ross, R. M., Smith, R. C., Stammerjohn, S. E., Vernet, M., & Fraser, W. (2007). Marine ecosystems: The West Antarctic Peninsula. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 362(1477), 67–94. https://doi.org/10.1098/rstb.2006.1955
+Copernicus Climate Change Service. (2018). *ERA5 hourly data on single levels from 1940 to present*. Climate Data Store. https://doi.org/10.24381/cds.adbb2d47
 
-Elith, J., Phillips, S. J., Hastie, T., Dudík, M., Chee, Y. E., & Yates, C. J. (2011). A statistical explanation of MaxEnt for ecologists. *Diversity and Distributions*, 17(1), 43–57. https://doi.org/10.1111/j.1472-4642.2010.00725.x
+Elith, J., Phillips, S. J., Hastie, T., Dudík, M., Chee, Y. E., & Yates, C. J. (2011). A statistical explanation of MaxEnt for ecologists. *Diversity and Distributions*, 17, 43-57. https://doi.org/10.1111/j.1472-4642.2010.00725.x
 
-Fielding, A. H., & Bell, J. F. (1997). A review of methods for the assessment of prediction errors in conservation presence/absence models. *Environmental Conservation*, 24(1), 38–49. https://doi.org/10.1017/S0376892997000088
+Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B., Stouffer, R. J., & Taylor, K. E. (2016). Overview of the Coupled Model Intercomparison Project Phase 6 experimental design and organization. *Geoscientific Model Development*, 9, 1937-1958. https://doi.org/10.5194/gmd-9-1937-2016
 
-Fraser, W. R., & Hofmann, E. E. (2003). A predator's perspective on causal links between climate change, physical forcing and ecosystem response. *Marine Ecology Progress Series*, 265, 1–15. https://doi.org/10.3354/meps265001
+Gallagher, K. L., Herman, R., Walton, K., Dinniman, M. S., & Lynch, H. J. (2025). Pygoscelis penguins prefer different oceanographic and terrestrial habitats during the austral summer. *Ecosphere*, 16, e70091. https://doi.org/10.1002/ecs2.70091
 
-IPCC. (2021). *Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change*. Cambridge University Press, Cambridge, UK and New York, NY, USA. https://doi.org/10.1017/9781009157896
+GBIF.org User. (2026). *Occurrence Download*. The Global Biodiversity Information Facility. https://doi.org/10.15468/dl.jt3gt7
 
-Liu, C., Berry, P. M., Dawson, T. P., & Pearson, R. G. (2005). Selecting thresholds of occurrence in the prediction of species distributions. *Journal of Biogeography*, 32(1), 51–63. https://doi.org/10.1111/j.1365-2699.2004.01149.x
+Gerrish, L., Ireland, L., Fretwell, P., Cooper, P., & Skachkova, A. (2025). *High resolution vector polygons of the Antarctic coastline*, sürüm 7.11. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/7d6793c2-2513-4752-8f37-11db5b791fb5
 
-Lyver, P. O., Barron, M., Barton, K. J., Ainley, D. G., Pollard, A., Gordon, S., McNeill, S., Ballard, G., & Wilson, P. R. (2014). Trends in the breeding population of Adélie penguins in the Ross Sea, 1981–2012: A coincidence of climate and resource extraction effects. *PLOS ONE*, 9(3), e91188. https://doi.org/10.1371/journal.pone.0091188
+Hersbach, H., vd. (2020). The ERA5 global reanalysis. *Quarterly Journal of the Royal Meteorological Society*, 146, 1999-2049. https://doi.org/10.1002/qj.3803
 
-Massom, R. A., Stammerjohn, S. E., Smith, R. C., Pook, M. J., Iannuzzi, R. A., Adams, N., & Fraser, W. R. (2006). Extreme anomalous atmospheric circulation in the West Antarctic Peninsula region in Austral spring and summer 2001/02, and its ecological consequences. *Antarctic Science*, 18(3), 403–418. https://doi.org/10.1017/S0954102006000454
+Hijmans, R. J. (2012). Cross-validation of species distribution models: removing spatial sorting bias and calibration with a null model. *Ecology*, 93, 679-688. https://doi.org/10.1890/11-0826.1
 
-Phillips, S. J., Anderson, R. P., & Schapire, R. E. (2006). Maximum entropy modeling of species geographic distributions. *Ecological Modelling*, 190(3–4), 231–259. https://doi.org/10.1016/j.ecolmodel.2005.03.026
+Oceanites, Inc. (2026). *MAPPPD census counts of Antarctic and sub-Antarctic breeding penguins*, sürüm 5.0. Erişim 12 Kasım 2026. https://penguinmap.com/mapppd/
 
-Rignot, E., Mouginot, J., Scheuchl, B., van den Broeke, M., van Wessem, M. J., & Morlighem, M. (2019). Four decades of Antarctic Ice Sheet mass balance from 1979–2017. *Proceedings of the National Academy of Sciences*, 116(4), 1095–1103. https://doi.org/10.1073/pnas.1812883116
+Phillips, S. J., Anderson, R. P., & Schapire, R. E. (2006). Maximum entropy modeling of species geographic distributions. *Ecological Modelling*, 190, 231-259. https://doi.org/10.1016/j.ecolmodel.2005.03.026
 
-Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., Hauenstein, S., Lahoz-Monfort, J. J., Schröder, B., Thuiller, W., Warton, D. I., Wintle, B. A., Hartig, F., & Dormann, C. F. (2017). Cross-validation strategies for data with spatial, temporal, or phylogenetic structure. *Ecography*, 40(8), 913–929. https://doi.org/10.1111/ecog.02881
+Roberts, D. R., vd. (2017). Cross-validation strategies for data with spatial, temporal, or phylogenetic structure. *Ecography*, 40, 913-929. https://doi.org/10.1111/ecog.02881
 
-Southwell, C., Emmerson, L., McKinlay, J., Newbery, K., Takahashi, A., Kato, A., & Trathan, P. (2015). Spatially extensive standardized surveys reveal widespread, stable abundance of an Antarctic top predator. *Diversity and Distributions*, 21(1), 23–33. https://doi.org/10.1111/ddi.12260
+Skachkova, A., Gerrish, L., Fretwell, P., & Cooper, P. (2025). *High resolution vector polygons of Antarctic rock outcrop*, sürüm 7.11. NERC EDS UK Polar Data Centre. https://doi.org/10.5285/815525ca-cefe-4fbf-9224-3ee784e7de4e
 
-Stammerjohn, S. E., Martinson, D. G., Smith, R. C., & Iannuzzi, R. A. (2008). Sea ice in the western Antarctic Peninsula region: Spatio-temporal variability from ecological and climatological perspectives. *Deep Sea Research Part II: Topical Studies in Oceanography*, 55(18–19), 2041–2058. https://doi.org/10.1016/j.dsr2.2008.04.026
-
-Stammerjohn, S., Massom, R., Rind, D., & Martinson, D. (2012). Regions of rapid sea ice change: An inter-hemispheric seasonal comparison. *Geophysical Research Letters*, 39(6), L06501. https://doi.org/10.1029/2012GL050874
-
-Swets, J. A. (1988). Measuring the accuracy of diagnostic systems. *Science*, 240(4857), 1285–1293. https://doi.org/10.1126/science.3287615
-
-Trivelpiece, W. Z., Hinke, J. T., Miller, A. K., Reiss, C. S., Trivelpiece, S. G., & Watters, G. M. (2011). Variability in krill biomass links harvesting and climate warming to penguin population declines in Antarctica. *Proceedings of the National Academy of Sciences*, 108(18), 7625–7628. https://doi.org/10.1073/pnas.1016560108
-
-Turner, J., Barrand, N. E., Bradbury, W. M., Chelliah, M., Garabato, A. C. N., & Phillips, T. (2014). Antarctic climate change and the environment: An update. *Polar Record*, 50(3), 237–259. https://doi.org/10.1017/S0032247413000296
-
-Turner, J., Lu, H., White, I., King, J. C., Phillips, T., Hosking, J. S., Bracegirdle, T. J., Marshall, G. J., Mulvaney, R., & Deb, P. (2016). Absence of 21st century warming on Antarctic Peninsula consistent with natural variability. *Nature*, 535(7612), 411–415. https://doi.org/10.1038/nature18645
-
-Vaughan, D. G., Marshall, G. J., Connolley, W. M., Parkinson, C., Mulvaney, R., Hodgson, D. A., King, J. C., Pudsey, C. J., & Turner, J. (2003). Recent rapid regional climate warming on the Antarctic Peninsula. *Climatic Change*, 60(3), 243–274. https://doi.org/10.1023/A:1026021217991
-
-Wang, J., Hu, M., & Yang, J. (2026). Impact of climate change on the potentially suitable habitat distribution of Pygoscelis penguins in Antarctica. *Ying Yong Sheng Tai Xue Bao (The Journal of Applied Ecology)*, 37(3), 926–932. https://doi.org/10.13287/j.1001-9332.202603.028 [PMID: 42209243]
+Wang, J.-R., Hu, A.-L., & Yang, J. (2026). Impact of climate change on the potentially suitable habitat distribution of Pygoscelis penguins in Antarctica. *Ying Yong Sheng Tai Xue Bao*, 37, 926-932. https://doi.org/10.13287/j.1001-9332.202603.037 PMID 42209243.
 

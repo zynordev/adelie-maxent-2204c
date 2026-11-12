@@ -1,0 +1,8 @@
+{
+  "n_paired_projections": 720,
+  "target": "provisional general occurrence, not colony or demographic response",
+  "future_validation": false,
+  "clamping": true,
+  "new_model_training": false,
+  "repeated_schemes": "same 61 occurrence cells; never pooled as independent observations"
+}

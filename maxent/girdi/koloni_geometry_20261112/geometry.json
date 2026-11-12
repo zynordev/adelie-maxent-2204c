@@ -1,0 +1,12 @@
+{
+  "area_NWSE": [
+    -60,
+    -78,
+    -74,
+    -53
+  ],
+  "climate_fields_created": false,
+  "source": "SCAR ADD v7.11 rock/coast",
+  "coast_simplification_m": 50,
+  "rock_simplification_m": 0
+}

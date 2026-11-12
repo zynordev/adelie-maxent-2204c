@@ -1,0 +1,15 @@
+{
+  "source": "MAPPPD all-counts public CSV snapshot",
+  "source_url": "https://penguinmap.com/mapppd/DownloadAll",
+  "sha256": "d169c409cf278b137d6df35fbeb9ab3409bdea15f41c39bcaec549a4d4dbca89",
+  "raw_census_rows_global": 5487,
+  "local_census_rows_all_years": 123,
+  "local_sites_all_years": 22,
+  "eligible_positive_nest_censuses_2000_2025": 45,
+  "eligible_sites": 19,
+  "eligible_grid_cells": 14,
+  "same_cell_sites_not_independent": true,
+  "independent_validation_status": "unestablished; GBIF source overlap must be checked",
+  "decision_needed": "broader calibration domain for colony model or retain local occurrence/methodological scope",
+  "all_species_target_group_background": "not applied to mixed GBIF records; sampling processes differ"
+}

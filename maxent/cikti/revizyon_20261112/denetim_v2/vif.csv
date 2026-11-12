@@ -1,0 +1,17 @@
+domain,variable,n_cells,vif,singular
+rectangle,bio18,703,1.9860760127543577,False
+rectangle,buz_yillik,703,2.521228741817123,False
+rectangle,kaya,703,1.0709549151940552,False
+rectangle,sst_yillik,703,1.5558436789989007,False
+raw_ocean,bio18,339,1.9933766255721292,False
+raw_ocean,buz_yillik,339,3.837987343886004,False
+raw_ocean,kaya,339,1.4660807237308615,False
+raw_ocean,sst_yillik,339,3.888833635978883,False
+marine_support,bio18,325,1.7604581586679307,False
+marine_support,buz_yillik,325,5.63659294760214,False
+marine_support,kaya,325,1.2353991381953253,False
+marine_support,sst_yillik,325,5.2462170558033145,False
+coastal_support,bio18,579,2.0362225973152572,False
+coastal_support,buz_yillik,579,2.801085706863563,False
+coastal_support,kaya,579,1.1603695022510665,False
+coastal_support,sst_yillik,579,2.0117374120770792,False

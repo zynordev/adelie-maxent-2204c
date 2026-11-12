@@ -1,0 +1,296 @@
+{
+  "model": "IPSL-CM6A-LR",
+  "area_NWSE": [
+    -60.0,
+    -78.0,
+    -74.0,
+    -53.0
+  ],
+  "variables": [
+    {
+      "variable": "tas",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Amon.tas.gr.v20180803.tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/tas/gr/v20180803/tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "file_checksum": [
+            "7264c228560257b32d44dcc611d92976da7214af7e879586a78f969848c8c375"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 185001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.386433+00:00",
+            "bytes_received": 8431,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "f091e1251dacf49e2e7953ea599a49b6dd05d011c57b5e6bbbeb759bfa5044df"
+          },
+          "source_units": "K",
+          "native_slice": [
+            12,
+            25,
+            112,
+            124
+          ],
+          "calendar": "gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Amon.tas.gr.v20190119.tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/tas/gr/v20190119/tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "file_checksum": [
+            "e217b96d76a1e65c0d99cfb6f1897e5bc45a9e27beb8beee052277be6725c77f"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 210012,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tas&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:14.135527+00:00",
+            "bytes_received": 12169,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "efc72a6ed9d46ca61348b195f5d7cf2df760dc817e51e1bb39a1b6e89208123b"
+          },
+          "source_units": "K",
+          "native_slice": [
+            12,
+            25,
+            112,
+            124
+          ],
+          "calendar": "gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "tas_baseline_2000_2025.nc": "9df69bda896d2dcc33b4191993e19419ffe3c355aefbbca69f4ce415bf5db014",
+        "tas_future_2041_2060.nc": "5ffde2a172a0b352dd50f737f5c00e7a2959bd2cee81a8d3499a8d6cf8a51e2d",
+        "tas_aylik_klimatoloji.npz": "c37c46b71e20211a5436a2fbfaa151439484c23f514804876711601c29c858e5"
+      }
+    },
+    {
+      "variable": "pr",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Amon.pr.gr.v20180803.pr_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Amon/pr/gr/v20180803/pr_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc",
+          "file_checksum": [
+            "f11e63dd16bde40afb457cca766cce4b57f6d88cd0e73b1ce6ae190bd6d47f3b"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 185001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.397995+00:00",
+            "bytes_received": 12141,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "8659fdf74a051fcb47e625733dfcb6db59a3dfc54f90374d9b63b181f73c5685"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            12,
+            25,
+            112,
+            124
+          ],
+          "calendar": "gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Amon.pr.gr.v20190119.pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Amon/pr/gr/v20190119/pr_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc",
+          "file_checksum": [
+            "6c2a48c2d1837fff1e983b72c5c12805dc0e6c4e278beabbba3e94f980c86457"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 210012,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=pr&table_id=Amon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:14.586653+00:00",
+            "bytes_received": 12105,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "fd54a8316ad92d7da7a2e89577373fcd3d7c17b2c97c14162d8f0ed102507da1"
+          },
+          "source_units": "kg m-2 s-1",
+          "native_slice": [
+            12,
+            25,
+            112,
+            124
+          ],
+          "calendar": "gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "pr_baseline_2000_2025.nc": "c49502d6d14296613614ac8fee5e7128eea61eb729b92f8fd691cbddf96521bf",
+        "pr_future_2041_2060.nc": "b3e84c9db9c350fa8aea22ea1f05a8379078ee2dc5a454a501daaa65a09082c2",
+        "pr_aylik_klimatoloji.npz": "fbcf6da248bb25e99eaa3bf1b7fe818f9e7f7f850a7260e861c82350cc3c9c47"
+      }
+    },
+    {
+      "variable": "tos",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.Omon.tos.gn.v20180803.tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/Omon/tos/gn/v20180803/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "file_checksum": [
+            "ec7c3db92ff53196cb57f8efcaca578b6cf7694ad3b0b2caf871edd4b62409d0"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 185001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.372014+00:00",
+            "bytes_received": 12345,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "391ac5d6294dee21b6c6c196731bdd222b09f56be6cd94078e013bd7984a6b75"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            57,
+            97,
+            209,
+            236
+          ],
+          "calendar": "gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.Omon.tos.gn.v20190119.tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/Omon/tos/gn/v20190119/tos_Omon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "file_checksum": [
+            "0a1f426568e55b8aa9c1b547585444bc57589f0d65ff5f75c3a39af707f02f21"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 210012,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=tos&table_id=Omon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:16.488408+00:00",
+            "bytes_received": 12312,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "aa59b388e78b4119ef6852ab841f64c2e3ad500d31b209902389aacf0737dbb2"
+          },
+          "source_units": "degC",
+          "native_slice": [
+            57,
+            97,
+            209,
+            236
+          ],
+          "calendar": "gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "tos_baseline_2000_2025.nc": "9994963b0a7768ed71786be070bbee3d1995c18ce7197b8d11d75c4bdde7b863",
+        "tos_future_2041_2060.nc": "478e3ac09c443c7f3bbd150631b006767e43a6581d1eeee5281f900b8c43ad3f",
+        "tos_aylik_klimatoloji.npz": "ed14d898d5da2133211077504400035958bff9805990fc788e4d2c8f119d11b4"
+      }
+    },
+    {
+      "variable": "siconc",
+      "source_files": [
+        {
+          "id": "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r1i1p1f1.SImon.siconc.gn.v20180803.siconc_SImon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/CMIP/IPSL/IPSL-CM6A-LR/historical/r1i1p1f1/SImon/siconc/gn/v20180803/siconc_SImon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc",
+          "file_checksum": [
+            "009f3ddac3efbe31cbe505addd2942b1516f0adebd010cdc9b0f96a47f92f512"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 185001,
+          "last_month": 201412,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=historical&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:06.411351+00:00",
+            "bytes_received": 12579,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "c3c4af95dd620ebb11e703da247fefdd4fb03f9c5e9ef3c03646aeb1e4932f5a"
+          },
+          "source_units": "%",
+          "native_slice": [
+            57,
+            97,
+            209,
+            236
+          ],
+          "calendar": "gregorian"
+        },
+        {
+          "id": "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.SImon.siconc.gn.v20190119.siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "opendap_url": "https://esgf.ceda.ac.uk/thredds/dodsC/esg_cmip6/CMIP6/ScenarioMIP/IPSL/IPSL-CM6A-LR/ssp245/r1i1p1f1/SImon/siconc/gn/v20190119/siconc_SImon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gn_201501-210012.nc",
+          "file_checksum": [
+            "65b6e690b9561c7b34140a6d47420bf7f3a82d8c8b94479d8fc4abeb12524474"
+          ],
+          "file_checksum_type": [
+            "SHA256"
+          ],
+          "first_month": 201501,
+          "last_month": 210012,
+          "query_receipt": {
+            "url": "https://esgf-data.dkrz.de/esg-search/search/?project=CMIP6&source_id=IPSL-CM6A-LR&experiment_id=ssp245&member_id=r1i1p1f1&variable_id=siconc&table_id=SImon&type=File&format=application%2Fsolr%2Bjson&limit=100&latest=true",
+            "http_status": 200,
+            "checked_at_utc": "2026-11-12T16:40:20.932832+00:00",
+            "bytes_received": 12505,
+            "content_length": null,
+            "etag": null,
+            "last_modified": null,
+            "sha256": "7cf5035d182b19a1aefee626590fa14caf4821d2a1e4e6f6e1754bd73c87c9d4"
+          },
+          "source_units": "%",
+          "native_slice": [
+            57,
+            97,
+            209,
+            236
+          ],
+          "calendar": "gregorian"
+        }
+      ],
+      "status": "complete",
+      "outputs": {
+        "siconc_baseline_2000_2025.nc": "c3e1eaed7e19172050782b9283dcd3fa509ff80cb267c1da51eeeb80a07339d0",
+        "siconc_future_2041_2060.nc": "3f38419251d4905dcfa5717b4076324fc27c6a5f6ac0d43545aba04779664430",
+        "siconc_aylik_klimatoloji.npz": "2214f7cf55f437d7142e0d8b33e4bbfd389985c22f688b0b8f0294dd4c6ec8ce"
+      }
+    }
+  ],
+  "complete": true
+}
