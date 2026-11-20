@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-11-21 — Rapor sıfırdan elle yazılıyor: Yöntem 1.1 ve 1.2 (öğrenci)
+
+**Yapılanlar**
+- Öğrenci, raporu yapay zekâ taslağını kullanmadan kendi cümleleriyle sıfırdan yazmaya başladı; yapay zekâ yalnız kavram anlatımı ve doğruluk/eksiklik kontrolü yaptı (cümle kurmadı).
+- Yöntem 1.1 (araştırma sahası ve ızgara) ve 1.2 (varlık verisi) taslakları yazıldı: `rapor/yazim/TASLAK_YONTEM_1.1_1.2.md`. Yazım düzeltmesi son tura bırakıldı.
+- Kontrol edilen rakamlar: 37×19=703 hücre, 0,25°; GBIF 1001 → 704 → 67 hücre (19 kara / 48 deniz, ERA5 kaba maskesine göre); temiz 704 kaydın 163'ü 2026.
+
+**Sıradaki adım**
+- 1.3 Çevresel katmanlar. Sonra 1.4–1.9, Bulgular, Giriş, Amaç, Tartışma, Öneriler, Özet, Kaynaklar.
+
+---
+
 ## 2026-11-10 — Resmî 18 Sayfalık TÜBİTAK 2204-C Proje Raporunun Üretilmesi (Aşama 8 ✅)
 
 **Yapılanlar**
